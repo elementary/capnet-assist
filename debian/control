@@ -1,0 +1,13 @@
+Source: captive-portal-elementary
+Section: misc
+Priority: optional
+Maintainer: Cody Garver <cody@elementaryos.org>
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.4
+Homepage: http://elementaryos.org
+
+Package: captive-portal-elementary
+Architecture: all
+Depends: ${misc:Depends}
+Description: captive portal test for elementary
+ Uses NetworkManager to probe for captive portals.
