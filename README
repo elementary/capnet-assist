@@ -1,0 +1,13 @@
+Captive Portal detection script for NetworkManager
+
+To install, either use
+
+	sudo cp 90captive_portal_test /etc/NetworkManager/dispatcher.d/
+
+or create a .deb file with
+
+	debuild -us -uc
+
+and then install it.
+
+
