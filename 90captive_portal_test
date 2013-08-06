@@ -16,7 +16,7 @@ wait_for_process() {
 start_browser() {
      wait_for_process nm-applet
      logger -s "Running browser as '$user' to login in captive portal"
-     su $user -c "captive-login 2>/dev/null || sensible-browser www.elementaryos.org 2>/dev/null"
+     su $user -c "captive-login 2>/dev/null || sensible-browser start.elementaryos.org 2>/dev/null"
 }
 
 case "$2" in
