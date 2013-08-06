@@ -39,8 +39,10 @@ case "$2" in
     then	
         logger -s "Connection already established"
     else
-        logger -s "HTTP response should be 204. We are in a walled garden"
-        start_browser
+        if [ $res = 200]
+            logger -s "HTTP response should be 204. We are in a walled garden"
+            start_browser
+        fi
     fi
     ;;
     *)
