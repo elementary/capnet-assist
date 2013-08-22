@@ -1,0 +1,10 @@
+--------------------------------------------------------------------------------
+BUILDING
+--------------------------------------------------------------------------------
+bzr branch lp:captive-login
+cd captive-login
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+make
+sudo make install
