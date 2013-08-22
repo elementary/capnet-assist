@@ -1,5 +1,5 @@
-captive-portal-elementary (0.1) precise; urgency=low
+capnet-assist (0.1) precise; urgency=low
 
-  * Initial Release.
+  * Initial release
 
- -- Cody Garver <cody@elementaryos.org>  Thu, 11 Jul 2013 17:44:03 -0500
+ -- Cody Garver <codygarver@elementaryos.org>  Thu, 22 Aug 2013 09:23:23 -0500
