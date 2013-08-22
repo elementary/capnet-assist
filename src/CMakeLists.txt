@@ -1,7 +1,7 @@
 # Vala
 find_package(Vala REQUIRED)
 include(ValaVersion)
-ensure_vala_version("0.17.4" MINIMUM)
+ensure_vala_version("0.18" MINIMUM)
 include(ValaPrecompile)
 
 set(TARGET_GLIB 2.32)
