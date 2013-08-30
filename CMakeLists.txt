@@ -12,6 +12,7 @@ project(captive-login)
 set (RELEASE_NAME "GreatBarrier")
 set (VERSION "0.1")
 set (CMAKE_C_FLAGS "-ggdb")
+set (TARGET_GLIB 2.32)
 
 configure_file (${CMAKE_SOURCE_DIR}/src/config.vala.cmake ${CMAKE_SOURCE_DIR}/src/config.vala)
 

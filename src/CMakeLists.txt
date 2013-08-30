@@ -1,15 +1,7 @@
-# Vala
-find_package(Vala REQUIRED)
-include(ValaVersion)
-ensure_vala_version("0.18" MINIMUM)
-include(ValaPrecompile)
-
-set(TARGET_GLIB 2.32)
-
 pkg_check_modules(DEPS REQUIRED
-	gtk+-3.0
+    gtk+-3.0
     gio-2.0
-	webkitgtk-3.0
+    webkitgtk-3.0
 )
 add_definitions(${DEPS_CFLAGS})
 
