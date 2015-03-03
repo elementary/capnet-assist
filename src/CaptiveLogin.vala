@@ -26,6 +26,8 @@ public class ValaBrowser : Gtk.Window {
     
     public ValaBrowser () {
         set_default_size (1000, 680);
+        set_keep_above (true);
+        set_skip_taskbar_hint (true);
 
         var header = new Gtk.HeaderBar ();
         header.set_show_close_button (true);
