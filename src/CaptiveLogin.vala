@@ -3,8 +3,8 @@ using WebKit;
 
 public class ValaBrowser : Window {
 
-    private const string TITLE = "Login";
-    private const string DUMMY_URL = "www.elementaryos.org";
+    private const string TITLE = "Log in";
+    private const string DUMMY_URL = "http://elementary.io";
     
     private WebView web_view;
     
