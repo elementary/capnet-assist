@@ -1,12 +1,11 @@
 using Gtk;
-using WebKit;
 
 public class ValaBrowser : Window {
 
     private const string TITLE = "Log in";
     private const string DUMMY_URL = "http://elementary.io";
     
-    private WebView web_view;
+    private WebKit.WebView web_view;
     
     public ValaBrowser () {
         set_default_size (1000, 680);
@@ -23,7 +22,7 @@ public class ValaBrowser : Window {
     }
 
     private void create_widgets () {
-        this.web_view = new WebView ();
+        this.web_view = new WebKit.WebView ();
         var scrolled_window = new ScrolledWindow (null, null);
         scrolled_window.set_policy (PolicyType.AUTOMATIC, PolicyType.AUTOMATIC);
         scrolled_window.add (this.web_view);
@@ -37,15 +36,13 @@ public class ValaBrowser : Window {
         var page = "http://clients3.google.com/generate_204";
         stdout.printf ("Getting 204 page\n");
 
-        // create an HTTP session to twitter
         var session = new Soup.SessionAsync ();
         var message = new Soup.Message ("GET", page);
 
-        // send the HTTP request
         session.send_message (message);
-        
+
         stdout.printf ("Return code: %u\n",message.status_code);
-        return message.status_code == 204;        
+        return message.status_code == 204;
     }
 
     private void connect_signals () {
@@ -63,10 +60,6 @@ public class ValaBrowser : Window {
                 stdout.printf ("Still not logged in.\n");
             stdout.flush ();
         });
-        
-            //nothing to do here, leaving it just in case
-        /*this.web_view.load_committed.connect ((source, frame) => {
-        });*/
     }
     
     public void start () {
