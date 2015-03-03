@@ -1,6 +1,4 @@
-using Gtk;
-
-public class ValaBrowser : Window {
+public class ValaBrowser : Gtk.Window {
 
     private const string TITLE = "Log in";
     private const string DUMMY_URL = "http://elementary.io";
@@ -23,10 +21,10 @@ public class ValaBrowser : Window {
 
     private void create_widgets () {
         this.web_view = new WebKit.WebView ();
-        var scrolled_window = new ScrolledWindow (null, null);
-        scrolled_window.set_policy (PolicyType.AUTOMATIC, PolicyType.AUTOMATIC);
+        var scrolled_window = new Gtk.ScrolledWindow (null, null);
+        scrolled_window.set_policy (Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC);
         scrolled_window.add (this.web_view);
-        var vbox = new Box (Gtk.Orientation.VERTICAL, 0);
+        var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         vbox.set_homogeneous (false);
         vbox.pack_start (scrolled_window,true,true,0);
         add (vbox);
