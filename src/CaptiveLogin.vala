@@ -9,10 +9,15 @@ public class ValaBrowser : Window {
     private WebView web_view;
     
     public ValaBrowser () {
+        set_default_size (800, 600);
+
+        var header = new Gtk.HeaderBar ();
+        header.set_show_close_button (true);
+        header.get_style_context ().remove_class ("header-bar");
+
+        this.set_titlebar (header);
         this.title = ValaBrowser.TITLE;
-        set_default_size (800, 450);
-        this.window_position = Gtk.WindowPosition.CENTER;
-       
+
         create_widgets ();
         connect_signals ();
     }
