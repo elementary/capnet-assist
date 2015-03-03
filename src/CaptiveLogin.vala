@@ -53,7 +53,7 @@ public class ValaBrowser : Gtk.Window {
         var page = "http://clients3.google.com/generate_204";
         stdout.printf ("Getting 204 page\n");
 
-        var session = new Soup.SessionAsync ();
+        var session = new Soup.Session ();
         var message = new Soup.Message ("GET", page);
 
         session.send_message (message);
@@ -81,7 +81,7 @@ public class ValaBrowser : Gtk.Window {
     
     public void start () {
         show_all ();
-        this.web_view.open (ValaBrowser.DUMMY_URL);
+        this.web_view.load_uri (ValaBrowser.DUMMY_URL);
     }
 
     public static int main (string[] args) {
