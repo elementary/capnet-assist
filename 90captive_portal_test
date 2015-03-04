@@ -1,62 +1,53 @@
 #!/bin/sh -e
 # Script to dispatch NetworkManager events
 #
-# Runs ifupdown scripts when NetworkManager fiddles with interfaces.
+# Runs captive-login helper on walled garden networks.
 # See NetworkManager(8) for further documentation of the dispatcher events.
 
-if [ -z "$1" ]; then
-    echo "$0: called with no interface" 1>&2
-    exit 1;
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+if [ -x "/usr/bin/logger" ]; then
+    logger="/usr/bin/logger -s -t CapNetAssist"
+else
+    logger=":"
 fi
 
 wait_for_process() {
-  PNAME=$1
-  PID=`/usr/bin/pgrep $PNAME`
-  while [ -z "$PID" ]; do
+    PNAME=$1
+    while [ -z "$(/usr/bin/pgrep $PNAME)" ]; do
         sleep 3;
-        PID=`/usr/bin/pgrep $PNAME`
-  done
+    done
 }
 
 #launch the browser, but on boot we need to wait that nm-applet starts
 start_browser() {
-     wait_for_process nm-applet
-     logger -s "[CapNetAssist] Running browser as '$user' to login in captive portal"
-     su $user -c "captive-login 2>/dev/null || sensible-browser start.elementaryos.org 2>/dev/null"
+    local user="$1"
+    wait_for_process nm-applet
+    $logger "Running browser as '$user' to login in captive portal"
+    su "$user" -s /bin/sh -c "captive-login 2>/dev/null || sensible-browser start.elementaryos.org 2>/dev/null"
 }
 
 # Run the right scripts
 case "$2" in
     up|vpn-up)
-    logger -s "[CapNetAssist] DetectCaptivePortal script triggered"
+    $logger "DetectCaptivePortal script triggered"
 
-    #set the DISPLAY where to show the browser
+    # assume the DISPLAY where to show the browser
     if [ -z $DISPLAY ];then
         export DISPLAY=':0'
     fi
 
-    logger -s "[CapNetAssist] Display set"
+    $logger "Display set"
 
-    #get the username
-    user=$(who | grep "$DISPLAY" | awk '{print $1}' | tail -n1)
+    #get the usernames
+    users=$(who | grep "$DISPLAY" | awk '{print $1}')
 
-    #get HTTP response from google, should always return 204...
-    res=$(curl -sL -w "%{http_code}\\n" "http://clients3.google.com/generate_204" -o /dev/null)
-    logger -s "[CapNetAssist] HTTP response is: $res"
-
-    #... so when it returns something different than 204 we have a walled garden (HTTP request redirected to login page)
-    if [ $res = 204 ];
-    then
-        logger -s "[CapNetAssist] Connection already established"
-    else
-        if [ $res = 200]; then
-            logger -s "[CapNetAssist] HTTP response should be 204. We are in a walled garden"
-            start_browser
-        fi
-    fi
+    for u in $users; do
+        start_browser $u || :
+    done
     ;;
     *)
-    echo "$0: called with unknown action \`$2'" 1>&2
-    exit 1
+    # In a down phase
+    exit 0
     ;;
 esac
