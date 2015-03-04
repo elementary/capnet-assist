@@ -68,7 +68,7 @@ public class ValaBrowser : Gtk.Window {
         this.destroy.connect (Gtk.main_quit);
         //should title change?
         this.web_view.title_changed.connect ((source, frame, title) => {
-            this.title = "%s - %s".printf (title, ValaBrowser.TITLE);
+            this.title = "%s".printf (title);
         });
         
         this.web_view.document_load_finished.connect ( (frame) => {
