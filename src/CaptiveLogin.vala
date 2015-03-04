@@ -1,28 +1,51 @@
-using Gtk;
-using WebKit;
+/***
+    BEGIN LICENSE
 
-public class ValaBrowser : Window {
+    Copyright (C) 2015 elementary LLC.
+    This program is free software: you can redistribute it and/or modify it
+    under the terms of the GNU Lesser General Public License version 3, as published
+    by the Free Software Foundation.
 
-    private const string TITLE = "Login";
-    private const string DUMMY_URL = "www.elementaryos.org";
+    This program is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranties of
+    MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
+    PURPOSE.  See the GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program.  If not, see <http://www.gnu.org/licenses/>
+
+    END LICENSE
+***/
+
+public class ValaBrowser : Gtk.Window {
+
+    private const string TITLE = "Log in";
+    private const string DUMMY_URL = "http://elementary.io";
     
-    private WebView web_view;
+    private WebKit.WebView web_view;
     
     public ValaBrowser () {
+        set_default_size (1000, 680);
+        set_keep_above (true);
+        set_skip_taskbar_hint (true);
+
+        var header = new Gtk.HeaderBar ();
+        header.set_show_close_button (true);
+        header.get_style_context ().remove_class ("header-bar");
+
+        this.set_titlebar (header);
         this.title = ValaBrowser.TITLE;
-        set_default_size (800, 450);
-        this.window_position = Gtk.WindowPosition.CENTER;
-       
+
         create_widgets ();
         connect_signals ();
     }
 
     private void create_widgets () {
-        this.web_view = new WebView ();
-        var scrolled_window = new ScrolledWindow (null, null);
-        scrolled_window.set_policy (PolicyType.AUTOMATIC, PolicyType.AUTOMATIC);
+        this.web_view = new WebKit.WebView ();
+        var scrolled_window = new Gtk.ScrolledWindow (null, null);
+        scrolled_window.set_policy (Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC);
         scrolled_window.add (this.web_view);
-        var vbox = new Box (Gtk.Orientation.VERTICAL, 0);
+        var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         vbox.set_homogeneous (false);
         vbox.pack_start (scrolled_window,true,true,0);
         add (vbox);
@@ -32,22 +55,20 @@ public class ValaBrowser : Window {
         var page = "http://clients3.google.com/generate_204";
         stdout.printf ("Getting 204 page\n");
 
-        // create an HTTP session to twitter
-        var session = new Soup.SessionAsync ();
+        var session = new Soup.Session ();
         var message = new Soup.Message ("GET", page);
 
-        // send the HTTP request
         session.send_message (message);
-        
+
         stdout.printf ("Return code: %u\n",message.status_code);
-        return message.status_code == 204;        
+        return message.status_code == 204;
     }
 
     private void connect_signals () {
         this.destroy.connect (Gtk.main_quit);
         //should title change?
         this.web_view.title_changed.connect ((source, frame, title) => {
-            this.title = "%s - %s".printf (title, ValaBrowser.TITLE);
+            this.title = "%s".printf (title);
         });
         
         this.web_view.document_load_finished.connect ( (frame) => {
@@ -58,15 +79,11 @@ public class ValaBrowser : Window {
                 stdout.printf ("Still not logged in.\n");
             stdout.flush ();
         });
-        
-            //nothing to do here, leaving it just in case
-        /*this.web_view.load_committed.connect ((source, frame) => {
-        });*/
     }
     
     public void start () {
         show_all ();
-        this.web_view.open (ValaBrowser.DUMMY_URL);
+        this.web_view.load_uri (ValaBrowser.DUMMY_URL);
     }
 
     public static int main (string[] args) {
