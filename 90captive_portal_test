@@ -24,26 +24,26 @@ start_browser() {
     local user="$1"
     wait_for_process nm-applet
     $logger "Running browser as '$user' to login in captive portal"
-    su "$user" -s /bin/sh -c "captive-login 2>/dev/null || sensible-browser start.elementaryos.org 2>/dev/null"
+    su "$user" -s /bin/sh -c "captive-login 2>/dev/null"
 }
 
 # Run the right scripts
 case "$2" in
     up|vpn-up)
-    $logger "DetectCaptivePortal script triggered"
+    $logger -p user.debug "DetectCaptivePortal script triggered"
 
     # assume the DISPLAY where to show the browser
     if [ -z $DISPLAY ];then
         export DISPLAY=':0'
     fi
 
-    $logger "Display set"
+    $logger -p user.debug "Display set as: $DISPLAY"
 
     #get the usernames
     users=$(who | grep "$DISPLAY" | awk '{print $1}')
 
     for u in $users; do
-        start_browser $u || :
+        start_browser $u || $logger -p user.err "captive-login browser failed for user: $u"
     done
     ;;
     *)
