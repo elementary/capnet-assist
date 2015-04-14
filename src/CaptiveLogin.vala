@@ -47,20 +47,20 @@ public class ValaBrowser : Gtk.Window {
         scrolled_window.add (this.web_view);
         var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         vbox.set_homogeneous (false);
-        vbox.pack_start (scrolled_window,true,true,0);
+        vbox.pack_start (scrolled_window, true, true, 0);
         add (vbox);
     }
     
     public bool isLoggedIn () {
         var page = "http://clients3.google.com/generate_204";
-        stdout.printf ("Getting 204 page\n");
+        debug ("Getting 204 page");
 
         var session = new Soup.Session ();
         var message = new Soup.Message ("GET", page);
 
         session.send_message (message);
 
-        stdout.printf ("Return code: %u\n",message.status_code);
+        debug ("Return code: %u", message.status_code);
         return message.status_code == 204;
     }
 
@@ -73,11 +73,11 @@ public class ValaBrowser : Gtk.Window {
         
         this.web_view.document_load_finished.connect ( (frame) => {
             if (isLoggedIn ()) {
-                stdout.printf ("Logged in!\n");
+                debug ("Logged in!");
                 Gtk.main_quit ();
-            } else
-                stdout.printf ("Still not logged in.\n");
-            stdout.flush ();
+            } else {
+                debug ("Still not logged in.");
+            }
         });
     }
     
@@ -91,12 +91,12 @@ public class ValaBrowser : Gtk.Window {
 
         var browser = new ValaBrowser ();
         
-        if (!browser.isLoggedIn ()){
-            stdout.printf ("Opening browser to login\n");
+        if (!browser.isLoggedIn ()) {
+            debug ("Opening browser to login");
             browser.start ();
             Gtk.main ();
         } else {
-            stdout.printf ("Already logged in and connected, shutting down.\n");
+            debug ("Already logged in and connected, shutting down.");
         }
 
         return 0;
