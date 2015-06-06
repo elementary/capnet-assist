@@ -52,7 +52,7 @@ public class ValaBrowser : Gtk.Window {
     }
     
     public bool isLoggedIn () {
-        var page = "http://clients3.google.com/generate_204";
+        var page = "http://connectivitycheck.android.com/generate_204";
         debug ("Getting 204 page");
 
         var session = new Soup.Session ();
