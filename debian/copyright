@@ -1,10 +1,10 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: capnet-assist
-Upstream-Contact: Cody Garver <cody@elementaryos.org>
+Upstream-Contact: Cody Garver <cody@elementary.io>
 Source: https://launchpad.net/capnet-assist
 
 Files: debian/*
-Copyright: 2013-2015 Cody Garver <cody@elementaryos.org>
+Copyright: 2013-2015 Cody Garver <cody@elementary.io>
            2015 Martin Wimpress <code@flexion.org>
 License: GPL-3
 
