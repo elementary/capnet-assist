@@ -1,3 +1,9 @@
+capnet-assist (0.1.1) trusty; urgency=medium
+
+  * New upstream release
+
+ -- Cody Garver <cody@elementary.io>  Sun, 07 Jun 2015 17:00:19 -0500
+
 capnet-assist (0.1-1) trusty; urgency=low
 
   * Initial release
