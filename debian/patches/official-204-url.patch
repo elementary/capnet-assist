@@ -1,0 +1,11 @@
+--- a/src/CaptiveLogin.vala
++++ b/src/CaptiveLogin.vala
+@@ -52,7 +52,7 @@
+     }
+     
+     public bool isLoggedIn () {
+-        var page = "http://connectivitycheck.android.com/generate_204";
++        var page = "http://elementary.io/generate_204";
+         debug ("Getting 204 page");
+ 
+         var session = new Soup.Session ();
