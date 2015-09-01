@@ -42,3 +42,6 @@ add_custom_target(
 #Here we add the src directory. CMake will look for the CMakeLists.txt in this folder
 #and work from there
 add_subdirectory (src)
+
+# install captive network test script to Network Manager directory
+install (PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/90captive_portal_test DESTINATION /etc/NetworkManager/dispatcher.d/ )
