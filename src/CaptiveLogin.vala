@@ -75,20 +75,27 @@ public class ValaBrowser : Gtk.Window {
     private void connect_signals () {
         this.destroy.connect (Gtk.main_quit);
         //should title change?
-        this.web_view.title_changed.connect ((source, frame, title) => {
-            this.title = "%s".printf (title);
+        this.web_view.notify["title"].connect ((view, param_spec) => {
+            this.title = this.web_view.get_title ();
         });
-        
-        this.web_view.document_load_finished.connect ( (frame) => {
-            if (isLoggedIn ()) {
-                debug ("Logged in!");
-                Gtk.main_quit ();
-            } else {
-                debug ("Still not logged in.");
+
+        this.web_view.load_changed.connect ((view, event) => {
+            if (event == WebKit.LoadEvent.FINISHED) {
+                if (isLoggedIn ()) {
+                    debug ("Logged in!");
+                    Gtk.main_quit ();
+                } else {
+                    debug ("Still not logged in.");
+                }
             }
         });
+
+        this.web_view.load_failed.connect ((event, uri, error) => {
+            Gtk.main_quit ();
+            return true;
+        });
     }
-    
+
     public void start () {
         show_all ();
         this.web_view.load_uri (ValaBrowser.DUMMY_URL);
@@ -98,7 +105,7 @@ public class ValaBrowser : Gtk.Window {
         Gtk.init (ref args);
 
         var browser = new ValaBrowser ();
-        
+
         if (!browser.isLoggedIn ()) {
             debug ("Opening browser to login");
             browser.start ();
