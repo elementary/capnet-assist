@@ -89,8 +89,13 @@ public class ValaBrowser : Gtk.Window {
                 }
             }
         });
+
+        this.web_view.load_failed.connect ((event, uri, error) => {
+            Gtk.main_quit ();
+            return true;
+        });
     }
-    
+
     public void start () {
         show_all ();
         this.web_view.load_uri (ValaBrowser.DUMMY_URL);
