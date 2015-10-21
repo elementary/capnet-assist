@@ -1,7 +1,7 @@
 pkg_check_modules(DEPS REQUIRED
     gtk+-3.0
     gio-2.0
-    webkitgtk-3.0
+    webkit2gtk-4.0
 )
 add_definitions(${DEPS_CFLAGS})
 
@@ -17,7 +17,7 @@ set(CFLAGS
 )
 
 set(CAPTIVE_LOGIN_PACKAGES
-    gtk+-3.0 gio-2.0 webkitgtk-3.0
+    gtk+-3.0 gio-2.0 webkit2gtk-4.0
 )
 
 set(VALAC_OPTIONS
