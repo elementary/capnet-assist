@@ -52,6 +52,14 @@ public class ValaBrowser : Gtk.Window {
     }
     
     public bool isLoggedIn () {
+        var network_monitor = NetworkMonitor.get_default ();
+
+        // No connection is available at the moment, don't bother trying the
+        // connectivity check
+        if (!network_monitor.get_network_available ()) {
+            return true;
+        }
+
         var page = "http://connectivitycheck.android.com/generate_204";
         debug ("Getting 204 page");
 
