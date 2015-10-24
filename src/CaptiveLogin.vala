@@ -91,6 +91,11 @@ public class ValaBrowser : Gtk.Window {
         });
 
         this.web_view.load_failed.connect ((event, uri, error) => {
+            // The user has canceled the page loading eg. by clicking on a link.
+            if ((Error)error is WebKit.NetworkError.CANCELLED) {
+                return true;
+            }
+
             Gtk.main_quit ();
             return true;
         });
