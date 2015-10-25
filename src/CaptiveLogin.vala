@@ -43,15 +43,14 @@ public class ValaBrowser : Gtk.Window {
         this.set_titlebar (header);
 
         this.tls_button = new Gtk.Button ();
-        this.tls_button.set_relief (Gtk.ReliefStyle.NONE);
+        this.tls_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
         this.tls_button.set_no_show_all (true);
         this.tls_button.button_release_event.connect (on_tls_button_click);
 
         var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
         hbox.pack_start (this.tls_button);
-        title_label = new Gtk.Label ("<b>%s</b>".printf (ValaBrowser.TITLE));
-        title_label.set_use_markup (true);
-        title_label.set_ellipsize (Pango.EllipsizeMode.END);
+        this.title_label = new Gtk.Label (ValaBrowser.TITLE);
+        this.title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
         hbox.pack_start (title_label);
 
         header.set_custom_title (hbox);
@@ -70,7 +69,6 @@ public class ValaBrowser : Gtk.Window {
     }
     
     public bool isLoggedIn () {
-        return false;
         var network_monitor = NetworkMonitor.get_default ();
 
         // No connection is available at the moment, don't bother trying the
@@ -186,7 +184,7 @@ public class ValaBrowser : Gtk.Window {
         this.destroy.connect (Gtk.main_quit);
         //should title change?
         this.web_view.notify["title"].connect ((view, param_spec) => {
-            this.title_label.set_markup ("<b>%s</b>".printf (this.web_view.get_title ()));
+            this.title_label.set_text (this.web_view.get_title ());
         });
 
         this.web_view.load_changed.connect ((view, event) => {
