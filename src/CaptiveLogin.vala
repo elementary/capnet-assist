@@ -20,7 +20,7 @@
 public class ValaBrowser : Gtk.Window {
 
     private const string TITLE = "Log in";
-    private const string DUMMY_URL = "http://elementary.io";
+    private const string DUMMY_URL = "https://elementary.io";
     
     private WebKit.WebView web_view;
     private Gtk.Button tls_button;
@@ -43,7 +43,9 @@ public class ValaBrowser : Gtk.Window {
         this.title = ValaBrowser.TITLE;
 
         this.tls_button = new Gtk.Button ();
+        this.tls_button.set_relief (Gtk.ReliefStyle.NONE);
         this.tls_button.set_no_show_all (true);
+        this.tls_button.button_release_event.connect (on_tls_button_click);
 
         header.pack_start (this.tls_button);
 
@@ -106,6 +108,70 @@ public class ValaBrowser : Gtk.Window {
 
         var image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON);
         this.tls_button.set_image (image);
+    }
+
+    private bool on_tls_button_click (Gdk.EventButton event) {
+        TlsCertificate cert;
+        TlsCertificateFlags cert_flags;
+
+        if (!this.web_view.get_tls_info (out cert, out cert_flags)) {
+            return true;
+        }
+
+        var popover = new Gtk.Popover (this.tls_button);
+        popover.set_border_width (6);
+        var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
+        vbox.set_homogeneous (false);
+        popover.add (vbox);
+        var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+        hbox.set_homogeneous (false);
+        // Wonderful hack we got here, the vapi for Gtk has a wrong definition
+        // for the get_gicon () method, it's not reported as an out parameter
+        // hence we're stuck with passing everything by value.
+        // Since we're badass we pass the INVALID constant that evaluates to 0
+        // which is casted into a NULL pointer and allows us to save the date.
+        Icon button_icon;
+        (this.tls_button.get_image () as Gtk.Image).get_gicon (out button_icon, Gtk.IconSize.INVALID);
+        hbox.pack_start (new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.LARGE_TOOLBAR), false, false);
+        hbox.pack_start (new Gtk.Label (this.tls_button.get_tooltip_text ()), false, false);
+        vbox.pack_start (hbox, false, false);
+
+        var gcr_cert = new Gcr.SimpleCertificate (cert.certificate.data);
+        var cert_details = new Gcr.CertificateWidget (gcr_cert);
+        vbox.pack_start (cert_details);
+
+        // This hack has been borrowed from midori, the widget provided by the
+        // GCR library would fail with an assertion when the 'details' button was
+        // clicked
+        popover.button_press_event.connect ((event) => {
+            return true;
+        });
+        popover.button_release_event.connect ((event) => {
+            var child = popover.get_child ();
+            var event_widget = Gtk.get_event_widget (event);
+
+            if (child != null && event.window == popover.get_window ()) {
+                Gtk.Allocation child_alloc;
+                popover.get_allocation (out child_alloc);
+
+                if (event.x < child_alloc.x ||
+                    event.x > child_alloc.x + child_alloc.width ||
+                    event.y < child_alloc.y ||
+                    event.y > child_alloc.y + child_alloc.height) {
+                    popover.hide ();
+                }
+
+            } 
+            else if (event_widget != null && !event_widget.is_ancestor (popover)) {
+                popover.hide ();
+            }
+
+            return true;
+        });
+
+        popover.show_all ();
+
+        return true;
     }
 
     private void connect_signals () {

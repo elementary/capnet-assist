@@ -2,6 +2,8 @@ pkg_check_modules(DEPS REQUIRED
     gtk+-3.0
     gio-2.0
     webkit2gtk-4.0
+    gcr-3
+    gcr-ui-3
 )
 add_definitions(${DEPS_CFLAGS})
 
@@ -13,11 +15,12 @@ set(CFLAGS
     -D_VERSION=\"${VERSION}\"
     -D_INSTALL_PREFIX=\"${CMAKE_INSTALL_PREFIX}\"
     -D_SOURCE_ROOT_DIR=\"${CMAKE_SOURCE_DIR}\"
+    -DGCR_API_SUBJECT_TO_CHANGE
     -g
 )
 
 set(CAPTIVE_LOGIN_PACKAGES
-    gtk+-3.0 gio-2.0 webkit2gtk-4.0
+    gtk+-3.0 gio-2.0 webkit2gtk-4.0 gcr-3 gcr-ui-3
 )
 
 set(VALAC_OPTIONS
@@ -35,6 +38,8 @@ PACKAGES
 OPTIONS
     ${VALAC_OPTIONS}
 )
+
+add_definitions(${CFLAGS})
 
 #Here we define our executable name.
 add_executable(captive-login ${VALA_C} )
