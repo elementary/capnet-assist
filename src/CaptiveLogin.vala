@@ -56,7 +56,7 @@ public class ValaBrowser : Gtk.Window {
 
         // No connection is available at the moment, don't bother trying the
         // connectivity check
-        if (!network_monitor.get_network_available ()) {
+        if (network_monitor.get_connectivity () != NetworkConnectivity.FULL) {
             return true;
         }
 
