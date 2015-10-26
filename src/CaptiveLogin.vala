@@ -156,6 +156,7 @@ public class ValaBrowser : Gtk.Window {
             return;
         }
         if (!web_view.get_tls_info (out cert, out cert_flags)) {
+            tls_button.set_active (false);
             return;
         }
 
