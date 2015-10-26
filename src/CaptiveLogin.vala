@@ -33,6 +33,33 @@ public class ValaBrowser : Gtk.Window {
 
         create_widgets ();
         connect_signals ();
+        setup_web_view ();
+    }
+
+    bool is_privacy_mode_enabled () {
+        var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
+        bool privacy_mode = !privacy_settings.get_boolean ("remember-recent-files") || 
+                            !privacy_settings.get_boolean ("remember-app-usage");
+        return privacy_mode;
+    }
+
+    private void setup_web_view () {
+        if (!is_privacy_mode_enabled ()) {
+            var cookies_db_path = Path.build_path (Path.DIR_SEPARATOR_S,
+                                                   Environment.get_user_config_dir (),
+                                                   "midori",
+                                                   "cookies.db");
+
+            if (!FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
+                debug ("No cookies.db found, not saving the cookies...\n");
+                return;
+            }
+
+            var cookie_manager = web_view.get_context ().get_cookie_manager ();
+
+            cookie_manager.set_accept_policy (WebKit.CookieAcceptPolicy.ALWAYS);
+            cookie_manager.set_persistent_storage (cookies_db_path, WebKit.CookiePersistentStorage.SQLITE);
+        }
     }
 
     private void create_widgets () {
