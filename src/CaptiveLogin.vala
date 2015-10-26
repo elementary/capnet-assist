@@ -20,10 +20,10 @@
 public class ValaBrowser : Gtk.Window {
 
     private const string TITLE = "Log in";
-    private const string DUMMY_URL = "http://elementary.io";
+    private const string DUMMY_URL = "https://elementary.io";
     
     private WebKit.WebView web_view;
-    private Gtk.Button tls_button;
+    private Gtk.ToggleButton tls_button;
     private Gtk.Label title_label;
     
     public ValaBrowser () {
@@ -42,11 +42,12 @@ public class ValaBrowser : Gtk.Window {
 
         this.set_titlebar (header);
 
-        this.tls_button = new Gtk.Button ();
+        this.tls_button = new Gtk.ToggleButton ();
+        this.tls_button.set_image (new Gtk.Image.from_icon_name ("text-html", Gtk.IconSize.BUTTON));
         this.tls_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
         this.tls_button.get_style_context ().add_class ("titlebutton");
-        this.tls_button.set_no_show_all (true);
-        this.tls_button.button_release_event.connect (on_tls_button_click);
+        this.tls_button.set_sensitive (false);
+        this.tls_button.toggled.connect (on_tls_button_click);
 
         var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
         hbox.set_margin_top (3);
@@ -119,12 +120,16 @@ public class ValaBrowser : Gtk.Window {
         this.tls_button.set_image (image);
     }
 
-    private bool on_tls_button_click (Gdk.EventButton event) {
+    private void on_tls_button_click () {
         TlsCertificate cert;
         TlsCertificateFlags cert_flags;
 
+        if (!this.tls_button.get_active ()) {
+            return;
+        }
+
         if (!this.web_view.get_tls_info (out cert, out cert_flags)) {
-            return true;
+            return;
         }
 
         var popover = new Gtk.Popover (this.tls_button);
@@ -168,11 +173,13 @@ public class ValaBrowser : Gtk.Window {
                     event.y < child_alloc.y ||
                     event.y > child_alloc.y + child_alloc.height) {
                     popover.hide ();
+                    this.tls_button.set_active (false);
                 }
 
             } 
             else if (event_widget != null && !event_widget.is_ancestor (popover)) {
                 popover.hide ();
+                this.tls_button.set_active (false);
             }
 
             return true;
@@ -180,7 +187,7 @@ public class ValaBrowser : Gtk.Window {
 
         popover.show_all ();
 
-        return true;
+        return;
     }
 
     private void connect_signals () {
@@ -202,12 +209,12 @@ public class ValaBrowser : Gtk.Window {
                 break;
 
             case WebKit.LoadEvent.STARTED:
-                this.tls_button.hide ();
+                this.tls_button.set_sensitive (false);
                 break;
 
             case WebKit.LoadEvent.COMMITTED:
                 update_tls_info ();
-                this.tls_button.show ();
+                this.tls_button.set_sensitive (true);
                 break;
             }
         });
