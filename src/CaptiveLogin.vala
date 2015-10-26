@@ -42,31 +42,32 @@ public class ValaBrowser : Gtk.Window {
 
         this.set_titlebar (header);
 
-        this.tls_button = new Gtk.ToggleButton ();
-        this.tls_button.set_image (new Gtk.Image.from_icon_name ("content-loading-symbolic", Gtk.IconSize.BUTTON));
-        this.tls_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        this.tls_button.get_style_context ().add_class ("titlebutton");
-        this.tls_button.set_sensitive (false);
-        this.tls_button.toggled.connect (on_tls_button_click);
+        tls_button = new Gtk.ToggleButton ();
+        tls_button.set_image (new Gtk.Image.from_icon_name ("content-loading-symbolic", Gtk.IconSize.BUTTON));
+        var tls_button_style_context = tls_button.get_style_context ();
+        tls_button_style_context.add_class (Gtk.STYLE_CLASS_FLAT);
+        tls_button_style_context.add_class ("titlebutton");
+        tls_button.set_sensitive (false);
+        tls_button.toggled.connect (on_tls_button_click);
 
         var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
         hbox.set_margin_top (3);
         hbox.set_margin_bottom (3);
-        hbox.pack_start (this.tls_button);
-        this.title_label = new Gtk.Label (ValaBrowser.TITLE);
-        this.title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
+        hbox.pack_start (tls_button);
+
+        title_label = new Gtk.Label (ValaBrowser.TITLE);
+        title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
         hbox.pack_start (title_label);
 
         header.set_custom_title (hbox);
 
-        this.web_view = new WebKit.WebView ();
+        web_view = new WebKit.WebView ();
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null);
         scrolled_window.set_policy (Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC);
-        scrolled_window.add (this.web_view);
+        scrolled_window.add (web_view);
 
         var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        vbox.set_homogeneous (false);
         vbox.pack_start (scrolled_window, true, true, 0);
 
         add (vbox);
@@ -99,7 +100,7 @@ public class ValaBrowser : Gtk.Window {
         Icon icon;
         bool is_secure;
 
-        if (!this.web_view.get_tls_info (out cert, out cert_flags)) {
+        if (!web_view.get_tls_info (out cert, out cert_flags)) {
             // The page is served over HTTP
             is_secure = false;
         } else {
@@ -110,44 +111,43 @@ public class ValaBrowser : Gtk.Window {
 
         if (is_secure) {
             icon = new ThemedIcon.from_names ({"channel-secure-symbolic", "security-high"});
-            this.tls_button.set_tooltip_text ("The page is served over a protected connection.");
+            tls_button.set_tooltip_text ("The page is served over a protected connection.");
         } else {
             icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
-            this.tls_button.set_tooltip_text ("The page is served over an unprotected connection.");
+            tls_button.set_tooltip_text ("The page is served over an unprotected connection.");
         }
 
         var image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON);
-        this.tls_button.set_image (image);
+        tls_button.set_image (image);
     }
 
     private void on_tls_button_click () {
         TlsCertificate cert;
         TlsCertificateFlags cert_flags;
 
-        if (!this.tls_button.get_active ()) {
+        if (!tls_button.get_active ()) {
+            return;
+        }
+        if (!web_view.get_tls_info (out cert, out cert_flags)) {
             return;
         }
 
-        if (!this.web_view.get_tls_info (out cert, out cert_flags)) {
-            return;
-        }
-
-        var popover = new Gtk.Popover (this.tls_button);
+        var popover = new Gtk.Popover (tls_button);
         popover.set_border_width (6);
         var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
-        vbox.set_homogeneous (false);
         popover.add (vbox);
-        var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        hbox.set_homogeneous (false);
+
         // Wonderful hack we got here, the vapi for Gtk has a wrong definition
         // for the get_gicon () method, it's not reported as an out parameter
         // hence we're stuck with passing everything by value.
         // Since we're badass we pass the INVALID constant that evaluates to 0
         // which is casted into a NULL pointer and allows us to save the date.
         Icon button_icon;
-        (this.tls_button.get_image () as Gtk.Image).get_gicon (out button_icon, Gtk.IconSize.INVALID);
+        (tls_button.get_image () as Gtk.Image).get_gicon (out button_icon, Gtk.IconSize.INVALID);
+
+        var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
         hbox.pack_start (new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.LARGE_TOOLBAR), false, false);
-        hbox.pack_start (new Gtk.Label (this.tls_button.get_tooltip_text ()), false, false);
+        hbox.pack_start (new Gtk.Label (tls_button.get_tooltip_text ()), false, false);
         vbox.pack_start (hbox, false, false);
 
         var gcr_cert = new Gcr.SimpleCertificate (cert.certificate.data);
@@ -173,13 +173,12 @@ public class ValaBrowser : Gtk.Window {
                     event.y < child_alloc.y ||
                     event.y > child_alloc.y + child_alloc.height) {
                     popover.hide ();
-                    this.tls_button.set_active (false);
+                    tls_button.set_active (false);
                 }
-
             } 
             else if (event_widget != null && !event_widget.is_ancestor (popover)) {
                 popover.hide ();
-                this.tls_button.set_active (false);
+                tls_button.set_active (false);
             }
 
             return true;
@@ -193,33 +192,33 @@ public class ValaBrowser : Gtk.Window {
     private void connect_signals () {
         this.destroy.connect (Gtk.main_quit);
         //should title change?
-        this.web_view.notify["title"].connect ((view, param_spec) => {
-            this.title_label.set_text (this.web_view.get_title ());
+        web_view.notify["title"].connect ((view, param_spec) => {
+            title_label.set_text (web_view.get_title ());
         });
 
-        this.web_view.load_changed.connect ((view, event) => {
+        web_view.load_changed.connect ((view, event) => {
             switch (event) {
-            case WebKit.LoadEvent.FINISHED:
-                if (isLoggedIn ()) {
-                    debug ("Logged in!");
-                    Gtk.main_quit ();
-                } else {
-                    debug ("Still not logged in.");
-                }
-                break;
+                case WebKit.LoadEvent.FINISHED:
+                    if (isLoggedIn ()) {
+                        debug ("Logged in!");
+                        Gtk.main_quit ();
+                    } else {
+                        debug ("Still not logged in.");
+                    }
+                    break;
 
-            case WebKit.LoadEvent.STARTED:
-                this.tls_button.set_sensitive (false);
-                break;
+                case WebKit.LoadEvent.STARTED:
+                    tls_button.set_sensitive (false);
+                    break;
 
-            case WebKit.LoadEvent.COMMITTED:
-                update_tls_info ();
-                this.tls_button.set_sensitive (true);
-                break;
+                case WebKit.LoadEvent.COMMITTED:
+                    update_tls_info ();
+                    tls_button.set_sensitive (true);
+                    break;
             }
         });
 
-        this.web_view.load_failed.connect ((event, uri, error) => {
+        web_view.load_failed.connect ((event, uri, error) => {
             // The user has canceled the page loading eg. by clicking on a link.
             if ((Error)error is WebKit.NetworkError.CANCELLED) {
                 return true;
@@ -232,7 +231,7 @@ public class ValaBrowser : Gtk.Window {
 
     public void start () {
         show_all ();
-        this.web_view.load_uri (ValaBrowser.DUMMY_URL);
+        web_view.load_uri (ValaBrowser.DUMMY_URL);
     }
 
     public static int main (string[] args) {
