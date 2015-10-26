@@ -43,7 +43,7 @@ public class ValaBrowser : Gtk.Window {
         this.set_titlebar (header);
 
         this.tls_button = new Gtk.ToggleButton ();
-        this.tls_button.set_image (new Gtk.Image.from_icon_name ("text-html", Gtk.IconSize.BUTTON));
+        this.tls_button.set_image (new Gtk.Image.from_icon_name ("content-loading-symbolic", Gtk.IconSize.BUTTON));
         this.tls_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
         this.tls_button.get_style_context ().add_class ("titlebutton");
         this.tls_button.set_sensitive (false);
