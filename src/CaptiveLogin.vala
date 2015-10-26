@@ -49,7 +49,8 @@ public class ValaBrowser : Gtk.Window {
         this.tls_button.button_release_event.connect (on_tls_button_click);
 
         var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        hbox.set_border_width (6);
+        hbox.set_margin_top (3);
+        hbox.set_margin_bottom (3);
         hbox.pack_start (this.tls_button);
         this.title_label = new Gtk.Label (ValaBrowser.TITLE);
         this.title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
