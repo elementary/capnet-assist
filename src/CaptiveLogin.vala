@@ -181,6 +181,7 @@ public class ValaBrowser : Gtk.Window {
         primary_text.margin_start = 9;
 
         var secondary_text = new Gtk.Label (tls_button.get_tooltip_text ());
+        secondary_text.get_style_context ().add_class ("success");
         secondary_text.halign = Gtk.Align.START;
         secondary_text.margin_start = 9;
 
