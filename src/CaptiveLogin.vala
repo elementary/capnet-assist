@@ -19,12 +19,20 @@
 
 public class ValaBrowser : Gtk.Window {
 
+    private enum ViewSecurity {
+        NONE,
+        SECURE,
+        MIXED_CONTENT,
+    }
+
     private const string TITLE = "Log in";
-    private const string DUMMY_URL = "http://elementary.io";
+    private const string DUMMY_URL = "https://elementary.io";
     
     private WebKit.WebView web_view;
     private Gtk.ToggleButton tls_button;
     private Gtk.Label title_label;
+
+    private ViewSecurity view_security = ViewSecurity.NONE;
     
     public ValaBrowser () {
         set_default_size (1000, 680);
@@ -124,7 +132,6 @@ public class ValaBrowser : Gtk.Window {
     private void update_tls_info () {
         TlsCertificate cert;
         TlsCertificateFlags cert_flags;
-        Icon icon;
         bool is_secure;
 
         if (!web_view.get_tls_info (out cert, out cert_flags)) {
@@ -137,15 +144,38 @@ public class ValaBrowser : Gtk.Window {
         }
 
         if (is_secure) {
-            icon = new ThemedIcon.from_names ({"channel-secure-symbolic", "security-high"});
-            tls_button.set_tooltip_text ("The page is served over a protected connection.");
+            view_security = ViewSecurity.SECURE;
         } else {
-            icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
-            tls_button.set_tooltip_text ("The page is served over an unprotected connection.");
+            view_security = ViewSecurity.NONE;
+        }
+    }
+
+    private void update_tls_button_icon () {
+        Icon icon;
+        string tooltip;
+
+        switch (view_security) {
+            case ViewSecurity.NONE:
+                icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
+                tooltip = "The page is served over an unprotected connection.";
+                break;
+
+            case ViewSecurity.SECURE:
+                icon = new ThemedIcon.from_names ({"channel-secure-symbolic", "security-high"});
+                tooltip = "The page is served over a protected connection.";
+                break;
+
+            case ViewSecurity.MIXED_CONTENT:
+                icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
+                tooltip = "Some elements of this page are served over an unprotected connection.";
+                break;
+
+            default:
+                error ("Cannot reach this");
         }
 
-        var image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON);
-        tls_button.set_image (image);
+        tls_button.set_image (new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON));
+        tls_button.set_tooltip_text (tooltip);
     }
 
     private void on_tls_button_click () {
@@ -172,7 +202,11 @@ public class ValaBrowser : Gtk.Window {
         (tls_button.get_image () as Gtk.Image).get_gicon (out button_icon, Gtk.IconSize.INVALID);
 
         var icon = new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.DIALOG);
-        icon.get_style_context ().add_class ("success");
+        if (view_security == ViewSecurity.SECURE) {
+            icon.get_style_context ().add_class ("success");
+        } else {
+            icon.get_style_context ().add_class ("warning");
+        }
         icon.valign = Gtk.Align.START;
 
         var primary_text = new Gtk.Label (web_view.get_uri());
@@ -181,7 +215,11 @@ public class ValaBrowser : Gtk.Window {
         primary_text.margin_start = 9;
 
         var secondary_text = new Gtk.Label (tls_button.get_tooltip_text ());
-        secondary_text.get_style_context ().add_class ("success");
+        if (view_security == ViewSecurity.SECURE) {
+            secondary_text.get_style_context ().add_class ("success");
+        } else {
+            secondary_text.get_style_context ().add_class ("warning");
+        }
         secondary_text.halign = Gtk.Align.START;
         secondary_text.margin_start = 9;
 
@@ -251,14 +289,21 @@ public class ValaBrowser : Gtk.Window {
                     break;
 
                 case WebKit.LoadEvent.STARTED:
+                    view_security = ViewSecurity.NONE;
                     tls_button.set_sensitive (false);
                     break;
 
                 case WebKit.LoadEvent.COMMITTED:
                     update_tls_info ();
+                    update_tls_button_icon ();
                     tls_button.set_sensitive (true);
                     break;
             }
+        });
+
+        web_view.insecure_content_detected.connect (() => {
+            view_security = ViewSecurity.MIXED_CONTENT;
+            update_tls_button_icon ();
         });
 
         web_view.load_failed.connect ((event, uri, error) => {
