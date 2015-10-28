@@ -161,9 +161,7 @@ public class ValaBrowser : Gtk.Window {
         }
 
         var popover = new Gtk.Popover (tls_button);
-        popover.set_border_width (6);
-        var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
-        popover.add (vbox);
+        popover.set_border_width (12);
 
         // Wonderful hack we got here, the vapi for Gtk has a wrong definition
         // for the get_gicon () method, it's not reported as an out parameter
@@ -173,14 +171,30 @@ public class ValaBrowser : Gtk.Window {
         Icon button_icon;
         (tls_button.get_image () as Gtk.Image).get_gicon (out button_icon, Gtk.IconSize.INVALID);
 
-        var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        hbox.pack_start (new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.LARGE_TOOLBAR), false, false);
-        hbox.pack_start (new Gtk.Label (tls_button.get_tooltip_text ()), false, false);
-        vbox.pack_start (hbox, false, false);
+        var icon = new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.DIALOG);
+        icon.get_style_context ().add_class ("success");
+        icon.valign = Gtk.Align.START;
+
+        var primary_text = new Gtk.Label (web_view.get_uri());
+        primary_text.get_style_context ().add_class ("h3");
+        primary_text.halign = Gtk.Align.START;
+        primary_text.margin_start = 9;
+
+        var secondary_text = new Gtk.Label (tls_button.get_tooltip_text ());
+        secondary_text.halign = Gtk.Align.START;
+        secondary_text.margin_start = 9;
 
         var gcr_cert = new Gcr.SimpleCertificate (cert.certificate.data);
         var cert_details = new Gcr.CertificateWidget (gcr_cert);
-        vbox.pack_start (cert_details);
+
+        var grid = new Gtk.Grid ();
+        grid.column_spacing = 3;
+        grid.attach (icon, 0, 0, 1, 2);
+        grid.attach (primary_text, 1, 0, 1, 1);
+        grid.attach (secondary_text, 1, 1, 1, 1);
+        grid.attach (cert_details, 1, 2, 1, 1);
+        
+        popover.add (grid);
 
         // This hack has been borrowed from midori, the widget provided by the
         // GCR library would fail with an assertion when the 'details' button was
@@ -188,6 +202,7 @@ public class ValaBrowser : Gtk.Window {
         popover.button_press_event.connect ((event) => {
             return true;
         });
+
         popover.button_release_event.connect ((event) => {
             var child = popover.get_child ();
             var event_widget = Gtk.get_event_widget (event);
@@ -203,8 +218,7 @@ public class ValaBrowser : Gtk.Window {
                     popover.hide ();
                     tls_button.set_active (false);
                 }
-            } 
-            else if (event_widget != null && !event_widget.is_ancestor (popover)) {
+            } else if (event_widget != null && !event_widget.is_ancestor (popover)) {
                 popover.hide ();
                 tls_button.set_active (false);
             }
