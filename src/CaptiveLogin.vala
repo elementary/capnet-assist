@@ -26,7 +26,7 @@ public class ValaBrowser : Gtk.Window {
     }
 
     private const string TITLE = "Log in";
-    private const string DUMMY_URL = "https://elementary.io";
+    private const string DUMMY_URL = "http://elementary.io";
     
     private WebKit.WebView web_view;
     private Gtk.ToggleButton tls_button;
@@ -176,6 +176,7 @@ public class ValaBrowser : Gtk.Window {
 
         tls_button.set_image (new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON));
         tls_button.set_tooltip_text (tooltip);
+        tls_button.set_sensitive (view_security != ViewSecurity.NONE);
     }
 
     private void on_tls_button_click () {
@@ -290,13 +291,12 @@ public class ValaBrowser : Gtk.Window {
 
                 case WebKit.LoadEvent.STARTED:
                     view_security = ViewSecurity.NONE;
-                    tls_button.set_sensitive (false);
+                    update_tls_button_icon ();
                     break;
 
                 case WebKit.LoadEvent.COMMITTED:
                     update_tls_info ();
                     update_tls_button_icon ();
-                    tls_button.set_sensitive (true);
                     break;
             }
         });
