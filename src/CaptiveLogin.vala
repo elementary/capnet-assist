@@ -171,7 +171,7 @@ public class ValaBrowser : Gtk.Window {
                 break;
 
             default:
-                error ("Cannot reach this");
+                assert_not_reached ();
         }
 
         tls_button.set_image (new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON));
