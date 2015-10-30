@@ -138,7 +138,7 @@ public class ValaBrowser : Gtk.Window {
 
         if (is_secure) {
             icon = new ThemedIcon.from_names ({"channel-secure-symbolic", "security-high"});
-            tls_button.set_tooltip_text ("The page is served over a protected connection.");
+            tls_button.set_tooltip_text (_("The page is served over a protected connection."));
         } else {
             icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
             tls_button.set_tooltip_text ("The page is served over an unprotected connection.");

@@ -13,8 +13,10 @@ set (RELEASE_NAME "GreatBarrier")
 set (VERSION "0.1.1")
 set (CMAKE_C_FLAGS "-ggdb")
 set (TARGET_GLIB 2.32)
+set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
 
 configure_file (${CMAKE_SOURCE_DIR}/src/config.vala.cmake ${CMAKE_SOURCE_DIR}/src/config.vala)
+add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 
 #Here we load the modules we downloaded earlier and placed into the ./cmake directory
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake )
@@ -41,6 +43,7 @@ add_custom_target(
 
 #Here we add the src directory. CMake will look for the CMakeLists.txt in this folder
 #and work from there
+add_subdirectory (po)
 add_subdirectory (src)
 
 # install captive network test script to Network Manager directory
