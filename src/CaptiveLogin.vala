@@ -157,17 +157,17 @@ public class ValaBrowser : Gtk.Window {
         switch (view_security) {
             case ViewSecurity.NONE:
                 icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
-                tooltip = "The page is served over an unprotected connection.";
+                tooltip = _("The page is served over an unprotected connection.");
                 break;
 
             case ViewSecurity.SECURE:
                 icon = new ThemedIcon.from_names ({"channel-secure-symbolic", "security-high"});
-                tooltip = "The page is served over a protected connection.";
+                tooltip = _("The page is served over a protected connection.");
                 break;
 
             case ViewSecurity.MIXED_CONTENT:
                 icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
-                tooltip = "Some elements of this page are served over an unprotected connection.";
+                tooltip = _("Some elements of this page are served over an unprotected connection.");
                 break;
 
             default:
