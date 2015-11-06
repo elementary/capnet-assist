@@ -1,0 +1,22 @@
+# Portuguese translation for capnet-assist
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the capnet-assist package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: capnet-assist\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-10-29 18:36-0500\n"
+"PO-Revision-Date: 2015-11-05 21:50+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Portuguese <pt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-11-06 05:38+0000\n"
+"X-Generator: Launchpad (build 17838)\n"
+
+#: ../src//CaptiveLogin.vala:141
+msgid "The page is served over a protected connection."
+msgstr ""
