@@ -24,7 +24,7 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake )
 # Vala
 find_package (Vala REQUIRED)
 include (ValaVersion)
-ensure_vala_version ("0.18" MINIMUM)
+ensure_vala_version ("0.26" MINIMUM)
 include (ValaPrecompile)
 
 find_package(PkgConfig)
