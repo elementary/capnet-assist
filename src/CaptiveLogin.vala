@@ -200,7 +200,7 @@ public class ValaBrowser : Gtk.Window {
         // Since we're badass we pass the INVALID constant that evaluates to 0
         // which is casted into a NULL pointer and allows us to save the date.
         Icon button_icon;
-#if VALA_0_32
+#if VALA_0_30
         ((Gtk.Image) tls_button.get_image ()).get_gicon (out button_icon, null);
 #else
         ((Gtk.Image) tls_button.get_image ()).get_gicon (out button_icon, Gtk.IconSize.INVALID);
