@@ -98,14 +98,7 @@ public class ValaBrowser : Gtk.Window {
 
         web_view = new WebKit.WebView ();
 
-        var scrolled_window = new Gtk.ScrolledWindow (null, null);
-        scrolled_window.set_policy (Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC);
-        scrolled_window.add (web_view);
-
-        var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        vbox.pack_start (scrolled_window, true, true, 0);
-
-        add (vbox);
+        add (web_view);
     }
     
     public bool isLoggedIn () {
