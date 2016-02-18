@@ -38,6 +38,7 @@ public class ValaBrowser : Gtk.Window {
         set_default_size (1000, 680);
         set_keep_above (true);
         set_skip_taskbar_hint (true);
+        stick ();
 
         create_widgets ();
         connect_signals ();
