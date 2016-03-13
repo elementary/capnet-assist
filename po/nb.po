@@ -8,23 +8,24 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-11-08 15:04+0100\n"
-"PO-Revision-Date: 2015-11-04 16:59+0000\n"
+"PO-Revision-Date: 2016-03-12 16:00+0000\n"
 "Last-Translator: ProsjektX <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-02-16 05:38+0000\n"
-"X-Generator: Launchpad (build 17925)\n"
+"X-Launchpad-Export-Date: 2016-03-13 05:51+0000\n"
+"X-Generator: Launchpad (build 17939)\n"
 
 #: ../src/CaptiveLogin.vala:160
 msgid "The page is served over an unprotected connection."
-msgstr ""
+msgstr "Siden betjenes over en ubeskyttet tilkobling."
 
 #: ../src/CaptiveLogin.vala:165
 msgid "The page is served over a protected connection."
-msgstr "Siden er servert over en beskyttet tilkobling."
+msgstr "Siden betjenes over en beskyttet tilkobling."
 
 #: ../src/CaptiveLogin.vala:170
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
+"Noen elementer på denne siden betjenes over en ubeskyttet tilkobling."
