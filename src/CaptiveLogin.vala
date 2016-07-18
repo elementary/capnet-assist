@@ -102,7 +102,7 @@ public class ValaBrowser : Gtk.Window {
         add (web_view);
     }
     
-    public bool isLoggedIn () {
+    public bool is_captive_portal () {
         var network_monitor = NetworkMonitor.get_default ();
 
         // No connection is available at the moment, don't bother trying the
@@ -120,7 +120,17 @@ public class ValaBrowser : Gtk.Window {
         session.send_message (message);
 
         debug ("Return code: %u", message.status_code);
-        return message.status_code == 204;
+        
+        /*
+         * If there is an active connection to the internet, this will 
+         * successfully connect to the connectivity checker and return 204. 
+         * If there is no internet connection (including no captive portal), this
+         * request will fail and libsoup will return a transport failure status 
+         * code (<100).
+         * Otherwise, libsoup will resolve the redirect to the captive portal, 
+         * which will return status code 200.
+         */
+        return message.status_code == 200;
     }
 
     private void update_tls_info () {
@@ -279,11 +289,10 @@ public class ValaBrowser : Gtk.Window {
         web_view.load_changed.connect ((view, event) => {
             switch (event) {
                 case WebKit.LoadEvent.FINISHED:
-                    if (isLoggedIn ()) {
-                        debug ("Logged in!");
-                        Gtk.main_quit ();
-                    } else {
+                    if (is_captive_portal ()) {
                         debug ("Still not logged in.");
+                    } else {
+                        debug ("Logged in!");
                     }
                     break;
 
@@ -325,12 +334,12 @@ public class ValaBrowser : Gtk.Window {
 
         var browser = new ValaBrowser ();
 
-        if (!browser.isLoggedIn ()) {
+        if (browser.is_captive_portal ()) {
             debug ("Opening browser to login");
             browser.start ();
             Gtk.main ();
         } else {
-            debug ("Already logged in and connected, shutting down.");
+            debug ("Already logged in and connected, or no internet connection. Shutting down.");
         }
 
         return 0;
