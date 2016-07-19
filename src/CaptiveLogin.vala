@@ -31,11 +31,15 @@ public class ValaBrowser : Gtk.Window {
     private WebKit.WebView web_view;
     private Gtk.ToggleButton tls_button;
     private Gtk.Label title_label;
+    
+    private uint web_view_retries = 0;
+    private uint connectivity_retries = 0;
+    private const uint MAX_RETRIES = 3;
 
     private ViewSecurity view_security = ViewSecurity.NONE;
     
     public ValaBrowser () {
-        set_default_size (1000, 680);
+        set_default_size (1240, 900);
         set_keep_above (true);
         set_skip_taskbar_hint (true);
         stick ();
@@ -102,35 +106,63 @@ public class ValaBrowser : Gtk.Window {
         add (web_view);
     }
     
-    public bool is_captive_portal () {
+    public bool is_connected () {
         var network_monitor = NetworkMonitor.get_default ();
+ 
+         // No connection is available at the moment, don't bother trying the
+         // connectivity check
+         if (network_monitor.get_connectivity () != NetworkConnectivity.FULL) {
+             return false;
+         }
 
-        // No connection is available at the moment, don't bother trying the
-        // connectivity check
-        if (network_monitor.get_connectivity () != NetworkConnectivity.FULL) {
-            return true;
+        return true;
+    }
+    
+    /*
+     * If there is an active connection to the internet, this will 
+     * successfully connect to the connectivity checker and return 204. 
+     * If there is no internet connection (including no captive portal), this
+     * request will fail and libsoup will return a transport failure status 
+     * code (<100).
+     * Otherwise, libsoup will resolve the redirect to the captive portal, 
+     * which will return status code 200.
+     */    
+    public uint get_connectivity_soup_response () {
+    
+        connectivity_retries = 0;
+        var page = "http://connectivitycheck.android.com/generate_204";
+        
+        
+        while(connectivity_retries < MAX_RETRIES) {
+             var session = new Soup.Session ();
+             var message = new Soup.Message ("GET", page);
+     
+             session.send_message (message);
+     
+             debug ("Return code: %u", message.status_code); 
+             
+             if(message.status_code > 0 && message.status_code < 100) { 
+                // This condition is libsoup's SOUP_STATUS_IS_TRANSPORT_ERROR
+                debug("Faulty connection, retrying check");
+                connectivity_retries++;
+                Thread.usleep(3 * 1000000);
+                continue;
+             } else {
+                return message.status_code;
+             }
         }
 
-        var page = "http://connectivitycheck.android.com/generate_204";
-        debug ("Getting 204 page");
-
-        var session = new Soup.Session ();
-        var message = new Soup.Message ("GET", page);
-
-        session.send_message (message);
-
-        debug ("Return code: %u", message.status_code);
-        
-        /*
-         * If there is an active connection to the internet, this will 
-         * successfully connect to the connectivity checker and return 204. 
-         * If there is no internet connection (including no captive portal), this
-         * request will fail and libsoup will return a transport failure status 
-         * code (<100).
-         * Otherwise, libsoup will resolve the redirect to the captive portal, 
-         * which will return status code 200.
-         */
-        return message.status_code == 200;
+       assert_not_reached ();
+    }
+    
+    public bool is_logged_id () {
+        debug("Checking logged in");
+        return is_connected () &&  get_connectivity_soup_response () == 204;
+    }
+    
+    public bool is_captive_portal () {
+        debug("Checking captive portal");
+        return is_connected () &&  get_connectivity_soup_response () == 200;
     }
 
     private void update_tls_info () {
@@ -289,19 +321,26 @@ public class ValaBrowser : Gtk.Window {
         web_view.load_changed.connect ((view, event) => {
             switch (event) {
                 case WebKit.LoadEvent.FINISHED:
-                    if (is_captive_portal ()) {
-                        debug ("Still not logged in.");
-                    } else {
+                    debug("Load finished");
+                    web_view_retries = 0;
+                    
+                    if (is_logged_id ()) {
                         debug ("Logged in!");
+                    } else {
+                        debug ("Still not logged in.");
                     }
                     break;
 
                 case WebKit.LoadEvent.STARTED:
+                    debug("Loading");
+                    
                     view_security = ViewSecurity.NONE;
                     update_tls_button_icon ();
                     break;
 
                 case WebKit.LoadEvent.COMMITTED:
+                    debug("Committed");
+                    
                     update_tls_info ();
                     update_tls_button_icon ();
                     break;
@@ -319,7 +358,17 @@ public class ValaBrowser : Gtk.Window {
                 return true;
             }
 
-            Gtk.main_quit ();
+            if (web_view_retries < MAX_RETRIES) {
+                Timeout.add (3000, () => { 
+                    debug("Faulty connection, reloading");
+                    web_view.reload ();
+                    return false;
+                });
+                web_view_retries++;
+            } else {
+                //@TODO display message about faulty connection
+            }
+
             return true;
         });
     }
