@@ -56,11 +56,11 @@ public class ValaBrowser : Gtk.Window {
         if (!is_privacy_mode_enabled ()) {
             var cookies_db_path = Path.build_path (Path.DIR_SEPARATOR_S,
                                                    Environment.get_user_config_dir (),
-                                                   "midori",
-                                                   "cookies.db");
+                                                   "epiphany",
+                                                   "cookies.sqlite");
 
             if (!FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
-                debug ("No cookies.db found, not saving the cookies...\n");
+                debug ("No cookies store found, not saving the cookies...\n");
                 return;
             }
 
