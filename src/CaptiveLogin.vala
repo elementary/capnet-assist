@@ -54,7 +54,7 @@ public class ValaBrowser : Gtk.Window {
     }
     
     public async void init () {
-        if (true || yield is_captive_portal ()) {
+        if (yield is_captive_portal ()) {
             debug ("Opening browser to login");
             web_view.load_uri (DUMMY_URL);
         } else {
