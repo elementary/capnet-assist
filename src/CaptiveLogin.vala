@@ -54,7 +54,7 @@ public class ValaBrowser : Gtk.Window {
     }
     
     public async void init () {
-        if (yield is_captive_portal ()) {
+        if (true || yield is_captive_portal ()) {
             debug ("Opening browser to login");
             web_view.load_uri (DUMMY_URL);
         } else {
@@ -385,9 +385,10 @@ public class ValaBrowser : Gtk.Window {
                     
                     if (!load_failed) { 
                         update_header_button (HeaderButtonState.SECURITY_NONE);
+                        
+                        first_load = false;
                     }
                     
-                    first_load = false;
                     break;
 
                 case WebKit.LoadEvent.STARTED:
@@ -414,10 +415,11 @@ public class ValaBrowser : Gtk.Window {
             if ((Error)error is WebKit.NetworkError.CANCELLED) {
                 return true;
             }
+            debug ("Load failed");
             
             load_failed = true;
 
-            if (web_view_retries < MAX_RETRIES && !first_load) {
+            if (web_view_retries < MAX_RETRIES && first_load) {
                 /*
                  * The signal is load_failed, but the webview is only ever requested to run
                  * when is_captive_portal returns true. So if we're unable to load it now, 
