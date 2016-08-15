@@ -1,3 +1,9 @@
+capnet-assist (0.2) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Mon, 15 Aug 2016 12:39:31 -0500
+
 capnet-assist (0.1.1) trusty; urgency=medium
 
   * New upstream release
