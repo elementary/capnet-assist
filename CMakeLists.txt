@@ -10,7 +10,7 @@ cmake_policy(VERSION 2.8)
 project(captive-login)
 
 set (RELEASE_NAME "GreatBarrier")
-set (VERSION "0.1.1")
+set (VERSION "0.2")
 set (CMAKE_C_FLAGS "-ggdb")
 set (TARGET_GLIB 2.32)
 set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
