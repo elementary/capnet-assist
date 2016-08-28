@@ -32,8 +32,6 @@ public class ValaBrowser : Gtk.Window {
     private const string GENERATE_204_URL = "http://connectivitycheck.android.com/generate_204";
     
     private WebKit.WebView web_view;
-    private Gtk.Stack stack;
-    private Granite.Widgets.AlertView alert_view;
     private Gtk.ToggleButton header_button;
     private Gtk.Label title_label;
     
@@ -132,23 +130,12 @@ public class ValaBrowser : Gtk.Window {
         set_titlebar (header);
 
         web_view = new WebKit.WebView ();
-        
-        alert_view = new Granite.Widgets.AlertView (
-           _("Could not establish connection to captive portal."), 
-           _("We detected a captive portal connection, but we were unable to connect to it.\nConsider going closer to the access point for a better connection."), 
-           "network-error"
-        );
-        alert_view.show_action (_("Retry connection"));
-        
-        stack = new Gtk.Stack ();
-        stack.add (web_view);
-        stack.add (alert_view);
-          
+
         set_default_size (1240, 900);
         set_keep_above (true);
         set_skip_taskbar_hint (true);
         stick ();
-        add (stack);
+        add (web_view);
     }
     
     public bool is_connected () {
@@ -436,17 +423,11 @@ public class ValaBrowser : Gtk.Window {
                     return false;
                 });
                 web_view_retries++;
-            } else {
-                show_alert_view ();
+            } else if (first_load) {
+                Gtk.main_quit ();
             }
            
             return true;
-        });
-        
-        alert_view.action_activated.connect (() => {            
-            reload ();
-            
-            show_web_view ();
         });
     }
     
@@ -465,7 +446,11 @@ public class ValaBrowser : Gtk.Window {
             } else {
                 debug ("Still not logged in.");
                 
-                show_web_view ();
+                debug ("Showing web view");
+                
+                if (!visible) {
+                    show_all ();
+                }
             }
         });
     }
@@ -481,29 +466,7 @@ public class ValaBrowser : Gtk.Window {
             web_view.reload ();
         }
     }
-    
-    
-    public void show_alert_view () {
-        debug ("Showing alert view");
-        
-        if (!visible) {
-            show_all ();
-        }
-        
-        update_header_button (HeaderButtonState.WARNING);        
-        stack.visible_child = alert_view;
-    }
-    
-    public void show_web_view () {
-        debug ("Showing web view");
-        
-        if (!visible) {
-            show_all ();
-        }
-        
-        stack.visible_child = web_view;
-    }
-    
+
     public static int main (string[] args) {
         Gtk.init (ref args);
 

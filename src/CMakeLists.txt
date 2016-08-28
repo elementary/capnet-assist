@@ -4,7 +4,6 @@ pkg_check_modules(DEPS REQUIRED
     webkit2gtk-4.0
     gcr-3
     gcr-ui-3
-    granite
 )
 add_definitions(${DEPS_CFLAGS})
 
@@ -26,7 +25,6 @@ set(CAPTIVE_LOGIN_PACKAGES
     webkit2gtk-4.0
     gcr-3
     gcr-ui-3
-    granite
 )
 
 set(VALAC_OPTIONS
