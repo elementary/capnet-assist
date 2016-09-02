@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Captive Network Assistant
+Exec=capnet-assist
+Comment=Connect to captive network portals
+Icon=preferences-system-network
+Terminal=false
+Type=Application
+NoDisplay=true

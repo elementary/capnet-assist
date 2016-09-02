@@ -43,6 +43,7 @@ add_custom_target(
 
 #Here we add the src directory. CMake will look for the CMakeLists.txt in this folder
 #and work from there
+add_subdirectory (data)
 add_subdirectory (po)
 add_subdirectory (src)
 
