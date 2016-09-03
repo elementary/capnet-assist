@@ -65,9 +65,11 @@ public class ValaBrowser : Gtk.Window {
         ulong cancel = 0;
         uint timeout_src = 0;
         if (cancellable != null) {
-         if (cancellable.is_cancelled ()) 
+            if (cancellable.is_cancelled ()) {
                 return;
-         cancel = cancellable.cancelled.connect (()=>sleep_async.callback());
+            }
+
+            cancel = cancellable.cancelled.connect (()=>sleep_async.callback());
         }
         timeout_src = Timeout.add(timeout, sleep_async.callback);
         yield;
@@ -165,23 +167,23 @@ public class ValaBrowser : Gtk.Window {
         Soup.Message message = null;
         
         do {
-             message = new Soup.Message ("GET", GENERATE_204_URL);
+            message = new Soup.Message ("GET", GENERATE_204_URL);
+
+            session.send_message (message);
      
-             session.send_message (message);
-     
-             debug ("Return code: %u", message.status_code); 
-             
-             if(message.status_code > 0 && message.status_code < 100) { 
+            debug ("Return code: %u", message.status_code); 
+
+            if(message.status_code > 0 && message.status_code < 100) { 
                 // The condition above is libsoup's SOUP_STATUS_IS_TRANSPORT_ERROR macro
                 debug ("Transport error, retrying check");
                 connectivity_retries++;
                 yield sleep_async (3000);
                 continue;
-             } else {
+            } else {
                 break;
-             }
-        } while(connectivity_retries < MAX_RETRIES);
-        
+            }
+        } while (connectivity_retries < MAX_RETRIES);
+
         return message.status_code;
     }
     
