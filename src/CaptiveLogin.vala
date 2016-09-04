@@ -30,11 +30,11 @@ public class ValaBrowser : Gtk.Window {
     private const string TITLE = _("Log in");
     private const string DUMMY_URL = "http://elementary.io/capnet-assist";
     private const string GENERATE_204_URL = "http://connectivitycheck.android.com/generate_204";
-    
+
     private WebKit.WebView web_view;
     private Gtk.ToggleButton header_button;
     private Gtk.Label title_label;
-    
+
     private uint web_view_retries = 0;
     private const uint MAX_RETRIES = 3;
     // Flag used to check if web_view.load_failed was triggered before web_view.load_changed
@@ -42,15 +42,15 @@ public class ValaBrowser : Gtk.Window {
     private HeaderButtonState header_button_state = HeaderButtonState.SECURITY_NONE;
     // Is false if any pages successfully finished loading
     private bool first_load = true;
-    
+
     public ValaBrowser () {
         setup_ui ();
         connect_signals ();
         setup_web_view ();
-        
+
         init ();
     }
-    
+
     public async void init () {
         if (yield is_captive_portal ()) {
             debug ("Opening browser to login");
@@ -60,7 +60,7 @@ public class ValaBrowser : Gtk.Window {
             Gtk.main_quit ();
         }
     }
-    
+
     public static async void sleep_async(int timeout, GLib.Cancellable? cancellable = null) {
         ulong cancel = 0;
         uint timeout_src = 0;
@@ -82,7 +82,7 @@ public class ValaBrowser : Gtk.Window {
 
     bool is_privacy_mode_enabled () {
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
-        
+
         return !privacy_settings.get_boolean ("remember-recent-files") ||
                 !privacy_settings.get_boolean ("remember-app-usage");
     }
@@ -108,7 +108,7 @@ public class ValaBrowser : Gtk.Window {
 
     private void setup_ui () {
         header_button = new Gtk.ToggleButton ();
-        
+
         var header_button_style_context = header_button.get_style_context ();
         header_button_style_context.add_class (Gtk.STYLE_CLASS_FLAT);
         header_button_style_context.add_class ("titlebutton");
@@ -128,7 +128,7 @@ public class ValaBrowser : Gtk.Window {
         header.set_show_close_button (true);
         header.get_style_context ().add_class ("compact");
         header.set_custom_title (hbox);
-        
+
         set_titlebar (header);
 
         web_view = new WebKit.WebView ();
@@ -139,10 +139,10 @@ public class ValaBrowser : Gtk.Window {
         stick ();
         add (web_view);
     }
-    
+
     public bool is_connected () {
         var network_monitor = NetworkMonitor.get_default ();
- 
+
          // No connection is available at the moment, don't bother trying the
          // connectivity check
          if (network_monitor.get_connectivity () != NetworkConnectivity.FULL) {
@@ -151,29 +151,29 @@ public class ValaBrowser : Gtk.Window {
 
         return true;
     }
-    
+
     /*
-     * If there is an active connection to the internet, this will 
-     * successfully connect to the connectivity checker and return 204. 
+     * If there is an active connection to the internet, this will
+     * successfully connect to the connectivity checker and return 204.
      * If there is no internet connection (including no captive portal), this
-     * request will fail and libsoup will return a transport failure status 
+     * request will fail and libsoup will return a transport failure status
      * code (<100).
-     * Otherwise, libsoup will resolve the redirect to the captive portal, 
+     * Otherwise, libsoup will resolve the redirect to the captive portal,
      * which will return status code 200.
-     */    
+     */
     public async uint get_connectivity_soup_response () {
         var connectivity_retries = 0;
         var session = new Soup.Session ();
         Soup.Message message = null;
-        
+
         do {
             message = new Soup.Message ("GET", GENERATE_204_URL);
 
             session.send_message (message);
-     
-            debug ("Return code: %u", message.status_code); 
 
-            if(message.status_code > 0 && message.status_code < 100) { 
+            debug ("Return code: %u", message.status_code);
+
+            if(message.status_code > 0 && message.status_code < 100) {
                 // The condition above is libsoup's SOUP_STATUS_IS_TRANSPORT_ERROR macro
                 debug ("Transport error, retrying check");
                 connectivity_retries++;
@@ -186,12 +186,12 @@ public class ValaBrowser : Gtk.Window {
 
         return message.status_code;
     }
-    
+
     public async bool is_logged_in () {
         debug ("Checking logged in");
         return is_connected () &&  (yield get_connectivity_soup_response ()) == 204;
     }
-    
+
     public async bool is_captive_portal () {
         debug ("Checking captive portal");
         return is_connected () && (yield get_connectivity_soup_response ())  == 200;
@@ -220,7 +220,7 @@ public class ValaBrowser : Gtk.Window {
 
     private void update_header_button (HeaderButtonState new_state) {
         header_button_state = new_state;
-    
+
         Icon icon;
         string tooltip;
 
@@ -320,7 +320,7 @@ public class ValaBrowser : Gtk.Window {
         grid.attach (primary_text, 1, 0, 1, 1);
         grid.attach (secondary_text, 1, 1, 1, 1);
         grid.attach (cert_details, 1, 2, 1, 1);
-        
+
         popover.add (grid);
 
         // This hack has been borrowed from midori, the widget provided by the
@@ -360,7 +360,7 @@ public class ValaBrowser : Gtk.Window {
 
     private void connect_signals () {
         this.destroy.connect (Gtk.main_quit);
-        
+
         web_view.notify["title"].connect ((view, param_spec) => {
             title_label.set_text (web_view.get_title ());
         });
@@ -369,15 +369,15 @@ public class ValaBrowser : Gtk.Window {
             switch (event) {
                 case WebKit.LoadEvent.FINISHED:
                     debug("Load finished");
-                    
+
                     web_view_load_finished ();
-                    
-                    if (!load_failed) { 
+
+                    if (!load_failed) {
                         update_header_button (HeaderButtonState.SECURITY_NONE);
-                        
+
                         first_load = false;
                     }
-                    
+
                     break;
 
                 case WebKit.LoadEvent.STARTED:
@@ -389,7 +389,7 @@ public class ValaBrowser : Gtk.Window {
 
                 case WebKit.LoadEvent.COMMITTED:
                     debug("Committed");
-                    
+
                     update_header_button (get_tls_state ());
                     break;
             }
@@ -405,63 +405,63 @@ public class ValaBrowser : Gtk.Window {
                 return true;
             }
             debug ("Load failed");
-            
+
             load_failed = true;
 
             if (web_view_retries < MAX_RETRIES && first_load) {
                 /*
                  * The signal is load_failed, but the webview is only ever requested to run
-                 * when is_captive_portal returns true. So if we're unable to load it now, 
+                 * when is_captive_portal returns true. So if we're unable to load it now,
                  * it means we're on a faulty connection.
                  */
                 debug("Faulty connection, retrying in 3 seconds");
                 update_header_button (HeaderButtonState.LOADING);
-                
-                Timeout.add (3000, () => { 
+
+                Timeout.add (3000, () => {
                     debug("Reloading");
-                    
+
                     reload (false);
-                    
+
                     return false;
                 });
                 web_view_retries++;
             } else if (first_load) {
                 Gtk.main_quit ();
             }
-           
+
             return true;
         });
     }
-    
+
     public async void web_view_load_finished () {
         if (load_failed) {
             return;
         }
-        
+
         is_logged_in.begin ((obj, res) => {
             if (is_logged_in.end(res)) {
                 debug ("Logged in!");
-                
+
                 if(!visible) {
                     Gtk.main_quit ();
                 }
             } else {
                 debug ("Still not logged in.");
-                
+
                 debug ("Showing web view");
-                
+
                 if (!visible) {
                     show_all ();
                 }
             }
         });
     }
-    
+
     public async void reload (bool reset = true) {
         if (reset) {
-            web_view_retries = 0; 
+            web_view_retries = 0;
         }
-        
+
         if (web_view.uri == "") {
             web_view.load_uri (DUMMY_URL);
         } else {
@@ -473,9 +473,9 @@ public class ValaBrowser : Gtk.Window {
         Gtk.init (ref args);
 
         var browser = new ValaBrowser ();
-        
+
         Gtk.main ();
-        
+
         return 0;
     }
 }
