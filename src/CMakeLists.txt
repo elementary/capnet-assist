@@ -20,7 +20,11 @@ set(CFLAGS
 )
 
 set(CAPTIVE_LOGIN_PACKAGES
-    gtk+-3.0 gio-2.0 webkit2gtk-4.0 gcr-3 gcr-ui-3
+    gtk+-3.0
+    gio-2.0
+    webkit2gtk-4.0
+    gcr-3
+    gcr-ui-3
 )
 
 set(VALAC_OPTIONS
