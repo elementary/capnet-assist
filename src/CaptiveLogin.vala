@@ -239,12 +239,12 @@ public class ValaBrowser : Gtk.Window {
                 icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
                 tooltip = _("Some elements of this page are served over an unprotected connection.");
                 break;
-            
+
             case HeaderButtonState.WARNING:
                 icon = new ThemedIcon.from_names ({"dialog-warning-symbolic", "dialog-warning"});
                 tooltip = _("Some elements of this page are served over an unprotected connection.");
                 break;
-                
+
             case HeaderButtonState.LOADING:
                 icon = new ThemedIcon ("content-loading-symbolic");
                 tooltip = _("Loading captive portal.");
