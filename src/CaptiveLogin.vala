@@ -115,19 +115,20 @@ public class ValaBrowser : Gtk.Window {
         header_button.set_sensitive (false);
         header_button.toggled.connect (on_header_button_click);
 
-        var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        hbox.set_margin_top (3);
-        hbox.set_margin_bottom (3);
-        hbox.pack_start (header_button);
-
         title_label = new Gtk.Label (ValaBrowser.TITLE);
         title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
-        hbox.pack_start (title_label);
+
+        var header_grid = new Gtk.Grid ();
+        header_grid.column_spacing = 6;
+        header_grid.margin_top = 3;
+        header_grid.margin_bottom = 3;
+        header_grid.add (header_button);
+        header_grid.add (title_label);
 
         var header = new Gtk.HeaderBar ();
         header.set_show_close_button (true);
         header.get_style_context ().add_class ("compact");
-        header.set_custom_title (hbox);
+        header.set_custom_title (header_grid);
 
         set_titlebar (header);
 
