@@ -31,14 +31,16 @@ public class ValaBrowser : Gtk.ApplicationWindow {
     public ValaBrowser (Gtk.Application app) {
         Object (application: app);
 
-        set_default_size (1000, 680);
-        set_keep_above (true);
-        set_skip_taskbar_hint (true);
-        stick ();
-
         create_widgets ();
         connect_signals ();
         setup_web_view ();
+    }
+
+    construct {
+        set_default_size (1000, 680);
+        set_keep_above (true);
+        skip_taskbar_hint = true;
+        stick ();
     }
 
     bool is_privacy_mode_enabled () {
