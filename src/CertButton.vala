@@ -23,6 +23,7 @@ public class CertButton : Gtk.ToggleButton {
     public enum Security {
         NONE,
         SECURE,
+        LOADING,
         MIXED_CONTENT,
     }
 
@@ -32,6 +33,10 @@ public class CertButton : Gtk.ToggleButton {
             string tooltip;
 
             switch (value) {
+                case Security.LOADING:
+                    icon = new ThemedIcon ("content-loading-symbolic");
+                    tooltip = _("Loading captive portal.");
+                    break;
                 case Security.NONE:
                     icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
                     tooltip = _("The page is served over an unprotected connection.");
@@ -53,12 +58,12 @@ public class CertButton : Gtk.ToggleButton {
 
             image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON);
             tooltip_text = tooltip;
-            set_sensitive (value != CertButton.Security.NONE);
+            set_sensitive (value != CertButton.Security.NONE && value != CertButton.Security.LOADING);
         }
     }
 
     public CertButton () {
-        Object (security: Security.NONE);
+        Object (security: Security.LOADING);
     }
 
     construct {
