@@ -36,6 +36,7 @@ set(VALAC_OPTIONS
 
 vala_precompile(VALA_C
     config.vala
+    Application.vala
     CaptiveLogin.vala
     CertButton.vala
 PACKAGES

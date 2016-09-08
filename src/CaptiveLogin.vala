@@ -17,18 +17,20 @@
     END LICENSE
 ***/
 
-public class ValaBrowser : Gtk.Window {
+public class ValaBrowser : Gtk.ApplicationWindow {
 
     private const string TITLE = _("Log in");
     private const string DUMMY_URL = "http://elementary.io/capnet-assist";
-    
+
     private WebKit.WebView web_view;
     private CertButton tls_button;
     private Gtk.Label title_label;
 
     private CertButton.Security view_security;
-    
-    public ValaBrowser () {
+
+    public ValaBrowser (Gtk.Application app) {
+        Object (application: app);
+
         set_default_size (1000, 680);
         set_keep_above (true);
         set_skip_taskbar_hint (true);
@@ -41,7 +43,7 @@ public class ValaBrowser : Gtk.Window {
 
     bool is_privacy_mode_enabled () {
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
-        bool privacy_mode = !privacy_settings.get_boolean ("remember-recent-files") || 
+        bool privacy_mode = !privacy_settings.get_boolean ("remember-recent-files") ||
                             !privacy_settings.get_boolean ("remember-app-usage");
         return privacy_mode;
     }
@@ -89,7 +91,7 @@ public class ValaBrowser : Gtk.Window {
 
         add (web_view);
     }
-    
+
     public bool is_captive_portal () {
         var network_monitor = NetworkMonitor.get_default ();
 
@@ -108,14 +110,14 @@ public class ValaBrowser : Gtk.Window {
         session.send_message (message);
 
         debug ("Return code: %u", message.status_code);
-        
+
         /*
-         * If there is an active connection to the internet, this will 
-         * successfully connect to the connectivity checker and return 204. 
+         * If there is an active connection to the internet, this will
+         * successfully connect to the connectivity checker and return 204.
          * If there is no internet connection (including no captive portal), this
-         * request will fail and libsoup will return a transport failure status 
+         * request will fail and libsoup will return a transport failure status
          * code (<100).
-         * Otherwise, libsoup will resolve the redirect to the captive portal, 
+         * Otherwise, libsoup will resolve the redirect to the captive portal,
          * which will return status code 200.
          */
         return message.status_code == 200;
@@ -200,7 +202,7 @@ public class ValaBrowser : Gtk.Window {
         grid.attach (primary_text, 1, 0, 1, 1);
         grid.attach (secondary_text, 1, 1, 1, 1);
         grid.attach (cert_details, 1, 2, 1, 1);
-        
+
         popover.add (grid);
 
         // This hack has been borrowed from midori, the widget provided by the
@@ -239,7 +241,7 @@ public class ValaBrowser : Gtk.Window {
     }
 
     private void connect_signals () {
-        this.destroy.connect (Gtk.main_quit);
+        this.destroy.connect (application.quit);
         tls_button.toggled.connect (on_tls_button_click);
         //should title change?
         web_view.notify["title"].connect ((view, param_spec) => {
@@ -279,29 +281,13 @@ public class ValaBrowser : Gtk.Window {
                 return true;
             }
 
-            Gtk.main_quit ();
+            application.quit ();
             return true;
         });
     }
 
-    public void start () {
+    public void start (string? browser_url) {
         show_all ();
-        web_view.load_uri (ValaBrowser.DUMMY_URL);
-    }
-
-    public static int main (string[] args) {
-        Gtk.init (ref args);
-
-        var browser = new ValaBrowser ();
-
-        if (browser.is_captive_portal ()) {
-            debug ("Opening browser to login");
-            browser.start ();
-            Gtk.main ();
-        } else {
-            debug ("Already logged in and connected, or no internet connection. Shutting down.");
-        }
-
-        return 0;
+        web_view.load_uri (browser_url ?? ValaBrowser.DUMMY_URL);
     }
 }
