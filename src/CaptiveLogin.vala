@@ -26,7 +26,7 @@ public class ValaBrowser : Gtk.Window {
     private CertButton tls_button;
     private Gtk.Label title_label;
 
-    private CertButton.Security view_security = CertButton.Security.NONE;
+    private CertButton.Security view_security;
     
     public ValaBrowser () {
         set_default_size (1000, 680);
