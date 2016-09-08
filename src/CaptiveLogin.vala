@@ -22,6 +22,7 @@ public class ValaBrowser : Gtk.Window {
     private enum ViewSecurity {
         NONE,
         SECURE,
+        LOADING,
         MIXED_CONTENT,
     }
 
@@ -159,6 +160,10 @@ public class ValaBrowser : Gtk.Window {
         string tooltip;
 
         switch (view_security) {
+            case ViewSecurity.LOADING:
+                icon = new ThemedIcon ("content-loading-symbolic");
+                tooltip = _("Loading captive portal.");
+                break;
             case ViewSecurity.NONE:
                 icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
                 tooltip = _("The page is served over an unprotected connection.");
@@ -178,9 +183,9 @@ public class ValaBrowser : Gtk.Window {
                 assert_not_reached ();
         }
 
-        tls_button.set_image (new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON));
-        tls_button.set_tooltip_text (tooltip);
-        tls_button.set_sensitive (view_security != ViewSecurity.NONE);
+        tls_button.image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON);
+        tls_button.tooltip_text = tooltip;
+        tls_button.set_sensitive (view_security != ViewSecurity.NONE && view_security != ViewSecurity.LOADING);
     }
 
     private void on_tls_button_click () {
@@ -297,7 +302,7 @@ public class ValaBrowser : Gtk.Window {
                     break;
 
                 case WebKit.LoadEvent.STARTED:
-                    view_security = ViewSecurity.NONE;
+                    view_security = ViewSecurity.LOADING;
                     update_tls_button_icon ();
                     break;
 
