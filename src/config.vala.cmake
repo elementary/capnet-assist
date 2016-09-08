@@ -16,4 +16,5 @@
 
 namespace Constants {
     public const string VERSION = "@VERSION@";
+    public const string APP_NAME = "@CMAKE_PROJECT_NAME@";
 }

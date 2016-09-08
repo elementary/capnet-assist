@@ -15,5 +15,6 @@
  */
 
 namespace Constants {
-    public const string VERSION = "0.1.1";
+    public const string VERSION = "0.2";
+    public const string APP_NAME = "captive-login";
 }

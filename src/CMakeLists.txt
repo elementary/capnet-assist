@@ -37,6 +37,7 @@ set(VALAC_OPTIONS
 vala_precompile(VALA_C
     config.vala
     CaptiveLogin.vala
+    Application.vala
 PACKAGES
     ${CAPTIVE_LOGIN_PACKAGES}
 OPTIONS
