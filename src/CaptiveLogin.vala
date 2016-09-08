@@ -19,7 +19,7 @@
 
 public class ValaBrowser : Gtk.Window {
 
-    private const string TITLE = "Log in";
+    private const string TITLE = _("Log in");
     private const string DUMMY_URL = "http://elementary.io/capnet-assist";
     
     private WebKit.WebView web_view;
