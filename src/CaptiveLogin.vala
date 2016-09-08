@@ -19,21 +19,14 @@
 
 public class ValaBrowser : Gtk.ApplicationWindow {
 
-    private enum ViewSecurity {
-        NONE,
-        SECURE,
-        LOADING,
-        MIXED_CONTENT,
-    }
-
     private const string TITLE = _("Log in");
     private const string DUMMY_URL = "http://elementary.io/capnet-assist";
 
     private WebKit.WebView web_view;
-    private Gtk.ToggleButton tls_button;
+    private CertButton tls_button;
     private Gtk.Label title_label;
 
-    private ViewSecurity view_security = ViewSecurity.NONE;
+    private CertButton.Security view_security;
 
     public ValaBrowser (Gtk.Application app) {
         Object (application: app);
@@ -75,12 +68,7 @@ public class ValaBrowser : Gtk.ApplicationWindow {
     }
 
     private void create_widgets () {
-        tls_button = new Gtk.ToggleButton ();
-        tls_button.image = new Gtk.Image.from_icon_name ("content-loading-symbolic", Gtk.IconSize.BUTTON);
-        var tls_button_style_context = tls_button.get_style_context ();
-        tls_button_style_context.add_class (Gtk.STYLE_CLASS_FLAT);
-        tls_button_style_context.add_class ("titlebutton");
-        tls_button.sensitive = false;
+        tls_button = new CertButton ();
 
         title_label = new Gtk.Label (ValaBrowser.TITLE);
         title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
@@ -150,43 +138,10 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         }
 
         if (is_secure) {
-            view_security = ViewSecurity.SECURE;
+            view_security = CertButton.Security.SECURE;
         } else {
-            view_security = ViewSecurity.NONE;
+            view_security = CertButton.Security.NONE;
         }
-    }
-
-    private void update_tls_button_icon () {
-        Icon icon;
-        string tooltip;
-
-        switch (view_security) {
-            case ViewSecurity.LOADING:
-                icon = new ThemedIcon ("content-loading-symbolic");
-                tooltip = _("Loading captive portal.");
-                break;
-            case ViewSecurity.NONE:
-                icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
-                tooltip = _("The page is served over an unprotected connection.");
-                break;
-
-            case ViewSecurity.SECURE:
-                icon = new ThemedIcon.from_names ({"channel-secure-symbolic", "security-high"});
-                tooltip = _("The page is served over a protected connection.");
-                break;
-
-            case ViewSecurity.MIXED_CONTENT:
-                icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
-                tooltip = _("Some elements of this page are served over an unprotected connection.");
-                break;
-
-            default:
-                assert_not_reached ();
-        }
-
-        tls_button.image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON);
-        tls_button.tooltip_text = tooltip;
-        tls_button.set_sensitive (view_security != ViewSecurity.NONE && view_security != ViewSecurity.LOADING);
     }
 
     private void on_tls_button_click () {
@@ -217,7 +172,7 @@ public class ValaBrowser : Gtk.ApplicationWindow {
 #endif
 
         var icon = new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.DIALOG);
-        if (view_security == ViewSecurity.SECURE) {
+        if (view_security == CertButton.Security.SECURE) {
             icon.get_style_context ().add_class ("success");
         } else {
             icon.get_style_context ().add_class ("warning");
@@ -230,7 +185,7 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         primary_text.margin_start = 9;
 
         var secondary_text = new Gtk.Label (tls_button.get_tooltip_text ());
-        if (view_security == ViewSecurity.SECURE) {
+        if (view_security == CertButton.Security.SECURE) {
             secondary_text.get_style_context ().add_class ("success");
         } else {
             secondary_text.get_style_context ().add_class ("warning");
@@ -304,20 +259,20 @@ public class ValaBrowser : Gtk.ApplicationWindow {
                     break;
 
                 case WebKit.LoadEvent.STARTED:
-                    view_security = ViewSecurity.LOADING;
-                    update_tls_button_icon ();
+                    view_security = CertButton.Security.LOADING;
+                    tls_button.security = view_security;
                     break;
 
                 case WebKit.LoadEvent.COMMITTED:
                     update_tls_info ();
-                    update_tls_button_icon ();
+                    tls_button.security = view_security;
                     break;
             }
         });
 
         web_view.insecure_content_detected.connect (() => {
-            view_security = ViewSecurity.MIXED_CONTENT;
-            update_tls_button_icon ();
+            view_security = CertButton.Security.MIXED_CONTENT;
+            tls_button.security = view_security;
         });
 
         web_view.load_failed.connect ((event, uri, error) => {
