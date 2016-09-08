@@ -26,14 +26,42 @@ public class CertButton : Gtk.ToggleButton {
         MIXED_CONTENT,
     }
 
-    public CertButton () {
+    public Security security {
+        set {
+            Icon icon;
+            string tooltip;
 
+            switch (value) {
+                case Security.NONE:
+                    icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
+                    tooltip = _("The page is served over an unprotected connection.");
+                    break;
+
+                case Security.SECURE:
+                    icon = new ThemedIcon.from_names ({"channel-secure-symbolic", "security-high"});
+                    tooltip = _("The page is served over a protected connection.");
+                    break;
+
+                case Security.MIXED_CONTENT:
+                    icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
+                    tooltip = _("Some elements of this page are served over an unprotected connection.");
+                    break;
+
+                default:
+                    assert_not_reached ();
+            }
+
+            image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON);
+            tooltip_text = tooltip;
+            set_sensitive (value != CertButton.Security.NONE);
+        }
+    }
+
+    public CertButton () {
+        Object (security: Security.NONE);
     }
 
     construct {
-        image = new Gtk.Image.from_icon_name ("content-loading-symbolic", Gtk.IconSize.BUTTON);
-        sensitive = false;
-
         var style_context = get_style_context ();
         style_context.add_class (Gtk.STYLE_CLASS_FLAT);
         style_context.add_class ("titlebutton");

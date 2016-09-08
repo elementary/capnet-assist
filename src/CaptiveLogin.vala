@@ -144,35 +144,6 @@ public class ValaBrowser : Gtk.Window {
         }
     }
 
-    private void update_tls_button_icon () {
-        Icon icon;
-        string tooltip;
-
-        switch (view_security) {
-            case CertButton.Security.NONE:
-                icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
-                tooltip = _("The page is served over an unprotected connection.");
-                break;
-
-            case CertButton.Security.SECURE:
-                icon = new ThemedIcon.from_names ({"channel-secure-symbolic", "security-high"});
-                tooltip = _("The page is served over a protected connection.");
-                break;
-
-            case CertButton.Security.MIXED_CONTENT:
-                icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
-                tooltip = _("Some elements of this page are served over an unprotected connection.");
-                break;
-
-            default:
-                assert_not_reached ();
-        }
-
-        tls_button.set_image (new Gtk.Image.from_gicon (icon, Gtk.IconSize.BUTTON));
-        tls_button.set_tooltip_text (tooltip);
-        tls_button.set_sensitive (view_security != CertButton.Security.NONE);
-    }
-
     private void on_tls_button_click () {
         TlsCertificate cert;
         TlsCertificateFlags cert_flags;
@@ -288,19 +259,19 @@ public class ValaBrowser : Gtk.Window {
 
                 case WebKit.LoadEvent.STARTED:
                     view_security = CertButton.Security.NONE;
-                    update_tls_button_icon ();
+                    tls_button.security = view_security;
                     break;
 
                 case WebKit.LoadEvent.COMMITTED:
                     update_tls_info ();
-                    update_tls_button_icon ();
+                    tls_button.security = view_security;
                     break;
             }
         });
 
         web_view.insecure_content_detected.connect (() => {
             view_security = CertButton.Security.MIXED_CONTENT;
-            update_tls_button_icon ();
+            tls_button.security = view_security;
         });
 
         web_view.load_failed.connect ((event, uri, error) => {
