@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-08 15:04+0100\n"
+"POT-Creation-Date: 2016-09-08 10:58-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/CaptiveLogin.vala:160
+#: ../src/CaptiveLogin.vala:29
+msgid "Log in"
+msgstr ""
+
+#: ../src/CaptiveLogin.vala:164
+msgid "Loading captive portal."
+msgstr ""
+
+#: ../src/CaptiveLogin.vala:168
 msgid "The page is served over an unprotected connection."
 msgstr ""
 
-#: ../src/CaptiveLogin.vala:165
+#: ../src/CaptiveLogin.vala:173
 msgid "The page is served over a protected connection."
 msgstr ""
 
-#: ../src/CaptiveLogin.vala:170
+#: ../src/CaptiveLogin.vala:178
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
