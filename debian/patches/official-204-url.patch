@@ -1,11 +1,11 @@
 --- a/src/CaptiveLogin.vala
 +++ b/src/CaptiveLogin.vala
-@@ -29,7 +29,7 @@
+@@ -113,7 +113,7 @@
+             return true;
+         }
  
-     private const string TITLE = _("Log in");
-     private const string DUMMY_URL = "http://elementary.io/capnet-assist";
--    private const string GENERATE_204_URL = "http://connectivitycheck.android.com/generate_204";
-+    private const string GENERATE_204_URL = "http://elementary.io/generate_204";
+-        var page = "http://connectivitycheck.android.com/generate_204";
++        var page = "http://elementary.io/generate_204";
+         debug ("Getting 204 page");
  
-     private WebKit.WebView web_view;
-     private Gtk.ToggleButton header_button;
+         var session = new Soup.Session ();
