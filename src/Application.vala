@@ -18,9 +18,11 @@
 */
 
 public class Captive.Application : Gtk.Application {
+    private bool force_show = false;
+    private string? debug_url = null;
 
     public Application () {
-        Object (application_id: "org.pantheon.captive-login");
+        Object (application_id: "org.pantheon.captive-login", flags: ApplicationFlags.HANDLES_COMMAND_LINE);
     }
 
     public override void activate () {
@@ -28,14 +30,38 @@ public class Captive.Application : Gtk.Application {
             mark_busy ();
 
             var browser = new ValaBrowser (this);
-            if (browser.is_captive_portal ()) {
+            if (browser.is_captive_portal () || force_show) {
                 debug ("Opening browser to login");
-                browser.start ();
+                browser.start (debug_url);
             } else {
                 debug ("Already logged in and connected, or no internet connection. Shutting down.");
                 quit ();
             }
         }
+    }
+
+    public override int command_line (ApplicationCommandLine command_line) {
+        OptionEntry[] options = new OptionEntry[2];
+        options[0] = { "force-window", 'f', 0, OptionArg.NONE, ref force_show, "Force the browser window to appear", null };
+        options[1] = { "url", 'u', 0, OptionArg.STRING, ref debug_url, "Load the folowing URL on the browser window", "URL" };
+
+        string[] args = command_line.get_arguments ();
+
+        try {
+            var opt_context = new OptionContext ("- OptionContext example");
+            opt_context.set_help_enabled (true);
+            opt_context.add_main_entries (options, null);
+            unowned string[] tmp = args;
+            opt_context.parse (ref tmp);
+        } catch (OptionError e) {
+            command_line.print ("error: %s\n", e.message);
+            command_line.print ("Run '%s --help' to see a full list of available command line options.\n", args[0]);
+            return -1;
+        }
+
+        activate ();
+
+        return 0;
     }
 
     public static int main (string[] args) {

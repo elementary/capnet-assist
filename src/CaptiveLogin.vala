@@ -331,8 +331,8 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         });
     }
 
-    public void start () {
+    public void start (string? browser_url) {
         show_all ();
-        web_view.load_uri (ValaBrowser.DUMMY_URL);
+        web_view.load_uri (browser_url ?? ValaBrowser.DUMMY_URL);
     }
 }
