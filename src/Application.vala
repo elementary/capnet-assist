@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2016 lementary Developers (https://launchpad.net/capnet-assist)
+* Copyright (c) 2016 elementary LLC (https://launchpad.net/capnet-assist)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
