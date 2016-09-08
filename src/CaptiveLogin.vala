@@ -67,7 +67,6 @@ public class ValaBrowser : Gtk.Window {
 
     private void create_widgets () {
         tls_button = new CertButton ();
-        tls_button.toggled.connect (on_tls_button_click);
 
         title_label = new Gtk.Label (ValaBrowser.TITLE);
         title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
