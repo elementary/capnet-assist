@@ -73,30 +73,29 @@ public class ValaBrowser : Gtk.Window {
     }
 
     private void create_widgets () {
-        var header = new Gtk.HeaderBar ();
-        header.set_show_close_button (true);
-        header.get_style_context ().add_class ("compact");
-
-        this.set_titlebar (header);
-
         tls_button = new Gtk.ToggleButton ();
-        tls_button.set_image (new Gtk.Image.from_icon_name ("content-loading-symbolic", Gtk.IconSize.BUTTON));
+        tls_button.image = new Gtk.Image.from_icon_name ("content-loading-symbolic", Gtk.IconSize.BUTTON);
         var tls_button_style_context = tls_button.get_style_context ();
         tls_button_style_context.add_class (Gtk.STYLE_CLASS_FLAT);
         tls_button_style_context.add_class ("titlebutton");
-        tls_button.set_sensitive (false);
-        tls_button.toggled.connect (on_tls_button_click);
-
-        var hbox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        hbox.set_margin_top (3);
-        hbox.set_margin_bottom (3);
-        hbox.pack_start (tls_button);
+        tls_button.sensitive = false;
 
         title_label = new Gtk.Label (ValaBrowser.TITLE);
         title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
-        hbox.pack_start (title_label);
 
-        header.set_custom_title (hbox);
+        var header_grid = new Gtk.Grid ();
+        header_grid.column_spacing = 6;
+        header_grid.margin_top = 3;
+        header_grid.margin_bottom = 3;
+        header_grid.add (tls_button);
+        header_grid.add (title_label);
+
+        var header = new Gtk.HeaderBar ();
+        header.show_close_button = true;
+        header.get_style_context ().add_class ("compact");
+        header.custom_title = header_grid;
+
+        set_titlebar (header);
 
         web_view = new WebKit.WebView ();
 
@@ -286,6 +285,7 @@ public class ValaBrowser : Gtk.Window {
 
     private void connect_signals () {
         this.destroy.connect (Gtk.main_quit);
+        tls_button.toggled.connect (on_tls_button_click);
         //should title change?
         web_view.notify["title"].connect ((view, param_spec) => {
             title_label.set_text (web_view.get_title ());
