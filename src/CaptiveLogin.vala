@@ -92,37 +92,6 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         add (web_view);
     }
 
-    public bool is_captive_portal () {
-        var network_monitor = NetworkMonitor.get_default ();
-
-        // No connection is available at the moment, don't bother trying the
-        // connectivity check
-        if (network_monitor.get_connectivity () != NetworkConnectivity.FULL) {
-            return true;
-        }
-
-        var page = "http://connectivitycheck.android.com/generate_204";
-        debug ("Getting 204 page");
-
-        var session = new Soup.Session ();
-        var message = new Soup.Message ("GET", page);
-
-        session.send_message (message);
-
-        debug ("Return code: %u", message.status_code);
-
-        /*
-         * If there is an active connection to the internet, this will
-         * successfully connect to the connectivity checker and return 204.
-         * If there is no internet connection (including no captive portal), this
-         * request will fail and libsoup will return a transport failure status
-         * code (<100).
-         * Otherwise, libsoup will resolve the redirect to the captive portal,
-         * which will return status code 200.
-         */
-        return message.status_code == 200;
-    }
-
     private void update_tls_info () {
         TlsCertificate cert;
         TlsCertificateFlags cert_flags;
@@ -250,19 +219,10 @@ public class ValaBrowser : Gtk.ApplicationWindow {
 
         web_view.load_changed.connect ((view, event) => {
             switch (event) {
-                case WebKit.LoadEvent.FINISHED:
-                    if (is_captive_portal ()) {
-                        debug ("Still not logged in.");
-                    } else {
-                        debug ("Logged in!");
-                    }
-                    break;
-
                 case WebKit.LoadEvent.STARTED:
                     view_security = CertButton.Security.LOADING;
                     tls_button.security = view_security;
                     break;
-
                 case WebKit.LoadEvent.COMMITTED:
                     update_tls_info ();
                     tls_button.security = view_security;
