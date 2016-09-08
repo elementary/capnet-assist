@@ -161,7 +161,7 @@ public class ValaBrowser : Gtk.Window {
 
         switch (view_security) {
             case ViewSecurity.LOADING:
-                icon = new ThemedIcon.from_names ({"content-loading-symbolic", "security-low"});
+                icon = new ThemedIcon ("content-loading-symbolic");
                 tooltip = _("Loading captive portal.");
                 break;
             case ViewSecurity.NONE:
