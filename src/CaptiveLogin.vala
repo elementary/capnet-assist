@@ -157,7 +157,7 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         }
 
         var popover = new Gtk.Popover (tls_button);
-        popover.set_border_width (12);
+        popover.border_width = 12;
 
         // Wonderful hack we got here, the vapi for Gtk has a wrong definition
         // for the get_gicon () method, it's not reported as an out parameter
@@ -172,11 +172,6 @@ public class ValaBrowser : Gtk.ApplicationWindow {
 #endif
 
         var icon = new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.DIALOG);
-        if (view_security == CertButton.Security.SECURE) {
-            icon.get_style_context ().add_class ("success");
-        } else {
-            icon.get_style_context ().add_class ("warning");
-        }
         icon.valign = Gtk.Align.START;
 
         var primary_text = new Gtk.Label (web_view.get_uri());
@@ -185,13 +180,16 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         primary_text.margin_start = 9;
 
         var secondary_text = new Gtk.Label (tls_button.get_tooltip_text ());
-        if (view_security == CertButton.Security.SECURE) {
-            secondary_text.get_style_context ().add_class ("success");
-        } else {
-            secondary_text.get_style_context ().add_class ("warning");
-        }
         secondary_text.halign = Gtk.Align.START;
         secondary_text.margin_start = 9;
+
+        if (view_security == CertButton.Security.SECURE) {
+            icon.get_style_context ().add_class ("success");
+            secondary_text.get_style_context ().add_class ("success");
+        } else {
+            icon.get_style_context ().add_class ("warning");
+            secondary_text.get_style_context ().add_class ("warning");
+        }
 
         var gcr_cert = new Gcr.SimpleCertificate (cert.certificate.data);
         var cert_details = new Gcr.CertificateWidget (gcr_cert);
