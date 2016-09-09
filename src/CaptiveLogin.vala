@@ -26,8 +26,6 @@ public class ValaBrowser : Gtk.ApplicationWindow {
     private CertButton tls_button;
     private Gtk.Label title_label;
 
-    private CertButton.Security view_security;
-
     public ValaBrowser (Gtk.Application app) {
         Object (application: app);
 
@@ -138,9 +136,9 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         }
 
         if (is_secure) {
-            view_security = CertButton.Security.SECURE;
+            tls_button.security = CertButton.Security.SECURE;
         } else {
-            view_security = CertButton.Security.NONE;
+            tls_button.security = CertButton.Security.NONE;
         }
     }
 
@@ -183,7 +181,7 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         secondary_text.halign = Gtk.Align.START;
         secondary_text.margin_start = 9;
 
-        if (view_security == CertButton.Security.SECURE) {
+        if (tls_button.security == CertButton.Security.SECURE) {
             icon.get_style_context ().add_class ("success");
             secondary_text.get_style_context ().add_class ("success");
         } else {
@@ -257,20 +255,17 @@ public class ValaBrowser : Gtk.ApplicationWindow {
                     break;
 
                 case WebKit.LoadEvent.STARTED:
-                    view_security = CertButton.Security.LOADING;
-                    tls_button.security = view_security;
+                    tls_button.security = CertButton.Security.LOADING;
                     break;
 
                 case WebKit.LoadEvent.COMMITTED:
                     update_tls_info ();
-                    tls_button.security = view_security;
                     break;
             }
         });
 
         web_view.insecure_content_detected.connect (() => {
-            view_security = CertButton.Security.MIXED_CONTENT;
-            tls_button.security = view_security;
+            tls_button.security = CertButton.Security.MIXED_CONTENT;
         });
 
         web_view.load_failed.connect ((event, uri, error) => {
