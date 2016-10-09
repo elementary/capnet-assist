@@ -27,8 +27,6 @@ public class ValaBrowser : Gtk.ApplicationWindow {
     private CertButton tls_button;
     private Gtk.Label title_label;
 
-    private CertButton.Security view_security;
-
     public ValaBrowser (Gtk.Application app) {
         Object (application: app);
 
@@ -107,9 +105,9 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         }
 
         if (is_secure) {
-            view_security = CertButton.Security.SECURE;
+            tls_button.security = CertButton.Security.SECURE;
         } else {
-            view_security = CertButton.Security.NONE;
+            tls_button.security = CertButton.Security.NONE;
         }
     }
 
@@ -126,7 +124,7 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         }
 
         var popover = new Gtk.Popover (tls_button);
-        popover.set_border_width (12);
+        popover.border_width = 12;
 
         // Wonderful hack we got here, the vapi for Gtk has a wrong definition
         // for the get_gicon () method, it's not reported as an out parameter
@@ -141,11 +139,6 @@ public class ValaBrowser : Gtk.ApplicationWindow {
 #endif
 
         var icon = new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.DIALOG);
-        if (view_security == CertButton.Security.SECURE) {
-            icon.get_style_context ().add_class ("success");
-        } else {
-            icon.get_style_context ().add_class ("warning");
-        }
         icon.valign = Gtk.Align.START;
 
         var primary_text = new Gtk.Label (web_view.get_uri());
@@ -154,13 +147,16 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         primary_text.margin_start = 9;
 
         var secondary_text = new Gtk.Label (tls_button.get_tooltip_text ());
-        if (view_security == CertButton.Security.SECURE) {
-            secondary_text.get_style_context ().add_class ("success");
-        } else {
-            secondary_text.get_style_context ().add_class ("warning");
-        }
         secondary_text.halign = Gtk.Align.START;
         secondary_text.margin_start = 9;
+
+        if (tls_button.security == CertButton.Security.SECURE) {
+            icon.get_style_context ().add_class ("success");
+            secondary_text.get_style_context ().add_class ("success");
+        } else {
+            icon.get_style_context ().add_class ("warning");
+            secondary_text.get_style_context ().add_class ("warning");
+        }
 
         var gcr_cert = new Gcr.SimpleCertificate (cert.certificate.data);
         var cert_details = new Gcr.CertificateWidget (gcr_cert);
@@ -220,19 +216,16 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         web_view.load_changed.connect ((view, event) => {
             switch (event) {
                 case WebKit.LoadEvent.STARTED:
-                    view_security = CertButton.Security.LOADING;
-                    tls_button.security = view_security;
+                    tls_button.security = CertButton.Security.LOADING;
                     break;
                 case WebKit.LoadEvent.COMMITTED:
                     update_tls_info ();
-                    tls_button.security = view_security;
                     break;
             }
         });
 
         web_view.insecure_content_detected.connect (() => {
-            view_security = CertButton.Security.MIXED_CONTENT;
-            tls_button.security = view_security;
+            tls_button.security = CertButton.Security.MIXED_CONTENT;
         });
 
         web_view.load_failed.connect ((event, uri, error) => {
