@@ -1,21 +1,22 @@
-/***
-    BEGIN LICENSE
-
-    Copyright (C) 2015 elementary LLC.
-    This program is free software: you can redistribute it and/or modify it
-    under the terms of the GNU Lesser General Public License version 3, as published
-    by the Free Software Foundation.
-
-    This program is distributed in the hope that it will be useful, but
-    WITHOUT ANY WARRANTY; without even the implied warranties of
-    MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
-    PURPOSE.  See the GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License along
-    with this program.  If not, see <http://www.gnu.org/licenses/>
-
-    END LICENSE
-***/
+/*
+* Copyright (c) 2015 - 2016 elementary LLC. (http://launchpad.net/capnet-assist)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU General Public
+* License as published by the Free Software Foundation; either
+* version 2 of the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+* Boston, MA 02111-1307, USA.
+*
+*/
 
 public class ValaBrowser : Gtk.ApplicationWindow {
 
@@ -24,8 +25,6 @@ public class ValaBrowser : Gtk.ApplicationWindow {
     private WebKit.WebView web_view;
     private CertButton tls_button;
     private Gtk.Label title_label;
-
-    private CertButton.Security view_security;
 
     public ValaBrowser (Gtk.Application app) {
         Object (application: app);
@@ -66,9 +65,8 @@ public class ValaBrowser : Gtk.ApplicationWindow {
 
     bool is_privacy_mode_enabled () {
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
-        bool privacy_mode = !privacy_settings.get_boolean ("remember-recent-files") ||
-                            !privacy_settings.get_boolean ("remember-app-usage");
-        return privacy_mode;
+        return !privacy_settings.get_boolean ("remember-recent-files") ||
+               !privacy_settings.get_boolean ("remember-app-usage");
     }
 
     private void setup_web_view () {
@@ -90,37 +88,6 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         }
     }
 
-    public bool is_captive_portal () {
-        var network_monitor = NetworkMonitor.get_default ();
-
-        // No connection is available at the moment, don't bother trying the
-        // connectivity check
-        if (network_monitor.get_connectivity () != NetworkConnectivity.FULL) {
-            return true;
-        }
-
-        var page = "http://connectivitycheck.android.com/generate_204";
-        debug ("Getting 204 page");
-
-        var session = new Soup.Session ();
-        var message = new Soup.Message ("GET", page);
-
-        session.send_message (message);
-
-        debug ("Return code: %u", message.status_code);
-
-        /*
-         * If there is an active connection to the internet, this will
-         * successfully connect to the connectivity checker and return 204.
-         * If there is no internet connection (including no captive portal), this
-         * request will fail and libsoup will return a transport failure status
-         * code (<100).
-         * Otherwise, libsoup will resolve the redirect to the captive portal,
-         * which will return status code 200.
-         */
-        return message.status_code == 200;
-    }
-
     private void update_tls_info () {
         TlsCertificate cert;
         TlsCertificateFlags cert_flags;
@@ -136,9 +103,9 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         }
 
         if (is_secure) {
-            view_security = CertButton.Security.SECURE;
+            tls_button.security = CertButton.Security.SECURE;
         } else {
-            view_security = CertButton.Security.NONE;
+            tls_button.security = CertButton.Security.NONE;
         }
     }
 
@@ -155,7 +122,7 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         }
 
         var popover = new Gtk.Popover (tls_button);
-        popover.set_border_width (12);
+        popover.border_width = 12;
 
         // Wonderful hack we got here, the vapi for Gtk has a wrong definition
         // for the get_gicon () method, it's not reported as an out parameter
@@ -170,11 +137,6 @@ public class ValaBrowser : Gtk.ApplicationWindow {
 #endif
 
         var icon = new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.DIALOG);
-        if (view_security == CertButton.Security.SECURE) {
-            icon.get_style_context ().add_class ("success");
-        } else {
-            icon.get_style_context ().add_class ("warning");
-        }
         icon.valign = Gtk.Align.START;
 
         var primary_text = new Gtk.Label (web_view.get_uri());
@@ -183,13 +145,16 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         primary_text.margin_start = 9;
 
         var secondary_text = new Gtk.Label (tls_button.get_tooltip_text ());
-        if (view_security == CertButton.Security.SECURE) {
-            secondary_text.get_style_context ().add_class ("success");
-        } else {
-            secondary_text.get_style_context ().add_class ("warning");
-        }
         secondary_text.halign = Gtk.Align.START;
         secondary_text.margin_start = 9;
+
+        if (tls_button.security == CertButton.Security.SECURE) {
+            icon.get_style_context ().add_class ("success");
+            secondary_text.get_style_context ().add_class ("success");
+        } else {
+            icon.get_style_context ().add_class ("warning");
+            secondary_text.get_style_context ().add_class ("warning");
+        }
 
         var gcr_cert = new Gcr.SimpleCertificate (cert.certificate.data);
         var cert_details = new Gcr.CertificateWidget (gcr_cert);
@@ -241,36 +206,24 @@ public class ValaBrowser : Gtk.ApplicationWindow {
     private void connect_signals () {
         this.destroy.connect (application.quit);
         tls_button.toggled.connect (on_tls_button_click);
-        //should title change?
+
         web_view.notify["title"].connect ((view, param_spec) => {
             title_label.set_text (web_view.get_title ());
         });
 
         web_view.load_changed.connect ((view, event) => {
             switch (event) {
-                case WebKit.LoadEvent.FINISHED:
-                    if (is_captive_portal ()) {
-                        debug ("Still not logged in.");
-                    } else {
-                        debug ("Logged in!");
-                    }
-                    break;
-
                 case WebKit.LoadEvent.STARTED:
-                    view_security = CertButton.Security.LOADING;
-                    tls_button.security = view_security;
+                    tls_button.security = CertButton.Security.LOADING;
                     break;
-
                 case WebKit.LoadEvent.COMMITTED:
                     update_tls_info ();
-                    tls_button.security = view_security;
                     break;
             }
         });
 
         web_view.insecure_content_detected.connect (() => {
-            view_security = CertButton.Security.MIXED_CONTENT;
-            tls_button.security = view_security;
+            tls_button.security = CertButton.Security.MIXED_CONTENT;
         });
 
         web_view.load_failed.connect ((event, uri, error) => {

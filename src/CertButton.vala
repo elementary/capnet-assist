@@ -27,8 +27,15 @@ public class CertButton : Gtk.ToggleButton {
         MIXED_CONTENT,
     }
 
+    private Security _security;
+
     public Security security {
+        get {
+            return _security;
+        }
         set {
+            _security = value;
+
             Icon icon;
             string tooltip;
 
