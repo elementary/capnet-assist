@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2015 - 2016 elementary LLC (http://launchpad.net/capnet-assist)
+* Copyright (c) 2015 - 2016 elementary LLC. (http://launchpad.net/capnet-assist)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -20,7 +20,6 @@
 
 public class ValaBrowser : Gtk.ApplicationWindow {
 
-    private const string TITLE = _("Log in");
     private const string DUMMY_URL = "http://elementary.io/capnet-assist";
 
     private WebKit.WebView web_view;
@@ -29,13 +28,37 @@ public class ValaBrowser : Gtk.ApplicationWindow {
 
     public ValaBrowser (Gtk.Application app) {
         Object (application: app);
+    }
+
+    construct {
+        tls_button = new CertButton ();
+
+        title_label = new Gtk.Label (_("Log in"));
+        title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
+
+        var header_grid = new Gtk.Grid ();
+        header_grid.column_spacing = 6;
+        header_grid.margin_top = 3;
+        header_grid.margin_bottom = 3;
+        header_grid.add (tls_button);
+        header_grid.add (title_label);
+
+        var header = new Gtk.HeaderBar ();
+        header.show_close_button = true;
+        header.get_style_context ().add_class ("compact");
+        header.custom_title = header_grid;
+
+        set_titlebar (header);
+
+        web_view = new WebKit.WebView ();
+
+        add (web_view);
 
         set_default_size (1000, 680);
         set_keep_above (true);
-        set_skip_taskbar_hint (true);
+        skip_taskbar_hint = true;
         stick ();
 
-        create_widgets ();
         connect_signals ();
         setup_web_view ();
     }
@@ -63,31 +86,6 @@ public class ValaBrowser : Gtk.ApplicationWindow {
             cookie_manager.set_accept_policy (WebKit.CookieAcceptPolicy.ALWAYS);
             cookie_manager.set_persistent_storage (cookies_db_path, WebKit.CookiePersistentStorage.SQLITE);
         }
-    }
-
-    private void create_widgets () {
-        tls_button = new CertButton ();
-
-        title_label = new Gtk.Label (ValaBrowser.TITLE);
-        title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
-
-        var header_grid = new Gtk.Grid ();
-        header_grid.column_spacing = 6;
-        header_grid.margin_top = 3;
-        header_grid.margin_bottom = 3;
-        header_grid.add (tls_button);
-        header_grid.add (title_label);
-
-        var header = new Gtk.HeaderBar ();
-        header.show_close_button = true;
-        header.get_style_context ().add_class ("compact");
-        header.custom_title = header_grid;
-
-        set_titlebar (header);
-
-        web_view = new WebKit.WebView ();
-
-        add (web_view);
     }
 
     private void update_tls_info () {
