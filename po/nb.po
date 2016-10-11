@@ -7,33 +7,33 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-09-08 13:27-0700\n"
+"POT-Creation-Date: 2016-10-10 12:53-0700\n"
 "PO-Revision-Date: 2016-03-12 16:00+0000\n"
 "Last-Translator: ProsjektX <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-09-09 06:32+0000\n"
-"X-Generator: Launchpad (build 18184)\n"
+"X-Launchpad-Export-Date: 2016-10-11 07:37+0000\n"
+"X-Generator: Launchpad (build 18227)\n"
 
-#: ../src/CertButton.vala:38
+#: ../src/CertButton.vala:45
 msgid "Loading captive portal."
 msgstr ""
 
-#: ../src/CertButton.vala:42
+#: ../src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
 msgstr "Siden betjenes over en ubeskyttet tilkobling."
 
-#: ../src/CertButton.vala:47
+#: ../src/CertButton.vala:54
 msgid "The page is served over a protected connection."
 msgstr "Siden betjenes over en beskyttet tilkobling."
 
-#: ../src/CertButton.vala:52
+#: ../src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
 "Noen elementer på denne siden betjenes over en ubeskyttet tilkobling."
 
-#: ../src/CaptiveLogin.vala:22
+#: ../src/CaptiveLogin.vala:36
 msgid "Log in"
 msgstr ""
