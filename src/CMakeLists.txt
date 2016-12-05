@@ -2,6 +2,7 @@ pkg_check_modules(DEPS REQUIRED
     gtk+-3.0
     gio-2.0
     webkit2gtk-4.0
+    granite>=0.3
     gcr-3
     gcr-ui-3
 )
@@ -23,6 +24,7 @@ set(CAPTIVE_LOGIN_PACKAGES
     gtk+-3.0
     gio-2.0
     webkit2gtk-4.0
+    granite
     gcr-3
     gcr-ui-3
 )
@@ -39,6 +41,7 @@ vala_precompile(VALA_C
     Application.vala
     CaptiveLogin.vala
     CertButton.vala
+    TabbedWebView.vala
 PACKAGES
     ${CAPTIVE_LOGIN_PACKAGES}
 OPTIONS
