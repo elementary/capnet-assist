@@ -19,12 +19,15 @@
 */
 
 public class ValaBrowser : Gtk.ApplicationWindow {
-
     private const string DUMMY_URL = "http://elementary.io/capnet-assist";
 
-    private WebKit.WebView web_view;
     private CertButton tls_button;
     private Gtk.Label title_label;
+
+    private Granite.Widgets.DynamicNotebook notebook;
+
+    // When a download is passed to the browser, it triggers the load failed signal
+    private bool download_requested = false;
 
     public ValaBrowser (Gtk.Application app) {
         Object (application: app);
@@ -50,9 +53,14 @@ public class ValaBrowser : Gtk.ApplicationWindow {
 
         set_titlebar (header);
 
-        web_view = new WebKit.WebView ();
+        notebook = new Granite.Widgets.DynamicNotebook ();
+        notebook.tab_bar_behavior = Granite.Widgets.DynamicNotebook.TabBarBehavior.SINGLE;
+        notebook.allow_drag = false;
+        notebook.allow_new_window = false;
+        notebook.allow_restoring = false;
+        notebook.add_button_visible = false;
 
-        add (web_view);
+        add (notebook);
 
         set_default_size (1000, 680);
         set_keep_above (true);
@@ -60,53 +68,12 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         stick ();
 
         connect_signals ();
-        setup_web_view ();
     }
 
     bool is_privacy_mode_enabled () {
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
         return !privacy_settings.get_boolean ("remember-recent-files") ||
                !privacy_settings.get_boolean ("remember-app-usage");
-    }
-
-    private void setup_web_view () {
-        if (!is_privacy_mode_enabled ()) {
-            var cookies_db_path = Path.build_path (Path.DIR_SEPARATOR_S,
-                                                   Environment.get_user_config_dir (),
-                                                   "epiphany",
-                                                   "cookies.sqlite");
-
-            if (!FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
-                debug ("No cookies store found, not saving the cookies...\n");
-                return;
-            }
-
-            var cookie_manager = web_view.get_context ().get_cookie_manager ();
-
-            cookie_manager.set_accept_policy (WebKit.CookieAcceptPolicy.ALWAYS);
-            cookie_manager.set_persistent_storage (cookies_db_path, WebKit.CookiePersistentStorage.SQLITE);
-        }
-    }
-
-    private void update_tls_info () {
-        TlsCertificate cert;
-        TlsCertificateFlags cert_flags;
-        bool is_secure;
-
-        if (!web_view.get_tls_info (out cert, out cert_flags)) {
-            // The page is served over HTTP
-            is_secure = false;
-        } else {
-            // The page is served over HTTPS, if cert_flags is set then there's
-            // some problem with the certificate provided by the website.
-            is_secure = (cert_flags == 0);
-        }
-
-        if (is_secure) {
-            tls_button.security = CertButton.Security.SECURE;
-        } else {
-            tls_button.security = CertButton.Security.NONE;
-        }
     }
 
     private void on_tls_button_click () {
@@ -116,6 +83,9 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         if (!tls_button.get_active ()) {
             return;
         }
+
+        var web_view = ((TabbedWebView) notebook.current).web_view;
+
         if (!web_view.get_tls_info (out cert, out cert_flags)) {
             tls_button.set_active (false);
             return;
@@ -202,43 +172,101 @@ public class ValaBrowser : Gtk.ApplicationWindow {
 
         return;
     }
-
     private void connect_signals () {
         this.destroy.connect (application.quit);
         tls_button.toggled.connect (on_tls_button_click);
 
-        web_view.notify["title"].connect ((view, param_spec) => {
-            title_label.set_text (web_view.get_title ());
+        notebook.tab_switched.connect ((old_tab, new_tab) => {
+            var captive_view = (TabbedWebView) new_tab;
+            title_label.label = captive_view.label;
+
+            tls_button.security = captive_view.security;
         });
 
-        web_view.load_changed.connect ((view, event) => {
-            switch (event) {
-                case WebKit.LoadEvent.STARTED:
-                    tls_button.security = CertButton.Security.LOADING;
-                    break;
-                case WebKit.LoadEvent.COMMITTED:
-                    update_tls_info ();
-                    break;
+        notebook.close_tab_requested.connect ((tab) => {
+            if (notebook.n_tabs == 1) {
+                application.quit ();
+            } else if (notebook.n_tabs == 2) {
+                notebook.show_tabs = false;
+            }
+
+            return true;
+        });
+    }
+
+    private TabbedWebView create_tab (string uri) {
+        var tab = new TabbedWebView (uri, !is_privacy_mode_enabled ());
+
+        notebook.insert_tab (tab, notebook.n_tabs);
+        notebook.show_tabs = notebook.n_tabs > 1;
+
+        tab.notify["label"].connect ((view, param_spec) => {
+            if (tab == this.notebook.current) {
+                title_label.set_text (tab.label);
             }
         });
 
-        web_view.insecure_content_detected.connect (() => {
-            tls_button.security = CertButton.Security.MIXED_CONTENT;
+        tab.notify["security"].connect ((view, param_spec) => {
+            if (tab == this.notebook.current) {
+                tls_button.security = tab.security;
+            }
         });
 
-        web_view.load_failed.connect ((event, uri, error) => {
+        tab.web_view.create.connect ((navigation_action)=> {
+            create_tab (navigation_action.get_request().get_uri ());
+            return null;
+        });
+
+        tab.web_view.decide_policy.connect ((decision, type) => {
+            switch (type) {
+                case WebKit.PolicyDecisionType.NEW_WINDOW_ACTION:
+                    if (decision is WebKit.ResponsePolicyDecision) {
+                        create_tab ((decision as WebKit.ResponsePolicyDecision).request.get_uri ());
+                    }
+                break;
+                case WebKit.PolicyDecisionType.RESPONSE:
+                    if (decision is WebKit.ResponsePolicyDecision) {
+                        var policy = (WebKit.ResponsePolicyDecision) decision;
+                        if (!policy.is_mime_type_supported ()) {
+                            try {
+                                var url = policy.request.get_uri ();
+                                AppInfo.launch_default_for_uri (url, null);
+                                download_requested = true;
+                            } catch (Error e) {
+                                warning ("No app to handle urls: %s", e.message);
+                            }
+
+                            return false;
+                        }
+                    }
+                break;
+            }
+
+            return true;
+        });
+
+        return tab;
+    }
+
+    public void start (string? browser_url) {
+        var default_tab = create_tab (browser_url ?? ValaBrowser.DUMMY_URL);
+
+        default_tab.web_view.load_failed.connect ((event, uri, error) => {
             // The user has canceled the page loading eg. by clicking on a link.
-            if ((Error)error is WebKit.NetworkError.CANCELLED) {
+            if ((Error) error is WebKit.NetworkError.CANCELLED) {
+                return true;
+            }
+
+            // Download started, but interrupted
+            if (download_requested) {
+                download_requested = false;
                 return true;
             }
 
             application.quit ();
             return true;
         });
-    }
 
-    public void start (string? browser_url) {
         show_all ();
-        web_view.load_uri (browser_url ?? ValaBrowser.DUMMY_URL);
     }
 }
