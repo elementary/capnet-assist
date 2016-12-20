@@ -18,10 +18,10 @@
 *
 */
 
-public class ValaBrowser : Gtk.ApplicationWindow {
+public class CaptiveLogin : Gtk.ApplicationWindow {
     private const string DUMMY_URL = "http://elementary.io/capnet-assist";
 
-    private CertButton tls_button;
+    private CertButton cert_button;
     private Gtk.Label title_label;
 
     private Granite.Widgets.DynamicNotebook notebook;
@@ -29,12 +29,12 @@ public class ValaBrowser : Gtk.ApplicationWindow {
     // When a download is passed to the browser, it triggers the load failed signal
     private bool download_requested = false;
 
-    public ValaBrowser (Gtk.Application app) {
+    public CaptiveLogin (Gtk.Application app) {
         Object (application: app);
     }
 
     construct {
-        tls_button = new CertButton ();
+        cert_button = new CertButton (this);
 
         title_label = new Gtk.Label (_("Log in"));
         title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
@@ -43,7 +43,7 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         header_grid.column_spacing = 6;
         header_grid.margin_top = 3;
         header_grid.margin_bottom = 3;
-        header_grid.add (tls_button);
+        header_grid.add (cert_button);
         header_grid.add (title_label);
 
         var header = new Gtk.HeaderBar ();
@@ -76,111 +76,14 @@ public class ValaBrowser : Gtk.ApplicationWindow {
                !privacy_settings.get_boolean ("remember-app-usage");
     }
 
-    private void on_tls_button_click () {
-        TlsCertificate cert;
-        TlsCertificateFlags cert_flags;
-
-        if (!tls_button.get_active ()) {
-            return;
-        }
-
-        var web_view = ((TabbedWebView) notebook.current).web_view;
-
-        if (!web_view.get_tls_info (out cert, out cert_flags)) {
-            tls_button.set_active (false);
-            return;
-        }
-
-        var popover = new Gtk.Popover (tls_button);
-        popover.border_width = 12;
-
-        // Wonderful hack we got here, the vapi for Gtk has a wrong definition
-        // for the get_gicon () method, it's not reported as an out parameter
-        // hence we're stuck with passing everything by value.
-        // Since we're badass we pass the INVALID constant that evaluates to 0
-        // which is casted into a NULL pointer and allows us to save the date.
-        Icon button_icon;
-#if VALA_0_30
-        ((Gtk.Image) tls_button.get_image ()).get_gicon (out button_icon, null);
-#else
-        ((Gtk.Image) tls_button.get_image ()).get_gicon (out button_icon, Gtk.IconSize.INVALID);
-#endif
-
-        var icon = new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.DIALOG);
-        icon.valign = Gtk.Align.START;
-
-        var primary_text = new Gtk.Label (web_view.get_uri());
-        primary_text.get_style_context ().add_class ("h3");
-        primary_text.halign = Gtk.Align.START;
-        primary_text.margin_start = 9;
-
-        var secondary_text = new Gtk.Label (tls_button.get_tooltip_text ());
-        secondary_text.halign = Gtk.Align.START;
-        secondary_text.margin_start = 9;
-
-        if (tls_button.security == CertButton.Security.SECURE) {
-            icon.get_style_context ().add_class ("success");
-            secondary_text.get_style_context ().add_class ("success");
-        } else {
-            icon.get_style_context ().add_class ("warning");
-            secondary_text.get_style_context ().add_class ("warning");
-        }
-
-        var gcr_cert = new Gcr.SimpleCertificate (cert.certificate.data);
-        var cert_details = new Gcr.CertificateWidget (gcr_cert);
-
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 3;
-        grid.attach (icon, 0, 0, 1, 2);
-        grid.attach (primary_text, 1, 0, 1, 1);
-        grid.attach (secondary_text, 1, 1, 1, 1);
-        grid.attach (cert_details, 1, 2, 1, 1);
-
-        popover.add (grid);
-
-        // This hack has been borrowed from midori, the widget provided by the
-        // GCR library would fail with an assertion when the 'details' button was
-        // clicked
-        popover.button_press_event.connect ((event) => {
-            return true;
-        });
-
-        popover.button_release_event.connect ((event) => {
-            var child = popover.get_child ();
-            var event_widget = Gtk.get_event_widget (event);
-
-            if (child != null && event.window == popover.get_window ()) {
-                Gtk.Allocation child_alloc;
-                popover.get_allocation (out child_alloc);
-
-                if (event.x < child_alloc.x ||
-                    event.x > child_alloc.x + child_alloc.width ||
-                    event.y < child_alloc.y ||
-                    event.y > child_alloc.y + child_alloc.height) {
-                    popover.hide ();
-                    tls_button.set_active (false);
-                }
-            } else if (event_widget != null && !event_widget.is_ancestor (popover)) {
-                popover.hide ();
-                tls_button.set_active (false);
-            }
-
-            return true;
-        });
-
-        popover.show_all ();
-
-        return;
-    }
     private void connect_signals () {
         this.destroy.connect (application.quit);
-        tls_button.toggled.connect (on_tls_button_click);
 
         notebook.tab_switched.connect ((old_tab, new_tab) => {
             var captive_view = (TabbedWebView) new_tab;
             title_label.label = captive_view.label;
 
-            tls_button.security = captive_view.security;
+            cert_button.security = captive_view.security;
         });
 
         notebook.close_tab_requested.connect ((tab) => {
@@ -208,12 +111,13 @@ public class ValaBrowser : Gtk.ApplicationWindow {
 
         tab.notify["security"].connect ((view, param_spec) => {
             if (tab == this.notebook.current) {
-                tls_button.security = tab.security;
+                cert_button.security = tab.security;
             }
         });
 
         tab.web_view.create.connect ((navigation_action)=> {
             create_tab (navigation_action.get_request().get_uri ());
+
             return null;
         });
 
@@ -248,8 +152,20 @@ public class ValaBrowser : Gtk.ApplicationWindow {
         return tab;
     }
 
+    public bool get_tls_info (out TlsCertificate certificate, out TlsCertificateFlags errors) {
+        var web_view = ((TabbedWebView) notebook.current).web_view;
+
+        return web_view.get_tls_info (out certificate, out errors);
+    }
+
+    public string get_uri () {
+        var web_view = ((TabbedWebView) notebook.current).web_view;
+
+        return web_view.get_uri ();
+    }
+
     public void start (string? browser_url) {
-        var default_tab = create_tab (browser_url ?? ValaBrowser.DUMMY_URL);
+        var default_tab = create_tab (browser_url ?? DUMMY_URL);
 
         default_tab.web_view.load_failed.connect ((event, uri, error) => {
             // The user has canceled the page loading eg. by clicking on a link.

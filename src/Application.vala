@@ -60,7 +60,7 @@ public class Captive.Application : Gtk.Application {
         if (!is_busy) {
             mark_busy ();
 
-            var browser = new ValaBrowser (this);
+            var browser = new CaptiveLogin (this);
             if (is_captive_portal () || force_show) {
                 debug ("Opening browser to login");
                 browser.start (debug_url);
