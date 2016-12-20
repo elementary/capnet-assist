@@ -27,7 +27,7 @@ public class CertButton : Gtk.ToggleButton {
         MIXED_CONTENT,
     }
 
-    public Security _security;
+    private Security _security;
 
     public Security security {
         get {
