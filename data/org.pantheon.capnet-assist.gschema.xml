@@ -1,0 +1,8 @@
+<schemalist>
+  <schema path="/org/pantheon/capnet-assist/" id="org.pantheon.capnet-assist" gettext-domain="audience">
+        <key name="enabled" type="b">
+            <default>true</default>
+            <summary>Whether the assistant should be enabled</summary>
+        </key>
+    </schema>
+</schemalist>

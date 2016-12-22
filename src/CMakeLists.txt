@@ -42,6 +42,7 @@ vala_precompile(VALA_C
     CaptiveLogin.vala
     CertButton.vala
     TabbedWebView.vala
+    Settings.vala
 PACKAGES
     ${CAPTIVE_LOGIN_PACKAGES}
 OPTIONS
