@@ -57,6 +57,12 @@ public class Captive.Application : Gtk.Application {
     }
 
     public override void activate () {
+        var settings = new Settings ();
+        if (!settings.enabled) {
+            quit ();
+            return;
+        }
+
         if (!is_busy) {
             mark_busy ();
 
