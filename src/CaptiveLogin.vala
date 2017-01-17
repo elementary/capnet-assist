@@ -19,7 +19,7 @@
 */
 
 public class CaptiveLogin : Gtk.ApplicationWindow {
-    private const string DUMMY_URL = "http://elementary.io/capnet-assist";
+    private const string DUMMY_URL = "http://capnet.elementary.io";
 
     private CertButton cert_button;
     private Gtk.Label title_label;
