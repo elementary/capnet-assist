@@ -40,6 +40,12 @@ add_custom_target(
         ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake
 )
 
+# CTest
+include (CTest)
+if (BUILD_TESTING)
+    add_test (NAME validate-desktop-file COMMAND desktop-file-validate ${CMAKE_BINARY_DIR}/data/org.pantheon.capnet-assist.desktop)
+endif ()
+
 #Here we add the src directory. CMake will look for the CMakeLists.txt in this folder
 #and work from there
 add_subdirectory (data)
