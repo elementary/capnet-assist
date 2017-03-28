@@ -43,7 +43,7 @@ add_custom_target(
 # CTest
 include (CTest)
 if (BUILD_TESTING)
-    add_test (NAME validate-desktop-file COMMAND desktop-file-validate ${CMAKE_BINARY_DIR}/data/org.pantheon.capnet-assist.desktop)
+    add_test (NAME validate-desktop-file COMMAND desktop-file-validate ${CMAKE_BINARY_DIR}/data/io.elementary.capnet-assist.desktop)
 endif ()
 
 #Here we add the src directory. CMake will look for the CMakeLists.txt in this folder

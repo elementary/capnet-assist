@@ -1,5 +1,5 @@
 <schemalist>
-  <schema path="/org/pantheon/capnet-assist/" id="org.pantheon.capnet-assist">
+  <schema path="/io/elementary/desktop/capnet-assist/" id="io.elementary.capnet-assist">
         <key name="enabled" type="b">
             <default>true</default>
             <summary>Whether the assistant should be enabled</summary>
