@@ -22,7 +22,7 @@ public class Captive.Application : Gtk.Application {
     private string? debug_url = null;
 
     public Application () {
-        Object (application_id: "org.pantheon.captive-login", flags: ApplicationFlags.HANDLES_COMMAND_LINE);
+        Object (application_id: "io.elementary.capnet-assist", flags: ApplicationFlags.HANDLES_COMMAND_LINE);
     }
 
     private bool is_captive_portal () {
