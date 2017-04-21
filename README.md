@@ -5,6 +5,16 @@ A small WebKit app that assists a user with login when a captive portal is detec
 
 ## Building, Testing, and Installation
 
+You'll need the following dependencies:
+* cmake
+* desktop-file-utils
+* libgcr-3-dev
+* libglib2.0-dev
+* libgranite-dev
+* libgtk-3-dev
+* libwebkit2gtk-4.0-dev
+* valac
+
 It's recommended to create a clean build environment
 
     mkdir build
