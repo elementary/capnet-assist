@@ -73,7 +73,6 @@ public class CaptiveLogin : Gtk.ApplicationWindow {
 
         add (notebook);
 
-//        set_default_size (680, 680);
         set_keep_above (true);
         skip_taskbar_hint = true;
         stick ();
