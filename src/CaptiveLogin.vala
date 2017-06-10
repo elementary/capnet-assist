@@ -31,6 +31,17 @@ public class CaptiveLogin : Gtk.ApplicationWindow {
 
     public CaptiveLogin (Gtk.Application app) {
         Object (application: app);
+
+        unowned Captive.Settings saved_state = Captive.Settings.get_default ();
+        set_default_size (saved_state.window_width, saved_state.window_height);
+
+        switch (saved_state.window_state) {
+            case Captive.Settings.WindowState.MAXIMIZED:
+                this.maximize ();
+                break;
+            default:
+                break;
+        }
     }
 
     construct {
@@ -62,7 +73,7 @@ public class CaptiveLogin : Gtk.ApplicationWindow {
 
         add (notebook);
 
-        set_default_size (1000, 680);
+//        set_default_size (680, 680);
         set_keep_above (true);
         skip_taskbar_hint = true;
         stick ();
@@ -184,5 +195,21 @@ public class CaptiveLogin : Gtk.ApplicationWindow {
         });
 
         show_all ();
+    }
+
+    public override bool delete_event (Gdk.EventAny event) {
+        int window_width;
+        int window_height;
+        get_size (out window_width, out window_height);
+        unowned Captive.Settings saved_state = Captive.Settings.get_default ();
+        saved_state.window_width = window_width;
+        saved_state.window_height = window_height;
+        if (is_maximized) {
+            saved_state.window_state = Captive.Settings.WindowState.MAXIMIZED;
+        } else {
+            saved_state.window_state = Captive.Settings.WindowState.NORMAL;
+        }
+
+        return false;
     }
 }
