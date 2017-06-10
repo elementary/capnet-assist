@@ -18,9 +18,25 @@
 */
 
 public class Captive.Settings : Granite.Services.Settings {
+	public enum WindowState {
+		NORMAL,
+		MAXIMIZED,
+		FULLSCREEN
+	}
+
+	public int window_width { get; set; }
+	public int window_height { get; set; }
+	public WindowState window_state { get; set; }
 	public bool enabled { get; set; }
 
+	private static Settings main_settings;
+    public static unowned Settings get_default () {
+        if (main_settings == null)
+            main_settings = new Settings ();
+        return main_settings;
+    }
+
 	public Settings () {
-		base ("org.pantheon.capnet-assist");
+		base ("io.elementary.capnet-assist.settings");
 	}
 }

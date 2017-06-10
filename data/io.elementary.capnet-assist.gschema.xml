@@ -1,5 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/io/elementary/desktop/capnet-assist/" id="io.elementary.capnet-assist">
+    <enum id="io.elementary.capnet-assist.windowstate">
+        <value value="0" nick="normal"/>
+        <value value="1" nick="maximized"/>
+    </enum>       
+    <schema path="/io/elementary/capnet-assist/settings/" id="io.elementary.capnet-assist.settings">
+        <key type="i" name="window-width">
+          <default>1000</default>
+          <summary>Window width</summary>
+          <description>Window width</description>
+        </key>
+        <key type="i" name="window-height">
+          <default>680</default>
+          <summary>Window height</summary>
+          <description>Window height</description>
+        </key>
+        <key enum="io.elementary.capnet-assist.windowstate" name="window-state">
+          <default>'normal'</default>
+          <summary>The saved state of the window</summary>
+          <description>The saved state of the window</description>
+        </key>
         <key name="enabled" type="b">
             <default>true</default>
             <summary>Whether the assistant should be enabled</summary>
