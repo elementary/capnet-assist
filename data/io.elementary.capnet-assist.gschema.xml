@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-    <enum id="io.elementary.capnet-assist.windowstate">
+    <enum id="io.elementary.desktop.capnet-assist.windowstate">
         <value value="0" nick="normal"/>
         <value value="1" nick="maximized"/>
     </enum>       
-    <schema path="/io/elementary/capnet-assist/settings/" id="io.elementary.capnet-assist.settings">
+    <schema path="/io/elementary/desktop/capnet-assist/" id="io.elementary.desktop.capnet-assist">
         <key type="i" name="window-width">
           <default>1000</default>
           <summary>Window width</summary>
@@ -15,7 +15,7 @@
           <summary>Window height</summary>
           <description>Window height</description>
         </key>
-        <key enum="io.elementary.capnet-assist.windowstate" name="window-state">
+        <key enum="io.elementary.desktop.capnet-assist.windowstate" name="window-state">
           <default>'normal'</default>
           <summary>The saved state of the window</summary>
           <description>The saved state of the window</description>
