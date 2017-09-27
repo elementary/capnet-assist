@@ -1,7 +1,7 @@
 #!/bin/sh -e
 # Script to dispatch NetworkManager events
 #
-# Runs captive-login helper on walled garden networks.
+# Runs io.elementary.capnet-assist helper on walled garden networks.
 # See NetworkManager(8) for further documentation of the dispatcher events.
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -28,7 +28,7 @@ start_browser() {
     wait_for_process nm-applet
 
     $logger "Running browser as '$user' with display '$display' to login in captive portal"
-    su "$user" -s /bin/sh -c "captive-login 2>/dev/null"
+    su "$user" -s /bin/sh -c "io.elementary.capnet-assist 2>/dev/null"
 }
 
 # Run the right scripts
