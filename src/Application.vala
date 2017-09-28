@@ -25,7 +25,7 @@ public class Captive.Application : Gtk.Application {
         Object (application_id: "io.elementary.capnet-assist", flags: ApplicationFlags.HANDLES_COMMAND_LINE);
     }
 
-    private bool is_captive_portal () {
+    private static bool is_captive_portal () {
         var network_monitor = NetworkMonitor.get_default ();
         return network_monitor.get_connectivity () == NetworkConnectivity.PORTAL;
     }
