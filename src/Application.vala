@@ -27,7 +27,7 @@ public class Captive.Application : Gtk.Application {
 
     private bool is_captive_portal () {
         var network_monitor = NetworkMonitor.get_default ();
-        return network_monitor.get_connectivity () = NetworkConnectivity.PORTAL;
+        return network_monitor.get_connectivity () == NetworkConnectivity.PORTAL;
     }
 
     public override void activate () {
