@@ -6,29 +6,24 @@ A small WebKit app that assists a user with login when a captive portal is detec
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
-* cmake
 * desktop-file-utils
 * libgcr-3-dev
 * libglib2.0-dev
 * libgranite-dev
 * libgtk-3-dev
 * libwebkit2gtk-4.0-dev
+* meson
 * valac
-
-It's recommended to create a clean build environment
-
-    mkdir build
-    cd build/
     
-Run `cmake` to configure the build environment and then `make all test` to build and run automated tests
+Run `meson` to configure the build environment and then `ninja test` to build and run automated tests
 
-    cmake -DCMAKE_INSTALL_PREFIX=/usr ..
-    make all test
+    meson build --prefix=/usr
+    ninja test
     
-To install, use `make install`, then execute with `captive-login`
+To install, use `ninja install`, then execute with `captive-login`
 
-    sudo make install
-    captive-login
+    sudo ninja install
+    io.elementary.capnet-assist
 
 ## Debugging
 
@@ -36,8 +31,8 @@ Set the environment variable `G_MESSAGES_DEBUG` to "all" to have the captive-log
 
 Use the flag `-f` to force the captive login window to show even if no captive portal is detected.
 
-    captive-login -f 
+    io.elementary.capnet-assist -f 
 
 Use the flag `-u` to direct the captive login window to a specific URL. This may not show a window without `-f` if no captive portal is detected.
 
-    captive-login -fu https://elementary.io
+    io.elementary.capnet-assist -fu https://elementary.io
