@@ -76,8 +76,8 @@ public class Captive.Application : Gtk.Application {
     }
 
     public static int main (string[] args) {
-        Environment.set_application_name (Constants.APP_NAME);
-        Environment.set_prgname (Constants.APP_NAME);
+        Environment.set_application_name ("captive-login");
+        Environment.set_prgname ("captive-login");
 
         var application = new Captive.Application ();
 
