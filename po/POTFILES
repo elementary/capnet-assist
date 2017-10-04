@@ -4,4 +4,3 @@ src/CertButton.vala
 src/CaptiveLogin.vala
 src/Application.vala
 data/io.elementary.capnet-assist.desktop
-
