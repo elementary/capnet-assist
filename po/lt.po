@@ -21,23 +21,24 @@ msgstr ""
 "X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
-#: src/CertButton.vala:45
+#: ../src/CertButton.vala:45
 msgid "Loading captive portal."
 msgstr "Įkeliamas belaisvis portalas."
 
-#: src/CertButton.vala:49
+#: ../src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
 msgstr "Puslapis yra pateikiamas per neapsaugotą ryšį."
 
-#: src/CertButton.vala:54
+#: ../src/CertButton.vala:54
 msgid "The page is served over a protected connection."
 msgstr "Puslapis yra pateikiamas per apsaugotą ryšį."
 
-#: src/CertButton.vala:59
+#: ../src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr "Kai kurie šio puslapio elementai yra pateikiami per neapsaugotą ryšį."
+msgstr ""
+"Kai kurie šio puslapio elementai yra pateikiami per neapsaugotą ryšį."
 
-#: src/CaptiveLogin.vala:50
+#: ../src/CaptiveLogin.vala:36
 msgid "Log in"
 msgstr "Prisijungti"
 
