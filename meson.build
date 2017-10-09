@@ -31,5 +31,5 @@ subdir('po')
 
 install_data(
     '90captive_portal_test',
-    install_dir: join_paths('/etc', 'NetworkManager', 'dispatcher.d')
+    install_dir: join_paths(get_option('sysconfdir'), 'NetworkManager', 'dispatcher.d')
 )
