@@ -1,4 +1,5 @@
-project('io.elementary.capnet-assist', 'vala', 'c')
+project('io.elementary.capnet-assist', 'vala', 'c',
+        default_options: 'sysconfdir=/etc')
 
 i18n = import('i18n')
 
