@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-04 11:12+0200\n"
-"PO-Revision-Date: 2017-11-07 06:59+0000\n"
+"PO-Revision-Date: 2017-12-27 04:46+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/desktop/capnet-"
 "assist/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.16\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/CertButton.vala:45
@@ -30,7 +30,7 @@ msgstr "보호되지 않은 연결을 통해 제공됩니다."
 
 #: src/CertButton.vala:54
 msgid "The page is served over a protected connection."
-msgstr "보호 된 연결을 통해 제공됩니다."
+msgstr "보호된 연결을 통해 제공됩니다."
 
 #: src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
