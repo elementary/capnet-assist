@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-04 11:12+0200\n"
-"PO-Revision-Date: 2017-10-04 15:03+0000\n"
+"PO-Revision-Date: 2017-11-11 08:45+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/desktop/capnet-"
 "assist/pl/>\n"
@@ -44,11 +44,11 @@ msgstr "Zaloguj"
 
 #: data/io.elementary.capnet-assist.desktop:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Asystent uwierzytelniania sieci"
 
 #: data/io.elementary.capnet-assist.desktop:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Połącz z portalami uwierzytelniania sieci"
 
 #: data/io.elementary.capnet-assist.desktop:6
 msgid "preferences-system-network"
