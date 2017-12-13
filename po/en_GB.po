@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-13 03:46+0000\n"
-"PO-Revision-Date: 2017-12-13 03:46+0000\n"
+"PO-Revision-Date: 2017-12-14 00:03+0000\n"
 "Last-Translator: Joe Osborne <reachjoe.o@gmail.com>\n"
 "Language-Team: English (United Kingdom) "
 "<https://weblate.elementary.io/projects/desktop/capnet-assist/en_GB/>\n"
@@ -32,7 +32,7 @@ msgstr "Some elements of this page are served over an unprotected connection."
 
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
-msgstr "Log In"
+msgstr "Log in"
 
 #: data/io.elementary.capnet-assist.desktop:3
 msgid "Captive Network Assistant"
