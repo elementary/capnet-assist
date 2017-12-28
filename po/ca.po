@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-04 11:12+0200\n"
-"PO-Revision-Date: 2017-12-28 10:11+0000\n"
+"PO-Revision-Date: 2017-12-29 00:09+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/desktop"
 "/capnet-assist/ca/>\n"
@@ -35,7 +35,7 @@ msgstr "La pàgina s'ofereix per una connexió amb protecció."
 #: src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
-"Alguns elements d'aquesta pàgina s'ofereixen sobre una connexió sense "
+"Alguns elements d'aquesta pàgina s'ofereixen per una connexió sense "
 "protecció."
 
 #: src/CaptiveLogin.vala:50
