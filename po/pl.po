@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-04 11:12+0200\n"
-"PO-Revision-Date: 2017-11-11 08:45+0000\n"
-"Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
+"PO-Revision-Date: 2018-01-18 00:00+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/desktop/capnet-"
 "assist/pl/>\n"
 "Language: pl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.16\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/CertButton.vala:45
@@ -40,7 +40,7 @@ msgstr ""
 
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
-msgstr "Zaloguj"
+msgstr "Zaloguj się"
 
 #: data/io.elementary.capnet-assist.desktop:3
 msgid "Captive Network Assistant"
