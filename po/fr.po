@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-04 11:12+0200\n"
-"PO-Revision-Date: 2017-10-04 15:50+0000\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-10-10 12:53-0700\n"
+"PO-Revision-Date: 2017-04-14 23:19+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/desktop/capnet-"
 "assist/fr/>\n"
@@ -20,36 +20,24 @@ msgstr ""
 "X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
-#: src/CertButton.vala:45
+#: ../src/CertButton.vala:45
 msgid "Loading captive portal."
 msgstr "Chargement du portail."
 
-#: src/CertButton.vala:49
+#: ../src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
 msgstr "Cette page est affichée à partir d'une connexion non sécurisée."
 
-#: src/CertButton.vala:54
+#: ../src/CertButton.vala:54
 msgid "The page is served over a protected connection."
 msgstr "Cette page est affichée à partir d'une connexion sécurisée."
 
-#: src/CertButton.vala:59
+#: ../src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
 "Certains éléments de cette page sont affichés à partir d'une connexion non "
 "sécurisée."
 
-#: src/CaptiveLogin.vala:50
+#: ../src/CaptiveLogin.vala:36
 msgid "Log in"
 msgstr "Connexion"
-
-#: data/io.elementary.capnet-assist.desktop:3
-msgid "Captive Network Assistant"
-msgstr "Assistant de portail captif"
-
-#: data/io.elementary.capnet-assist.desktop:5
-msgid "Connect to captive network portals"
-msgstr "Se connecter à un portail"
-
-#: data/io.elementary.capnet-assist.desktop:6
-msgid "preferences-system-network"
-msgstr "preferences-system-network"
