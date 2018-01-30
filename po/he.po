@@ -19,19 +19,19 @@ msgstr ""
 
 #: ../src/CertButton.vala:45
 msgid "Loading captive portal."
-msgstr ""
+msgstr "שובה הרשת נטען."
 
 #: ../src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
-msgstr ""
+msgstr "העמוד הזה מוגש דרך חיבור בלתי מוגן."
 
 #: ../src/CertButton.vala:54
 msgid "The page is served over a protected connection."
-msgstr ""
+msgstr "העמוד מוגש דרך חיבור מוגן."
 
 #: ../src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr ""
+msgstr "חלק מהרכיבים שבעמוד זה מוגשים דרך חיבור לא מוגן."
 
 #: ../src/CaptiveLogin.vala:36
 msgid "Log in"

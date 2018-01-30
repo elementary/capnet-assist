@@ -14,8 +14,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/CertButton.vala:45
 msgid "Loading captive portal."
@@ -23,16 +24,16 @@ msgstr "Càrrega del portal captiu."
 
 #: ../src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
-msgstr "La pàgina s'ofereix sobre una connexió sense protecció."
+msgstr "La pàgina s'ofereix per una connexió sense protecció."
 
 #: ../src/CertButton.vala:54
 msgid "The page is served over a protected connection."
-msgstr "La pàgina s'ofereix sobre una connexió amb protecció."
+msgstr "La pàgina s'ofereix per una connexió amb protecció."
 
 #: ../src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
-"Alguns elements d'aquesta pàgina s'ofereixen sobre una connexió sense "
+"Alguns elements d'aquesta pàgina s'ofereixen per una connexió sense "
 "protecció."
 
 #: ../src/CaptiveLogin.vala:36

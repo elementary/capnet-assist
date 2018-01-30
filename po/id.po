@@ -18,19 +18,21 @@ msgstr ""
 
 #: ../src/CertButton.vala:45
 msgid "Loading captive portal."
-msgstr ""
+msgstr "Memuat captive portal."
 
 #: ../src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
-msgstr ""
+msgstr "Halaman ini disajikan lewat sambungan yang tidak terlindungi."
 
 #: ../src/CertButton.vala:54
 msgid "The page is served over a protected connection."
-msgstr ""
+msgstr "Halaman ini disajikan lewat sambungan yang terlindungi."
 
 #: ../src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
+"Beberapa elemen dari halaman ini disajikan lewat sambungan yang tidak "
+"terlindungi."
 
 #: ../src/CaptiveLogin.vala:36
 msgid "Log in"
