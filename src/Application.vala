@@ -25,35 +25,9 @@ public class Captive.Application : Gtk.Application {
         Object (application_id: "io.elementary.capnet-assist", flags: ApplicationFlags.HANDLES_COMMAND_LINE);
     }
 
-    private bool is_captive_portal () {
+    private static bool is_captive_portal () {
         var network_monitor = NetworkMonitor.get_default ();
-
-        // No connection is available at the moment, don't bother trying the
-        // connectivity check
-        if (network_monitor.get_connectivity () != NetworkConnectivity.FULL) {
-            return true;
-        }
-
-        var page = "http://connectivitycheck.android.com/generate_204";
-        debug ("Getting 204 page");
-
-        var session = new Soup.Session ();
-        var message = new Soup.Message ("GET", page);
-
-        session.send_message (message);
-
-        debug ("Return code: %u", message.status_code);
-
-        /*
-         * If there is an active connection to the internet, this will
-         * successfully connect to the connectivity checker and return 204.
-         * If there is no internet connection (including no captive portal), this
-         * request will fail and libsoup will return a transport failure status
-         * code (<100).
-         * Otherwise, libsoup will resolve the redirect to the captive portal,
-         * which will return status code 200.
-         */
-        return message.status_code == 200;
+        return network_monitor.get_connectivity () == NetworkConnectivity.PORTAL;
     }
 
     public override void activate () {
