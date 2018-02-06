@@ -45,17 +45,17 @@ public class CertButton : Gtk.ToggleButton {
                     tooltip = _("Loading captive portal.");
                     break;
                 case Security.NONE:
-                    icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
+                    icon = new ThemedIcon ("security-low-symbolic");
                     tooltip = _("The page is served over an unprotected connection.");
                     break;
 
                 case Security.SECURE:
-                    icon = new ThemedIcon.from_names ({"channel-secure-symbolic", "security-high"});
+                    icon = new ThemedIcon ("security-high-symbolic");
                     tooltip = _("The page is served over a protected connection.");
                     break;
 
                 case Security.MIXED_CONTENT:
-                    icon = new ThemedIcon.from_names ({"channel-insecure-symbolic", "security-low"});
+                    icon = new ThemedIcon ("security-medium-symbolic");
                     tooltip = _("Some elements of this page are served over an unprotected connection.");
                     break;
 
