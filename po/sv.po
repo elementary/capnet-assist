@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-10 12:53-0700\n"
-"PO-Revision-Date: 2018-03-24 19:24+0000\n"
+"PO-Revision-Date: 2018-03-25 00:08+0000\n"
 "Last-Translator: H. Gerhard. A <henrik.ahlkvist@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/desktop"
 "/capnet-assist/sv/>\n"
@@ -25,15 +25,15 @@ msgstr "Laddar captive portal."
 
 #: ../src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
-msgstr "Sidan laddas genom en osäker uppkoppling."
+msgstr "Sidan laddas över en osäker uppkoppling."
 
 #: ../src/CertButton.vala:54
 msgid "The page is served over a protected connection."
-msgstr "Sidan hämtas över en säker anslutning."
+msgstr "Sidan hämtas över en säker uppkoppling."
 
 #: ../src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr "En del av sidan hämtas över en osäker uppkoppling."
+msgstr "En del av sidan hämtas genom en osäker uppkoppling."
 
 #: ../src/CaptiveLogin.vala:36
 msgid "Log in"
