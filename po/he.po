@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Hebrew (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-03 12:17+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2018-06-18 00:04+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/desktop/capnet-"
 "assist/he/>\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: src/CertButton.vala:45
 msgid "Loading captive portal."
-msgstr "שובה הרשת נטען."
+msgstr "שובה רשת נטען."
 
 #: src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
