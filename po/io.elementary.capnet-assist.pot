@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the io.elementary.capnet-assist package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: io.elementary.capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-10 12:53-0700\n"
+"POT-Creation-Date: 2018-06-27 10:34-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,34 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/CertButton.vala:45
+#: src/CertButton.vala:45
 msgid "Loading captive portal."
 msgstr ""
 
-#: ../src/CertButton.vala:49
+#: src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
 msgstr ""
 
-#: ../src/CertButton.vala:54
+#: src/CertButton.vala:54
 msgid "The page is served over a protected connection."
 msgstr ""
 
-#: ../src/CertButton.vala:59
+#: src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
 
-#: ../src/CaptiveLogin.vala:36
+#: src/CaptiveLogin.vala:50
 msgid "Log in"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.desktop:3
+msgid "Captive Network Assistant"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.desktop:5
+msgid "Connect to captive network portals"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.desktop:6
+msgid "preferences-system-network"
 msgstr ""
