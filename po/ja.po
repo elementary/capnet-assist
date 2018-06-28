@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 10:34-0700\n"
-"PO-Revision-Date: 2018-05-01 00:03+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"PO-Revision-Date: 2018-06-29 00:04+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist/ja/>\n"
 "Language: ja\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/CertButton.vala:45
@@ -42,11 +42,11 @@ msgstr "ログイン"
 
 #: data/io.elementary.capnet-assist.desktop:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "キャプティブネットワークアシスタント"
 
 #: data/io.elementary.capnet-assist.desktop:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "キャプティブネットワークポータルに接続します"
 
 #: data/io.elementary.capnet-assist.desktop:6
 msgid "preferences-system-network"
