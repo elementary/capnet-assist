@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 10:34-0700\n"
-"PO-Revision-Date: 2018-06-30 00:02+0000\n"
+"PO-Revision-Date: 2018-07-04 14:55+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist/cs/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/CertButton.vala:45
 msgid "Loading captive portal."
-msgstr "Načítám captive portál."
+msgstr "Načítám portál chráněné sítě."
 
 #: src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
@@ -42,11 +42,11 @@ msgstr "Přihlásit se"
 
 #: data/io.elementary.capnet-assist.desktop:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Portál chráněné sítě"
 
 #: data/io.elementary.capnet-assist.desktop:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Připojit k portálům chráněné sítě"
 
 #: data/io.elementary.capnet-assist.desktop:6
 msgid "preferences-system-network"
