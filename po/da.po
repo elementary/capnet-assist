@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 10:34-0700\n"
-"PO-Revision-Date: 2018-06-28 00:10+0000\n"
+"PO-Revision-Date: 2018-06-28 17:00+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist/da/>\n"
@@ -41,11 +41,11 @@ msgstr "Log ind"
 
 #: data/io.elementary.capnet-assist.desktop:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Captive Netværksassistent"
 
 #: data/io.elementary.capnet-assist.desktop:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Opret forbindelse til captive netværksportaler"
 
 #: data/io.elementary.capnet-assist.desktop:6
 msgid "preferences-system-network"
