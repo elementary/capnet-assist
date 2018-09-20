@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 10:34-0700\n"
-"PO-Revision-Date: 2018-08-29 00:03+0000\n"
+"PO-Revision-Date: 2018-09-21 00:06+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist/de/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/CertButton.vala:45
 msgid "Loading captive portal."
-msgstr "Captive-Portal wird geladen."
+msgstr "Laden des Captive-Portals."
 
 #: src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
@@ -44,11 +44,11 @@ msgstr "Anmelden"
 
 #: data/io.elementary.capnet-assist.desktop:3
 msgid "Captive Network Assistant"
-msgstr "Captive Network Assistant"
+msgstr "Assistent für unternehmenseigenes Netzwerk"
 
 #: data/io.elementary.capnet-assist.desktop:5
 msgid "Connect to captive network portals"
-msgstr "Verbindung zu firmeneigenen Netzwerkportalen"
+msgstr "Verbindung zu unternehmenseigenen Netzwerkportalen herstellen"
 
 #: data/io.elementary.capnet-assist.desktop:6
 msgid "preferences-system-network"
