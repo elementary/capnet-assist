@@ -1,3 +1,9 @@
+capnet-assist (2.2.1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Wed, 03 Oct 2018 06:59:05 -0500
+
 capnet-assist (0.2.2) bionic; urgency=medium
 
   * New upstream release.
