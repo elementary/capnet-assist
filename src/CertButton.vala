@@ -120,6 +120,9 @@ public class CertButton : Gtk.ToggleButton {
         primary_text.get_style_context ().add_class ("h3");
         primary_text.halign = Gtk.Align.START;
         primary_text.margin_start = 9;
+        primary_text.max_width_chars = 70;
+        primary_text.wrap = true;
+        primary_text.wrap_mode = Pango.WrapMode.WORD_CHAR;
 
         var secondary_text = new Gtk.Label (get_tooltip_text ());
         secondary_text.halign = Gtk.Align.START;
