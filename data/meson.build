@@ -13,6 +13,15 @@ desktop_file = i18n.merge_file(
     type: 'desktop'
 )
 
+i18n.merge_file(
+    'appdata',
+    input: meson.project_name() + '.appdata.xml.in',
+    output: meson.project_name() + '.appdata.xml',
+    install: true,
+    install_dir: join_paths(get_option('datadir'), 'metainfo'),
+    po_dir: join_paths(meson.source_root(), 'po', 'extra')
+)
+
 test (
     'Validate desktop file',
     find_program('desktop-file-validate'),
