@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-12 13:54-0700\n"
-"PO-Revision-Date: 2018-10-12 22:45+0000\n"
+"PO-Revision-Date: 2018-10-13 00:09+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "desktop/capnet-assist-extra/nb/>\n"
@@ -31,13 +31,14 @@ msgid "Connect to captive network portals"
 msgstr "Koble til nettverkfangstportaler"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:11
+#, fuzzy
 msgid ""
 "Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
-"Logg inn i fangstportaler—som Wi-Fi-nettverk på kaféer, luftplasser, og tog. "
-"Fangstportalassistenten åpnes automatisk for å koble deg til."
+"Logg inn i inngangsportaler—som noen Wi-Fi-nettverk på kaféer, luftplasser, "
+"og tog. Fangstportalassistenten åpnes automatisk for å koble deg til."
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:50
 msgid "elementary, Inc."
