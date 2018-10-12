@@ -1,31 +1,52 @@
-# Slovenian translations for extra package.
-# Copyright (C) 2018 THE extra'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the extra package.
-# Automatically generated, 2018.
+# Slovenian translation for capnet-assist
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the capnet-assist package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: extra\n"
+"Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 12:56-0700\n"
-"PO-Revision-Date: 2018-06-27 12:56-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2018-10-12 10:34-0700\n"
+"PO-Revision-Date: 2018-08-22 00:08+0000\n"
+"Last-Translator: Jernej Virag <jernej@virag.si>\n"
+"Language-Team: Slovenian <https://weblate.elementary.io/projects/desktop/"
+"capnet-assist/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 3.0.1\n"
+"X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: data/io.elementary.capnet-assist.desktop:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Pomočnik za internetno povezavo"
 
 #: data/io.elementary.capnet-assist.desktop:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Poveži se na omrežje preko portala"
 
 #: data/io.elementary.capnet-assist.desktop:6
 msgid "preferences-system-network"
 msgstr ""
+
+#~ msgid "Loading captive portal."
+#~ msgstr "Nalagam portal."
+
+#~ msgid "The page is served over an unprotected connection."
+#~ msgstr "Ta stran je prenešena preko nezaščitene povezave."
+
+#~ msgid "The page is served over a protected connection."
+#~ msgstr "Ta stran je prenešena preko zaščitene povezave."
+
+#~ msgid ""
+#~ "Some elements of this page are served over an unprotected connection."
+#~ msgstr ""
+#~ "Nekateri elementi na tej strani so bili prenešeni preko nezaščitene "
+#~ "povezave."
+
+#~ msgid "Log in"
+#~ msgstr "Prijava"

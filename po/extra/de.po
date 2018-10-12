@@ -1,30 +1,51 @@
-# German translations for extra package.
-# Copyright (C) 2018 THE extra'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the extra package.
-# Automatically generated, 2018.
+# German translation for capnet-assist
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the capnet-assist package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: extra\n"
+"Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 12:56-0700\n"
-"PO-Revision-Date: 2018-06-27 12:56-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2018-10-12 10:34-0700\n"
+"PO-Revision-Date: 2018-09-21 00:06+0000\n"
+"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
+"Language-Team: German <https://weblate.elementary.io/projects/desktop/capnet-"
+"assist/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
+"X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: data/io.elementary.capnet-assist.desktop:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Assistent für unternehmenseigenes Netzwerk"
 
 #: data/io.elementary.capnet-assist.desktop:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Verbindung zu unternehmenseigenen Netzwerkportalen herstellen"
 
 #: data/io.elementary.capnet-assist.desktop:6
 msgid "preferences-system-network"
 msgstr ""
+
+#~ msgid "Loading captive portal."
+#~ msgstr "Laden des Captive-Portals."
+
+#~ msgid "The page is served over an unprotected connection."
+#~ msgstr "Diese Seite wird über eine ungeschützte Verbindung bereitgestellt."
+
+#~ msgid "The page is served over a protected connection."
+#~ msgstr "Diese Seite wird über eine geschützte Verbindung bereitgestellt."
+
+#~ msgid ""
+#~ "Some elements of this page are served over an unprotected connection."
+#~ msgstr ""
+#~ "Manche Elemente dieser Seite werden über eine ungeschützte Verbindung "
+#~ "bereitgestellt."
+
+#~ msgid "Log in"
+#~ msgstr "Anmelden"

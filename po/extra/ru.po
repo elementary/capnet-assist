@@ -1,31 +1,51 @@
-# Russian translations for extra package.
-# Copyright (C) 2018 THE extra'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the extra package.
-# Automatically generated, 2018.
+# Russian translation for capnet-assist
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the capnet-assist package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: extra\n"
+"Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 12:56-0700\n"
-"PO-Revision-Date: 2018-06-27 12:56-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2018-10-12 10:34-0700\n"
+"PO-Revision-Date: 2018-06-30 13:22+0000\n"
+"Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
+"Language-Team: Russian <https://weblate.elementary.io/projects/desktop/"
+"capnet-assist/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
+"X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: data/io.elementary.capnet-assist.desktop:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Ассистент сервиса авторизации в публичной сети"
 
 #: data/io.elementary.capnet-assist.desktop:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Подключение к сервису авторизации в публичной сети"
 
 #: data/io.elementary.capnet-assist.desktop:6
 msgid "preferences-system-network"
-msgstr ""
+msgstr "preferences-system-network"
+
+#~ msgid "Loading captive portal."
+#~ msgstr "Загрузка сервиса авторизации в публичной сети."
+
+#~ msgid "The page is served over an unprotected connection."
+#~ msgstr "Эта страница использует незащищённое соединение."
+
+#~ msgid "The page is served over a protected connection."
+#~ msgstr "Эта страница использует защищённое соединение."
+
+#~ msgid ""
+#~ "Some elements of this page are served over an unprotected connection."
+#~ msgstr ""
+#~ "Некоторые элементы этой страницы используют незащищённое соединение."
+
+#~ msgid "Log in"
+#~ msgstr "Войти"
