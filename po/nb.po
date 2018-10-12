@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-12 13:53-0700\n"
-"PO-Revision-Date: 2018-10-09 18:10+0000\n"
-"Last-Translator: Nils K <slx@nilsk.net>\n"
+"PO-Revision-Date: 2018-10-13 00:09+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "desktop/capnet-assist/nb/>\n"
 "Language: nb\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/CertButton.vala:45
 msgid "Loading captive portal."
-msgstr "Laster inn landingspåloggingsside."
+msgstr "Laster inn inngangsportal."
 
 #: src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
