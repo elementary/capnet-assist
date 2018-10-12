@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:34-0700\n"
+"POT-Creation-Date: 2018-10-12 10:46-0700\n"
 "PO-Revision-Date: 2018-10-12 00:04+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/desktop/"
@@ -33,21 +33,17 @@ msgstr "हे पान एका सुरक्षित कनेक्श�
 
 #: src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr ""
-"या पानावरील काही भाग एका असुरक्षित कनेक्शन वरून आपल्यासाठी आणले जात आहेत."
+msgstr "या पानावरील काही भाग एका असुरक्षित कनेक्शन वरून आपल्यासाठी आणले जात आहेत."
 
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
 msgstr "लॉग इन"
 
-#: data/io.elementary.capnet-assist.desktop:3
-msgid "Captive Network Assistant"
-msgstr "कॅप्टिव्ह नेटवर्क सहाय्यक"
+#~ msgid "Captive Network Assistant"
+#~ msgstr "कॅप्टिव्ह नेटवर्क सहाय्यक"
 
-#: data/io.elementary.capnet-assist.desktop:5
-msgid "Connect to captive network portals"
-msgstr "कॅप्टिव्ह पोर्टलला जोडा"
+#~ msgid "Connect to captive network portals"
+#~ msgstr "कॅप्टिव्ह पोर्टलला जोडा"
 
-#: data/io.elementary.capnet-assist.desktop:6
-msgid "preferences-system-network"
-msgstr "preferences-system-network"
+#~ msgid "preferences-system-network"
+#~ msgstr "preferences-system-network"
