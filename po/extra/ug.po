@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-12 10:34-0700\n"
+"POT-Creation-Date: 2018-10-12 13:54-0700\n"
 "PO-Revision-Date: 2016-12-18 03:50+0000\n"
 "Last-Translator: aliyusup <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -18,15 +18,28 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: data/io.elementary.capnet-assist.desktop:3
+#: data/io.elementary.capnet-assist.appdata.xml.in:8
+#: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
 msgstr ""
 
-#: data/io.elementary.capnet-assist.desktop:5
+#: data/io.elementary.capnet-assist.appdata.xml.in:9
+#: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
 msgstr ""
 
-#: data/io.elementary.capnet-assist.desktop:6
+#: data/io.elementary.capnet-assist.appdata.xml.in:11
+msgid ""
+"Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
+"trains—with ease. Captive Network Assistant automatically opens to help you "
+"get connected."
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:50
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/io.elementary.capnet-assist.desktop.in:6
 msgid "preferences-system-network"
 msgstr ""
 
