@@ -3,6 +3,8 @@
 
 Log into captive portals—like Wi-Fi networks at coffee shops, airports, and trains—with ease. Captive Network Assistant automatically opens to help you get connected.
 
+![Screenshot](https://raw.github.com/elementary/capnet-assist/master/data/screenshot.png)
+
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
