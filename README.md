@@ -1,7 +1,7 @@
 # Captive Portal Assistant
 [![l10n](https://i18n.elementary.io/widgets/desktop/capnet-assist/svg-badge.svg)](https://i18n.elementary.io/projects/desktop/capnet-assist)
 
-A small WebKit app that assists a user with login when a captive portal is detected.
+Log into captive portals—like Wi-Fi networks at coffee shops, airports, and trains—with ease. Captive Network Assistant automatically opens to assist with logging in.
 
 ## Building, Testing, and Installation
 
