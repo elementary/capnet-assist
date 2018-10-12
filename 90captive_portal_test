@@ -6,15 +6,17 @@
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
-if [ -x "/usr/bin/logger" ]; then
-    logger="/usr/bin/logger -s -t CapNetAssist"
-else
-    logger=":"
-fi
+msg() {
+    if [ -n "$(command -v logger)" ]; then
+        logger -s -t io.elementary.capnet-assist $@ || :
+    fi
+}
 
 wait_for_process() {
-    PNAME=$1
-    while [ -z "$(/usr/bin/pgrep $PNAME)" ]; do
+    local process="$1"
+    # timeout after 90 seconds
+    for t in $(seq 1 30); do
+        [ -z "$(pgrep "$process")" ] || return
         sleep 3;
     done
 }
@@ -24,26 +26,21 @@ start_browser() {
     local user="$1"
     local display="$2"
 
-    export DISPLAY="$display"
     wait_for_process nm-applet
 
-    $logger "Running browser as '$user' with display '$display' to login in captive portal"
-    su "$user" -s /bin/sh -c "io.elementary.capnet-assist 2>/dev/null"
+    export DISPLAY="$display"
+
+    msg -p user.notice "starting browser for user: '$user', with display: '$display'"
+    runuser -u "$user" -- io.elementary.capnet-assist 2>/dev/null || \
+    msg -p user.err "browser failed for user: '$user', with display: '$display'"
 }
 
-# Run the right scripts
-case "$2" in
-    up|vpn-up)
-    $logger -p user.debug "DetectCaptivePortal script triggered"
+[ "$2" = "connectivity-change" -a "$CONNECTIVITY_STATE" = "portal" ] || exit 0
 
-    # Match 2nd column of who's output with ' :[at least one digit] '
-    who | awk '$2 ~ /:[0-9]+/ { print $1 " " $2; };' | \
-    while read user display; do
-        start_browser $user $display || $logger -p user.err "failed for user: '$user' display: '$display')"
-    done
-    ;;
-    *)
-    # In a down phase
-    exit 0
-    ;;
-esac
+msg -p user.debug "captive portal detected on interface: '$1'"
+
+# Match 2nd column of who's output with ' :[at least one digit] '
+who | awk '$2 ~ /:[0-9]+/ { print $1 " " $2; };' | \
+while read user display; do
+    start_browser "$user" "$display"
+done
