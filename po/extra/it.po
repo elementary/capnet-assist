@@ -1,0 +1,51 @@
+# Italian translation for capnet-assist
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the capnet-assist package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: capnet-assist\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-12 10:34-0700\n"
+"PO-Revision-Date: 2018-09-06 04:30+0000\n"
+"Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
+"Language-Team: Italian <https://weblate.elementary.io/projects/desktop/"
+"capnet-assist/it/>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
+"X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
+
+#: data/io.elementary.capnet-assist.desktop:3
+msgid "Captive Network Assistant"
+msgstr "Assistente Captive Network"
+
+#: data/io.elementary.capnet-assist.desktop:5
+msgid "Connect to captive network portals"
+msgstr "Collegarsi a captive portal di rete"
+
+#: data/io.elementary.capnet-assist.desktop:6
+msgid "preferences-system-network"
+msgstr "preferences-system-network"
+
+#~ msgid "Loading captive portal."
+#~ msgstr "Caricamento captive portal."
+
+#~ msgid "The page is served over an unprotected connection."
+#~ msgstr "La pagina è servita tramite una connessione non protetta."
+
+#~ msgid "The page is served over a protected connection."
+#~ msgstr "La pagina è servita tramite una connessione protetta."
+
+#~ msgid ""
+#~ "Some elements of this page are served over an unprotected connection."
+#~ msgstr ""
+#~ "Alcuni elementi di questa pagina sono serviti su una connessione non "
+#~ "protetta."
+
+#~ msgid "Log in"
+#~ msgstr "Accedi"

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Free Wi-Fi at Delish</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <style>
+      body {
+        align-items: center;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("https://images.unsplash.com/photo-1515215316771-2742baa337f4");
+        background-position: 50% 85%;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        justify-content: center;
+      }
+
+      button {
+        background: #3a9104;
+        border: none;
+        border-radius: 99px;
+        color: #fff;
+        font-size: 16px;
+        padding: 0.5em 1em;
+      }
+
+      h2,
+      .fas {
+        color: #3a9104;
+      }
+
+      h2 + p {
+        margin-block-end: 0;
+      }
+
+      input {
+        width: calc(100% - 24px);
+        padding: 6px;
+        margin-bottom: 6px;
+      }
+
+      p + p {
+        margin-block-start: 0;
+      }
+
+      p.small {
+        font-size: 80%;
+      }
+
+      .dialog {
+        background: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        padding: 24px;
+        text-align: center;
+        width: 320px;
+      }
+    </style>
+  </head>
+</html>
+<body>
+  <div class="dialog">
+    <i class="fas fa-coffee fa-4x"></i>
+    <h2>Wi-Fi + Coffee = 💚</h2>
+    <p>Welcome to Delish!</p>
+    <p>Log on to our network once, and this device will automatically connect at participating Delish® stores everywhere you go.</p>
+    <input placeholder="First"></input>
+    <input placeholder="Last"></input>
+    <input placeholder="Email Address"></input>
+    <p class="small">By accepting, I agree to receive emails about Delish news, promotions, and offers.</p>
+    <button>Accept & Connect</button>
+  </div>
+</body>

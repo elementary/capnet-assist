@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:34-0700\n"
+"POT-Creation-Date: 2018-10-12 10:46-0700\n"
 "PO-Revision-Date: 2018-08-12 12:01+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
@@ -40,14 +40,11 @@ msgstr "此页面中的某些元素来自未受保护的连接。"
 msgid "Log in"
 msgstr "登录"
 
-#: data/io.elementary.capnet-assist.desktop:3
-msgid "Captive Network Assistant"
-msgstr "网络认证助手"
+#~ msgid "Captive Network Assistant"
+#~ msgstr "网络认证助手"
 
-#: data/io.elementary.capnet-assist.desktop:5
-msgid "Connect to captive network portals"
-msgstr "连接到网络认证界面"
+#~ msgid "Connect to captive network portals"
+#~ msgstr "连接到网络认证界面"
 
-#: data/io.elementary.capnet-assist.desktop:6
-msgid "preferences-system-network"
-msgstr "设置-系统-网络"
+#~ msgid "preferences-system-network"
+#~ msgstr "设置-系统-网络"

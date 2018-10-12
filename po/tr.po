@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:34-0700\n"
+"POT-Creation-Date: 2018-10-12 10:46-0700\n"
 "PO-Revision-Date: 2018-08-31 00:04+0000\n"
 "Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/desktop/"
@@ -41,14 +41,5 @@ msgstr ""
 msgid "Log in"
 msgstr "Giriş yap"
 
-#: data/io.elementary.capnet-assist.desktop:3
-msgid "Captive Network Assistant"
-msgstr ""
-
-#: data/io.elementary.capnet-assist.desktop:5
-msgid "Connect to captive network portals"
-msgstr ""
-
-#: data/io.elementary.capnet-assist.desktop:6
-msgid "preferences-system-network"
-msgstr "tercihler-sistem-ağ"
+#~ msgid "preferences-system-network"
+#~ msgstr "tercihler-sistem-ağ"

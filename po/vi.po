@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vietnamese (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:34-0700\n"
+"POT-Creation-Date: 2018-10-12 10:46-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/desktop/"
@@ -35,14 +35,11 @@ msgstr ""
 msgid "Log in"
 msgstr "Đăng nhập"
 
-#: data/io.elementary.capnet-assist.desktop:3
-msgid "Captive Network Assistant"
-msgstr "Trợ lý mạng lưu động"
+#~ msgid "Captive Network Assistant"
+#~ msgstr "Trợ lý mạng lưu động"
 
-#: data/io.elementary.capnet-assist.desktop:5
-msgid "Connect to captive network portals"
-msgstr "Kết nối với các cổng mạng lưu động"
+#~ msgid "Connect to captive network portals"
+#~ msgstr "Kết nối với các cổng mạng lưu động"
 
-#: data/io.elementary.capnet-assist.desktop:6
-msgid "preferences-system-network"
-msgstr "cài đặt-hệ thống-mạng"
+#~ msgid "preferences-system-network"
+#~ msgstr "cài đặt-hệ thống-mạng"

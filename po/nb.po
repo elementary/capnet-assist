@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:34-0700\n"
-"PO-Revision-Date: 2018-07-18 00:05+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"POT-Creation-Date: 2018-10-12 10:46-0700\n"
+"PO-Revision-Date: 2018-10-09 18:10+0000\n"
+"Last-Translator: Nils K <slx@nilsk.net>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "desktop/capnet-assist/nb/>\n"
 "Language: nb\n"
@@ -40,15 +40,11 @@ msgstr "Noen elementer på denne siden betjenes over en ubeskyttet tilkobling."
 msgid "Log in"
 msgstr "Logg inn"
 
-#: data/io.elementary.capnet-assist.desktop:3
-#, fuzzy
-msgid "Captive Network Assistant"
-msgstr "Assistent for nettverkfangstportaler"
+#~ msgid "Captive Network Assistant"
+#~ msgstr "Assistent for nettverkfangstportaler"
 
-#: data/io.elementary.capnet-assist.desktop:5
-msgid "Connect to captive network portals"
-msgstr "Koble til nettverkfangstportaler"
+#~ msgid "Connect to captive network portals"
+#~ msgstr "Koble til nettverkfangstportaler"
 
-#: data/io.elementary.capnet-assist.desktop:6
-msgid "preferences-system-network"
-msgstr "innstillinger-system-nettverk"
+#~ msgid "preferences-system-network"
+#~ msgstr "innstillinger-system-nettverk"

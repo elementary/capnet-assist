@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:34-0700\n"
+"POT-Creation-Date: 2018-10-12 10:46-0700\n"
 "PO-Revision-Date: 2018-09-06 04:30+0000\n"
 "Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/desktop/"
@@ -42,14 +42,11 @@ msgstr ""
 msgid "Log in"
 msgstr "Accedi"
 
-#: data/io.elementary.capnet-assist.desktop:3
-msgid "Captive Network Assistant"
-msgstr "Assistente Captive Network"
+#~ msgid "Captive Network Assistant"
+#~ msgstr "Assistente Captive Network"
 
-#: data/io.elementary.capnet-assist.desktop:5
-msgid "Connect to captive network portals"
-msgstr "Collegarsi a captive portal di rete"
+#~ msgid "Connect to captive network portals"
+#~ msgstr "Collegarsi a captive portal di rete"
 
-#: data/io.elementary.capnet-assist.desktop:6
-msgid "preferences-system-network"
-msgstr "preferences-system-network"
+#~ msgid "preferences-system-network"
+#~ msgstr "preferences-system-network"

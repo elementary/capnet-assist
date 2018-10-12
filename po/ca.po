@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:34-0700\n"
+"POT-Creation-Date: 2018-10-12 10:46-0700\n"
 "PO-Revision-Date: 2018-07-02 15:38+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/desktop/"
@@ -42,14 +42,11 @@ msgstr ""
 msgid "Log in"
 msgstr "Inicieu la sessió"
 
-#: data/io.elementary.capnet-assist.desktop:3
-msgid "Captive Network Assistant"
-msgstr "Assistent de xarxa captiva"
+#~ msgid "Captive Network Assistant"
+#~ msgstr "Assistent de xarxa captiva"
 
-#: data/io.elementary.capnet-assist.desktop:5
-msgid "Connect to captive network portals"
-msgstr "Connecta a portals de xarxa captius"
+#~ msgid "Connect to captive network portals"
+#~ msgstr "Connecta a portals de xarxa captius"
 
-#: data/io.elementary.capnet-assist.desktop:6
-msgid "preferences-system-network"
-msgstr "xarxa-sistema-preferències"
+#~ msgid "preferences-system-network"
+#~ msgstr "xarxa-sistema-preferències"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hebrew (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:34-0700\n"
+"POT-Creation-Date: 2018-10-12 10:46-0700\n"
 "PO-Revision-Date: 2018-06-18 00:04+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/desktop/capnet-"
@@ -34,14 +34,11 @@ msgstr "חלק מהרכיבים שבעמוד זה מוגשים דרך חיבור
 msgid "Log in"
 msgstr "כניסה"
 
-#: data/io.elementary.capnet-assist.desktop:3
-msgid "Captive Network Assistant"
-msgstr "מסייע שובה רשת"
+#~ msgid "Captive Network Assistant"
+#~ msgstr "מסייע שובה רשת"
 
-#: data/io.elementary.capnet-assist.desktop:5
-msgid "Connect to captive network portals"
-msgstr "התחברות לשערי גישה של שובי רשת"
+#~ msgid "Connect to captive network portals"
+#~ msgstr "התחברות לשערי גישה של שובי רשת"
 
-#: data/io.elementary.capnet-assist.desktop:6
-msgid "preferences-system-network"
-msgstr "preferences-system-network"
+#~ msgid "preferences-system-network"
+#~ msgstr "preferences-system-network"
