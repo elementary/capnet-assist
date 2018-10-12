@@ -1,0 +1,50 @@
+# Norwegian Bokmal translation for capnet-assist
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the capnet-assist package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: capnet-assist\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-12 10:34-0700\n"
+"PO-Revision-Date: 2018-10-09 18:10+0000\n"
+"Last-Translator: Nils K <slx@nilsk.net>\n"
+"Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
+"desktop/capnet-assist/nb/>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
+"X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
+
+#: data/io.elementary.capnet-assist.desktop:3
+msgid "Captive Network Assistant"
+msgstr "Assistent for nettverkfangstportaler"
+
+#: data/io.elementary.capnet-assist.desktop:5
+msgid "Connect to captive network portals"
+msgstr "Koble til nettverkfangstportaler"
+
+#: data/io.elementary.capnet-assist.desktop:6
+msgid "preferences-system-network"
+msgstr "innstillinger-system-nettverk"
+
+#~ msgid "Loading captive portal."
+#~ msgstr "Laster inn landingspåloggingsside."
+
+#~ msgid "The page is served over an unprotected connection."
+#~ msgstr "Siden betjenes over en ubeskyttet tilkobling."
+
+#~ msgid "The page is served over a protected connection."
+#~ msgstr "Siden betjenes over en beskyttet tilkobling."
+
+#~ msgid ""
+#~ "Some elements of this page are served over an unprotected connection."
+#~ msgstr ""
+#~ "Noen elementer på denne siden betjenes over en ubeskyttet tilkobling."
+
+#~ msgid "Log in"
+#~ msgstr "Logg inn"

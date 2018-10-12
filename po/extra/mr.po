@@ -1,0 +1,48 @@
+# Marathi translations for PACKAGE package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-12 10:34-0700\n"
+"PO-Revision-Date: 2018-10-12 00:04+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://weblate.elementary.io/projects/desktop/"
+"capnet-assist/mr/>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.0.1\n"
+
+#: data/io.elementary.capnet-assist.desktop:3
+msgid "Captive Network Assistant"
+msgstr "कॅप्टिव्ह नेटवर्क सहाय्यक"
+
+#: data/io.elementary.capnet-assist.desktop:5
+msgid "Connect to captive network portals"
+msgstr "कॅप्टिव्ह पोर्टलला जोडा"
+
+#: data/io.elementary.capnet-assist.desktop:6
+msgid "preferences-system-network"
+msgstr "preferences-system-network"
+
+#~ msgid "Loading captive portal."
+#~ msgstr "कॅप्टिव्ह पोर्टल लोड होत आहे."
+
+#~ msgid "The page is served over an unprotected connection."
+#~ msgstr "हे पान एका असुरक्षित कनेक्शन वरून आपल्यासाठी आणले जात आहे."
+
+#~ msgid "The page is served over a protected connection."
+#~ msgstr "हे पान एका सुरक्षित कनेक्शन वरून आपल्यासाठी आणले जात आहे."
+
+#~ msgid ""
+#~ "Some elements of this page are served over an unprotected connection."
+#~ msgstr "या पानावरील काही भाग एका असुरक्षित कनेक्शन वरून आपल्यासाठी आणले जात आहेत."
+
+#~ msgid "Log in"
+#~ msgstr "लॉग इन"
