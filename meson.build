@@ -1,7 +1,7 @@
 project(
     'io.elementary.capnet-assist',
     'vala', 'c',
-    version: '2.2.1',
+    version: '2.2.2',
     default_options: 'sysconfdir=/etc'
 )
 
