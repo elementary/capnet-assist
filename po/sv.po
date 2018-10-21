@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:02-0700\n"
-"PO-Revision-Date: 2018-10-20 00:10+0000\n"
+"PO-Revision-Date: 2018-10-22 00:03+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist/sv/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/CertButton.vala:45
 msgid "Loading captive portal."
-msgstr "Laddar captive portal."
+msgstr "Laddar captive-portal."
 
 #: src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
