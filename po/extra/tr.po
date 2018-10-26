@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:02-0700\n"
-"PO-Revision-Date: 2018-10-26 22:06+0000\n"
-"Last-Translator: Ümit Seyhan <btc.umit@gmail.com>\n"
+"PO-Revision-Date: 2018-10-26 22:07+0000\n"
+"Last-Translator: Burhan Keleş <klsburhan@hotmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist-extra/tr/>\n"
 "Language: tr\n"
@@ -23,12 +23,12 @@ msgstr ""
 #: data/io.elementary.capnet-assist.appdata.xml.in:8
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr "Captive Ağ Asistanı"
+msgstr "Kısıtlı Ağ Yardımcısı"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:9
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Kısıtlı ağ portallerine bağlanın"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:11
 msgid ""
