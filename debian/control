@@ -2,8 +2,7 @@ Source: capnet-assist
 Section: net
 Priority: optional
 Maintainer: Cody Garver <cody@elementary.io>
-Build-Depends: debhelper (>= 9),
-               desktop-file-utils,
+Build-Depends: debhelper (>= 10.5.1),
                gettext,
                libgcr-3-dev,
                libglib2.0-dev (>= 2.44),
@@ -12,10 +11,8 @@ Build-Depends: debhelper (>= 9),
                libwebkit2gtk-4.0-dev,
                meson,
                valac (>= 0.28)
-Standards-Version: 3.9.6
-Homepage: https://launchpad.net/capnet-assist
-Vcs-Bzr: https://code.launchpad.net/capnet-assist
-Vcs-Browser: http://bazaar.launchpad.net/~elementary-apps/capnet-assist/trunk/files
+Standards-Version: 4.1.1
+Homepage: https://github.com/elementary/capnet-assist
 
 Package: capnet-assist
 Architecture: any
