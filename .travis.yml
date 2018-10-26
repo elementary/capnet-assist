@@ -24,4 +24,4 @@ script:
   - houston ci
     --type system-app
     --name-domain io.elementary.capnet-assist
-    --name-human Captive Network Assistant
+    --name-human "Captive Network Assistant"
