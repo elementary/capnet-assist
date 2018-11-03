@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:02-0700\n"
-"PO-Revision-Date: 2018-10-07 02:37+0000\n"
+"PO-Revision-Date: 2018-11-04 00:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist/ja/>\n"
@@ -26,15 +26,15 @@ msgstr "キャプティブポータルを読み込んでいます。"
 
 #: src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
-msgstr "ページが保護されていない接続を介して提供しています。"
+msgstr "ページは保護されていない接続を介して提供されています。"
 
 #: src/CertButton.vala:54
 msgid "The page is served over a protected connection."
-msgstr "ページが保護された接続を介して提供しています。"
+msgstr "ページは保護された接続を介して提供されています。"
 
 #: src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr "ページの一部要素は保護されていない接続を介して提供しています。"
+msgstr "ページの一部の要素は保護されていない接続を介して提供されています。"
 
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
