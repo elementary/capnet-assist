@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-12 10:34-0700\n"
-"PO-Revision-Date: 2018-10-12 19:30+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"POT-Creation-Date: 2018-10-13 17:02-0700\n"
+"PO-Revision-Date: 2018-10-26 22:12+0000\n"
+"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist-extra/tr/>\n"
 "Language: tr\n"
@@ -20,15 +20,31 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
-#: data/io.elementary.capnet-assist.desktop:3
+#: data/io.elementary.capnet-assist.appdata.xml.in:8
+#: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Kısıtlı Ağ Yardımcısı"
 
-#: data/io.elementary.capnet-assist.desktop:5
+#: data/io.elementary.capnet-assist.appdata.xml.in:9
+#: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Kısıtlı ağ portallarına bağlan"
 
-#: data/io.elementary.capnet-assist.desktop:6
+#: data/io.elementary.capnet-assist.appdata.xml.in:11
+msgid ""
+"Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
+"trains—with ease. Captive Network Assistant automatically opens to help you "
+"get connected."
+msgstr ""
+"Kolaylıkla—tıpkı kahve dükkanlarında, hava alanlarında ve trenlerdeki Wi-Fi "
+"ağları gibi—Kısıtlı ağ portallarına giriş yap. Kısıtlı Ağ Asistanı "
+"bağlanmanıza yardımcı olmak için otomatik olarak açılır."
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:50
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/io.elementary.capnet-assist.desktop.in:6
 msgid "preferences-system-network"
 msgstr "preferences-system-network"
 

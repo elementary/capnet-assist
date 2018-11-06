@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-12 10:46-0700\n"
-"PO-Revision-Date: 2018-03-25 00:08+0000\n"
-"Last-Translator: H. Gerhard. A <henrik.ahlkvist@gmail.com>\n"
+"POT-Creation-Date: 2018-10-13 17:02-0700\n"
+"PO-Revision-Date: 2018-10-22 00:03+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist/sv/>\n"
 "Language: sv\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: src/CertButton.vala:45
 msgid "Loading captive portal."
-msgstr "Laddar captive portal."
+msgstr "Laddar captive-portal."
 
 #: src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
-msgstr "Sidan laddas över en osäker uppkoppling."
+msgstr "Sidan hämtas över en osäker uppkoppling."
 
 #: src/CertButton.vala:54
 msgid "The page is served over a protected connection."

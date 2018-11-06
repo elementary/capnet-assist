@@ -8,7 +8,6 @@ Log into captive portals—like Wi-Fi networks at coffee shops, airports, and tr
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
-* desktop-file-utils
 * libgcr-3-dev
 * libglib2.0-dev
 * libgranite-dev
