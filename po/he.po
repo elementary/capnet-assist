@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hebrew (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:02-0700\n"
+"POT-Creation-Date: 2018-11-06 16:16-0800\n"
 "PO-Revision-Date: 2018-06-18 00:04+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/desktop/capnet-"
@@ -33,6 +33,18 @@ msgstr "חלק מהרכיבים שבעמוד זה מוגשים דרך חיבור
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
 msgstr "כניסה"
+
+#: src/Application.vala:56
+msgid "Force the browser window to appear"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "Load the folowing URL on the browser window"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "URL"
+msgstr ""
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "מסייע שובה רשת"

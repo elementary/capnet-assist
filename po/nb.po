@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:02-0700\n"
+"POT-Creation-Date: 2018-11-06 16:16-0800\n"
 "PO-Revision-Date: 2018-10-13 00:09+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
@@ -39,6 +39,18 @@ msgstr "Noen elementer på denne siden betjenes over en ubeskyttet tilkobling."
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
 msgstr "Logg inn"
+
+#: src/Application.vala:56
+msgid "Force the browser window to appear"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "Load the folowing URL on the browser window"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "URL"
+msgstr ""
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "Assistent for nettverkfangstportaler"

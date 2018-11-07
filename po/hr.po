@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:02-0700\n"
+"POT-Creation-Date: 2018-11-06 16:16-0800\n"
 "PO-Revision-Date: 2016-09-12 22:29+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
@@ -37,3 +37,15 @@ msgstr "Neki elementi ove stranice koriste nezaštićeno povezivanje."
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
 msgstr "Prijava"
+
+#: src/Application.vala:56
+msgid "Force the browser window to appear"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "Load the folowing URL on the browser window"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "URL"
+msgstr ""

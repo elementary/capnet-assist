@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:02-0700\n"
+"POT-Creation-Date: 2018-11-06 16:16-0800\n"
 "PO-Revision-Date: 2018-08-12 12:01+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
@@ -39,6 +39,18 @@ msgstr "此页面中的某些元素来自未受保护的连接。"
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
 msgstr "登录"
+
+#: src/Application.vala:56
+msgid "Force the browser window to appear"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "Load the folowing URL on the browser window"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "URL"
+msgstr ""
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "网络认证助手"

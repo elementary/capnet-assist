@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:02-0700\n"
+"POT-Creation-Date: 2018-11-06 16:16-0800\n"
 "PO-Revision-Date: 2016-12-18 03:50+0000\n"
 "Last-Translator: aliyusup <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -37,3 +37,15 @@ msgstr "بۇ بەتتىكى بەزى مەزمۇنلار قوغدالمىغان �
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
 msgstr "تىزىملىتىش"
+
+#: src/Application.vala:56
+msgid "Force the browser window to appear"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "Load the folowing URL on the browser window"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "URL"
+msgstr ""

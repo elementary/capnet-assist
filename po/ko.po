@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:02-0700\n"
+"POT-Creation-Date: 2018-11-06 16:16-0800\n"
 "PO-Revision-Date: 2018-06-27 22:08+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/desktop/capnet-"
@@ -39,6 +39,18 @@ msgstr "이 페이지의 일부 요소는 보호되지 않은 연결을 통해 �
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
 msgstr "로그 인"
+
+#: src/Application.vala:56
+msgid "Force the browser window to appear"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "Load the folowing URL on the browser window"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "URL"
+msgstr ""
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "캡티브 네트워크 어시스턴트"
