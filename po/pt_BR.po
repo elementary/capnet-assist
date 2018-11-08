@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-06 16:16-0800\n"
-"PO-Revision-Date: 2018-08-30 00:06+0000\n"
+"PO-Revision-Date: 2018-11-08 03:19+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "desktop/capnet-assist/pt_BR/>\n"
@@ -43,15 +43,15 @@ msgstr "Entrar"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "Forçar a janela do navegador a aparecer"
 
 #: src/Application.vala:57
 msgid "Load the folowing URL on the browser window"
-msgstr ""
+msgstr "Carregue a URL seguinte na janela do navegador"
 
 #: src/Application.vala:57
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "Assistente de Rede Captive"
