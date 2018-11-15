@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-06 16:16-0800\n"
-"PO-Revision-Date: 2018-07-02 16:34+0000\n"
+"PO-Revision-Date: 2018-11-17 00:01+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist/fi/>\n"
@@ -42,7 +42,7 @@ msgstr "Kirjaudu"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "Pakota selaimen ikkuna ilmestymään"
 
 #: src/Application.vala:57
 msgid "Load the folowing URL on the browser window"
