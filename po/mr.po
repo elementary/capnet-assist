@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-06 16:16-0800\n"
-"PO-Revision-Date: 2018-10-12 00:04+0000\n"
+"PO-Revision-Date: 2018-11-15 08:44+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist/mr/>\n"
@@ -41,15 +41,15 @@ msgstr "लॉग इन"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "ब्राउझर विंडो प्रकट करण्यासाठी सक्ती करा"
 
 #: src/Application.vala:57
 msgid "Load the folowing URL on the browser window"
-msgstr ""
+msgstr "ब्राउझर विंडोवर खालील URL लोड करा"
 
 #: src/Application.vala:57
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "कॅप्टिव्ह नेटवर्क सहाय्यक"
