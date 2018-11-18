@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-06 16:16-0800\n"
-"PO-Revision-Date: 2018-10-13 00:09+0000\n"
+"PO-Revision-Date: 2018-11-18 10:03+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "desktop/capnet-assist/nb/>\n"
@@ -42,15 +42,15 @@ msgstr "Logg inn"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "Tving visning av nettleservinduet"
 
 #: src/Application.vala:57
 msgid "Load the folowing URL on the browser window"
-msgstr ""
+msgstr "Last følgende nettadresse i nettleservinduet"
 
 #: src/Application.vala:57
 msgid "URL"
-msgstr ""
+msgstr "Nettadresse"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "Assistent for nettverkfangstportaler"
