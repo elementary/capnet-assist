@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2016-2017 elementary LLC (https://launchpad.net/capnet-assist)
+* Copyright (c) 2016-2018 elementary LLC (https://launchpad.net/capnet-assist)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -54,7 +54,7 @@ public class Captive.Application : Gtk.Application {
     public override int command_line (ApplicationCommandLine command_line) {
         OptionEntry[] options = new OptionEntry[2];
         options[0] = { "force-window", 'f', 0, OptionArg.NONE, ref force_show, _("Force the browser window to appear"), null };
-        options[1] = { "url", 'u', 0, OptionArg.STRING, ref debug_url, _("Load the folowing URL on the browser window"), _("URL") };
+        options[1] = { "url", 'u', 0, OptionArg.STRING, ref debug_url, _("Load the following URL in the browser window"), _("URL") };
 
         string[] args = command_line.get_arguments ();
 
