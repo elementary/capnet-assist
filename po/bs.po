@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-06 16:16-0800\n"
+"POT-Creation-Date: 2018-11-18 20:48-0800\n"
 "PO-Revision-Date: 2018-11-09 07:38+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/desktop/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0.1\n"
 
 #: src/CertButton.vala:45
@@ -45,7 +45,8 @@ msgid "Force the browser window to appear"
 msgstr "Natjeraj prozor pregledanika da se pojavi"
 
 #: src/Application.vala:57
-msgid "Load the folowing URL on the browser window"
+#, fuzzy
+msgid "Load the following URL in the browser window"
 msgstr "Učitaj sljedeći URL u prozoru preglednika"
 
 #: src/Application.vala:57

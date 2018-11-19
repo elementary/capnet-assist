@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-06 16:16-0800\n"
+"POT-Creation-Date: 2018-11-18 20:48-0800\n"
 "PO-Revision-Date: 2018-11-09 13:12+0000\n"
 "Last-Translator: Nuno Alexandre MS Ribeiro <nuno.anarresti@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/desktop/"
@@ -46,7 +46,8 @@ msgid "Force the browser window to appear"
 msgstr "Forçar a janela do navegador a aparecer"
 
 #: src/Application.vala:57
-msgid "Load the folowing URL on the browser window"
+#, fuzzy
+msgid "Load the following URL in the browser window"
 msgstr "Carregar o seguinte URL na janela do navegador"
 
 #: src/Application.vala:57

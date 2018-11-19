@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-06 16:16-0800\n"
+"POT-Creation-Date: 2018-11-18 20:48-0800\n"
 "PO-Revision-Date: 2018-11-15 08:44+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/desktop/"
@@ -44,7 +44,8 @@ msgid "Force the browser window to appear"
 msgstr "ब्राउझर विंडो प्रकट करण्यासाठी सक्ती करा"
 
 #: src/Application.vala:57
-msgid "Load the folowing URL on the browser window"
+#, fuzzy
+msgid "Load the following URL in the browser window"
 msgstr "ब्राउझर विंडोवर खालील URL लोड करा"
 
 #: src/Application.vala:57
