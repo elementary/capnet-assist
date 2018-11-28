@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:02-0700\n"
 "PO-Revision-Date: 2018-11-28 14:20+0000\n"
-"Last-Translator: Yuxuan Wang <wangmation.ch@foxmail.com>\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "desktop/capnet-assist-extra/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -39,7 +39,7 @@ msgstr "网络认证助手将自动开启，并帮助你简单地登录到在机
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:50
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/io.elementary.capnet-assist.desktop.in:6
 msgid "preferences-system-network"
