@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-18 20:48-0800\n"
-"PO-Revision-Date: 2018-08-12 12:01+0000\n"
+"PO-Revision-Date: 2018-11-28 14:20+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "desktop/capnet-assist/zh_Hans/>\n"
@@ -42,15 +42,15 @@ msgstr "登录"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "强制显示浏览器窗口"
 
 #: src/Application.vala:57
 msgid "Load the following URL in the browser window"
-msgstr ""
+msgstr "在浏览器窗口中载入下列 URL"
 
 #: src/Application.vala:57
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "网络认证助手"
