@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-18 20:48-0800\n"
 "PO-Revision-Date: 2019-01-12 00:08+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Last-Translator: Franck STAUFFER <franck.stauffer@e.email>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/desktop/"
 "capnet-assist/fr/>\n"
 "Language: fr\n"
@@ -48,7 +48,7 @@ msgstr "Forcer l'affichage de la fenêtre du navigateur"
 
 #: src/Application.vala:57
 msgid "Load the following URL in the browser window"
-msgstr ""
+msgstr "Charger l'URL suivant dans la fenêtre du navigateur"
 
 #: src/Application.vala:57
 msgid "URL"
