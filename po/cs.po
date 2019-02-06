@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-18 20:48-0800\n"
-"PO-Revision-Date: 2018-07-10 00:03+0000\n"
+"PO-Revision-Date: 2019-02-06 18:09+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/desktop/capnet-"
-"assist/cs/>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/desktop/"
+"capnet-assist/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,15 +43,15 @@ msgstr "Přihlásit se"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "Vynutit zobrazení okna prohlížeče"
 
 #: src/Application.vala:57
 msgid "Load the following URL in the browser window"
-msgstr ""
+msgstr "Načíst následující URL v okně prohlížeče"
 
 #: src/Application.vala:57
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "Uzavřený síťový portál"
