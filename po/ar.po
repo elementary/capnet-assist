@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-18 20:48-0800\n"
 "PO-Revision-Date: 2019-03-11 20:21+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"Last-Translator: Khalid <kmoj86@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/ar/>\n"
 "Language: ar\n"
@@ -34,7 +34,7 @@ msgstr "هذه الصفحة مقدمة عن طريق اتصال محمي."
 
 #: src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr ""
+msgstr "بعض عناصر هذه الصفحة مقدمة عن طريق اتصال غير محمي"
 
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
