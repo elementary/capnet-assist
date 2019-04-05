@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-18 20:48-0800\n"
 "PO-Revision-Date: 2019-04-06 18:52+0000\n"
-"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"Last-Translator: emre imamoğlu <imamogluemree@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/tr/>\n"
 "Language: tr\n"
@@ -51,7 +51,7 @@ msgstr "Aşağıdaki URL adresini tarayıcı penceresinde yükle"
 
 #: src/Application.vala:57
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #~ msgid "preferences-system-network"
 #~ msgstr "tercihler-sistem-ağ"
