@@ -8,21 +8,21 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-18 20:48-0800\n"
-"PO-Revision-Date: 2018-08-31 00:04+0000\n"
-"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2019-04-06 18:52+0000\n"
+"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/CertButton.vala:45
 msgid "Loading captive portal."
-msgstr "Captive portal yükleniyor."
+msgstr "Giriş portalı yükleniyor."
 
 #: src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
@@ -35,7 +35,7 @@ msgstr "Bu sayfa korumalı bir bağlantı üzerinden hizmet veriyor."
 #: src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
-"Bu sayfadaki bazı ögeler korumasız bir bağlantı üzerinden hizmet veriyor."
+"Bu sayfadaki bazı öğeler korumasız bir bağlantı üzerinden hizmet veriyor."
 
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
@@ -43,11 +43,11 @@ msgstr "Giriş yap"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "Tarayıcı penceresini görünmeye zorla"
 
 #: src/Application.vala:57
 msgid "Load the following URL in the browser window"
-msgstr ""
+msgstr "Aşağıdaki URL adresini tarayıcı penceresinde yükle"
 
 #: src/Application.vala:57
 msgid "URL"
