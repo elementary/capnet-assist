@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-18 20:48-0800\n"
+"POT-Creation-Date: 2019-06-26 22:42+0200\n"
 "PO-Revision-Date: 2018-11-22 00:02+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
@@ -34,7 +34,8 @@ msgstr "A página é fornecida por uma conexão protegida."
 
 #: src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr "Alguns elementos dessa página são exibidos em uma conexão desprotegida."
+msgstr ""
+"Alguns elementos dessa página são exibidos em uma conexão desprotegida."
 
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
