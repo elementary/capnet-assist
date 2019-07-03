@@ -7,7 +7,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
 "POT-Creation-Date: 2019-06-26 22:42+0200\n"
 "PO-Revision-Date: 2019-06-29 17:51+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
