@@ -8,50 +8,51 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:42+0200\n"
-"PO-Revision-Date: 2018-07-09 20:00+0000\n"
-"Last-Translator: Rafael Bautista Martínez <iuninefrendor@gmail.com>\n"
-"Language-Team: Spanish <https://weblate.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2019-09-13 03:22+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/CertButton.vala:45
 msgid "Loading captive portal."
-msgstr "Cargando portal cautivo."
+msgstr "Cargando el portal cautivo."
 
 #: src/CertButton.vala:49
 msgid "The page is served over an unprotected connection."
-msgstr "La página se sirve bajo una conexión desprotegida."
+msgstr "La página se suministra mediante una conexión desprotegida."
 
 #: src/CertButton.vala:54
 msgid "The page is served over a protected connection."
-msgstr "La página se sirve bajo una conexión protegida."
+msgstr "La página se suministra mediante una conexión protegida."
 
 #: src/CertButton.vala:59
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
-"Algunos elementos de esta página se sirven bajo una conexión desprotegida."
+"Algunos elementos de esta página se suministran mediante una conexión "
+"desprotegida."
 
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
-msgstr "Iniciar sesión"
+msgstr "Acceder"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "Forzar que se muestre la ventana del navegador"
 
 #: src/Application.vala:57
 msgid "Load the following URL in the browser window"
-msgstr ""
+msgstr "Cargar el URL siguiente en la ventana del navegador"
 
 #: src/Application.vala:57
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "Asistente de portal cautivo"
