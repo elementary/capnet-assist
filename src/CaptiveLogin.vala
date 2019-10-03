@@ -126,7 +126,7 @@ public class CaptiveLogin : Gtk.ApplicationWindow {
         });
 
         tab.web_view.create.connect ((navigation_action)=> {
-            create_tab (navigation_action.get_request().get_uri ());
+            create_tab (navigation_action.get_request ().get_uri ());
 
             return null;
         });
