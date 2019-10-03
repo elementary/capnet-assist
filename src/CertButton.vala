@@ -19,7 +19,6 @@
 */
 
 public class CertButton : Gtk.ToggleButton {
-
     public enum Security {
         NONE,
         SECURE,
@@ -116,7 +115,7 @@ public class CertButton : Gtk.ToggleButton {
         var icon = new Gtk.Image.from_gicon (button_icon, Gtk.IconSize.DIALOG);
         icon.valign = Gtk.Align.START;
 
-        var primary_text = new Gtk.Label (captive_login_window.get_uri());
+        var primary_text = new Gtk.Label (captive_login_window.get_uri ());
         primary_text.get_style_context ().add_class ("h3");
         primary_text.halign = Gtk.Align.START;
         primary_text.margin_start = 9;

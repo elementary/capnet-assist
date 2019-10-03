@@ -80,7 +80,7 @@ public class TabbedWebView : Granite.Widgets.Tab {
                                                    "cookies.sqlite");
 
             if (!FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
-                debug ("No cookies store found, not saving the cookies...\n");
+                debug ("No cookies store found, not saving the cookies…");
                 return;
             }
 
