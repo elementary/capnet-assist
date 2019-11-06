@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2016-10-10 12:53-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=ASCII\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
 msgstr ""
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
 msgstr ""
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
 msgstr ""
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
 
@@ -41,7 +41,7 @@ msgid "Force the browser window to appear"
 msgstr ""
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
+msgid "Load this address in the browser window"
 msgstr ""
 
 #: src/Application.vala:57

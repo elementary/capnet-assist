@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2019-01-04 21:20+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -19,19 +19,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
 msgstr "Lastar inn inngongsportal."
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
 msgstr "Sida vert servert over ei ubeskytta tilkopling."
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
 msgstr "Sida vert servert over ei beskytta tilkopling."
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "Nokre element på denne sida er servert over ei ubeskytta tilkopling."
 
@@ -44,7 +44,8 @@ msgid "Force the browser window to appear"
 msgstr "Tving vising av nettlesarvindauget"
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
+#, fuzzy
+msgid "Load this address in the browser window"
 msgstr "Last den følgande URLen i nettlesarvindauget"
 
 #: src/Application.vala:57

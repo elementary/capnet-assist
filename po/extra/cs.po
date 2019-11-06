@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2018-10-28 16:18+0000\n"
 "Last-Translator: Daniel Zvir <zvir.daniel@seznam.cz>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/desktop/capnet-"
@@ -40,7 +40,11 @@ msgstr ""
 "kavárnách, letištích a ve vlacích. Tento asistent se automaticky otevře, aby "
 "vám pomohl připojit se."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:50
+#: data/io.elementary.capnet-assist.appdata.xml.in:17
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

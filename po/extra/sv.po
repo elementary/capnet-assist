@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2018-10-21 09:49+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/desktop/"
@@ -39,7 +39,11 @@ msgstr ""
 "flygplatser och tåg. Captive nätverksassistent öppnar automatiskt för att "
 "hjälpa dig bli uppkopplad."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:50
+#: data/io.elementary.capnet-assist.appdata.xml.in:17
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

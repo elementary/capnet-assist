@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2018-11-03 13:14+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/desktop/"
@@ -40,7 +40,11 @@ msgstr ""
 "kafićima, na aerodromu i u vozovima. Pomoćnik za mreže putem captive portala "
 "automatski se otvara kako bi Vam pomogao da se povežete."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:50
+#: data/io.elementary.capnet-assist.appdata.xml.in:17
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

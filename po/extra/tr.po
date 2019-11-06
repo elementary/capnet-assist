@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2019-04-06 18:52+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -40,7 +40,11 @@ msgstr ""
 "Wi-Fi ağları gibi—kolaylıkla giriş yapmanızı sağlar. Kısıtlı Ağ Asistanı "
 "bağlanmanıza yardımcı olmak için otomatik olarak açılır."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:50
+#: data/io.elementary.capnet-assist.appdata.xml.in:17
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

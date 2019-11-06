@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2019-01-31 21:55+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/desktop/capnet-"
@@ -19,19 +19,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
 msgstr "Indlæser captive portal."
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
 msgstr "Siden er vist over en ubeskyttet forbindelse."
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
 msgstr "Siden er vist over en beskyttet forbindelse."
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "Nogle elementer på denne side er vist over en ubeskyttet forbindelse."
 
@@ -44,7 +44,8 @@ msgid "Force the browser window to appear"
 msgstr "Tving browservinduet til at blive vist"
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
+#, fuzzy
+msgid "Load this address in the browser window"
 msgstr "Load følgende URL i browservinduet"
 
 #: src/Application.vala:57

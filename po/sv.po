@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2018-10-22 00:03+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/desktop/"
@@ -19,19 +19,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
 msgstr "Laddar captive-portal."
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
 msgstr "Sidan hämtas över en osäker uppkoppling."
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
 msgstr "Sidan hämtas över en säker uppkoppling."
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "En del av sidan hämtas genom en osäker uppkoppling."
 
@@ -44,7 +44,7 @@ msgid "Force the browser window to appear"
 msgstr ""
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
+msgid "Load this address in the browser window"
 msgstr ""
 
 #: src/Application.vala:57

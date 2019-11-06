@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2018-11-29 12:03+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/desktop/"
@@ -19,19 +19,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
 msgstr "कॅप्टिव्ह पोर्टल लोड होत आहे."
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
 msgstr "हे पान एका असुरक्षित कनेक्शन वरून आपल्यासाठी आणले जात आहे."
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
 msgstr "हे पान एका सुरक्षित कनेक्शन वरून आपल्यासाठी आणले जात आहे."
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "या पानावरील काही भाग एका असुरक्षित कनेक्शन वरून आपल्यासाठी आणले जात आहेत."
 
@@ -44,7 +44,8 @@ msgid "Force the browser window to appear"
 msgstr "ब्राउझर विंडो प्रकट करण्यासाठी सक्ती करा"
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
+#, fuzzy
+msgid "Load this address in the browser window"
 msgstr "ब्राउझर विंडोवर खालील URL लोड करा"
 
 #: src/Application.vala:57

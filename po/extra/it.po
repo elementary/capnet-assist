@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2018-10-13 00:52+0000\n"
 "Last-Translator: Marco De Paolini <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/desktop/"
@@ -40,7 +40,11 @@ msgstr ""
 "aeroporti, treni, ecc. L'assistente per Captive Network si apre "
 "automaticamente per fornire aiuto durante la connessione."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:50
+#: data/io.elementary.capnet-assist.appdata.xml.in:17
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
