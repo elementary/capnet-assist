@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2019-07-11 20:46+0000\n"
+"PO-Revision-Date: 2019-11-09 11:24+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
-"Language-Team: Esperanto <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist/eo/>\n"
+"Language-Team: Esperanto <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: src/CertButton.vala:44
 msgid "Loading captive portal."
@@ -44,9 +44,8 @@ msgid "Force the browser window to appear"
 msgstr "Trudi aperon de la foliumila paĝo"
 
 #: src/Application.vala:57
-#, fuzzy
 msgid "Load this address in the browser window"
-msgstr "Ŝargi la sekvan URL-paĝon en la foliumilo"
+msgstr "Ŝargi ĉi adreson en la foliumilo"
 
 #: src/Application.vala:57
 msgid "URL"
