@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2019-09-13 03:22+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
-"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist/es/>\n"
+"PO-Revision-Date: 2019-11-11 12:24+0000\n"
+"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,9 +47,8 @@ msgid "Force the browser window to appear"
 msgstr "Forzar que se muestre la ventana del navegador"
 
 #: src/Application.vala:57
-#, fuzzy
 msgid "Load this address in the browser window"
-msgstr "Cargar el URL siguiente en la ventana del navegador"
+msgstr "Cargar esta dirección en la ventana del navegador"
 
 #: src/Application.vala:57
 msgid "URL"
