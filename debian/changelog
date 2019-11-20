@@ -1,3 +1,22 @@
+capnet-assist (2.2.4) bionic; urgency=medium
+
+  * Release 2.2.4 (#50)
+  * Travis: Downgrade node to 10 to fix CI
+  * Update translation template
+  * Add Gettext Updates to Actions
+  * Delete AUTHORS
+  * Add Release to Actions
+  * AppData: Add releases info
+  * Add Lint to CI (#49)
+  * Fix code style issues
+  * Delete CODE_OF_CONDUCT.md
+  * Fix wrong merge
+  * Application.vala: Replace "the following URL" with "this address"
+    (#46)
+  * Add Silesian and update translation template
+
+ -- Cody Garver <cody@elementary.io>  Wed, 20 Nov 2019 16:42:18 +0000
+
 capnet-assist (2.2.3) bionic; urgency=medium
 
   * New upstream release.
