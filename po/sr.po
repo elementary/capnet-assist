@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-18 20:48-0800\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2016-12-19 06:19+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <sr@li.org>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
 msgstr "Учитавам портал ограничавања."
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
 msgstr "Страница је приказана преко незаштићене везе."
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
 msgstr "Страница је приказана преко заштићене везе."
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "Неки елементи ове странице су приказани преко незаштићене везе."
 
@@ -43,7 +43,7 @@ msgid "Force the browser window to appear"
 msgstr ""
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
+msgid "Load this address in the browser window"
 msgstr ""
 
 #: src/Application.vala:57

@@ -7,41 +7,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-18 20:48-0800\n"
-"PO-Revision-Date: 2016-10-10 12:53-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"PO-Revision-Date: 2019-03-12 20:26+0000\n"
+"Last-Translator: Khalid <kmoj86@gmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/capnet-"
+"assist/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 3.4\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
 msgstr ""
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
-msgstr ""
+msgstr "هذه الصفحة مقدمة عن طريق اتصال غير محمي."
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
-msgstr ""
+msgstr "هذه الصفحة مقدمة عن طريق اتصال محمي."
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr ""
+msgstr "بعض عناصر هذه الصفحة مقدمة عن طريق اتصال غير محمي."
 
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
-msgstr ""
+msgstr "الدخول"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
 msgstr ""
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
+msgid "Load this address in the browser window"
 msgstr ""
 
 #: src/Application.vala:57

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:02-0700\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2018-10-13 12:37+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/desktop/"
@@ -38,7 +38,11 @@ msgstr ""
 "कॉफी शॉप, विमानतळ आणि ट्रेनमध्ये कॅप्टिव्ह पोर्टल-जसे वाय-फाय नेटवर्कमध्ये लॉग इन करा-"
 "सहजतेने. कॅप्टिव्ह नेटवर्क सहाय्यक आपोआप कनेक्ट होण्यास मदत करण्यासाठी स्वयंचलितपणे उघडते."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:50
+#: data/io.elementary.capnet-assist.appdata.xml.in:17
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:59
 msgid "elementary, Inc."
 msgstr "एलिमेंटरी, Inc."
 

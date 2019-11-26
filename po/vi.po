@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vietnamese (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-18 20:48-0800\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/desktop/"
@@ -14,19 +14,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
 msgstr "Đang tải cổng lưu giữ."
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
 msgstr "Trang được phân phát qua kết nối không được bảo vệ."
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
 msgstr "Trang được phân phối qua kết nối được bảo vệ."
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
 "Một số phần của trang này được phân phát qua kết nối không được bảo vệ."
@@ -40,7 +40,7 @@ msgid "Force the browser window to appear"
 msgstr ""
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
+msgid "Load this address in the browser window"
 msgstr ""
 
 #: src/Application.vala:57

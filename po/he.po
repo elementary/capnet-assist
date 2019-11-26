@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hebrew (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-18 20:48-0800\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2018-11-20 00:03+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/desktop/"
-"capnet-assist/he/>\n"
+"Language-Team: Hebrew <https://weblate.elementary.io/projects/desktop/capnet-"
+"assist/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,19 +14,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
 msgstr "שובה רשת נטען."
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
 msgstr "העמוד הזה מוגש דרך חיבור בלתי מוגן."
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
 msgstr "העמוד מוגש דרך חיבור מוגן."
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "חלק מהרכיבים שבעמוד זה מוגשים דרך חיבור לא מוגן."
 
@@ -39,7 +39,8 @@ msgid "Force the browser window to appear"
 msgstr "לאלץ את הצגת חלון הדפדפן"
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
+#, fuzzy
+msgid "Load this address in the browser window"
 msgstr "לטעון את הכתובת הבאה בחלון הדפדפן"
 
 #: src/Application.vala:57

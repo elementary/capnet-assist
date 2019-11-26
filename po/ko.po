@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-18 20:48-0800\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2018-11-19 15:43+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
-"Language-Team: Korean <https://weblate.elementary.io/projects/desktop/"
-"capnet-assist/ko/>\n"
+"Language-Team: Korean <https://weblate.elementary.io/projects/desktop/capnet-"
+"assist/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,19 +20,19 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
 msgstr "캡티브 포털을 불러옵니다."
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
 msgstr "보호되지 않은 연결을 통해 제공됩니다."
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
 msgstr "보호된 연결을 통해 제공됩니다."
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "이 페이지의 일부 요소는 보호되지 않은 연결을 통해 제공됩니다."
 
@@ -45,7 +45,8 @@ msgid "Force the browser window to appear"
 msgstr "브라우저 창을 강제로 보이기"
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
+#, fuzzy
+msgid "Load this address in the browser window"
 msgstr "다음 URL을 브라우저 창에 띄웁니다"
 
 #: src/Application.vala:57

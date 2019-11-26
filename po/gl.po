@@ -7,43 +7,48 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-18 20:48-0800\n"
-"PO-Revision-Date: 2016-10-10 12:53-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"PO-Revision-Date: 2019-09-19 18:26+0000\n"
+"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"Language-Team: Galician <https://l10n.elementary.io/projects/desktop/capnet-"
+"assist/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.7.1\n"
 
-#: src/CertButton.vala:45
+#: src/CertButton.vala:44
 msgid "Loading captive portal."
-msgstr ""
+msgstr "Cargando o portal cativo."
 
-#: src/CertButton.vala:49
+#: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
-msgstr ""
+msgstr "A páxina fornécese mediante unha conexión desprotexida."
 
-#: src/CertButton.vala:54
+#: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
-msgstr ""
+msgstr "A páxina fornécese mediante unha conexión protexida."
 
-#: src/CertButton.vala:59
+#: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
+"Algúns elementos desta páxina fornécense mediante unha conexión desprotexida."
 
 #: src/CaptiveLogin.vala:50
 msgid "Log in"
-msgstr ""
+msgstr "Acceder"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "Forzar que se mostre a xanela do navegador"
 
 #: src/Application.vala:57
-msgid "Load the following URL in the browser window"
-msgstr ""
+#, fuzzy
+msgid "Load this address in the browser window"
+msgstr "Cargar o seguinte URL na xanela do navegador"
 
 #: src/Application.vala:57
 msgid "URL"
-msgstr ""
+msgstr "URL"
