@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2018-11-29 12:03+0000\n"
+"PO-Revision-Date: 2019-11-28 16:24+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Marathi <https://weblate.elementary.io/projects/desktop/"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: src/CertButton.vala:44
 msgid "Loading captive portal."
@@ -44,9 +44,8 @@ msgid "Force the browser window to appear"
 msgstr "ब्राउझर विंडो प्रकट करण्यासाठी सक्ती करा"
 
 #: src/Application.vala:57
-#, fuzzy
 msgid "Load this address in the browser window"
-msgstr "ब्राउझर विंडोवर खालील URL लोड करा"
+msgstr "ब्राउझर विंडोमध्ये हा पत्ता लोड करा"
 
 #: src/Application.vala:57
 msgid "URL"
