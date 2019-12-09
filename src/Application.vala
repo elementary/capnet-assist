@@ -21,8 +21,14 @@ public class Captive.Application : Gtk.Application {
     private bool force_show = false;
     private string? debug_url = null;
 
+    public static Settings settings;
+
     public Application () {
         Object (application_id: "io.elementary.capnet-assist", flags: ApplicationFlags.HANDLES_COMMAND_LINE);
+    }
+
+    static construct {
+        settings = new Settings ("io.elementary.desktop.capnet-assist");
     }
 
     private static bool is_captive_portal () {
@@ -31,8 +37,7 @@ public class Captive.Application : Gtk.Application {
     }
 
     public override void activate () {
-        var settings = new Settings ();
-        if (!settings.enabled) {
+        if (!settings.get_boolean ("enabled")) {
             quit ();
             return;
         }

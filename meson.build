@@ -15,7 +15,6 @@ executable(
     'src/CaptiveLogin.vala',
     'src/CertButton.vala',
     'src/TabbedWebView.vala',
-    'src/Settings.vala',
     dependencies: [
         dependency('gcr-3'),
         dependency('gcr-ui-3'),

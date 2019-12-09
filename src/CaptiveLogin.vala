@@ -32,15 +32,10 @@ public class CaptiveLogin : Gtk.ApplicationWindow {
     public CaptiveLogin (Gtk.Application app) {
         Object (application: app);
 
-        unowned Captive.Settings saved_state = Captive.Settings.get_default ();
-        set_default_size (saved_state.window_width, saved_state.window_height);
+        set_default_size (Captive.Application.settings.get_int ("window-width"), Captive.Application.settings.get_int ("window-height"));
 
-        switch (saved_state.window_state) {
-            case Captive.Settings.WindowState.MAXIMIZED:
-                this.maximize ();
-                break;
-            default:
-                break;
+        if (Captive.Application.settings.get_boolean ("is-maximized")) {
+            maximize ();
         }
     }
 
@@ -200,13 +195,12 @@ public class CaptiveLogin : Gtk.ApplicationWindow {
         int window_width;
         int window_height;
         get_size (out window_width, out window_height);
-        unowned Captive.Settings saved_state = Captive.Settings.get_default ();
-        saved_state.window_width = window_width;
-        saved_state.window_height = window_height;
+        Captive.Application.settings.set_int ("window-width", window_width);
+        Captive.Application.settings.set_int ("window-height", window_height);
         if (is_maximized) {
-            saved_state.window_state = Captive.Settings.WindowState.MAXIMIZED;
+            Captive.Application.settings.set_boolean ("is-maximized", true);
         } else {
-            saved_state.window_state = Captive.Settings.WindowState.NORMAL;
+            Captive.Application.settings.set_boolean ("is-maximized", false);
         }
 
         return false;

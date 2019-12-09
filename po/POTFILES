@@ -1,5 +1,4 @@
 src/TabbedWebView.vala
-src/Settings.vala
 src/CertButton.vala
 src/CaptiveLogin.vala
 src/Application.vala

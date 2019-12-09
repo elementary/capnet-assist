@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-    <enum id="io.elementary.desktop.capnet-assist.windowstate">
-        <value value="0" nick="normal"/>
-        <value value="1" nick="maximized"/>
-    </enum>       
     <schema path="/io/elementary/desktop/capnet-assist/" id="io.elementary.desktop.capnet-assist">
         <key type="i" name="window-width">
           <default>1000</default>
@@ -15,10 +11,9 @@
           <summary>Window height</summary>
           <description>Window height</description>
         </key>
-        <key enum="io.elementary.desktop.capnet-assist.windowstate" name="window-state">
-          <default>'normal'</default>
-          <summary>The saved state of the window</summary>
-          <description>The saved state of the window</description>
+        <key type="b" name="is-maximized">
+          <default>false</default>
+          <summary>Whether the window is maximized</summary>
         </key>
         <key name="enabled" type="b">
             <default>true</default>
