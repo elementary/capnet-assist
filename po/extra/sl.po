@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2020-01-08 00:07+0000\n"
-"Last-Translator: Jernej Virag <jernej@virag.si>\n"
+"PO-Revision-Date: 2020-02-16 05:32+0000\n"
+"Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/sl/>\n"
 "Language: sl\n"
@@ -24,12 +24,12 @@ msgstr ""
 #: data/io.elementary.capnet-assist.appdata.xml.in:8
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr "Pomočnik za internetno povezavo"
+msgstr "Pomočnik za prestrezna omrežja"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:9
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr "Poveži se na omrežje preko portala"
+msgstr "Povežite se na omrežje prestreznih portalov"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:11
 msgid ""
@@ -37,6 +37,9 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
+"Prijavite se v prestrezne portale (kot so Wi-Fi omrežja v kavarnah, na "
+"letališčih in vlakih) z lahkoto. Pomočnik za prestrezne portale se odpre "
+"samodejno in vam pomaga pri povezovanju."
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
 msgid "Updated translations"
@@ -48,7 +51,7 @@ msgstr "elementary, Inc."
 
 #: data/io.elementary.capnet-assist.desktop.in:6
 msgid "preferences-system-network"
-msgstr ""
+msgstr "preferences-system-network"
 
 #~ msgid "Loading captive portal."
 #~ msgstr "Nalagam portal."
