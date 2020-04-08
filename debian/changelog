@@ -1,3 +1,11 @@
+capnet-assist (2.2.5) bionic; urgency=medium
+
+  * Release 2.2.5 (#52)
+  * Update .travis.yml
+  * Replace Granite.Services.Settings with GLib.Settings (#51)
+
+ -- Cody Garver <cody@elementary.io>  Wed, 08 Apr 2020 20:33:07 +0000
+
 capnet-assist (2.2.4) bionic; urgency=medium
 
   * Release 2.2.4 (#50)
