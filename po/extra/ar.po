@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2019-12-15 02:07+0000\n"
+"PO-Revision-Date: 2020-05-14 14:11+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/ar/>\n"
@@ -39,11 +39,11 @@ msgstr ""
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
 msgid "Updated translations"
-msgstr ""
+msgstr "ترجمات محدثة"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:59
 msgid "elementary, Inc."
-msgstr "إليمانتري المحدودة."
+msgstr "اليمينتري المتحدة."
 
 #: data/io.elementary.capnet-assist.desktop.in:6
 msgid "preferences-system-network"
