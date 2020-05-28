@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2018-11-28 14:20+0000\n"
+"PO-Revision-Date: 2020-05-29 13:11+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "desktop/capnet-assist/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/CertButton.vala:44
@@ -45,9 +45,8 @@ msgid "Force the browser window to appear"
 msgstr "强制显示浏览器窗口"
 
 #: src/Application.vala:57
-#, fuzzy
 msgid "Load this address in the browser window"
-msgstr "在浏览器窗口中载入下列 URL"
+msgstr "在浏览器中打开此地址"
 
 #: src/Application.vala:57
 msgid "URL"
