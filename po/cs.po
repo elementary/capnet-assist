@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2020-05-29 13:11+0000\n"
+"PO-Revision-Date: 2020-06-07 11:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/cs/>\n"
@@ -44,11 +44,11 @@ msgstr "Přihlásit se"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr "Vynutit zobrazení okna prohlížeče"
+msgstr "Vynutit zobrazení okna webového prohlížeče"
 
 #: src/Application.vala:57
 msgid "Load this address in the browser window"
-msgstr "Načíst tuto adresu v okně prohlížeče"
+msgstr "Načíst tuto adresu v okně webového prohlížeče"
 
 #: src/Application.vala:57
 msgid "URL"
