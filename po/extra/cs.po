@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2020-05-29 13:11+0000\n"
+"PO-Revision-Date: 2020-06-07 11:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/cs/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: data/io.elementary.capnet-assist.appdata.xml.in:8
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr "Uzavřený síťový portál"
+msgstr "Pomocník pro uzavřené síťové portály (captive portal)"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:9
 #: data/io.elementary.capnet-assist.desktop.in:5
@@ -36,9 +36,9 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
-"Přihlašte se do uzavřených síťových portálů, jako např. Wi-Fi sítě v "
-"kavárnách, letištích a ve vlacích. Tento asistent se automaticky otevře, aby "
-"vám pomohl připojit se."
+"Přihlašujte se do uzavřených síťových portálů, jako např. Wi-Fi sítě v "
+"kavárnách, letištích a ve vlacích – jednoduše. Tento pomocník se automaticky "
+"otevře, aby vám pomohl připojit se."
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
 msgid "Updated translations"
