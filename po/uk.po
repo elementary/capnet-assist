@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2020-09-11 19:31+0000\n"
+"PO-Revision-Date: 2020-09-12 22:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/uk/>\n"
@@ -42,12 +42,12 @@ msgstr "Увійти"
 
 #: src/Application.vala:56
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "Примусово відкрити вікно браузера"
 
 #: src/Application.vala:57
 msgid "Load this address in the browser window"
-msgstr ""
+msgstr "Завантажити цю адресу у вікні переглядача"
 
 #: src/Application.vala:57
 msgid "URL"
-msgstr ""
+msgstr "URL"
