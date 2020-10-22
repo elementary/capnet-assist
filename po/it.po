@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2020-10-13 22:14+0000\n"
+"PO-Revision-Date: 2020-10-23 17:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/it/>\n"
@@ -35,7 +35,7 @@ msgstr "La pagina è servita tramite una connessione protetta."
 #: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
-"Alcuni elementi di questa pagina sono serviti su una connessione non "
+"Alcuni elementi di questa pagina sono forniti tramite una connessione non "
 "protetta."
 
 #: src/CaptiveLogin.vala:50
