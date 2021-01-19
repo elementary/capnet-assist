@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
 "PO-Revision-Date: 2021-01-19 21:39+0000\n"
-"Last-Translator: Leander <admin@apptooler.org>\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/de/>\n"
 "Language: de\n"
@@ -23,12 +23,12 @@ msgstr ""
 #: data/io.elementary.capnet-assist.appdata.xml.in:8
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr "Assistent für unternehmenseigenes Netzwerk"
+msgstr "Assistent für Netzwerk mit Vorschaltseite"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:9
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr "Verbindung zu unternehmenseigenen Netzwerkportalen herstellen"
+msgstr "Verbindung zu einem Netzwerk mit Vorschaltseite herstellen"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:11
 msgid ""
