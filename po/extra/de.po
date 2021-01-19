@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2021-01-19 21:39+0000\n"
+"PO-Revision-Date: 2021-01-20 02:14+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/de/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: data/io.elementary.capnet-assist.appdata.xml.in:8
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr "Assistent für Netzwerk mit Vorschaltseite"
+msgstr "Assistent für Netzwerke mit Vorschaltseite"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:9
 #: data/io.elementary.capnet-assist.desktop.in:5
@@ -36,9 +36,10 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
-"Verbinde Dich ganz einfach mit öffentlichen Netzwerken, wie dem WLAN im "
-"Café, am Flughafen oder im Zug. Der Captive Network Assistent öffnet sich "
-"automatisch, um Dir bei der Anmeldung zu helfen."
+"Verbindungen mit Netzwerken mit Vorschaltseiten einfach herstellen, wie dem "
+"WLAN im Café, am Flughafen oder im Zug. Der »Assistent für Netzwerke mit "
+"Vorschaltseite« öffnet sich automatisch, um bei der Anmeldung zu "
+"unterstützen."
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
 msgid "Updated translations"
