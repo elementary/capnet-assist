@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2021-01-20 02:14+0000\n"
+"PO-Revision-Date: 2021-02-25 16:54+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/de/>\n"
@@ -35,7 +35,7 @@ msgstr "Diese Seite wird über eine geschützte Verbindung bereitgestellt."
 #: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
-"Manche Elemente dieser Seite werden über eine ungeschützte Verbindung "
+"Einige Elemente dieser Seite werden über eine ungeschützte Verbindung "
 "bereitgestellt."
 
 #: src/CaptiveLogin.vala:50
@@ -48,7 +48,7 @@ msgstr "Anzeige des Browser-Fensters erzwingen"
 
 #: src/Application.vala:57
 msgid "Load this address in the browser window"
-msgstr "Die folgende Adresse im Browser-Fenster laden"
+msgstr "Folgende Adresse im Browser-Fenster laden"
 
 #: src/Application.vala:57
 msgid "URL"
