@@ -21,16 +21,3 @@ Depends: network-manager, network-manager-config-connectivity-ubuntu, ${misc:Dep
 Description: Captive login detector
  A small WebKit app only to make a user log in when a
  captive portal is detected.
-
-Package: capnet-assist-dbg
-Architecture: any
-Section: debug
-Priority: extra
-Depends: capnet-assist (= ${binary:Version}), ${misc:Depends}
-Pre-Depends: dpkg (>= 1.15.6)
-Enhances: capnet-assist
-Description: Captive login detector (debugging symbols)
- A small WebKit app only to make a user log in when a
- captive portal is detected.
- .
- This package contains debugging symbols for capnet-assist.
