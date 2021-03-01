@@ -13,7 +13,7 @@
 	dh $@ --buildsystem=meson
 
 override_dh_strip:
-	dh_strip --dbg-package=capnet-assist-dbg
+	dh_strip --dbgsym-migration='capnet-assist-dbg (<< 2.2.5)'
 
 override_dh_auto_install:
 	dh_auto_install --destdir=debian/capnet-assist
