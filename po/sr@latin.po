@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.elementary.capnet-assist package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: io.elementary.capnet-assist\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sr@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/CertButton.vala:44
+msgid "Loading captive portal."
+msgstr ""
+
+#: src/CertButton.vala:48
+msgid "The page is served over an unprotected connection."
+msgstr ""
+
+#: src/CertButton.vala:53
+msgid "The page is served over a protected connection."
+msgstr ""
+
+#: src/CertButton.vala:58
+msgid "Some elements of this page are served over an unprotected connection."
+msgstr ""
+
+#: src/CaptiveLogin.vala:50
+msgid "Log in"
+msgstr ""
+
+#: src/Application.vala:56
+msgid "Force the browser window to appear"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "Load this address in the browser window"
+msgstr ""
+
+#: src/Application.vala:57
+msgid "URL"
+msgstr ""
