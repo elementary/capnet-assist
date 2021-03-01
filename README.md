@@ -12,6 +12,7 @@ You'll need the following dependencies:
 * libglib2.0-dev
 * libgranite-dev
 * libgtk-3-dev
+* libhandy-1-dev >= 1.0.0
 * libwebkit2gtk-4.0-dev
 * meson
 * valac

@@ -18,7 +18,7 @@
 *
 */
 
-public class CaptiveLogin : Gtk.ApplicationWindow {
+public class CaptiveLogin : Hdy.ApplicationWindow {
     private const string DUMMY_URL = "http://capnet.elementary.io";
 
     private CertButton cert_button;
@@ -40,33 +40,39 @@ public class CaptiveLogin : Gtk.ApplicationWindow {
     }
 
     construct {
+        Hdy.init ();
+
         cert_button = new CertButton (this);
 
         title_label = new Gtk.Label (_("Log in"));
         title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
 
-        var header_grid = new Gtk.Grid ();
-        header_grid.column_spacing = 6;
-        header_grid.margin_top = 3;
-        header_grid.margin_bottom = 3;
+        var header_grid = new Gtk.Grid () {
+            column_spacing = 6
+        };
         header_grid.add (cert_button);
         header_grid.add (title_label);
 
-        var header = new Gtk.HeaderBar ();
-        header.show_close_button = true;
-        header.get_style_context ().add_class ("compact");
-        header.custom_title = header_grid;
+        var header = new Hdy.HeaderBar () {
+            custom_title = header_grid,
+            show_close_button = true
+        };
+        header.get_style_context ().add_class ("default-decoration");
 
-        set_titlebar (header);
+        notebook = new Granite.Widgets.DynamicNotebook () {
+            add_button_visible = false,
+            allow_drag = false,
+            allow_new_window = false,
+            allow_restoring = false,
+            expand = true,
+            tab_bar_behavior = Granite.Widgets.DynamicNotebook.TabBarBehavior.SINGLE
+        };
 
-        notebook = new Granite.Widgets.DynamicNotebook ();
-        notebook.tab_bar_behavior = Granite.Widgets.DynamicNotebook.TabBarBehavior.SINGLE;
-        notebook.allow_drag = false;
-        notebook.allow_new_window = false;
-        notebook.allow_restoring = false;
-        notebook.add_button_visible = false;
+        var grid = new Gtk.Grid ();
+        grid.attach (header, 0, 0);
+        grid.attach (notebook, 0, 1);
 
-        add (notebook);
+        add (grid);
 
         set_keep_above (true);
         skip_taskbar_hint = true;
