@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 16:43+0000\n"
-"PO-Revision-Date: 2018-06-30 13:22+0000\n"
-"Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
-"Language-Team: Russian <https://weblate.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2021-03-06 17:28+0000\n"
+"Last-Translator: yurdmitriev <yurdmitriev02@gmail.com>\n"
+"Language-Team: Russian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/CertButton.vala:44
@@ -47,7 +47,7 @@ msgstr ""
 
 #: src/Application.vala:57
 msgid "Load this address in the browser window"
-msgstr ""
+msgstr "Загрузить этот адрес в браузере"
 
 #: src/Application.vala:57
 msgid "URL"
