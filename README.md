@@ -31,10 +31,14 @@ To install, use `ninja install`, then execute with `captive-login`
 
 Set the environment variable `G_MESSAGES_DEBUG` to "all" to have the captive-login binary print debug messages.
 
-Use the flag `-f` to force the captive login window to show even if no captive portal is detected.
+Use the flag `-f` to force the captive login window to show even if no captive portal is detected:
 
     io.elementary.capnet-assist -f 
 
-Use the flag `-u` to direct the captive login window to a specific URL. This may not show a window without `-f` if no captive portal is detected.
+Use the flag `-u` to direct the captive login window to a specific URL. This may not show a window without `-f` if no captive portal is detected:
 
     io.elementary.capnet-assist -fu https://elementary.io
+    
+An example HTML file is included in this repository, e.g. for screenshots, but note you must include a `file://` path:
+
+    io.elementary.capnet-assist -fu file:///home/username/Projects/elementary/capnet-assist/data/example.html
