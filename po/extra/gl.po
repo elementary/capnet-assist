@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2019-09-19 18:26+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -40,10 +40,16 @@ msgstr ""
 "automaticamente para conectarse."
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
+msgid "Dark style support"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:18
+#: data/io.elementary.capnet-assist.appdata.xml.in:25
+#: data/io.elementary.capnet-assist.appdata.xml.in:32
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:59
+#: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

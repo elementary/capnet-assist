@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2020-03-01 15:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -38,10 +38,16 @@ msgid ""
 msgstr ""
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
+msgid "Dark style support"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:18
+#: data/io.elementary.capnet-assist.appdata.xml.in:25
+#: data/io.elementary.capnet-assist.appdata.xml.in:32
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:59
+#: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
