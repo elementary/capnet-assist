@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2018-06-13 00:06+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop/"
@@ -36,18 +36,18 @@ msgstr "Az oldallal való kapcsolat védett."
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "Az oldal egyes elemei nem védett kapcsolaton keresztül töltődtek be."
 
-#: src/CaptiveLogin.vala:50
+#: src/CaptiveLogin.vala:56
 msgid "Log in"
 msgstr "Bejelentkezés"
 
-#: src/Application.vala:56
+#: src/Application.vala:61
 msgid "Force the browser window to appear"
 msgstr ""
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "Load this address in the browser window"
 msgstr ""
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "URL"
 msgstr ""

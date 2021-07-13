@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2019-09-19 18:26+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -36,19 +36,19 @@ msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
 "Algúns elementos desta páxina fornécense mediante unha conexión desprotexida."
 
-#: src/CaptiveLogin.vala:50
+#: src/CaptiveLogin.vala:56
 msgid "Log in"
 msgstr "Acceder"
 
-#: src/Application.vala:56
+#: src/Application.vala:61
 msgid "Force the browser window to appear"
 msgstr "Forzar que se mostre a xanela do navegador"
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 #, fuzzy
 msgid "Load this address in the browser window"
 msgstr "Cargar o seguinte URL na xanela do navegador"
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "URL"
 msgstr "URL"
