@@ -1,3 +1,14 @@
+capnet-assist (2.3.0) bionic; urgency=medium
+
+  * Release 2.3.0 (#60)
+  * Add dark style support (#58)
+  * Update translation files
+  * CaptiveLogin: Subclass Hdy.ApplicationWindow (#55)
+  * Use GitHub CI (#56)
+  * LINGUAS: Sort and remove en
+
+ -- Cody Garver <cody@elementary.io>  Tue, 13 Jul 2021 23:29:10 +0000
+
 capnet-assist (2.2.5) bionic; urgency=medium
 
   * Release 2.2.5 (#52)
