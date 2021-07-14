@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2018-06-05 09:25+0000\n"
 "Last-Translator: Liffindra Angga Zaaldian <liffindra.zaaldian@icloud.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/desktop/"
@@ -37,18 +37,18 @@ msgstr ""
 "Beberapa elemen dari halaman ini disajikan lewat sambungan yang tidak "
 "terlindungi."
 
-#: src/CaptiveLogin.vala:50
+#: src/CaptiveLogin.vala:56
 msgid "Log in"
 msgstr "Masuk"
 
-#: src/Application.vala:56
+#: src/Application.vala:61
 msgid "Force the browser window to appear"
 msgstr ""
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "Load this address in the browser window"
 msgstr ""
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "URL"
 msgstr ""

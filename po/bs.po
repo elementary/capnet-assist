@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2018-11-21 08:00+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/desktop/"
@@ -36,19 +36,19 @@ msgstr "Ova stranica se prenosi putem zaštićene veze."
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "Pojedini elementi ove stranice su prikazani preko nezaštićene veze."
 
-#: src/CaptiveLogin.vala:50
+#: src/CaptiveLogin.vala:56
 msgid "Log in"
 msgstr "Prijava"
 
-#: src/Application.vala:56
+#: src/Application.vala:61
 msgid "Force the browser window to appear"
 msgstr "Natjeraj prozor pregledanika da se pojavi"
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 #, fuzzy
 msgid "Load this address in the browser window"
 msgstr "Učitaj sljedeći URL u prozoru preglednika"
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "URL"
 msgstr "URL"

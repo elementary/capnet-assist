@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2019-11-09 11:24+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
-"Language-Team: Esperanto <https://l10n.elementary.io/projects/desktop/"
-"capnet-assist/eo/>\n"
+"Language-Team: Esperanto <https://l10n.elementary.io/projects/desktop/capnet-"
+"assist/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,18 +35,18 @@ msgstr "Protektata konekto provizas la paĝon."
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "Senprotekta konekto provizas elementojn de la paĝo."
 
-#: src/CaptiveLogin.vala:50
+#: src/CaptiveLogin.vala:56
 msgid "Log in"
 msgstr "Ensaluti"
 
-#: src/Application.vala:56
+#: src/Application.vala:61
 msgid "Force the browser window to appear"
 msgstr "Trudi aperon de la foliumila paĝo"
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "Load this address in the browser window"
 msgstr "Ŝargi ĉi adreson en la foliumilo"
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "URL"
 msgstr "URL-adreso"

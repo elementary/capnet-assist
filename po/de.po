@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2021-02-25 16:54+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
-"Language-Team: German <https://l10n.elementary.io/projects/desktop/"
-"capnet-assist/de/>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/desktop/capnet-"
+"assist/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,19 +38,19 @@ msgstr ""
 "Einige Elemente dieser Seite werden über eine ungeschützte Verbindung "
 "bereitgestellt."
 
-#: src/CaptiveLogin.vala:50
+#: src/CaptiveLogin.vala:56
 msgid "Log in"
 msgstr "Anmelden"
 
-#: src/Application.vala:56
+#: src/Application.vala:61
 msgid "Force the browser window to appear"
 msgstr "Anzeige des Browser-Fensters erzwingen"
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "Load this address in the browser window"
 msgstr "Folgende Adresse im Browser-Fenster laden"
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "URL"
 msgstr "URL"
 
