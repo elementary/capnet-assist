@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-13 23:29+0000\n"
-"PO-Revision-Date: 2021-07-15 07:48+0000\n"
+"PO-Revision-Date: 2021-07-19 21:06+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/tr/>\n"
@@ -23,12 +23,12 @@ msgstr ""
 #: data/io.elementary.capnet-assist.appdata.xml.in:8
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr "Kısıtlı Ağ Yardımcısı"
+msgstr "Giriş Portalı Yardımcısı"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:9
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr "Kısıtlı ağ portallarına bağlan"
+msgstr "Giriş portallarına bağlan"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:11
 msgid ""
@@ -36,9 +36,9 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
-"Kısıtlı ağ portallarına—kafelerde, hava alanlarında ve trenlerdeki Wi-Fi "
-"ağları gibi—kolaylıkla giriş yapmanızı sağlar. Kısıtlı Ağ Asistanı "
-"bağlanmanıza yardımcı olmak için otomatik olarak açılır."
+"Giriş portallarına—kafelerde, hava alanlarında ve trenlerdeki Wi-Fi ağları "
+"gibi—kolaylıkla giriş yapmanızı sağlar. Giriş Portalı Asistanı bağlanmanıza "
+"yardımcı olmak için otomatik olarak açılır."
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
 msgid "Dark style support"
