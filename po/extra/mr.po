@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2020-04-05 22:10+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/"
-"capnet-assist-extra/mr/>\n"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/capnet-"
+"assist-extra/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,10 +39,16 @@ msgstr ""
 "सहजतेने. कॅप्टिव्ह नेटवर्क सहाय्यक आपोआप कनेक्ट होण्यास मदत करण्यासाठी स्वयंचलितपणे उघडते."
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
+msgid "Dark style support"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:18
+#: data/io.elementary.capnet-assist.appdata.xml.in:25
+#: data/io.elementary.capnet-assist.appdata.xml.in:32
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:59
+#: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
 msgstr "एलिमेंटरी,Inc."
 
