@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-13 23:29+0000\n"
-"PO-Revision-Date: 2021-07-19 21:06+0000\n"
+"PO-Revision-Date: 2021-07-21 15:01+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/de/>\n"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
 msgid "Dark style support"
-msgstr "Unterstützung für dunklen Stil"
+msgstr "Unterstützung für Dark Mode"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
 #: data/io.elementary.capnet-assist.appdata.xml.in:25
