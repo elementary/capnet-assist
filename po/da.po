@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:43+0000\n"
+"POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2020-05-25 19:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
-"Language-Team: Danish <https://l10n.elementary.io/projects/desktop/"
-"capnet-assist/da/>\n"
+"Language-Team: Danish <https://l10n.elementary.io/projects/desktop/capnet-"
+"assist/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,19 +35,19 @@ msgstr "Siden er vist over en beskyttet forbindelse."
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "Nogle elementer på denne side er vist over en ubeskyttet forbindelse."
 
-#: src/CaptiveLogin.vala:50
+#: src/CaptiveLogin.vala:56
 msgid "Log in"
 msgstr "Log ind"
 
-#: src/Application.vala:56
+#: src/Application.vala:61
 msgid "Force the browser window to appear"
 msgstr "Tving browservinduet til at blive vist"
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "Load this address in the browser window"
 msgstr "Indlæs følgende URL i browservinduet"
 
-#: src/Application.vala:57
+#: src/Application.vala:62
 msgid "URL"
 msgstr "URL"
 
