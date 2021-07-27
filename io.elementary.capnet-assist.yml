@@ -15,8 +15,6 @@ finish-args:
 modules:
   - name: gcr
     buildsystem: meson
-    config-opts:
-      - -Dbuild
     sources:
         - type: git
           url: https://gitlab.gnome.org/GNOME/gcr.git
