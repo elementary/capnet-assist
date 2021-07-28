@@ -11,7 +11,7 @@ finish-args:
   - '--socket=fallback-x11'
   - '--socket=wayland'
   - '--share=network'
-
+  - '--system-talk-name=org.freedesktop.Accounts'
 modules:
   - name: gcr
     buildsystem: meson
