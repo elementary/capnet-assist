@@ -13,13 +13,6 @@ finish-args:
   - '--share=network'
   - '--system-talk-name=org.freedesktop.Accounts'
 modules:
-  - name: gcr
-    buildsystem: meson
-    sources:
-        - type: git
-          url: https://gitlab.gnome.org/GNOME/gcr.git
-          tag: '3.36'
-          
   - name: capnet-assist
     buildsystem: meson
     sources:
