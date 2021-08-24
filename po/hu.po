@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-13 23:29+0000\n"
 "PO-Revision-Date: 2021-08-24 02:12+0000\n"
-"Last-Translator: zoli111 <acszoltan111@gmail.com>\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/hu/>\n"
 "Language: hu\n"
@@ -42,7 +42,7 @@ msgstr "Bejelentkezés"
 
 #: src/Application.vala:61
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "A böngészőablak megjelenítésének kényszerítése"
 
 #: src/Application.vala:62
 msgid "Load this address in the browser window"
