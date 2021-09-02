@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-13 23:29+0000\n"
-"PO-Revision-Date: 2021-09-02 21:38+0000\n"
-"Last-Translator: mateszabo2001 <mateszabo2001@gmail.com>\n"
+"PO-Revision-Date: 2021-09-02 21:46+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/hu/>\n"
 "Language: hu\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
 msgid "Dark style support"
-msgstr ""
+msgstr "Sötét téma támogatása"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
 #: data/io.elementary.capnet-assist.appdata.xml.in:25
@@ -52,7 +52,7 @@ msgstr "Frissített fordítások"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
-msgstr "elementary, bejegyezve"
+msgstr "elementary, Inc."
 
 #: data/io.elementary.capnet-assist.desktop.in:6
 msgid "preferences-system-network"
