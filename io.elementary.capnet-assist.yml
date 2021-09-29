@@ -1,0 +1,21 @@
+app-id: io.elementary.capnet-assist
+
+runtime: io.elementary.Platform
+runtime-version: 'daily'
+sdk: io.elementary.Sdk
+
+command: io.elementary.capnet-assist
+
+finish-args:
+  - '--device=dri'
+  - '--share=ipc'
+  - '--socket=fallback-x11'
+  - '--socket=wayland'
+  - '--share=network'
+  - '--system-talk-name=org.freedesktop.Accounts'
+modules:
+  - name: capnet-assist
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: .

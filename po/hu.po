@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-13 23:29+0000\n"
-"PO-Revision-Date: 2018-06-13 00:06+0000\n"
-"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2021-09-02 21:46+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/CertButton.vala:44
@@ -42,12 +42,12 @@ msgstr "Bejelentkezés"
 
 #: src/Application.vala:61
 msgid "Force the browser window to appear"
-msgstr ""
+msgstr "A böngészőablak megjelenítésének kényszerítése"
 
 #: src/Application.vala:62
 msgid "Load this address in the browser window"
-msgstr ""
+msgstr "Az oldal betöltése böngészőablakban"
 
 #: src/Application.vala:62
 msgid "URL"
-msgstr ""
+msgstr "URL"
