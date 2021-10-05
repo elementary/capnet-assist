@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 23:29+0000\n"
+"POT-Creation-Date: 2021-10-05 21:25+0000\n"
 "PO-Revision-Date: 2021-09-07 02:12+0000\n"
 "Last-Translator: Yuchen Deng <inbz@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -54,8 +54,11 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/io.elementary.capnet-assist.desktop.in:6
-msgid "preferences-system-network"
-msgstr "preferences-system-network"
+msgid "io.elementary.capnet-assist"
+msgstr ""
+
+#~ msgid "preferences-system-network"
+#~ msgstr "preferences-system-network"
 
 #~ msgid "Loading captive portal."
 #~ msgstr "正在载入认证界面。"
