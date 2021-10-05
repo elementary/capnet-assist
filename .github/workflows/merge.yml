@@ -1,17 +1,15 @@
 ---
 
-name: CI
+name: Merge
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
+  push:
+    branches:
+      - master
 
 jobs:
-  flatpak:
-    name: Flatpak
+  deploy_flatpak:
+    name: Deploy Flatpak
     runs-on: ubuntu-latest
 
     strategy:
@@ -39,22 +37,30 @@ jobs:
         with:
           bundle: capnet-assist.flatpak
           manifest-path: io.elementary.capnet-assist.yml
-          run-tests: true
           repository-name: appcenter
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo
           cache-key: "flatpak-builder-${{ github.sha }}"
+          branch: daily
           arch: ${{ matrix.arch }}
 
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
+      - name: Deploy
+        uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v4
+        with:
+          repository: appcenter
+          flat-manager-url: https://flatpak-api.elementary.io
+          token: ${{ secrets.FLAT_MANAGER_TOKEN }}
 
-    container:
-      image: valalang/lint
+  gettext:
+    name: Gettext
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1 # Avoid an error when pushing
 
-      - name: Lint
-        run: io.elementary.vala-lint -d .
+      - name: Gettext
+        uses: elementary/actions/gettext-template@master
+        env:
+          GIT_USER_TOKEN: "${{ secrets.GIT_USER_TOKEN }}"
+          GIT_USER_NAME: "elementaryBot"
+          GIT_USER_EMAIL: "builds@elementary.io"
