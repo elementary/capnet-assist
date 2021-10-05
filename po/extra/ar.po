@@ -8,27 +8,27 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-13 23:29+0000\n"
-"PO-Revision-Date: 2020-05-14 14:11+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
-"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist-extra/ar/>\n"
+"PO-Revision-Date: 2021-08-27 18:48+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist-extra/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:8
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "مساعد بوابة الدخول الإلكترونية"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:9
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "اتصل ببوابات الدخول الإلكترونية"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:11
 msgid ""
@@ -36,20 +36,23 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
+"سجل دخولك على بوابات الدخول الإلكترونية، مثل شبكات الواي فاي في المقاهي، "
+"والمطارات، والقطارات بكل سهولة. مساعد بوابة الدخول الإلكترونية يفتح تلقائياً "
+"لمساعدتك على الاتصال."
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
 msgid "Dark style support"
-msgstr ""
+msgstr "دعم الواجهة المظلمة"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
 #: data/io.elementary.capnet-assist.appdata.xml.in:25
 #: data/io.elementary.capnet-assist.appdata.xml.in:32
 msgid "Updated translations"
-msgstr "ترجمات محدثة"
+msgstr "تحديثات على الترجمة"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
-msgstr "اليمينتري المتحدة."
+msgstr "elementary, Inc."
 
 #: data/io.elementary.capnet-assist.desktop.in:6
 msgid "preferences-system-network"
