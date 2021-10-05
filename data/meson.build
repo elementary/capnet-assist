@@ -3,7 +3,7 @@ install_data(
     install_dir: join_paths(get_option('datadir'), 'glib-2.0', 'schemas')
 )
 
-desktop_file = i18n.merge_file(
+i18n.merge_file(
     'desktop',
     input: meson.project_name() + '.desktop.in',
     output: meson.project_name() + '.desktop',
