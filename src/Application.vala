@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2016-2018 elementary LLC (https://launchpad.net/capnet-assist)
+* Copyright 2016-2021 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -18,7 +18,6 @@
 */
 
 public class Captive.Application : Gtk.Application {
-    private bool force_show = false;
     private string? debug_url = null;
 
     public static Settings settings;
@@ -31,11 +30,6 @@ public class Captive.Application : Gtk.Application {
         settings = new Settings ("io.elementary.desktop.capnet-assist");
     }
 
-    private static bool is_captive_portal () {
-        var network_monitor = NetworkMonitor.get_default ();
-        return network_monitor.get_connectivity () == NetworkConnectivity.PORTAL;
-    }
-
     public override void activate () {
         if (!settings.get_boolean ("enabled")) {
             quit ();
@@ -46,20 +40,13 @@ public class Captive.Application : Gtk.Application {
             mark_busy ();
 
             var browser = new CaptiveLogin (this);
-            if (is_captive_portal () || force_show) {
-                debug ("Opening browser to login");
-                browser.start (debug_url);
-            } else {
-                debug ("Already logged in and connected, or no internet connection. Shutting down.");
-                quit ();
-            }
+            browser.start (debug_url);
         }
     }
 
     public override int command_line (ApplicationCommandLine command_line) {
-        OptionEntry[] options = new OptionEntry[2];
-        options[0] = { "force-window", 'f', 0, OptionArg.NONE, ref force_show, _("Force the browser window to appear"), null };
-        options[1] = { "url", 'u', 0, OptionArg.STRING, ref debug_url, _("Load this address in the browser window"), _("URL") };
+        OptionEntry[] options = new OptionEntry[1];
+        options[0] = { "url", 'u', 0, OptionArg.STRING, ref debug_url, _("Load this address in the browser window"), _("URL") };
 
         string[] args = command_line.get_arguments ();
 
