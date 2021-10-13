@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 21:25+0000\n"
+"POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2020-02-16 05:32+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -42,17 +42,16 @@ msgstr ""
 msgid "Log in"
 msgstr "Prijava"
 
-#: src/Application.vala:61
-msgid "Force the browser window to appear"
-msgstr "Vsili pojavitev brskalnikovega okna"
-
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "Load this address in the browser window"
 msgstr "Naloži ta naslov v oknu brskalnika"
 
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "URL"
 msgstr "URL"
+
+#~ msgid "Force the browser window to appear"
+#~ msgstr "Vsili pojavitev brskalnikovega okna"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "Pomočnik za internetno povezavo"

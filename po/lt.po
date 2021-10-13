@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 21:25+0000\n"
+"POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2018-11-19 10:05+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/desktop/"
@@ -41,18 +41,17 @@ msgstr "Kai kurie šio puslapio elementai yra pateikiami per neapsaugotą ryšį
 msgid "Log in"
 msgstr "Prisijungti"
 
-#: src/Application.vala:61
-msgid "Force the browser window to appear"
-msgstr "Priverstinai atverti naršyklės langą"
-
-#: src/Application.vala:62
+#: src/Application.vala:49
 #, fuzzy
 msgid "Load this address in the browser window"
 msgstr "Įkelti šį URL naršyklės lange"
 
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "URL"
 msgstr "URL"
+
+#~ msgid "Force the browser window to appear"
+#~ msgstr "Priverstinai atverti naršyklės langą"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "Belaisvio tinklo pagelbiklis"

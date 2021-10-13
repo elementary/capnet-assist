@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 21:25+0000\n"
+"POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2020-12-19 10:16+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -41,14 +41,13 @@ msgstr "Неки елементи ове странице су послужен�
 msgid "Log in"
 msgstr "Пријави ме"
 
-#: src/Application.vala:61
-msgid "Force the browser window to appear"
-msgstr "Приморава појављивање прозора прегледника"
-
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "Load this address in the browser window"
 msgstr "Учитава ову адресу у прозору прегледника"
 
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "URL"
 msgstr "Адреса"
+
+#~ msgid "Force the browser window to appear"
+#~ msgstr "Приморава појављивање прозора прегледника"

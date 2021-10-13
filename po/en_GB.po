@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 21:25+0000\n"
+"POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2020-03-19 18:09+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@posteo.net>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -39,14 +39,13 @@ msgstr "Some elements of this page are served over an unprotected connection."
 msgid "Log in"
 msgstr "Log in"
 
-#: src/Application.vala:61
-msgid "Force the browser window to appear"
-msgstr "Force the browser windows to appear"
-
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "Load this address in the browser window"
 msgstr "Load this address in the browser window"
 
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "URL"
 msgstr "URL"
+
+#~ msgid "Force the browser window to appear"
+#~ msgstr "Force the browser windows to appear"

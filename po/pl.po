@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 21:25+0000\n"
+"POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2019-11-15 23:24+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -42,17 +42,16 @@ msgstr ""
 msgid "Log in"
 msgstr "Zaloguj"
 
-#: src/Application.vala:61
-msgid "Force the browser window to appear"
-msgstr "Wymuś wyświetlenie okna przeglądarki"
-
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "Load this address in the browser window"
 msgstr "Wczytaj ten adres w oknie przeglądarki"
 
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "URL"
 msgstr "Adres URL"
+
+#~ msgid "Force the browser window to appear"
+#~ msgstr "Wymuś wyświetlenie okna przeglądarki"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "Asystent uwierzytelniania sieciowego"

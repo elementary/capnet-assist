@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 21:25+0000\n"
+"POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2020-08-29 20:13+0000\n"
 "Last-Translator: Mejans <farga@mejans.fr>\n"
 "Language-Team: Occitan <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -39,14 +39,13 @@ msgstr ""
 msgid "Log in"
 msgstr "Connexion"
 
-#: src/Application.vala:61
-msgid "Force the browser window to appear"
-msgstr "Forçar l’afichatge de la fenèstra del navegador"
-
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "Load this address in the browser window"
 msgstr "Cargar aquesta adreça dins la fenèstra del navegador"
 
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "URL"
 msgstr "URL"
+
+#~ msgid "Force the browser window to appear"
+#~ msgstr "Forçar l’afichatge de la fenèstra del navegador"

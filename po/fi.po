@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 21:25+0000\n"
+"POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2019-11-09 11:24+0000\n"
 "Last-Translator: Veli-Pekka Samuli Finnilä <vpf@tuta.io>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -40,17 +40,16 @@ msgstr "Jotkin tämän sivun osat tarjotaan suojaamattomalla yhteydellä."
 msgid "Log in"
 msgstr "Kirjaudu"
 
-#: src/Application.vala:61
-msgid "Force the browser window to appear"
-msgstr "Pakota selaimen ikkuna ilmestymään"
-
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "Load this address in the browser window"
 msgstr "Lataa tämä osoite selainikkunassa"
 
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "URL"
 msgstr "URL"
+
+#~ msgid "Force the browser window to appear"
+#~ msgstr "Pakota selaimen ikkuna ilmestymään"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "Kirjautumisportaaliverkon avustaja"

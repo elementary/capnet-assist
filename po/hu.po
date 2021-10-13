@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 21:25+0000\n"
+"POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2021-09-02 21:46+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -40,14 +40,13 @@ msgstr "Az oldal egyes elemei nem védett kapcsolaton keresztül töltődtek be.
 msgid "Log in"
 msgstr "Bejelentkezés"
 
-#: src/Application.vala:61
-msgid "Force the browser window to appear"
-msgstr "A böngészőablak megjelenítésének kényszerítése"
-
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "Load this address in the browser window"
 msgstr "Az oldal betöltése böngészőablakban"
 
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "URL"
 msgstr "URL"
+
+#~ msgid "Force the browser window to appear"
+#~ msgstr "A böngészőablak megjelenítésének kényszerítése"

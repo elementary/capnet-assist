@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 21:25+0000\n"
+"POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2020-05-25 19:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -39,17 +39,16 @@ msgstr "Nogle elementer på denne side er vist over en ubeskyttet forbindelse."
 msgid "Log in"
 msgstr "Log ind"
 
-#: src/Application.vala:61
-msgid "Force the browser window to appear"
-msgstr "Tving browservinduet til at blive vist"
-
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "Load this address in the browser window"
 msgstr "Indlæs følgende URL i browservinduet"
 
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "URL"
 msgstr "URL"
+
+#~ msgid "Force the browser window to appear"
+#~ msgstr "Tving browservinduet til at blive vist"
 
 #~ msgid "Captive Network Assistant"
 #~ msgstr "Captive Netværksassistent"

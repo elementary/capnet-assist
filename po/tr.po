@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 21:25+0000\n"
+"POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2019-11-15 23:24+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -41,17 +41,16 @@ msgstr ""
 msgid "Log in"
 msgstr "Oturum aç"
 
-#: src/Application.vala:61
-msgid "Force the browser window to appear"
-msgstr "Tarayıcı penceresini görünmeye zorla"
-
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "Load this address in the browser window"
 msgstr "Bu adresi tarayıcı penceresinde aç"
 
-#: src/Application.vala:62
+#: src/Application.vala:49
 msgid "URL"
 msgstr "URL"
+
+#~ msgid "Force the browser window to appear"
+#~ msgstr "Tarayıcı penceresini görünmeye zorla"
 
 #~ msgid "preferences-system-network"
 #~ msgstr "tercihler-sistem-ağ"
