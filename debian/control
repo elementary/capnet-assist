@@ -1,17 +1,8 @@
 Source: capnet-assist
 Section: net
 Priority: optional
-Maintainer: Cody Garver <cody@elementary.io>
-Build-Depends: debhelper (>= 10.5.1),
-               gettext,
-               libgcr-3-dev,
-               libglib2.0-dev (>= 2.44),
-               libgranite-dev,
-               libgtk-3-dev,
-               libhandy-1-dev,
-               libwebkit2gtk-4.0-dev,
-               meson,
-               valac (>= 0.28)
+Maintainer: elementary, Inc. <builds@elementary.io> 
+Build-Depends: debhelper (>= 10.5.1)
 Standards-Version: 4.1.1
 Homepage: https://github.com/elementary/capnet-assist
 

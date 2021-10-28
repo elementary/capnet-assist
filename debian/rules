@@ -10,11 +10,8 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --buildsystem=meson
+	dh $@
 
 override_dh_strip:
 	dh_strip --dbgsym-migration='capnet-assist-dbg (<< 2.2.5)'
 
-override_dh_auto_install:
-	dh_auto_install --destdir=debian/capnet-assist
-	find . -name "extra.mo" -delete
