@@ -8,7 +8,7 @@ Homepage: https://github.com/elementary/capnet-assist
 
 Package: capnet-assist
 Architecture: any
-Depends: network-manager, network-manager-config-connectivity-ubuntu, ${misc:Depends}, ${shlibs:Depends}
+Depends: flatpak, network-manager, network-manager-config-connectivity-ubuntu, ${misc:Depends}, ${shlibs:Depends}
 Description: Captive login detector
  A small WebKit app only to make a user log in when a
  captive portal is detected.
