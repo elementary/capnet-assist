@@ -1,3 +1,19 @@
+capnet-assist (2.4.0) bionic; urgency=medium
+
+  * Release 2.4.0 (#67)
+  * Flatpak: Remove accountsservice hole (#68)
+  * Update translation files
+  * Update translation template
+  * Allow Launching from Indicator (#66)
+  * Create a unique icon (#63)
+  * Add aarch64 architecture support to flatpak builds (#65)
+  * README: Update name to match elsewhere (#64)
+  * Delete main.yml
+  * Package as Flatpak (#62)
+  * README: document example HTML file (#61)
+
+ -- elementary, Inc. <builds@elementary.io>  Fri, 29 Oct 2021 23:39:58 +0000
+
 capnet-assist (2.3.0) bionic; urgency=medium
 
   * Release 2.3.0 (#60)
