@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2021-11-01 05:30+0000\n"
-"Last-Translator: EternalV <lgprc@outlook.com>\n"
+"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/zh/>\n"
 "Language: zh\n"
@@ -33,7 +33,7 @@ msgstr "这个页面提供的是经过保护的链接."
 
 #: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr ""
+msgstr "此页面中的某些元素来自未受保护的连接。"
 
 #: src/CaptiveLogin.vala:56
 msgid "Log in"
@@ -45,4 +45,4 @@ msgstr "在浏览器窗口中加载此地址"
 
 #: src/Application.vala:49
 msgid "URL"
-msgstr ""
+msgstr "URL"
