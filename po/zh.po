@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
-"PO-Revision-Date: 2021-11-01 05:30+0000\n"
-"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
+"PO-Revision-Date: 2021-11-01 05:31+0000\n"
+"Last-Translator: EternalV <lgprc@outlook.com>\n"
 "Language-Team: Chinese <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/zh/>\n"
 "Language: zh\n"
@@ -33,7 +33,7 @@ msgstr "这个页面提供的是经过保护的链接."
 
 #: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr "此页面中的某些元素来自未受保护的连接。"
+msgstr "该页面的一些元素未提供经过保护的连接"
 
 #: src/CaptiveLogin.vala:56
 msgid "Log in"
