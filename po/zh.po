@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2021-11-01 05:32+0000\n"
-"Last-Translator: 李林 <376422269@qq.com>\n"
+"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/zh/>\n"
 "Language: zh\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/CertButton.vala:44
 msgid "Loading captive portal."
-msgstr ""
+msgstr "正在加载认证界面。"
 
 #: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
@@ -33,7 +33,7 @@ msgstr "这个页面提供的是经过保护的链接。"
 
 #: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr "该页面的一些元素未提供经过保护的连接"
+msgstr "该页面的一些元素未提供经过保护的连接。"
 
 #: src/CaptiveLogin.vala:56
 msgid "Log in"
