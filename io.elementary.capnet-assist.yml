@@ -1,7 +1,7 @@
 app-id: io.elementary.capnet-assist
 
 runtime: io.elementary.Platform
-runtime-version: '6'
+runtime-version: 'daily'
 sdk: io.elementary.Sdk
 
 command: io.elementary.capnet-assist
