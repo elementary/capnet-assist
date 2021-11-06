@@ -42,7 +42,7 @@
         </ul>
       </description>
     </release>
-  </releases
+  </releases>
 
   <provides>
     <binary>io.elementary.capnet-assist</binary>
