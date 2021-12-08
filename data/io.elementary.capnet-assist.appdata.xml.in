@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2018 elementary, Inc <contact@elementary.io> -->
+<!-- Copyright 2018-2021 elementary, Inc <contact@elementary.io> -->
 <component type="desktop-application">
   <id>io.elementary.capnet-assist</id>
   <metadata_license>CC0-1.0</metadata_license>
@@ -10,6 +10,7 @@
   <description>
     <p>Log into captive portals—like Wi-Fi networks at coffee shops, airports, and trains—with ease. Captive Network Assistant automatically opens to help you get connected.</p>
   </description>
+
   <releases>
     <release version="2.4.1" date="2021-12-07" urgency="medium">
       <description>
@@ -50,47 +51,27 @@
       </description>
     </release>
   </releases>
+
   <provides>
     <binary>io.elementary.capnet-assist</binary>
   </provides>
+
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/elementary/capnet-assist/master/data/screenshot.png</image>
     </screenshot>
   </screenshots>
-  <content_rating type="oars-1.1">
-    <content_attribute id="violence-cartoon">none</content_attribute>
-    <content_attribute id="violence-fantasy">none</content_attribute>
-    <content_attribute id="violence-realistic">none</content_attribute>
-    <content_attribute id="violence-bloodshed">none</content_attribute>
-    <content_attribute id="violence-sexual">none</content_attribute>
-    <content_attribute id="violence-desecration">none</content_attribute>
-    <content_attribute id="violence-slavery">none</content_attribute>
-    <content_attribute id="violence-worship">none</content_attribute>
-    <content_attribute id="drugs-alcohol">none</content_attribute>
-    <content_attribute id="drugs-narcotics">none</content_attribute>
-    <content_attribute id="drugs-tobacco">none</content_attribute>
-    <content_attribute id="sex-nudity">none</content_attribute>
-    <content_attribute id="sex-themes">none</content_attribute>
-    <content_attribute id="sex-homosexuality">none</content_attribute>
-    <content_attribute id="sex-prostitution">none</content_attribute>
-    <content_attribute id="sex-adultery">none</content_attribute>
-    <content_attribute id="sex-appearance">none</content_attribute>
-    <content_attribute id="language-profanity">none</content_attribute>
-    <content_attribute id="language-humor">none</content_attribute>
-    <content_attribute id="language-discrimination">none</content_attribute>
-    <content_attribute id="social-chat">none</content_attribute>
-    <content_attribute id="social-info">none</content_attribute>
-    <content_attribute id="social-audio">none</content_attribute>
-    <content_attribute id="social-location">none</content_attribute>
-    <content_attribute id="social-contacts">none</content_attribute>
-    <content_attribute id="money-purchasing">none</content_attribute>
-    <content_attribute id="money-gambling">none</content_attribute>
-  </content_rating>
+
+  <content_rating type="oars-1.1" />
   <developer_name>elementary, Inc.</developer_name>
   <url type="homepage">https://elementary.io/</url>
   <url type="bugtracker">https://github.com/elementary/capnet-assist/issues</url>
   <url type="donation">https://elementary.io/get-involved#funding</url>
   <url type="translate">https://l10n.elementary.io/projects/desktop</url>
   <update_contact>contact_at_elementary.io</update_contact>
+
+  <custom>
+    <value key="x-appcenter-color-primary">@base_color</value>
+    <value key="x-appcenter-color-primary-text">mix(@text_color, @GRAPE_500, 0.5)</value>
+  </custom>
 </component>
