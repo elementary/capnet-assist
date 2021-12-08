@@ -12,6 +12,14 @@
   </description>
 
   <releases>
+    <release version="2.4.1" date="2021-12-07" urgency="medium">
+      <description>
+        <ul>
+          <li>Update to elementary runtime 6.1</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.4.0" date="2021-10-29" urgency="medium">
       <description>
         <ul>
