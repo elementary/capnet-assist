@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
-"PO-Revision-Date: 2019-12-27 10:07+0000\n"
-"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist/nl/>\n"
+"PO-Revision-Date: 2022-01-15 13:42+0000\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/CertButton.vala:44
 msgid "Loading captive portal."
@@ -25,16 +25,16 @@ msgstr "Het afvang portaal wordt geladen."
 
 #: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
-msgstr "Deze pagina wordt aangeboden over een onbeschermde verbinding."
+msgstr "Deze pagina wordt aangeboden over een onbeveiligde verbinding."
 
 #: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
-msgstr "Deze pagina wordt aangeboden over een beschermde verbinding."
+msgstr "Deze pagina wordt aangeboden over een beveiligde verbinding."
 
 #: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
-"Sommige elementen van deze pagina worden aangeboden door een onbeschermde "
+"Sommige elementen van deze pagina worden aangeboden door een onbeveiligde "
 "verbinding."
 
 #: src/CaptiveLogin.vala:56
