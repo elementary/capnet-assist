@@ -1,3 +1,12 @@
+capnet-assist (2.4.1) bionic; urgency=medium
+
+  * Release 2.4.1 (#77)
+  * Fix data/meson.build (#76)
+  * AppData: Add dope branding (#71)
+  * Bump runtime to 6.1 (#70)
+
+ -- elementary, Inc. <builds@elementary.io>  Wed, 26 Jan 2022 18:02:38 +0000
+
 capnet-assist (2.4.0) bionic; urgency=medium
 
   * Release 2.4.0 (#67)
