@@ -12,7 +12,7 @@
   </description>
 
   <releases>
-    <release version="2.4.1" date="2021-12-07" urgency="medium">
+    <release version="2.4.1" date="2022-01-24" urgency="medium">
       <description>
         <ul>
           <li>Update to elementary runtime 6.1</li>
