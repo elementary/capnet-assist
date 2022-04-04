@@ -8,38 +8,41 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
-"PO-Revision-Date: 2016-10-10 12:53-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-04-04 21:19+0000\n"
+"Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
+"Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
+"desktop/capnet-assist/ckb/>\n"
 "Language: ckb\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/CertButton.vala:44
 msgid "Loading captive portal."
-msgstr ""
+msgstr "ئامادەکردنی پۆڕتاڵی ئەسیرکراو."
 
 #: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
-msgstr ""
+msgstr "ئەم پەڕەیە لەسەر پەیوەندییەکی نەپارێزراو ئامادەکراوە."
 
 #: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
-msgstr ""
+msgstr "ئەم پەڕەیە لەسەر پەیوەندییەکی پارێزراو ئامادەکراوە."
 
 #: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr ""
+msgstr "هەندێک ئامراز لەم پەڕەیەدا، لەسەر پەیوەندییەکی نەپارێزراو ئامادەکراوە."
 
 #: src/CaptiveLogin.vala:56
 msgid "Log in"
-msgstr ""
+msgstr "چوونەژورەوە"
 
 #: src/Application.vala:49
 msgid "Load this address in the browser window"
-msgstr ""
+msgstr "ئەم ناونیشانە لە پەنجەرەی وێبگەڕدا بکەوە"
 
 #: src/Application.vala:49
 msgid "URL"
-msgstr ""
+msgstr "لینک (URL)"
