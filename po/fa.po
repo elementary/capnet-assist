@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2022-04-14 20:30+0000\n"
-"Last-Translator: amir mohammadi <amir123456789893@gmail.com>\n"
+"Last-Translator: Pikhosh <pikhosh@gmail.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/fa/>\n"
 "Language: fa\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
-msgstr ""
+msgstr "این صفحه از طریق یک اتصال محافظت نشده ارائه شده است."
 
 #: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
