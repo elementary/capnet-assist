@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2022-04-14 20:30+0000\n"
-"Last-Translator: Pikhosh <pikhosh@gmail.com>\n"
+"Last-Translator: Tuaghmohammad Kalte <tuagh2007@gmail.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/fa/>\n"
 "Language: fa\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/CertButton.vala:44
 msgid "Loading captive portal."
-msgstr ""
+msgstr "در حال بارگذاری پورتال مهار شده."
 
 #: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
