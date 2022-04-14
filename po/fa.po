@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
-"PO-Revision-Date: 2016-10-10 12:53-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-04-14 20:30+0000\n"
+"Last-Translator: amir mohammadi <amir123456789893@gmail.com>\n"
+"Language-Team: Persian <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/CertButton.vala:44
 msgid "Loading captive portal."
@@ -26,11 +29,11 @@ msgstr ""
 
 #: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
-msgstr ""
+msgstr "این صفحه از طریق یک اتصال محافظت شده ارائه شده است."
 
 #: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr ""
+msgstr "این صفحه از طریق یک اتصال محافظت نشده ارائه شده است."
 
 #: src/CaptiveLogin.vala:56
 msgid "Log in"
