@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2022-04-14 22:02+0000\n"
-"Last-Translator: amir mohammadi <amir123456789893@gmail.com>\n"
+"Last-Translator: Tuaghmohammad Kalte <tuagh2007@gmail.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/fa/>\n"
 "Language: fa\n"
@@ -37,7 +37,7 @@ msgstr "این صفحه از طریق یک اتصال محافظت نشده ار
 
 #: src/CaptiveLogin.vala:56
 msgid "Log in"
-msgstr ""
+msgstr "ورود"
 
 #: src/Application.vala:49
 msgid "Load this address in the browser window"
