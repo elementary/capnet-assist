@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
 "PO-Revision-Date: 2022-05-07 01:27+0000\n"
-"Last-Translator: ignissak <methalicity@gmail.com>\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/sk/>\n"
 "Language: sk\n"
@@ -23,12 +23,12 @@ msgstr ""
 #: data/io.elementary.capnet-assist.appdata.xml.in:8
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Asistent prihlasovania do sietí"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:9
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Pripojte sa k uzatvoreným sieťovým portálom"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:11
 msgid ""
@@ -36,16 +36,19 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
+"Prihláste sa do uzatvorených sieťových portálov – ako napríklad do Wi-Fi "
+"sietí v kaviarňach, lietadlách a vlakoch – jednoducho. Asistent "
+"prihlasovania do sietí sa automaticky otvorí, aby vám pomohol pripojiť sa."
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
 msgid "Dark style support"
-msgstr ""
+msgstr "Podpora tmavého štýlu"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
 #: data/io.elementary.capnet-assist.appdata.xml.in:25
 #: data/io.elementary.capnet-assist.appdata.xml.in:32
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualizácia prekladov"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
