@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
-"PO-Revision-Date: 2022-05-07 01:27+0000\n"
+"PO-Revision-Date: 2022-05-07 15:04+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/sk/>\n"
@@ -48,7 +48,7 @@ msgstr "Podpora tmavého štýlu"
 #: data/io.elementary.capnet-assist.appdata.xml.in:25
 #: data/io.elementary.capnet-assist.appdata.xml.in:32
 msgid "Updated translations"
-msgstr "Aktualizácia prekladov"
+msgstr "Aktualizované preklady"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
