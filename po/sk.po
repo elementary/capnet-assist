@@ -8,40 +8,43 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
-"PO-Revision-Date: 2016-01-13 12:46+0000\n"
-"Last-Translator: Lukáš Papík <stereo839@gmail.com>\n"
-"Language-Team: Slovak <sk@li.org>\n"
+"PO-Revision-Date: 2022-05-07 13:35+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/CertButton.vala:44
 msgid "Loading captive portal."
-msgstr ""
+msgstr "Načítava sa uzatvorený sieťový portál."
 
 #: src/CertButton.vala:48
 msgid "The page is served over an unprotected connection."
-msgstr "Stránka je podávaná cez nechránené pripojenie."
+msgstr "Stránka je poskytovaná cez nezabezpečené pripojenie."
 
 #: src/CertButton.vala:53
 msgid "The page is served over a protected connection."
-msgstr "Stránka je podávaná cez chránené pripojenie."
+msgstr "Stránka je poskytovaná cez zabezpečené pripojenie."
 
 #: src/CertButton.vala:58
 msgid "Some elements of this page are served over an unprotected connection."
-msgstr "Nejaké prvky tejto stránky sú podávané cez nechránené pripojenie."
+msgstr ""
+"Niektoré prvky tejto stránky sú poskytované cez nezabezpečené pripojenie."
 
 #: src/CaptiveLogin.vala:56
 msgid "Log in"
-msgstr ""
+msgstr "Prihlásiť sa"
 
 #: src/Application.vala:49
 msgid "Load this address in the browser window"
-msgstr ""
+msgstr "Načítať túto adresu v okne webového prehliadača"
 
 #: src/Application.vala:49
 msgid "URL"
-msgstr ""
+msgstr "URL adresa"
