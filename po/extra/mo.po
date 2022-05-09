@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-13 22:19+0000\n"
+"POT-Creation-Date: 2022-05-09 13:08-0700\n"
 "PO-Revision-Date: 2018-05-26 07:42+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/desktop/"
@@ -36,22 +36,33 @@ msgid ""
 "get connected."
 msgstr ""
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:17
-msgid "Dark style support"
+#: data/io.elementary.capnet-assist.appdata.xml.in:18
+msgid "Update to elementary runtime 7"
 msgstr ""
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:18
-#: data/io.elementary.capnet-assist.appdata.xml.in:25
-#: data/io.elementary.capnet-assist.appdata.xml.in:32
+#: data/io.elementary.capnet-assist.appdata.xml.in:19
+#: data/io.elementary.capnet-assist.appdata.xml.in:27
+#: data/io.elementary.capnet-assist.appdata.xml.in:35
+#: data/io.elementary.capnet-assist.appdata.xml.in:43
+#: data/io.elementary.capnet-assist.appdata.xml.in:50
+#: data/io.elementary.capnet-assist.appdata.xml.in:57
 msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:26
+msgid "Update to elementary runtime 6.1"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:34
+msgid "New icon"
+msgstr ""
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:42
+msgid "Dark style support"
 msgstr ""
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
-msgstr ""
-
-#: data/io.elementary.capnet-assist.desktop.in:6
-msgid "io.elementary.capnet-assist"
 msgstr ""
 
 #~ msgid "Loading captive portal."
