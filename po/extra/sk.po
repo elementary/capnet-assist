@@ -8,25 +8,27 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-13 22:19+0000\n"
-"PO-Revision-Date: 2016-01-13 12:46+0000\n"
-"Last-Translator: Lukáš Papík <stereo839@gmail.com>\n"
-"Language-Team: Slovak <sk@li.org>\n"
+"PO-Revision-Date: 2022-05-07 15:04+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist-extra/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:8
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Asistent prihlasovania do sietí"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:9
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Pripojte sa k uzatvoreným sieťovým portálom"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:11
 msgid ""
@@ -34,20 +36,23 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
+"Prihláste sa do uzatvorených sieťových portálov – ako napríklad do Wi-Fi "
+"sietí v kaviarňach, lietadlách a vlakoch – jednoducho. Asistent "
+"prihlasovania do sietí sa automaticky otvorí, aby vám pomohol pripojiť sa."
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:17
 msgid "Dark style support"
-msgstr ""
+msgstr "Podpora tmavého štýlu"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
 #: data/io.elementary.capnet-assist.appdata.xml.in:25
 #: data/io.elementary.capnet-assist.appdata.xml.in:32
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualizované preklady"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/io.elementary.capnet-assist.desktop.in:6
 msgid "io.elementary.capnet-assist"
