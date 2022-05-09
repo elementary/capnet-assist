@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: Hebrew (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 13:08-0700\n"
-"PO-Revision-Date: 2022-04-07 22:05+0000\n"
+"PO-Revision-Date: 2022-05-09 23:25+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist-extra/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist-extra/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
 msgid "Update to elementary runtime 7"
-msgstr ""
+msgstr "עדכון לסביבת הרצה 7 של elementary"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:19
 #: data/io.elementary.capnet-assist.appdata.xml.in:27
@@ -48,11 +48,11 @@ msgstr "תרגומים עדכניים"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:26
 msgid "Update to elementary runtime 6.1"
-msgstr ""
+msgstr "עדכון לסביבת הרצה 6.1 של elementary"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:34
 msgid "New icon"
-msgstr ""
+msgstr "סמל חדש"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:42
 msgid "Dark style support"
