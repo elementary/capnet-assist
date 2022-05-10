@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 13:08-0700\n"
-"PO-Revision-Date: 2021-10-06 03:13+0000\n"
+"PO-Revision-Date: 2022-05-10 19:30+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
-"Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist-extra/uk/>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist-extra/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
 msgid "Update to elementary runtime 7"
-msgstr ""
+msgstr "Оновлення до середовища виконання elementary 7"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:19
 #: data/io.elementary.capnet-assist.appdata.xml.in:27
@@ -55,11 +55,11 @@ msgstr "Оновлено переклади"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:26
 msgid "Update to elementary runtime 6.1"
-msgstr ""
+msgstr "Оновлення до середовища виконання elementary 6.1"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:34
 msgid "New icon"
-msgstr ""
+msgstr "Нова піктограма"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:42
 msgid "Dark style support"
