@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-13 22:19+0000\n"
-"PO-Revision-Date: 2022-04-08 16:06+0000\n"
+"POT-Creation-Date: 2022-05-09 13:08-0700\n"
+"PO-Revision-Date: 2022-05-10 11:11+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/pl/>\n"
@@ -42,23 +42,34 @@ msgstr ""
 "sieci uwierzytelnianych otworzy się automatycznie, aby pomóc Ci nawiązać "
 "połączenie."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:17
-msgid "Dark style support"
-msgstr "Wsparcie dla ciemnego motywu"
-
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
-#: data/io.elementary.capnet-assist.appdata.xml.in:25
-#: data/io.elementary.capnet-assist.appdata.xml.in:32
+msgid "Update to elementary runtime 7"
+msgstr "Aktualizacja do elementary runtime 7"
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:19
+#: data/io.elementary.capnet-assist.appdata.xml.in:27
+#: data/io.elementary.capnet-assist.appdata.xml.in:35
+#: data/io.elementary.capnet-assist.appdata.xml.in:43
+#: data/io.elementary.capnet-assist.appdata.xml.in:50
+#: data/io.elementary.capnet-assist.appdata.xml.in:57
 msgid "Updated translations"
 msgstr "Aktualizacja tłumaczeń"
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:26
+msgid "Update to elementary runtime 6.1"
+msgstr "Aktualizacja do elementary runtime 6.1"
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:34
+msgid "New icon"
+msgstr "Nowa ikona"
+
+#: data/io.elementary.capnet-assist.appdata.xml.in:42
+msgid "Dark style support"
+msgstr "Wsparcie dla ciemnego motywu"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
-
-#: data/io.elementary.capnet-assist.desktop.in:6
-msgid "io.elementary.capnet-assist"
-msgstr ""
 
 #~ msgid "preferences-system-network"
 #~ msgstr "preferences-system-network"
