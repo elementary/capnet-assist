@@ -1,3 +1,13 @@
+capnet-assist (2.4.2) bionic; urgency=medium
+
+  * Release 2.4.2 (#81)
+  * Update io.elementary.capnet-assist.appdata.xml.in (#83)
+  * Update translation files
+  * Update .pot
+  * Flatpak: bump to Platform 7 (#80)
+
+ -- elementary, Inc. <builds@elementary.io>  Wed, 18 May 2022 04:45:49 +0000
+
 capnet-assist (2.4.1) bionic; urgency=medium
 
   * Release 2.4.1 (#77)
