@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 13:08-0700\n"
-"PO-Revision-Date: 2021-12-27 16:55+0000\n"
+"PO-Revision-Date: 2022-05-22 10:40+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist-extra/ja/>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist-extra/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
 msgid "Update to elementary runtime 7"
-msgstr ""
+msgstr "elementary ラインタイムをバージョン 7 にアップデート"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:19
 #: data/io.elementary.capnet-assist.appdata.xml.in:27
@@ -55,11 +55,11 @@ msgstr "翻訳の更新"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:26
 msgid "Update to elementary runtime 6.1"
-msgstr ""
+msgstr "elementary ラインタイムをバージョン 6.1 にアップデート"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:34
 msgid "New icon"
-msgstr ""
+msgstr "新しいアイコン"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:42
 msgid "Dark style support"
