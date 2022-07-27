@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 13:08-0700\n"
-"PO-Revision-Date: 2021-09-02 21:46+0000\n"
+"PO-Revision-Date: 2022-07-27 23:52+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
-"Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist-extra/hu/>\n"
+"Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist-extra/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
 msgid "Update to elementary runtime 7"
-msgstr ""
+msgstr "Frissítés az elementary 7-es futtatókörnyezetre"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:19
 #: data/io.elementary.capnet-assist.appdata.xml.in:27
@@ -55,11 +55,11 @@ msgstr "Frissített fordítások"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:26
 msgid "Update to elementary runtime 6.1"
-msgstr ""
+msgstr "Frissítés az elementary 6.1-es futtatókörnyezetre"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:34
 msgid "New icon"
-msgstr ""
+msgstr "Új ikon"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:42
 msgid "Dark style support"
