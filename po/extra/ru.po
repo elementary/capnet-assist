@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 13:08-0700\n"
-"PO-Revision-Date: 2022-07-14 09:53+0000\n"
+"PO-Revision-Date: 2022-09-30 14:55+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/ru/>\n"
@@ -37,7 +37,7 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
-"Облегчает вход на порталы, требующие аутентификации - сети Wi-Fi в кафе, "
+"Облегчает вход на порталы, требующие аутентификации — сети Wi-Fi в кафе, "
 "аэропортах и поездах и тому подобное. Помощник аутентификации сети "
 "автоматически открывается, чтобы помочь вам подключиться."
 
@@ -64,7 +64,7 @@ msgstr "Новая иконка"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:42
 msgid "Dark style support"
-msgstr "Поддержка темного стиля"
+msgstr "Поддержка тёмного стиля"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
