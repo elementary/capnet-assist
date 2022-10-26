@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 13:08-0700\n"
-"PO-Revision-Date: 2022-05-10 11:11+0000\n"
+"PO-Revision-Date: 2022-10-27 18:57+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/pl/>\n"
@@ -53,7 +53,7 @@ msgstr "Aktualizacja do elementary runtime 7"
 #: data/io.elementary.capnet-assist.appdata.xml.in:50
 #: data/io.elementary.capnet-assist.appdata.xml.in:57
 msgid "Updated translations"
-msgstr "Aktualizacja tłumaczeń"
+msgstr "Zaktualizowano tłumaczenia"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:26
 msgid "Update to elementary runtime 6.1"
