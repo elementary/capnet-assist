@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hebrew (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 13:08-0700\n"
-"PO-Revision-Date: 2022-05-09 23:25+0000\n"
+"PO-Revision-Date: 2022-10-26 16:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/he/>\n"
@@ -44,7 +44,7 @@ msgstr "עדכון לסביבת הרצה 7 של elementary"
 #: data/io.elementary.capnet-assist.appdata.xml.in:50
 #: data/io.elementary.capnet-assist.appdata.xml.in:57
 msgid "Updated translations"
-msgstr "תרגומים עדכניים"
+msgstr "התרגומים עודכנו"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:26
 msgid "Update to elementary runtime 6.1"
