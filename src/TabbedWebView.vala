@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2016-2017 elementary LLC (http://launchpad.net/capnet-assist)
+* Copyright 2016-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -18,26 +18,39 @@
 *
 */
 
-public class TabbedWebView : Granite.Widgets.Tab {
-    public WebKit.WebView web_view;
+public class TabbedWebView : WebKit.WebView {
+    public bool load_cookies { get; construct; }
     public CertButton.Security security { get; private set; }
 
-    public TabbedWebView (string uri, bool load_cookies) {
-        web_view = new WebKit.WebView ();
+    public TabbedWebView (bool load_cookies) {
+        Object (load_cookies: load_cookies);
+    }
 
-        page = web_view;
+    construct {
+        if (load_cookies) {
+            var cookies_db_path = Path.build_path (
+                Path.DIR_SEPARATOR_S,
+                Environment.get_user_config_dir (),
+                "epiphany",
+                "cookies.sqlite"
+            );
 
-        setup_web_view (load_cookies);
+            if (!FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
+                debug ("No cookies store found, not saving the cookies…");
+                return;
+            }
 
-        web_view.insecure_content_detected.connect (() => {
+            var cookie_manager = get_context ().get_cookie_manager ();
+
+            cookie_manager.set_accept_policy (WebKit.CookieAcceptPolicy.ALWAYS);
+            cookie_manager.set_persistent_storage (cookies_db_path, WebKit.CookiePersistentStorage.SQLITE);
+        }
+
+        insecure_content_detected.connect (() => {
             security = CertButton.Security.MIXED_CONTENT;
         });
 
-        web_view.notify["title"].connect ((view, param_spec) => {
-            label = web_view.get_title ();
-        });
-
-        web_view.load_changed.connect ((view, event) => {
+        load_changed.connect ((view, event) => {
             switch (event) {
                 case WebKit.LoadEvent.STARTED:
                     security = CertButton.Security.LOADING;
@@ -47,8 +60,6 @@ public class TabbedWebView : Granite.Widgets.Tab {
                     break;
             }
         });
-
-        web_view.load_uri (uri);
     }
 
     private void update_tls_info () {
@@ -56,7 +67,7 @@ public class TabbedWebView : Granite.Widgets.Tab {
         TlsCertificateFlags cert_flags;
         bool is_secure;
 
-        if (!web_view.get_tls_info (out cert, out cert_flags)) {
+        if (!get_tls_info (out cert, out cert_flags)) {
             // The page is served over HTTP
             is_secure = false;
         } else {
@@ -69,25 +80,6 @@ public class TabbedWebView : Granite.Widgets.Tab {
             security = CertButton.Security.SECURE;
         } else {
             security = CertButton.Security.NONE;
-        }
-    }
-
-    private void setup_web_view (bool load_cookies) {
-        if (load_cookies) {
-            var cookies_db_path = Path.build_path (Path.DIR_SEPARATOR_S,
-                                                   Environment.get_user_config_dir (),
-                                                   "epiphany",
-                                                   "cookies.sqlite");
-
-            if (!FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
-                debug ("No cookies store found, not saving the cookies…");
-                return;
-            }
-
-            var cookie_manager = web_view.get_context ().get_cookie_manager ();
-
-            cookie_manager.set_accept_policy (WebKit.CookieAcceptPolicy.ALWAYS);
-            cookie_manager.set_persistent_storage (cookies_db_path, WebKit.CookiePersistentStorage.SQLITE);
         }
     }
 }
