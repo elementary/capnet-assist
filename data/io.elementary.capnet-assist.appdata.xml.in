@@ -15,7 +15,7 @@
     <release version="2.4.3" date="2022-12-07" urgency="medium">
       <description>
         <ul>
-          <li>Update to elementary runtime 7</li>
+          <li>Update to elementary runtime 7.1</li>
           <li>Updated translations</li>
         </ul>
       </description>
