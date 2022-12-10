@@ -1,3 +1,12 @@
+capnet-assist (2.4.3) bionic; urgency=medium
+
+  * Release 2.4.3 (#90)
+  * Update translation files
+  * Update Flatpak Runtime to 7.1 (#88)
+  * Docs: Add missing 'cd build' instruction to the readme (#86)
+
+ -- elementary, Inc. <builds@elementary.io>  Sat, 10 Dec 2022 04:36:08 +0000
+
 capnet-assist (2.4.2) bionic; urgency=medium
 
   * Release 2.4.2 (#81)
