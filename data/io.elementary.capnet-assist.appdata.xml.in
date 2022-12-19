@@ -7,6 +7,7 @@
   <project_license>GPL-3.0+</project_license>
   <name>Captive Network Assistant</name>
   <summary>Connect to captive network portals</summary>
+  <icon type="stock">io.elementary.capnet-assist</icon>
   <description>
     <p>Log into captive portals—like Wi-Fi networks at coffee shops, airports, and trains—with ease. Captive Network Assistant automatically opens to help you get connected.</p>
   </description>
