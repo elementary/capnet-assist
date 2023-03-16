@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 13:08-0700\n"
-"PO-Revision-Date: 2023-03-12 22:25+0000\n"
+"PO-Revision-Date: 2023-03-17 05:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/ka/>\n"
@@ -23,12 +23,12 @@ msgstr ""
 #: data/io.elementary.capnet-assist.appdata.xml.in:8
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Captive Network-ის დამხმარე"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:9
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Captive Network-ის პორტალებთან მიერთება"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:11
 msgid ""
@@ -39,7 +39,7 @@ msgstr ""
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:18
 msgid "Update to elementary runtime 7"
-msgstr ""
+msgstr "განახლება Elementary 7-ის გაშვების გარემომდე"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:19
 #: data/io.elementary.capnet-assist.appdata.xml.in:27
@@ -52,15 +52,15 @@ msgstr "განახლებული თარგმანები"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:26
 msgid "Update to elementary runtime 6.1"
-msgstr ""
+msgstr "განახლება Elementary 6.1-ის გაშვების გარემომდე"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:34
 msgid "New icon"
-msgstr ""
+msgstr "ახალი ხატულა"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:42
 msgid "Dark style support"
-msgstr ""
+msgstr "ბნელი სტილის მხარდაჭერა"
 
 #: data/io.elementary.capnet-assist.appdata.xml.in:74
 msgid "elementary, Inc."
