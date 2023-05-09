@@ -88,13 +88,6 @@
       </description>
     </release>
 
-    <release version="2.3.0" date="2021-07-13" urgency="medium">
-      <description>
-        <ul>
-          <li>Dark style support</li>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
+    <release version="2.3.0" date="2021-07-13" urgency="medium" />
   </releases>
 </component>
