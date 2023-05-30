@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 13:08-0700\n"
+"POT-Creation-Date: 2023-05-09 11:37-0700\n"
 "PO-Revision-Date: 2020-04-05 22:10+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -19,17 +19,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:8
+#: data/capnet-assist.metainfo.xml.in:10
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
 msgstr "कॅप्टिव्ह नेटवर्क सहाय्यक"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:9
+#: data/capnet-assist.metainfo.xml.in:11
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
 msgstr "कॅप्टिव्ह पोर्टलला जोडा"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:11
+#: data/capnet-assist.metainfo.xml.in:13
 msgid ""
 "Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
 "trains—with ease. Captive Network Assistant automatically opens to help you "
@@ -38,34 +38,35 @@ msgstr ""
 "कॉफी शॉप, विमानतळ आणि ट्रेनमध्ये कॅप्टिव्ह पोर्टल-जसे वाय-फाय नेटवर्कमध्ये लॉग इन करा-"
 "सहजतेने. कॅप्टिव्ह नेटवर्क सहाय्यक आपोआप कनेक्ट होण्यास मदत करण्यासाठी स्वयंचलितपणे उघडते."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:18
-msgid "Update to elementary runtime 7"
+#: data/capnet-assist.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "एलिमेंटरी,Inc."
+
+#: data/capnet-assist.metainfo.xml.in:49
+msgid "Update to elementary runtime 7.2"
 msgstr ""
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:19
-#: data/io.elementary.capnet-assist.appdata.xml.in:27
-#: data/io.elementary.capnet-assist.appdata.xml.in:35
-#: data/io.elementary.capnet-assist.appdata.xml.in:43
-#: data/io.elementary.capnet-assist.appdata.xml.in:50
-#: data/io.elementary.capnet-assist.appdata.xml.in:57
+#: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
+#: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
+#: data/capnet-assist.metainfo.xml.in:86
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:26
+#: data/capnet-assist.metainfo.xml.in:58
+msgid "Update to elementary runtime 7.1"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:67
+msgid "Update to elementary runtime 7"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:76
 msgid "Update to elementary runtime 6.1"
 msgstr ""
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:34
+#: data/capnet-assist.metainfo.xml.in:85
 msgid "New icon"
 msgstr ""
-
-#: data/io.elementary.capnet-assist.appdata.xml.in:42
-msgid "Dark style support"
-msgstr ""
-
-#: data/io.elementary.capnet-assist.appdata.xml.in:74
-msgid "elementary, Inc."
-msgstr "एलिमेंटरी,Inc."
 
 #~ msgid "preferences-system-network"
 #~ msgstr "preferences-system-network"
