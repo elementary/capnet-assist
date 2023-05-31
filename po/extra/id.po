@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-09 11:37-0700\n"
-"PO-Revision-Date: 2023-05-20 17:06+0000\n"
+"PO-Revision-Date: 2023-06-01 14:07+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/desktop/"
@@ -23,12 +23,12 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:10
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Asisten Jaringan Kaptif"
 
 #: data/capnet-assist.metainfo.xml.in:11
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Menyambungkan ke portal jaringan kaptif"
 
 #: data/capnet-assist.metainfo.xml.in:13
 msgid ""
@@ -36,6 +36,9 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
+"Masuk ke portal kaptif—seperti jaringan Wi-Fi di kedai kopi, bandara, dan "
+"kereta api—dengan mudah. Asisten Jaringan Kaptif secara otomatis terbuka "
+"untuk membantu Anda terhubung."
 
 #: data/capnet-assist.metainfo.xml.in:41
 msgid "elementary, Inc."
@@ -43,7 +46,7 @@ msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:49
 msgid "Update to elementary runtime 7.2"
-msgstr ""
+msgstr "Pembaruan ke runtime elementary 7.2"
 
 #: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
 #: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
@@ -53,19 +56,19 @@ msgstr "Terjemahan yang diperbarui"
 
 #: data/capnet-assist.metainfo.xml.in:58
 msgid "Update to elementary runtime 7.1"
-msgstr ""
+msgstr "Pembaruan ke runtime elementary 7.1"
 
 #: data/capnet-assist.metainfo.xml.in:67
 msgid "Update to elementary runtime 7"
-msgstr ""
+msgstr "Pembaruan ke runtime elementary 7"
 
 #: data/capnet-assist.metainfo.xml.in:76
 msgid "Update to elementary runtime 6.1"
-msgstr ""
+msgstr "Pembaruan ke runtime elementary 6.1"
 
 #: data/capnet-assist.metainfo.xml.in:85
 msgid "New icon"
-msgstr ""
+msgstr "Ikon baru"
 
 #~ msgid "Loading captive portal."
 #~ msgstr "Memuat captive portal."
