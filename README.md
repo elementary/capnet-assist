@@ -8,26 +8,17 @@ Log into captive portals—like Wi-Fi networks at coffee shops, airports, and tr
 
 ## Building, Testing, and Installation
 
-You'll need the following dependencies:
-* libgcr-3-dev
-* libglib2.0-dev
-* libgranite-dev
-* libgtk-3-dev
-* libhandy-1-dev >= 1.0.0
-* libwebkit2gtk-4.0-dev
-* meson
-* valac
-    
-Run `meson` to configure the build environment and then `ninja test` to build and run automated tests
+Run `flatpak-builder` to configure the build environment, download dependencies, build, and install
 
-    meson build --prefix=/usr
-    cd build
-    ninja test
-    
-To install, use `ninja install`, then execute with `captive-login`
+```bash
+flatpak-builder build io.elementary.capnet-assist.yml --user --install --force-clean --install-deps-from=appcenter
+```
 
-    sudo ninja install
-    io.elementary.capnet-assist
+Then execute with
+
+```bash
+flatpak run io.elementary.capnet-assist
+```
 
 ## Debugging
 
