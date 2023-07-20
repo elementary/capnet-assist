@@ -30,6 +30,13 @@ public class Captive.Application : Gtk.Application {
         settings = new Settings ("io.elementary.desktop.capnet-assist");
     }
 
+    construct {
+        Intl.setlocale (LocaleCategory.ALL, "");
+        Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+        Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+        Intl.textdomain (GETTEXT_PACKAGE);
+    }
+
     public override void activate () {
         if (!settings.get_boolean ("enabled")) {
             quit ();
