@@ -6,6 +6,7 @@ project(
     default_options: 'sysconfdir=/etc'
 )
 
+gnome = import('gnome')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="captive-login"', '-DGCR_API_SUBJECT_TO_CHANGE', language:'c')
