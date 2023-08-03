@@ -2,6 +2,7 @@ project(
     'io.elementary.capnet-assist',
     'vala', 'c',
     version: '2.4.4',
+    meson_version: '>= 0.57',
     default_options: 'sysconfdir=/etc'
 )
 
@@ -39,7 +40,7 @@ executable(
     install : true
 )
 
-meson.add_install_script('meson/post_install.py')
+gnome.post_install(glib_compile_schemas: true)
 
 subdir('data')
 subdir('po')
