@@ -2,9 +2,11 @@ project(
     'io.elementary.capnet-assist',
     'vala', 'c',
     version: '2.4.4',
+    meson_version: '>= 0.57',
     default_options: 'sysconfdir=/etc'
 )
 
+gnome = import('gnome')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="captive-login"', '-DGCR_API_SUBJECT_TO_CHANGE', language:'c')
@@ -39,7 +41,7 @@ executable(
     install : true
 )
 
-meson.add_install_script('meson/post_install.py')
+gnome.post_install(glib_compile_schemas: true)
 
 subdir('data')
 subdir('po')
