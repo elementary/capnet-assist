@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-09 11:37-0700\n"
-"PO-Revision-Date: 2022-06-11 23:34+0000\n"
+"PO-Revision-Date: 2023-08-10 12:08+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: data/capnet-assist.metainfo.xml.in:10
@@ -45,9 +45,8 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:49
-#, fuzzy
 msgid "Update to elementary runtime 7.2"
-msgstr "Atualização para o elementary runtime 7"
+msgstr "Atualização para o elementary runtime 7.2"
 
 #: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
 #: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
@@ -56,9 +55,8 @@ msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
 #: data/capnet-assist.metainfo.xml.in:58
-#, fuzzy
 msgid "Update to elementary runtime 7.1"
-msgstr "Atualização para o elementary runtime 6.1"
+msgstr "Atualização para o elementary runtime 7.1"
 
 #: data/capnet-assist.metainfo.xml.in:67
 msgid "Update to elementary runtime 7"
