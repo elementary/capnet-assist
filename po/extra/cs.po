@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-09 11:37-0700\n"
-"PO-Revision-Date: 2022-01-11 03:35+0000\n"
-"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist-extra/cs/>\n"
+"PO-Revision-Date: 2023-08-30 11:08+0000\n"
+"Last-Translator: Jakub Kyzr <jakubkyzr@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist-extra/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:17+0000\n"
 
 #: data/capnet-assist.metainfo.xml.in:10
@@ -52,7 +52,7 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
 #: data/capnet-assist.metainfo.xml.in:86
 msgid "Updated translations"
-msgstr "Aktualizovány překlady"
+msgstr "Aktualizované překlady"
 
 #: data/capnet-assist.metainfo.xml.in:58
 msgid "Update to elementary runtime 7.1"
