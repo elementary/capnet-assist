@@ -73,6 +73,7 @@ public class CaptiveLogin : Hdy.ApplicationWindow {
 
         var tabbar = new Hdy.TabBar () {
             expand_tabs = false,
+            inverted = true,
             view = tabview
         };
 
