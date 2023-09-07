@@ -35,15 +35,14 @@ public class TabbedWebView : WebKit.WebView {
                 "cookies.sqlite"
             );
 
-            if (!FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
-                debug ("No cookies store found, not saving the cookies…");
-                return;
+            if (FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
+                var cookie_manager = get_context ().get_cookie_manager ();
+
+                cookie_manager.set_accept_policy (WebKit.CookieAcceptPolicy.ALWAYS);
+                cookie_manager.set_persistent_storage (cookies_db_path, WebKit.CookiePersistentStorage.SQLITE);
+            } else {
+                critical ("No cookies store found, not saving the cookies…");
             }
-
-            var cookie_manager = get_context ().get_cookie_manager ();
-
-            cookie_manager.set_accept_policy (WebKit.CookieAcceptPolicy.ALWAYS);
-            cookie_manager.set_persistent_storage (cookies_db_path, WebKit.CookiePersistentStorage.SQLITE);
         }
 
         insecure_content_detected.connect (() => {

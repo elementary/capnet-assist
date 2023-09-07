@@ -91,9 +91,9 @@ public class CaptiveLogin : Hdy.ApplicationWindow {
         this.destroy.connect (application.quit);
 
         tabview.notify["selected-page"].connect (() => {
-            var captive_view = (TabbedWebView) tabview.get_selected_page ().child;
-            title_label.label = captive_view.title;
-            cert_button.security = captive_view.security;
+            var webview = (TabbedWebView) tabview.get_selected_page ().child;
+            title_label.label = webview.title;
+            cert_button.security = webview.security;
         });
 
         tabview.close_page.connect ((page) => {
@@ -112,13 +112,10 @@ public class CaptiveLogin : Hdy.ApplicationWindow {
         return !privacy_settings.get_boolean ("remember-recent-files") ||
                !privacy_settings.get_boolean ("remember-app-usage");
     }
+
     private TabbedWebView create_tab (string uri) {
         var webview = new TabbedWebView (!is_privacy_mode_enabled ());
-        webview.load_uri (uri);
-
         var tabpage = tabview.append (webview);
-
-        show_all ();
 
         webview.bind_property ("title", tabpage, "title", SYNC_CREATE);
 
@@ -167,6 +164,9 @@ public class CaptiveLogin : Hdy.ApplicationWindow {
 
             return true;
         });
+
+        webview.load_uri (uri);
+        show_all ();
 
         return webview;
     }
