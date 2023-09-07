@@ -120,7 +120,7 @@ public class CaptiveLogin : Hdy.ApplicationWindow {
 
         show_all ();
 
-        webview.bind_property ("title", tabpage, "title");
+        webview.bind_property ("title", tabpage, "title", SYNC_CREATE);
 
         webview.notify["title"].connect ((view, param_spec) => {
             if (tabpage == tabview.get_selected_page ()) {
