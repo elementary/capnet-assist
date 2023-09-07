@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018-2023 elementary, Inc <contact@elementary.io> -->
+<component type="desktop-application">
+  <id>io.elementary.capnet-assist</id>
+  <translation type="gettext">captive-login</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <compulsory_for_desktop>Pantheon</compulsory_for_desktop>
+
+  <name>Captive Network Assistant</name>
+  <summary>Connect to captive network portals</summary>
+  <description>
+    <p>Log into captive portals—like Wi-Fi networks at coffee shops, airports, and trains—with ease. Captive Network Assistant automatically opens to help you get connected.</p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/capnet-assist/2.4.4/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+
+  <branding>
+    <color type="primary">#6c508a9</color>
+  </branding>
+  <custom>
+    <value key="x-appcenter-color-primary">#6c508a</value>
+  </custom>
+
+  <content_rating type="oars-1.1" />
+
+  <provides>
+    <binary>io.elementary.capnet-assist</binary>
+  </provides>
+
+  <url type="homepage">https://elementary.io/</url>
+  <url type="bugtracker">https://github.com/elementary/capnet-assist/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/capnet-assist/discussions</url>
+  <url type="translate">https://l10n.elementary.io/projects/desktop</url>
+
+  <developer_name>elementary, Inc.</developer_name>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
+  <releases>
+    <release version="2.4.4" date="2023-05-30" urgency="medium">
+      <description>
+        <ul>
+          <li>Update to elementary runtime 7.2</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.4.3" date="2022-12-08" urgency="medium">
+      <description>
+        <ul>
+          <li>Update to elementary runtime 7.1</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.4.2" date="2022-05-17" urgency="medium">
+      <description>
+        <ul>
+          <li>Update to elementary runtime 7</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.4.1" date="2022-01-24" urgency="medium">
+      <description>
+        <ul>
+          <li>Update to elementary runtime 6.1</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.4.0" date="2021-10-29" urgency="medium">
+      <description>
+        <ul>
+          <li>New icon</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.3.0" date="2021-07-13" urgency="medium" />
+  </releases>
+</component>

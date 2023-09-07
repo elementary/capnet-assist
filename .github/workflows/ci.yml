@@ -21,21 +21,21 @@ jobs:
       fail-fast: false
 
     container:
-      image: ghcr.io/elementary/flatpak-platform/runtime:7.1-${{ matrix.arch }}
+      image: ghcr.io/elementary/flatpak-platform/runtime:7.2-${{ matrix.arch }}
       options: --privileged
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up QEMU for aarch64 emulation
         if: ${{ matrix.arch != 'x86_64' }}
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v2
         with:
           platforms: arm64
 
       - name: Build
-        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
+        uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
           bundle: capnet-assist.flatpak
           manifest-path: io.elementary.capnet-assist.yml
@@ -54,7 +54,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Lint
         run: io.elementary.vala-lint -d .

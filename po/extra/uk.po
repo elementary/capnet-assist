@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 13:08-0700\n"
-"PO-Revision-Date: 2022-10-27 18:57+0000\n"
+"POT-Creation-Date: 2023-05-09 11:37-0700\n"
+"PO-Revision-Date: 2023-05-12 01:06+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/uk/>\n"
@@ -16,21 +16,21 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.17\n"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:8
+#: data/capnet-assist.metainfo.xml.in:10
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
 msgstr "Помічник автентифікації у мережі"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:9
+#: data/capnet-assist.metainfo.xml.in:11
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
 msgstr "Під'єднайтеся до автентифікованих мережних порталів"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:11
+#: data/capnet-assist.metainfo.xml.in:13
 msgid ""
 "Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
 "trains—with ease. Captive Network Assistant automatically opens to help you "
@@ -40,34 +40,38 @@ msgstr ""
 "аеропортах та поїздах тощо. Помічник автентифікації мережі автоматично "
 "відкривається, щоб допомогти вам під'єднатися."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:18
-msgid "Update to elementary runtime 7"
-msgstr "Оновлення до середовища виконання elementary 7"
+#: data/capnet-assist.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:19
-#: data/io.elementary.capnet-assist.appdata.xml.in:27
-#: data/io.elementary.capnet-assist.appdata.xml.in:35
-#: data/io.elementary.capnet-assist.appdata.xml.in:43
-#: data/io.elementary.capnet-assist.appdata.xml.in:50
-#: data/io.elementary.capnet-assist.appdata.xml.in:57
+#: data/capnet-assist.metainfo.xml.in:49
+msgid "Update to elementary runtime 7.2"
+msgstr "Оновлення до середовища виконання elementary 7.2"
+
+#: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
+#: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
+#: data/capnet-assist.metainfo.xml.in:86
 msgid "Updated translations"
 msgstr "Оновлені переклади"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:26
+#: data/capnet-assist.metainfo.xml.in:58
+msgid "Update to elementary runtime 7.1"
+msgstr "Оновлення до середовища виконання elementary 7.1"
+
+#: data/capnet-assist.metainfo.xml.in:67
+msgid "Update to elementary runtime 7"
+msgstr "Оновлення до середовища виконання elementary 7"
+
+#: data/capnet-assist.metainfo.xml.in:76
 msgid "Update to elementary runtime 6.1"
 msgstr "Оновлення до середовища виконання elementary 6.1"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:34
+#: data/capnet-assist.metainfo.xml.in:85
 msgid "New icon"
 msgstr "Нова піктограма"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:42
-msgid "Dark style support"
-msgstr "Підтримка темного стилю"
-
-#: data/io.elementary.capnet-assist.appdata.xml.in:74
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#~ msgid "Dark style support"
+#~ msgstr "Підтримка темного стилю"
 
 #~ msgid "io.elementary.capnet-assist"
 #~ msgstr "io.elementary.capnet-assist"

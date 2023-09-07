@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 13:08-0700\n"
-"PO-Revision-Date: 2021-09-29 02:28+0000\n"
+"POT-Creation-Date: 2023-05-09 11:37-0700\n"
+"PO-Revision-Date: 2023-07-08 23:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/nb/>\n"
@@ -17,20 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:8
+#: data/capnet-assist.metainfo.xml.in:10
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
 msgstr "Assistent for fangstnettverk"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:9
+#: data/capnet-assist.metainfo.xml.in:11
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
 msgstr "Koble til nettverkfangstportaler"
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:11
+#: data/capnet-assist.metainfo.xml.in:13
 #, fuzzy
 msgid ""
 "Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
@@ -40,35 +40,39 @@ msgstr ""
 "Logg inn i inngangsportaler—som noen Wi-Fi-nettverk på kaféer, luftplasser, "
 "og tog. Fangstportalassistenten åpnes automatisk for å koble deg til."
 
-#: data/io.elementary.capnet-assist.appdata.xml.in:18
-msgid "Update to elementary runtime 7"
-msgstr ""
-
-#: data/io.elementary.capnet-assist.appdata.xml.in:19
-#: data/io.elementary.capnet-assist.appdata.xml.in:27
-#: data/io.elementary.capnet-assist.appdata.xml.in:35
-#: data/io.elementary.capnet-assist.appdata.xml.in:43
-#: data/io.elementary.capnet-assist.appdata.xml.in:50
-#: data/io.elementary.capnet-assist.appdata.xml.in:57
-msgid "Updated translations"
-msgstr "Oppdaterte oversettelser"
-
-#: data/io.elementary.capnet-assist.appdata.xml.in:26
-msgid "Update to elementary runtime 6.1"
-msgstr ""
-
-#: data/io.elementary.capnet-assist.appdata.xml.in:34
-msgid "New icon"
-msgstr ""
-
-#: data/io.elementary.capnet-assist.appdata.xml.in:42
-msgid "Dark style support"
-msgstr "Støtte for mørk drakt"
-
-#: data/io.elementary.capnet-assist.appdata.xml.in:74
+#: data/capnet-assist.metainfo.xml.in:41
 #, fuzzy
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#: data/capnet-assist.metainfo.xml.in:49
+msgid "Update to elementary runtime 7.2"
+msgstr "Oppdatering til elementary-kjøretidsrutine 7.2"
+
+#: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
+#: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
+#: data/capnet-assist.metainfo.xml.in:86
+msgid "Updated translations"
+msgstr "Oppdaterte oversettelser"
+
+#: data/capnet-assist.metainfo.xml.in:58
+msgid "Update to elementary runtime 7.1"
+msgstr "Oppdatering til elementary-kjøretidsrutine 7.1"
+
+#: data/capnet-assist.metainfo.xml.in:67
+msgid "Update to elementary runtime 7"
+msgstr "Oppdatering til elementary-kjøretidsrutine 7"
+
+#: data/capnet-assist.metainfo.xml.in:76
+msgid "Update to elementary runtime 6.1"
+msgstr "Oppdatering til elementary-kjøretidsrutine 6.1"
+
+#: data/capnet-assist.metainfo.xml.in:85
+msgid "New icon"
+msgstr "Nytt ikon"
+
+#~ msgid "Dark style support"
+#~ msgstr "Støtte for mørk drakt"
 
 #~ msgid "preferences-system-network"
 #~ msgstr "preferences-system-network"
