@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 11:37-0700\n"
+"POT-Creation-Date: 2023-09-10 14:30-0700\n"
 "PO-Revision-Date: 2022-02-03 15:04+0000\n"
 "Last-Translator: Joel Jose <joel750jose@gmail.com>\n"
 "Language-Team: Malayalam <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -35,14 +35,14 @@ msgstr "ഈ പേജ് ഒരു പരിരക്ഷിത കണക്ഷ�
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "ഈ പേജിന്റെ ചില ഘടകങ്ങൾ ഒരു സുരക്ഷിതമല്ലാത്ത കണക്ഷനിലൂടെയാണ് നൽകുന്നത്."
 
-#: src/CaptiveLogin.vala:56
+#: src/CaptiveLogin.vala:55
 msgid "Log in"
 msgstr "ലോഗിൻ"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "Load this address in the browser window"
 msgstr "ബ്രൗസർ വിൻഡോയിൽ ഈ വിലാസം ലോഡ് ചെയ്യുക"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "URL"
 msgstr "URL"

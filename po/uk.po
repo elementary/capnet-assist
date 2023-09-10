@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 11:37-0700\n"
+"POT-Creation-Date: 2023-09-10 14:30-0700\n"
 "PO-Revision-Date: 2021-05-20 02:49+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -36,15 +36,15 @@ msgstr "Сторінка подається через захищене з'єд�
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "Деякі елементи цієї сторінки подаються через незахищене з'єднання."
 
-#: src/CaptiveLogin.vala:56
+#: src/CaptiveLogin.vala:55
 msgid "Log in"
 msgstr "Увійти"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "Load this address in the browser window"
 msgstr "Завантажити цю адресу у вікні переглядача"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "URL"
 msgstr "URL-адреса"
 

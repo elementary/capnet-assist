@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 11:37-0700\n"
+"POT-Creation-Date: 2023-09-10 14:30-0700\n"
 "PO-Revision-Date: 2022-09-30 23:18+0000\n"
 "Last-Translator: Mejans <farga@mejans.fr>\n"
 "Language-Team: Occitan <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -37,15 +37,15 @@ msgstr ""
 "D’unes elements d’aquesta pagina son afichats d’una connexion pas segura "
 "estant."
 
-#: src/CaptiveLogin.vala:56
+#: src/CaptiveLogin.vala:55
 msgid "Log in"
 msgstr "Connexion"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "Load this address in the browser window"
 msgstr "Cargar aquesta adreça dins la fenèstra del navegador"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "URL"
 msgstr "URL"
 

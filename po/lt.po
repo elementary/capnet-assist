@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 11:37-0700\n"
+"POT-Creation-Date: 2023-09-10 14:30-0700\n"
 "PO-Revision-Date: 2018-11-19 10:05+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/desktop/"
@@ -37,16 +37,16 @@ msgstr "Puslapis yra pateikiamas per apsaugotą ryšį."
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "Kai kurie šio puslapio elementai yra pateikiami per neapsaugotą ryšį."
 
-#: src/CaptiveLogin.vala:56
+#: src/CaptiveLogin.vala:55
 msgid "Log in"
 msgstr "Prisijungti"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 #, fuzzy
 msgid "Load this address in the browser window"
 msgstr "Įkelti šį URL naršyklės lange"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "URL"
 msgstr "URL"
 

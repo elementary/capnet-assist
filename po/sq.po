@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 11:37-0700\n"
+"POT-Creation-Date: 2023-09-10 14:30-0700\n"
 "PO-Revision-Date: 2016-05-01 01:43+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -35,14 +35,14 @@ msgid "Some elements of this page are served over an unprotected connection."
 msgstr ""
 "Disa elemente të kësaj faqe janë shërbyer mbi një lidhje të pambrojtur."
 
-#: src/CaptiveLogin.vala:56
+#: src/CaptiveLogin.vala:55
 msgid "Log in"
 msgstr ""
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "Load this address in the browser window"
 msgstr ""
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "URL"
 msgstr ""

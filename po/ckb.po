@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 11:37-0700\n"
+"POT-Creation-Date: 2023-09-10 14:30-0700\n"
 "PO-Revision-Date: 2022-04-04 21:19+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -35,14 +35,14 @@ msgstr "ئەم پەڕەیە لەسەر پەیوەندییەکی پارێزراو
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "هەندێک ئامراز لەم پەڕەیەدا، لەسەر پەیوەندییەکی نەپارێزراو ئامادەکراوە."
 
-#: src/CaptiveLogin.vala:56
+#: src/CaptiveLogin.vala:55
 msgid "Log in"
 msgstr "چوونەژورەوە"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "Load this address in the browser window"
 msgstr "ئەم ناونیشانە لە پەنجەرەی وێبگەڕدا بکەوە"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "URL"
 msgstr "لینک (URL)"

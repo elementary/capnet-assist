@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 11:37-0700\n"
+"POT-Creation-Date: 2023-09-10 14:30-0700\n"
 "PO-Revision-Date: 2016-12-18 03:50+0000\n"
 "Last-Translator: aliyusup <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -34,14 +34,14 @@ msgstr "بۇ بەت قوغدالغان ئۇلىنىش تەرىپىدىن تەم�
 msgid "Some elements of this page are served over an unprotected connection."
 msgstr "بۇ بەتتىكى بەزى مەزمۇنلار قوغدالمىغان ئۇلىنىش تەرىپىدىن تەمىنلەنگەن."
 
-#: src/CaptiveLogin.vala:56
+#: src/CaptiveLogin.vala:55
 msgid "Log in"
 msgstr "تىزىملىتىش"
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "Load this address in the browser window"
 msgstr ""
 
-#: src/Application.vala:49
+#: src/Application.vala:56
 msgid "URL"
 msgstr ""
