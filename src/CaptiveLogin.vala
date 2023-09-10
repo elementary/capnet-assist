@@ -68,7 +68,8 @@ public class CaptiveLogin : Hdy.ApplicationWindow {
         header.get_style_context ().add_class ("default-decoration");
 
         tabview = new Hdy.TabView () {
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
 
         var tabbar = new Hdy.TabBar () {
