@@ -64,7 +64,8 @@ public class Captive.Application : Gtk.Application {
     public override void startup () {
         base.startup ();
 
-        Hdy.init ();
+        Granite.init ();
+        Adw.init ();
 
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();

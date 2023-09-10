@@ -31,10 +31,10 @@ executable(
         dependency('gio-2.0'),
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
-        dependency('gtk+-3.0'),
-        dependency('granite'),
-        dependency('libhandy-1', version: '>=1.0.0'),
-        dependency('webkit2gtk-4.1')
+        dependency('granite-7', version: '>=7.0.0'),
+        dependency('gtk4'),
+        dependency('libadwaita-1', version: '>=1.0.0'),
+        dependency('webkitgtk-6.0')
     ],
     install : true
 )

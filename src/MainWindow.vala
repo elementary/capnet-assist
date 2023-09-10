@@ -18,7 +18,7 @@
 *
 */
 
-public class Captive.MainWindow : Hdy.ApplicationWindow {
+public class Captive.MainWindow : Gtk.ApplicationWindow {
     private const string DUMMY_URL = "http://capnet.elementary.io";
 
     private Granite.HeaderLabel cert_subject;
@@ -28,7 +28,7 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
     private Gtk.Label popover_label;
     private Gtk.Label title_label;
     private Gtk.MenuButton cert_button;
-    private Hdy.TabView tabview;
+    private Adw.TabView tabview;
 
     // When a download is passed to the browser, it triggers the load failed signal
     private bool download_requested = false;
@@ -97,33 +97,33 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
         cert_button.get_style_context ().add_class ("titlebutton");
 
         title_label = new Gtk.Label (_("Log in"));
-        title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
+        title_label.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
 
         var header_box = new Gtk.Box (HORIZONTAL, 6);
         header_box.add (cert_button);
         header_box.add (title_label);
 
-        var header = new Hdy.HeaderBar () {
-            custom_title = header_box,
-            show_close_button = true
+        var header = new Gtk.HeaderBar () {
+            title_widget = header_box,
+            show_title_buttons = true
         };
-        header.get_style_context ().add_class ("default-decoration");
+        header.add_css_class ("default-decoration");
 
-        tabview = new Hdy.TabView () {
+        tabview = new Adw.TabView () {
             hexpand = true,
             vexpand = true
         };
 
-        var tabbar = new Hdy.TabBar () {
+        var tabbar = new Adw.TabBar () {
             expand_tabs = false,
             inverted = true,
             view = tabview
         };
 
         var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        box.add (header);
-        box.add (tabbar);
-        box.add (tabview);
+        box.append (header);
+        box.append (tabbar);
+        box.append (tabview);
 
         child = box;
 
@@ -236,7 +236,6 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
         });
 
         webview.load_uri (uri);
-        show_all ();
 
         return webview;
     }
@@ -259,17 +258,5 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
             application.quit ();
             return true;
         });
-
-        show_all ();
-    }
-
-    public override bool delete_event (Gdk.EventAny event) {
-        int window_width;
-        int window_height;
-        get_size (out window_width, out window_height);
-        Captive.Application.settings.set_int ("window-width", window_width);
-        Captive.Application.settings.set_int ("window-height", window_height);
-
-        return false;
     }
 }
