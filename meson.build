@@ -24,8 +24,8 @@ executable(
     meson.project_name(),
     config_file,
     'src/Application.vala',
-    'src/CaptiveLogin.vala',
     'src/CertButton.vala',
+    'src/MainWindow.vala',
     'src/TabbedWebView.vala',
     dependencies: [
         dependency('gcr-3'),

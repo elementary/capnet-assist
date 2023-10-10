@@ -18,7 +18,7 @@
 *
 */
 
-public class CertButton : Gtk.ToggleButton {
+public class Captive.CertButton : Gtk.ToggleButton {
     public enum Security {
         NONE,
         SECURE,
@@ -68,11 +68,11 @@ public class CertButton : Gtk.ToggleButton {
         }
     }
 
-    public CaptiveLogin captive_login_window {
+    public MainWindow captive_login_window {
         get; set construct;
     }
 
-    public CertButton (CaptiveLogin captive_login_window) {
+    public CertButton (MainWindow captive_login_window) {
         Object (security: Security.LOADING, captive_login_window: captive_login_window);
     }
 

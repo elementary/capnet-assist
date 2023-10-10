@@ -18,7 +18,7 @@
 *
 */
 
-public class TabbedWebView : WebKit.WebView {
+public class Captive.TabbedWebView : WebKit.WebView {
     public bool load_cookies { get; construct; }
     public CertButton.Security security { get; private set; }
 
