@@ -20,7 +20,14 @@
 
 public class Captive.TabbedWebView : WebKit.WebView {
     public bool load_cookies { get; construct; }
-    public CertButton.Security security { get; private set; }
+    public Security security { get; private set; }
+
+    public enum Security {
+        NONE,
+        SECURE,
+        LOADING,
+        MIXED_CONTENT,
+    }
 
     public TabbedWebView (bool load_cookies) {
         Object (load_cookies: load_cookies);
@@ -46,13 +53,13 @@ public class Captive.TabbedWebView : WebKit.WebView {
         }
 
         insecure_content_detected.connect (() => {
-            security = CertButton.Security.MIXED_CONTENT;
+            security = MIXED_CONTENT;
         });
 
         load_changed.connect ((view, event) => {
             switch (event) {
                 case WebKit.LoadEvent.STARTED:
-                    security = CertButton.Security.LOADING;
+                    security = LOADING;
                     break;
                 case WebKit.LoadEvent.COMMITTED:
                     update_tls_info ();
@@ -76,9 +83,9 @@ public class Captive.TabbedWebView : WebKit.WebView {
         }
 
         if (is_secure) {
-            security = CertButton.Security.SECURE;
+            security = SECURE;
         } else {
-            security = CertButton.Security.NONE;
+            security = NONE;
         }
     }
 }
