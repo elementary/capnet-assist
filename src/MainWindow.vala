@@ -163,23 +163,18 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
 
         cert_button.sensitive = web_view.security != NONE && web_view.security != LOADING;
 
-        TlsCertificate cert;
-        TlsCertificateFlags cert_flags;
-
-        if (!web_view.get_tls_info (out cert, out cert_flags)) {
+        if (web_view.certificate == null) {
             cert_button.active = false;
             return;
         }
 
-        var gcr_cert = new Gcr.SimpleCertificate (cert.certificate.data);
-
         cert_expiry.label = _("Expires %s").printf (
-            gcr_cert.expiry_date.format (Granite.DateTime.get_default_date_format (false, true, true))
+            web_view.certificate.expiry_date.format (Granite.DateTime.get_default_date_format (false, true, true))
         );
 
-        cert_issuer.label = _("Issued by “%s”").printf (gcr_cert.issuer_name);
+        cert_issuer.label = _("Issued by “%s”").printf (web_view.certificate.issuer_name);
 
-        cert_subject.label = gcr_cert.subject_name;
+        cert_subject.label = web_view.certificate.subject_name;
     }
 
     private bool is_privacy_mode_enabled () {

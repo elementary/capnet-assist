@@ -21,6 +21,7 @@
 public class Captive.TabbedWebView : WebKit.WebView {
     public bool load_cookies { get; construct; }
     public Security security { get; private set; }
+    public Gcr.SimpleCertificate? certificate { get; private set; default = null; }
 
     public enum Security {
         NONE,
@@ -110,10 +111,12 @@ public class Captive.TabbedWebView : WebKit.WebView {
         if (!get_tls_info (out cert, out cert_flags)) {
             // The page is served over HTTP
             is_secure = false;
+            certificate = null;
         } else {
             // The page is served over HTTPS, if cert_flags is set then there's
             // some problem with the certificate provided by the website.
             is_secure = (cert_flags == 0);
+            certificate = new Gcr.SimpleCertificate (cert.certificate.data);
         }
 
         if (is_secure) {
