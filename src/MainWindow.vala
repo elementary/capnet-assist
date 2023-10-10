@@ -29,6 +29,13 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
     private Gtk.Label title_label;
     private Gtk.MenuButton cert_button;
     private Adw.TabView tabview;
+    private Granite.HeaderLabel cert_subject;
+    private Gtk.Image popover_image;
+    private Gtk.Label cert_expiry;
+    private Gtk.Label cert_issuer;
+    private Gtk.Label popover_label;
+    private Gtk.Label title_label;
+    private Gtk.MenuButton cert_button;
 
     // When a download is passed to the browser, it triggers the load failed signal
     private bool download_requested = false;
@@ -49,7 +56,7 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
             wrap = true,
             wrap_mode = WORD_CHAR
         };
-        popover_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        popover_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         cert_subject = new Granite.HeaderLabel ("");
 
@@ -65,10 +72,10 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
         };
 
         var cert_box = new Gtk.Box (VERTICAL, 3);
-        cert_box.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        cert_box.add (cert_subject);
-        cert_box.add (cert_issuer);
-        cert_box.add (cert_expiry);
+        cert_box.add_css_class (Granite.STYLE_CLASS_VIEW);
+        cert_box.append (cert_subject);
+        cert_box.append (cert_issuer);
+        cert_box.append (cert_expiry);
 
         var frame = new Gtk.Frame (null) {
             child = cert_box,
@@ -85,16 +92,15 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
         grid.attach (popover_image, 0, 0, 1, 2);
         grid.attach (popover_label, 1, 0);
         grid.attach (frame, 1, 1);
-        grid.show_all ();
 
-        var popover = new Gtk.Popover (null) {
+        var popover = new Gtk.Popover () {
             child = grid
         };
 
         cert_button = new Gtk.MenuButton () {
             popover = popover
         };
-        cert_button.get_style_context ().add_class ("titlebutton");
+        cert_button.add_css_class ("titlebutton");
 
         title_label = new Gtk.Label (_("Log in"));
         title_label.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
@@ -151,12 +157,10 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
 
         popover_label.label = cert_button.tooltip_text;
 
-        if (web_view.security == SECURE) {
-            popover_label.get_style_context ().remove_class (Gtk.STYLE_CLASS_WARNING);
-            popover_label.get_style_context ().add_class ("success");
+        if (security == SECURE) {
+            popover_label.css_classes = {"success"};
         } else {
-            popover_label.get_style_context ().remove_class ("success");
-            popover_label.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
+            popover_label.css_classes = {Granite.STYLE_CLASS_WARNING};
         }
 
         popover_image.icon_name = icon_name.replace ("-symbolic", "");
