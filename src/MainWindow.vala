@@ -85,6 +85,7 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
         grid.attach (popover_image, 0, 0, 1, 2);
         grid.attach (popover_label, 1, 0);
         grid.attach (frame, 1, 1);
+        grid.show_all ();
 
         var popover = new Gtk.Popover (null) {
             child = grid
