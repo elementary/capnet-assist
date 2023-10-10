@@ -3,8 +3,8 @@
  * SPDX-FileCopyrightText: 2016-2023 elementary, Inc. (https://elementary.io)
  */
 
-public class CertButton : Gtk.MenuButton {
-    public CaptiveLogin captive_login_window { get; construct set; }
+public class Captive.CertButton : Gtk.MenuButton {
+    public MainWindow captive_login_window { get; construct set; }
 
     public enum Security {
         NONE,
@@ -69,7 +69,7 @@ public class CertButton : Gtk.MenuButton {
     private Gtk.Label popover_label;
     private string icon_name = "content-loading-symbolic";
 
-    public CertButton (CaptiveLogin captive_login_window) {
+    public CertButton (MainWindow captive_login_window) {
         Object (captive_login_window: captive_login_window);
     }
 

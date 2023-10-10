@@ -46,9 +46,34 @@ public class Captive.Application : Gtk.Application {
         if (!is_busy) {
             mark_busy ();
 
-            var browser = new CaptiveLogin (this);
-            browser.start (debug_url);
+            var main_window = new MainWindow (this);
+
+            settings.bind ("window-height", main_window, "default-height", DEFAULT);
+            settings.bind ("window-width", main_window, "default-width", DEFAULT);
+
+            if (settings.get_boolean ("is-maximized")) {
+                main_window.maximize ();
+            }
+
+            settings.bind ("is-maximized", main_window, "is-maximized", SettingsBindFlags.SET);
+
+            main_window.start (debug_url);
         }
+    }
+
+    public override void startup () {
+        base.startup ();
+
+        Hdy.init ();
+
+        var granite_settings = Granite.Settings.get_default ();
+        var gtk_settings = Gtk.Settings.get_default ();
+
+        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
+
+        granite_settings.notify["prefers-color-scheme"].connect (() => {
+            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
+        });
     }
 
     public override int command_line (ApplicationCommandLine command_line) {

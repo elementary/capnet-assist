@@ -18,7 +18,7 @@
 *
 */
 
-public class CaptiveLogin : Hdy.ApplicationWindow {
+public class Captive.MainWindow : Hdy.ApplicationWindow {
     private const string DUMMY_URL = "http://capnet.elementary.io";
 
     private CertButton cert_button;
@@ -28,41 +28,22 @@ public class CaptiveLogin : Hdy.ApplicationWindow {
     // When a download is passed to the browser, it triggers the load failed signal
     private bool download_requested = false;
 
-    public CaptiveLogin (Gtk.Application app) {
+    public MainWindow (Gtk.Application app) {
         Object (application: app);
-
-        set_default_size (Captive.Application.settings.get_int ("window-width"), Captive.Application.settings.get_int ("window-height"));
-
-        if (Captive.Application.settings.get_boolean ("is-maximized")) {
-            maximize ();
-        }
     }
 
     construct {
-        Hdy.init ();
-
-        var granite_settings = Granite.Settings.get_default ();
-        var gtk_settings = Gtk.Settings.get_default ();
-
-        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
-
-        granite_settings.notify["prefers-color-scheme"].connect (() => {
-            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
-        });
-
         cert_button = new CertButton (this);
 
         title_label = new Gtk.Label (_("Log in"));
         title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
 
-        var header_grid = new Gtk.Grid () {
-            column_spacing = 6
-        };
-        header_grid.add (cert_button);
-        header_grid.add (title_label);
+        var header_box = new Gtk.Box (HORIZONTAL, 6);
+        header_box.add (cert_button);
+        header_box.add (title_label);
 
         var header = new Hdy.HeaderBar () {
-            custom_title = header_grid,
+            custom_title = header_box,
             show_close_button = true
         };
         header.get_style_context ().add_class ("default-decoration");
@@ -83,13 +64,7 @@ public class CaptiveLogin : Hdy.ApplicationWindow {
         box.add (tabbar);
         box.add (tabview);
 
-        add (box);
-
-        set_keep_above (true);
-        skip_taskbar_hint = true;
-        stick ();
-
-        this.destroy.connect (application.quit);
+        child = box;
 
         tabview.notify["selected-page"].connect (() => {
             var webview = (TabbedWebView) tabview.get_selected_page ().child;
@@ -108,7 +83,7 @@ public class CaptiveLogin : Hdy.ApplicationWindow {
         });
     }
 
-    bool is_privacy_mode_enabled () {
+    private bool is_privacy_mode_enabled () {
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
         return !privacy_settings.get_boolean ("remember-recent-files") ||
                !privacy_settings.get_boolean ("remember-app-usage");
@@ -212,11 +187,6 @@ public class CaptiveLogin : Hdy.ApplicationWindow {
         get_size (out window_width, out window_height);
         Captive.Application.settings.set_int ("window-width", window_width);
         Captive.Application.settings.set_int ("window-height", window_height);
-        if (is_maximized) {
-            Captive.Application.settings.set_boolean ("is-maximized", true);
-        } else {
-            Captive.Application.settings.set_boolean ("is-maximized", false);
-        }
 
         return false;
     }
