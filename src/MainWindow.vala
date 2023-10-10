@@ -130,7 +130,7 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
         tabview.notify["selected-page"].connect (() => {
             var webview = (TabbedWebView) tabview.get_selected_page ().child;
             title_label.label = webview.title;
-            update_security (webview.security);
+            update_security (webview);
         });
 
         tabview.close_page.connect ((page) => {
@@ -144,38 +144,14 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
         });
     }
 
-    private void update_security (TabbedWebView.Security security) {
-        var web_view = (TabbedWebView) tabview.get_selected_page ().child;
-        var uri = web_view.get_uri ();
-
-        string icon_name = "content-loading-symbolic";
-
-        switch (security) {
-            case LOADING:
-                icon_name = "content-loading-symbolic";
-                cert_button.tooltip_text = _("Loading captive portal.");
-                break;
-
-            case NONE:
-                icon_name = "security-low-symbolic";
-                cert_button.tooltip_text = _("“%s” is served over an unprotected connection").printf (uri);
-                break;
-
-            case SECURE:
-                icon_name = "security-high-symbolic";
-                cert_button.tooltip_text = _("“%s” is served over a protected connection").printf (uri);
-                break;
-
-            case MIXED_CONTENT:
-                icon_name = "security-medium-symbolic";
-                cert_button.tooltip_text = _("Some elements of “%s” are served over an unprotected connection").printf (uri);
-                break;
-        }
-
+    private void update_security (TabbedWebView web_view) {
+        string icon_name = web_view.security_to_icon_name ();
         cert_button.image = new Gtk.Image.from_icon_name (icon_name, BUTTON);
+        cert_button.tooltip_text = web_view.security_to_string ();
+
         popover_label.label = cert_button.tooltip_text;
 
-        if (security == SECURE) {
+        if (web_view.security == SECURE) {
             popover_label.get_style_context ().remove_class (Gtk.STYLE_CLASS_WARNING);
             popover_label.get_style_context ().add_class ("success");
         } else {
@@ -185,7 +161,7 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
 
         popover_image.icon_name = icon_name.replace ("-symbolic", "");
 
-        cert_button.sensitive = security != NONE && security != LOADING;
+        cert_button.sensitive = web_view.security != NONE && web_view.security != LOADING;
 
         TlsCertificate cert;
         TlsCertificateFlags cert_flags;
@@ -226,7 +202,7 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
 
         webview.notify["security"].connect ((view, param_spec) => {
             if (tabpage == tabview.get_selected_page ()) {
-                update_security (webview.security);
+                update_security (webview);
             }
         });
 

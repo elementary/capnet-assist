@@ -26,7 +26,7 @@ public class Captive.TabbedWebView : WebKit.WebView {
         NONE,
         SECURE,
         LOADING,
-        MIXED_CONTENT,
+        MIXED_CONTENT
     }
 
     public TabbedWebView (bool load_cookies) {
@@ -66,6 +66,40 @@ public class Captive.TabbedWebView : WebKit.WebView {
                     break;
             }
         });
+    }
+
+    public string security_to_string () {
+        switch (security) {
+            case NONE:
+                return _("“%s” is served over an unprotected connection").printf (get_uri ());
+
+            case SECURE:
+                return _("“%s” is served over a protected connection").printf (get_uri ());
+
+            case MIXED_CONTENT:
+                return _("Some elements of “%s” are served over an unprotected connection").printf (get_uri ());
+
+            case LOADING:
+            default:
+                return _("Loading captive portal");
+        };
+    }
+
+    public string security_to_icon_name () {
+        switch (security) {
+            case NONE:
+                return "security-low-symbolic";
+
+            case SECURE:
+                return "security-high-symbolic";
+
+            case MIXED_CONTENT:
+                return "security-medium-symbolic";
+
+            case LOADING:
+            default:
+                return "content-loading-symbolic";
+        };
     }
 
     private void update_tls_info () {
