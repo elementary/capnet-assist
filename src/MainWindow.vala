@@ -197,16 +197,13 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
 
         var gcr_cert = new Gcr.SimpleCertificate (cert.certificate.data);
 
-        Time time;
-        gcr_cert.expiry.to_time (out time);
-
         cert_expiry.label = _("Expires %s").printf (
-            time.format (Granite.DateTime.get_default_date_format (false, true, true))
+            gcr_cert.expiry_date.format (Granite.DateTime.get_default_date_format (false, true, true))
         );
 
-        cert_issuer.label = _("Issued by “%s”").printf (gcr_cert.issuer);
+        cert_issuer.label = _("Issued by “%s”").printf (gcr_cert.issuer_name);
 
-        cert_subject.label = gcr_cert.subject;
+        cert_subject.label = gcr_cert.subject_name;
     }
 
     private bool is_privacy_mode_enabled () {
