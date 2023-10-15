@@ -145,7 +145,7 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
     }
 
     private void update_security (TabbedWebView web_view) {
-        string icon_name = web_view.security_to_icon_name ();
+        string icon_name = web_view.security.to_icon_name ();
         cert_button.image = new Gtk.Image.from_icon_name (icon_name, BUTTON);
         cert_button.tooltip_text = web_view.security_to_string ();
 

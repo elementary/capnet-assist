@@ -27,7 +27,24 @@ public class Captive.TabbedWebView : WebKit.WebView {
         NONE,
         SECURE,
         LOADING,
-        MIXED_CONTENT
+        MIXED_CONTENT;
+
+        public string to_icon_name () {
+            switch (this) {
+                case NONE:
+                    return "security-low-symbolic";
+
+                case SECURE:
+                    return "security-high-symbolic";
+
+                case MIXED_CONTENT:
+                    return "security-medium-symbolic";
+
+                case LOADING:
+                default:
+                    return "content-loading-symbolic";
+            };
+        }
     }
 
     public TabbedWebView (bool load_cookies) {
@@ -83,23 +100,6 @@ public class Captive.TabbedWebView : WebKit.WebView {
             case LOADING:
             default:
                 return _("Loading captive portal");
-        };
-    }
-
-    public string security_to_icon_name () {
-        switch (security) {
-            case NONE:
-                return "security-low-symbolic";
-
-            case SECURE:
-                return "security-high-symbolic";
-
-            case MIXED_CONTENT:
-                return "security-medium-symbolic";
-
-            case LOADING:
-            default:
-                return "content-loading-symbolic";
         };
     }
 
