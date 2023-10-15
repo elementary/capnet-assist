@@ -60,14 +60,14 @@ public class Captive.TabbedWebView : WebKit.WebView {
                 "cookies.sqlite"
             );
 
-            // if (FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
-            //     var cookie_manager = get_context ().get_cookie_manager ();
+            if (FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
+                var cookie_manager = network_session.get_cookie_manager ();
 
-            //     cookie_manager.set_accept_policy (WebKit.CookieAcceptPolicy.ALWAYS);
-            //     cookie_manager.set_persistent_storage (cookies_db_path, WebKit.CookiePersistentStorage.SQLITE);
-            // } else {
-            //     critical ("No cookies store found, not saving the cookies…");
-            // }
+                cookie_manager.set_accept_policy (WebKit.CookieAcceptPolicy.ALWAYS);
+                cookie_manager.set_persistent_storage (cookies_db_path, WebKit.CookiePersistentStorage.SQLITE);
+            } else {
+                critical ("No cookies store found, not saving the cookies…");
+            }
         }
 
         insecure_content_detected.connect (() => {
