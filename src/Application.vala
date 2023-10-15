@@ -55,7 +55,7 @@ public class Captive.Application : Gtk.Application {
                 main_window.maximize ();
             }
 
-            settings.bind ("is-maximized", main_window, "is-maximized", SettingsBindFlags.SET);
+            settings.bind ("is-maximized", main_window, "maximized", SettingsBindFlags.SET);
 
             main_window.start (debug_url);
         }

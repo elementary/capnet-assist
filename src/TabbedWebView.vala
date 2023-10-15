@@ -19,13 +19,6 @@
 */
 
 public class Captive.TabbedWebView : WebKit.WebView {
-    public enum Security {
-        NONE,
-        SECURE,
-        LOADING,
-        MIXED_CONTENT,
-    }
-
     public bool load_cookies { get; construct; }
     public Security security { get; private set; }
     public Gcr.SimpleCertificate? certificate { get; private set; default = null; }

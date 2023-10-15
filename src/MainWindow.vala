@@ -21,13 +21,6 @@
 public class Captive.MainWindow : Gtk.ApplicationWindow {
     private const string DUMMY_URL = "http://capnet.elementary.io";
 
-    private Granite.HeaderLabel cert_subject;
-    private Gtk.Image popover_image;
-    private Gtk.Label cert_expiry;
-    private Gtk.Label cert_issuer;
-    private Gtk.Label popover_label;
-    private Gtk.Label title_label;
-    private Gtk.MenuButton cert_button;
     private Adw.TabView tabview;
     private Granite.HeaderLabel cert_subject;
     private Gtk.Image popover_image;
@@ -106,14 +99,14 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
         title_label.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
 
         var header_box = new Gtk.Box (HORIZONTAL, 6);
-        header_box.add (cert_button);
-        header_box.add (title_label);
+        header_box.append (cert_button);
+        header_box.append (title_label);
 
-        var header = new Gtk.HeaderBar () {
+        titlebar = new Gtk.HeaderBar () {
             title_widget = header_box,
             show_title_buttons = true
         };
-        header.add_css_class ("default-decoration");
+        titlebar.add_css_class ("default-decoration");
 
         tabview = new Adw.TabView () {
             hexpand = true,
@@ -127,7 +120,6 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
         };
 
         var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        box.append (header);
         box.append (tabbar);
         box.append (tabview);
 
@@ -151,19 +143,18 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
     }
 
     private void update_security (TabbedWebView web_view) {
-        string icon_name = web_view.security.to_icon_name ();
-        cert_button.image = new Gtk.Image.from_icon_name (icon_name, BUTTON);
+        cert_button.icon_name = icon_name = web_view.security.to_icon_name ();
         cert_button.tooltip_text = web_view.security_to_string ();
 
         popover_label.label = cert_button.tooltip_text;
 
-        if (security == SECURE) {
+        if (web_view.security == SECURE) {
             popover_label.css_classes = {"success"};
         } else {
             popover_label.css_classes = {Granite.STYLE_CLASS_WARNING};
         }
 
-        popover_image.icon_name = icon_name.replace ("-symbolic", "");
+        popover_image.icon_name = cert_button.icon_name.replace ("-symbolic", "");
 
         cert_button.sensitive = web_view.security != NONE && web_view.security != LOADING;
 
@@ -262,5 +253,7 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
             application.quit ();
             return true;
         });
+
+        present ();
     }
 }
