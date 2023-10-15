@@ -21,8 +21,13 @@
 public class Captive.MainWindow : Hdy.ApplicationWindow {
     private const string DUMMY_URL = "http://capnet.elementary.io";
 
-    private CertButton cert_button;
+    private Granite.HeaderLabel cert_subject;
+    private Gtk.Image popover_image;
+    private Gtk.Label cert_expiry;
+    private Gtk.Label cert_issuer;
+    private Gtk.Label popover_label;
     private Gtk.Label title_label;
+    private Gtk.MenuButton cert_button;
     private Hdy.TabView tabview;
 
     // When a download is passed to the browser, it triggers the load failed signal
@@ -33,7 +38,63 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
     }
 
     construct {
-        cert_button = new CertButton (this);
+        popover_image = new Gtk.Image () {
+            pixel_size = 48,
+            valign = START
+        };
+
+        popover_label = new Gtk.Label ("") {
+            xalign = 0,
+            max_width_chars = 55,
+            wrap = true,
+            wrap_mode = WORD_CHAR
+        };
+        popover_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
+        cert_subject = new Granite.HeaderLabel ("");
+
+        cert_issuer = new Gtk.Label ("") {
+            halign = START,
+            margin_start = 12
+        };
+
+        cert_expiry = new Gtk.Label ("") {
+            halign = START,
+            margin_start = 12,
+            margin_bottom = 6
+        };
+
+        var cert_box = new Gtk.Box (VERTICAL, 3);
+        cert_box.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        cert_box.add (cert_subject);
+        cert_box.add (cert_issuer);
+        cert_box.add (cert_expiry);
+
+        var frame = new Gtk.Frame (null) {
+            child = cert_box,
+            margin_top = 12
+        };
+
+        var grid = new Gtk.Grid () {
+            column_spacing = 12,
+            margin_top = 12,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
+        };
+        grid.attach (popover_image, 0, 0, 1, 2);
+        grid.attach (popover_label, 1, 0);
+        grid.attach (frame, 1, 1);
+        grid.show_all ();
+
+        var popover = new Gtk.Popover (null) {
+            child = grid
+        };
+
+        cert_button = new Gtk.MenuButton () {
+            popover = popover
+        };
+        cert_button.get_style_context ().add_class ("titlebutton");
 
         title_label = new Gtk.Label (_("Log in"));
         title_label.get_style_context ().add_class (Gtk.STYLE_CLASS_TITLE);
@@ -69,7 +130,7 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
         tabview.notify["selected-page"].connect (() => {
             var webview = (TabbedWebView) tabview.get_selected_page ().child;
             title_label.label = webview.title;
-            cert_button.security = webview.security;
+            update_security (webview);
         });
 
         tabview.close_page.connect ((page) => {
@@ -81,6 +142,39 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
 
             return Gdk.EVENT_STOP;
         });
+    }
+
+    private void update_security (TabbedWebView web_view) {
+        string icon_name = web_view.security.to_icon_name ();
+        cert_button.image = new Gtk.Image.from_icon_name (icon_name, BUTTON);
+        cert_button.tooltip_text = web_view.security_to_string ();
+
+        popover_label.label = cert_button.tooltip_text;
+
+        if (web_view.security == SECURE) {
+            popover_label.get_style_context ().remove_class (Gtk.STYLE_CLASS_WARNING);
+            popover_label.get_style_context ().add_class ("success");
+        } else {
+            popover_label.get_style_context ().remove_class ("success");
+            popover_label.get_style_context ().add_class (Gtk.STYLE_CLASS_WARNING);
+        }
+
+        popover_image.icon_name = icon_name.replace ("-symbolic", "");
+
+        cert_button.sensitive = web_view.security != NONE && web_view.security != LOADING;
+
+        if (web_view.certificate == null) {
+            cert_button.active = false;
+            return;
+        }
+
+        cert_expiry.label = _("Expires %s").printf (
+            web_view.certificate.expiry_date.format (Granite.DateTime.get_default_date_format (false, true, true))
+        );
+
+        cert_issuer.label = _("Issued by “%s”").printf (web_view.certificate.issuer_name);
+
+        cert_subject.label = web_view.certificate.subject_name;
     }
 
     private bool is_privacy_mode_enabled () {
@@ -103,7 +197,7 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
 
         webview.notify["security"].connect ((view, param_spec) => {
             if (tabpage == tabview.get_selected_page ()) {
-                cert_button.security = webview.security;
+                update_security (webview);
             }
         });
 
@@ -145,18 +239,6 @@ public class Captive.MainWindow : Hdy.ApplicationWindow {
         show_all ();
 
         return webview;
-    }
-
-    public bool get_tls_info (out TlsCertificate certificate, out TlsCertificateFlags errors) {
-        var web_view = (TabbedWebView) tabview.get_selected_page ().child;
-
-        return web_view.get_tls_info (out certificate, out errors);
-    }
-
-    public string get_uri () {
-        var web_view = (TabbedWebView) tabview.get_selected_page ().child;
-
-        return web_view.get_uri ();
     }
 
     public void start (string? browser_url) {

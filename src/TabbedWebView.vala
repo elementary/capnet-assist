@@ -20,7 +20,32 @@
 
 public class Captive.TabbedWebView : WebKit.WebView {
     public bool load_cookies { get; construct; }
-    public CertButton.Security security { get; private set; }
+    public Security security { get; private set; }
+    public Gcr.SimpleCertificate? certificate { get; private set; default = null; }
+
+    public enum Security {
+        NONE,
+        SECURE,
+        LOADING,
+        MIXED_CONTENT;
+
+        public string to_icon_name () {
+            switch (this) {
+                case NONE:
+                    return "security-low-symbolic";
+
+                case SECURE:
+                    return "security-high-symbolic";
+
+                case MIXED_CONTENT:
+                    return "security-medium-symbolic";
+
+                case LOADING:
+                default:
+                    return "content-loading-symbolic";
+            };
+        }
+    }
 
     public TabbedWebView (bool load_cookies) {
         Object (load_cookies: load_cookies);
@@ -46,19 +71,36 @@ public class Captive.TabbedWebView : WebKit.WebView {
         }
 
         insecure_content_detected.connect (() => {
-            security = CertButton.Security.MIXED_CONTENT;
+            security = MIXED_CONTENT;
         });
 
         load_changed.connect ((view, event) => {
             switch (event) {
                 case WebKit.LoadEvent.STARTED:
-                    security = CertButton.Security.LOADING;
+                    security = LOADING;
                     break;
                 case WebKit.LoadEvent.COMMITTED:
                     update_tls_info ();
                     break;
             }
         });
+    }
+
+    public string security_to_string () {
+        switch (security) {
+            case NONE:
+                return _("“%s” is served over an unprotected connection").printf (get_uri ());
+
+            case SECURE:
+                return _("“%s” is served over a protected connection").printf (get_uri ());
+
+            case MIXED_CONTENT:
+                return _("Some elements of “%s” are served over an unprotected connection").printf (get_uri ());
+
+            case LOADING:
+            default:
+                return _("Loading captive portal");
+        };
     }
 
     private void update_tls_info () {
@@ -69,16 +111,18 @@ public class Captive.TabbedWebView : WebKit.WebView {
         if (!get_tls_info (out cert, out cert_flags)) {
             // The page is served over HTTP
             is_secure = false;
+            certificate = null;
         } else {
             // The page is served over HTTPS, if cert_flags is set then there's
             // some problem with the certificate provided by the website.
             is_secure = (cert_flags == 0);
+            certificate = new Gcr.SimpleCertificate (cert.certificate.data);
         }
 
         if (is_secure) {
-            security = CertButton.Security.SECURE;
+            security = SECURE;
         } else {
-            security = CertButton.Security.NONE;
+            security = NONE;
         }
     }
 }
