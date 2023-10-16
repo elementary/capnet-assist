@@ -3,58 +3,36 @@
 name: CI
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
+  push:
+    branches: [ tintou/test-gettext-flatpak ]
 
 jobs:
-  flatpak:
-    name: Flatpak
+  gettext:
+    name: Gettext
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        arch: [x86_64, aarch64]
-      # Don't fail the whole workflow if one architecture fails
-      fail-fast: false
-
     container:
-      image: ghcr.io/elementary/flatpak-platform/runtime:7.2-${{ matrix.arch }}
+      image: ghcr.io/elementary/flatpak-platform/runtime:7.2-x86_64
       options: --privileged
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Install git, python3-git and jq
+      run: |
+        apt-get update
+        apt-get install git jq python3-git -y
 
-      - name: Set up QEMU for aarch64 emulation
-        if: ${{ matrix.arch != 'x86_64' }}
-        uses: docker/setup-qemu-action@v3
-        with:
-          platforms: arm64
+    - name: Clone repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GIT_USER_TOKEN }}
 
-      - name: Build
-        uses: flatpak/flatpak-github-actions/flatpak-builder@v6
-        with:
-          bundle: capnet-assist.flatpak
-          manifest-path: io.elementary.capnet-assist.yml
-          run-tests: true
-          repository-name: appcenter
-          repository-url: https://flatpak.elementary.io/repo.flatpakrepo
-          cache-key: "flatpak-builder-${{ github.sha }}"
-          arch: ${{ matrix.arch }}
+    - name: configure Git
+      run: |
+        git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-
-    container:
-      image: valalang/lint
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Lint
-        run: io.elementary.vala-lint -d .
+    - name: Update Translation Files
+      uses: elementary/actions/gettext-flatpak@tintou/gettext-flatpak
+      with:
+        manifest-path: 'io.elementary.capnet-assist.yml'
+      env:
+        GIT_USER_NAME: "elementaryBot"
+        GIT_USER_EMAIL: "builds@elementary.io"
