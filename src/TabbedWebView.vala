@@ -61,7 +61,7 @@ public class Captive.TabbedWebView : WebKit.WebView {
             );
 
             if (FileUtils.test (cookies_db_path, FileTest.IS_REGULAR)) {
-                var cookie_manager = get_context ().get_cookie_manager ();
+                var cookie_manager = network_session.get_cookie_manager ();
 
                 cookie_manager.set_accept_policy (WebKit.CookieAcceptPolicy.ALWAYS);
                 cookie_manager.set_persistent_storage (cookies_db_path, WebKit.CookiePersistentStorage.SQLITE);

@@ -55,7 +55,7 @@ public class Captive.Application : Gtk.Application {
                 main_window.maximize ();
             }
 
-            settings.bind ("is-maximized", main_window, "is-maximized", SettingsBindFlags.SET);
+            settings.bind ("is-maximized", main_window, "maximized", SettingsBindFlags.SET);
 
             main_window.start (debug_url);
         }
@@ -64,7 +64,8 @@ public class Captive.Application : Gtk.Application {
     public override void startup () {
         base.startup ();
 
-        Hdy.init ();
+        Granite.init ();
+        Adw.init ();
 
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();
