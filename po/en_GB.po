@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-17 15:51+0000\n"
-"PO-Revision-Date: 2020-03-19 18:09+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@posteo.net>\n"
+"PO-Revision-Date: 2023-10-19 13:10+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "desktop/capnet-assist/en_GB/>\n"
 "Language: en_GB\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: src/Application.vala:82
 msgid "Load this address in the browser window"
@@ -34,37 +34,31 @@ msgstr "Log in"
 #: src/MainWindow.vala:166
 #, c-format
 msgid "Expires %s"
-msgstr ""
+msgstr "Expires %s"
 
 #: src/MainWindow.vala:170
 #, c-format
 msgid "Issued by “%s”"
-msgstr ""
+msgstr "Issued by “%s”"
 
 #: src/TabbedWebView.vala:92
-#, fuzzy, c-format
-#| msgid "The page is served over an unprotected connection."
+#, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr "The page is served over an unprotected connection."
+msgstr "“%s” is served over an unprotected connection"
 
 #: src/TabbedWebView.vala:95
-#, fuzzy, c-format
-#| msgid "The page is served over a protected connection."
+#, c-format
 msgid "“%s” is served over a protected connection"
-msgstr "The page is served over a protected connection."
+msgstr "“%s” is served over a protected connection"
 
 #: src/TabbedWebView.vala:98
-#, fuzzy, c-format
-#| msgid ""
-#| "Some elements of this page are served over an unprotected connection."
+#, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
-msgstr "Some elements of this page are served over an unprotected connection."
+msgstr "Some elements of “%s” are served over an unprotected connection"
 
 #: src/TabbedWebView.vala:102
-#, fuzzy
-#| msgid "Loading captive portal."
 msgid "Loading captive portal"
-msgstr "Loading captive portal."
+msgstr "Loading captive portal"
 
 #~ msgid "Force the browser window to appear"
 #~ msgstr "Force the browser windows to appear"
