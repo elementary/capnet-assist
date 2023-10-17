@@ -7,39 +7,52 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 14:30-0700\n"
+"POT-Creation-Date: 2023-10-17 15:51+0000\n"
 "PO-Revision-Date: 2016-10-10 12:53-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/CertButton.vala:44
-msgid "Loading captive portal."
-msgstr ""
-
-#: src/CertButton.vala:48
-msgid "The page is served over an unprotected connection."
-msgstr ""
-
-#: src/CertButton.vala:53
-msgid "The page is served over a protected connection."
-msgstr ""
-
-#: src/CertButton.vala:58
-msgid "Some elements of this page are served over an unprotected connection."
-msgstr ""
-
-#: src/CaptiveLogin.vala:55
-msgid "Log in"
-msgstr ""
-
-#: src/Application.vala:56
+#: src/Application.vala:82
 msgid "Load this address in the browser window"
 msgstr ""
 
-#: src/Application.vala:56
+#: src/Application.vala:82
 msgid "URL"
+msgstr ""
+
+#: src/MainWindow.vala:98
+msgid "Log in"
+msgstr ""
+
+#: src/MainWindow.vala:166
+#, c-format
+msgid "Expires %s"
+msgstr ""
+
+#: src/MainWindow.vala:170
+#, c-format
+msgid "Issued by “%s”"
+msgstr ""
+
+#: src/TabbedWebView.vala:92
+#, c-format
+msgid "“%s” is served over an unprotected connection"
+msgstr ""
+
+#: src/TabbedWebView.vala:95
+#, c-format
+msgid "“%s” is served over a protected connection"
+msgstr ""
+
+#: src/TabbedWebView.vala:98
+#, c-format
+msgid "Some elements of “%s” are served over an unprotected connection"
+msgstr ""
+
+#: src/TabbedWebView.vala:102
+msgid "Loading captive portal"
 msgstr ""

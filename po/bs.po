@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 14:30-0700\n"
+"POT-Creation-Date: 2023-10-17 15:51+0000\n"
 "PO-Revision-Date: 2018-11-21 08:00+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/desktop/"
@@ -20,34 +20,53 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: src/CertButton.vala:44
-msgid "Loading captive portal."
-msgstr "Učitavanje portala ograničavanja."
-
-#: src/CertButton.vala:48
-msgid "The page is served over an unprotected connection."
-msgstr "Ova stranica se prenosi putem nezaštićene veze."
-
-#: src/CertButton.vala:53
-msgid "The page is served over a protected connection."
-msgstr "Ova stranica se prenosi putem zaštićene veze."
-
-#: src/CertButton.vala:58
-msgid "Some elements of this page are served over an unprotected connection."
-msgstr "Pojedini elementi ove stranice su prikazani preko nezaštićene veze."
-
-#: src/CaptiveLogin.vala:55
-msgid "Log in"
-msgstr "Prijava"
-
-#: src/Application.vala:56
+#: src/Application.vala:82
 #, fuzzy
 msgid "Load this address in the browser window"
 msgstr "Učitaj sljedeći URL u prozoru preglednika"
 
-#: src/Application.vala:56
+#: src/Application.vala:82
 msgid "URL"
 msgstr "URL"
+
+#: src/MainWindow.vala:98
+msgid "Log in"
+msgstr "Prijava"
+
+#: src/MainWindow.vala:166
+#, c-format
+msgid "Expires %s"
+msgstr ""
+
+#: src/MainWindow.vala:170
+#, c-format
+msgid "Issued by “%s”"
+msgstr ""
+
+#: src/TabbedWebView.vala:92
+#, fuzzy, c-format
+#| msgid "The page is served over an unprotected connection."
+msgid "“%s” is served over an unprotected connection"
+msgstr "Ova stranica se prenosi putem nezaštićene veze."
+
+#: src/TabbedWebView.vala:95
+#, fuzzy, c-format
+#| msgid "The page is served over a protected connection."
+msgid "“%s” is served over a protected connection"
+msgstr "Ova stranica se prenosi putem zaštićene veze."
+
+#: src/TabbedWebView.vala:98
+#, fuzzy, c-format
+#| msgid ""
+#| "Some elements of this page are served over an unprotected connection."
+msgid "Some elements of “%s” are served over an unprotected connection"
+msgstr "Pojedini elementi ove stranice su prikazani preko nezaštićene veze."
+
+#: src/TabbedWebView.vala:102
+#, fuzzy
+#| msgid "Loading captive portal."
+msgid "Loading captive portal"
+msgstr "Učitavanje portala ograničavanja."
 
 #~ msgid "Force the browser window to appear"
 #~ msgstr "Natjeraj prozor pregledanika da se pojavi"

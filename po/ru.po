@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 14:30-0700\n"
+"POT-Creation-Date: 2023-10-17 15:51+0000\n"
 "PO-Revision-Date: 2021-03-06 18:55+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -21,33 +21,52 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
-#: src/CertButton.vala:44
-msgid "Loading captive portal."
-msgstr "Загрузка сервиса авторизации в публичной сети."
-
-#: src/CertButton.vala:48
-msgid "The page is served over an unprotected connection."
-msgstr "Эта страница использует незащищённое соединение."
-
-#: src/CertButton.vala:53
-msgid "The page is served over a protected connection."
-msgstr "Эта страница использует защищённое соединение."
-
-#: src/CertButton.vala:58
-msgid "Some elements of this page are served over an unprotected connection."
-msgstr "Некоторые элементы этой страницы используют незащищённое соединение."
-
-#: src/CaptiveLogin.vala:55
-msgid "Log in"
-msgstr "Войти"
-
-#: src/Application.vala:56
+#: src/Application.vala:82
 msgid "Load this address in the browser window"
 msgstr "Загрузить этот адрес в окне браузера"
 
-#: src/Application.vala:56
+#: src/Application.vala:82
 msgid "URL"
 msgstr "URL-адрес"
+
+#: src/MainWindow.vala:98
+msgid "Log in"
+msgstr "Войти"
+
+#: src/MainWindow.vala:166
+#, c-format
+msgid "Expires %s"
+msgstr ""
+
+#: src/MainWindow.vala:170
+#, c-format
+msgid "Issued by “%s”"
+msgstr ""
+
+#: src/TabbedWebView.vala:92
+#, fuzzy, c-format
+#| msgid "The page is served over an unprotected connection."
+msgid "“%s” is served over an unprotected connection"
+msgstr "Эта страница использует незащищённое соединение."
+
+#: src/TabbedWebView.vala:95
+#, fuzzy, c-format
+#| msgid "The page is served over a protected connection."
+msgid "“%s” is served over a protected connection"
+msgstr "Эта страница использует защищённое соединение."
+
+#: src/TabbedWebView.vala:98
+#, fuzzy, c-format
+#| msgid ""
+#| "Some elements of this page are served over an unprotected connection."
+msgid "Some elements of “%s” are served over an unprotected connection"
+msgstr "Некоторые элементы этой страницы используют незащищённое соединение."
+
+#: src/TabbedWebView.vala:102
+#, fuzzy
+#| msgid "Loading captive portal."
+msgid "Loading captive portal"
+msgstr "Загрузка сервиса авторизации в публичной сети."
 
 #~ msgid "Force the browser window to appear"
 #~ msgstr "Принудительно открыть окно браузера"

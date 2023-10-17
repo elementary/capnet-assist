@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 14:30-0700\n"
+"POT-Creation-Date: 2023-10-17 15:51+0000\n"
 "PO-Revision-Date: 2020-02-25 22:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -14,33 +14,52 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: src/CertButton.vala:44
-msgid "Loading captive portal."
-msgstr "Ladowanie portalu uwierzitelniynio."
-
-#: src/CertButton.vala:48
-msgid "The page is served over an unprotected connection."
-msgstr "Ta strōna je na niychrōniōnym połōnczyniu."
-
-#: src/CertButton.vala:53
-msgid "The page is served over a protected connection."
-msgstr "Ta strōna je na chrōniōnym połōnczyniu."
-
-#: src/CertButton.vala:58
-msgid "Some elements of this page are served over an unprotected connection."
-msgstr "Niykere elymynta tyj strōny sōm na niychrōniōnym połōnczyniu."
-
-#: src/CaptiveLogin.vala:55
-msgid "Log in"
-msgstr "Wloguj"
-
-#: src/Application.vala:56
+#: src/Application.vala:82
 msgid "Load this address in the browser window"
 msgstr "Zaladuj ta adresa we ôknie przeglōndarki"
 
-#: src/Application.vala:56
+#: src/Application.vala:82
 msgid "URL"
 msgstr "Adresa URL"
+
+#: src/MainWindow.vala:98
+msgid "Log in"
+msgstr "Wloguj"
+
+#: src/MainWindow.vala:166
+#, c-format
+msgid "Expires %s"
+msgstr ""
+
+#: src/MainWindow.vala:170
+#, c-format
+msgid "Issued by “%s”"
+msgstr ""
+
+#: src/TabbedWebView.vala:92
+#, fuzzy, c-format
+#| msgid "The page is served over an unprotected connection."
+msgid "“%s” is served over an unprotected connection"
+msgstr "Ta strōna je na niychrōniōnym połōnczyniu."
+
+#: src/TabbedWebView.vala:95
+#, fuzzy, c-format
+#| msgid "The page is served over a protected connection."
+msgid "“%s” is served over a protected connection"
+msgstr "Ta strōna je na chrōniōnym połōnczyniu."
+
+#: src/TabbedWebView.vala:98
+#, fuzzy, c-format
+#| msgid ""
+#| "Some elements of this page are served over an unprotected connection."
+msgid "Some elements of “%s” are served over an unprotected connection"
+msgstr "Niykere elymynta tyj strōny sōm na niychrōniōnym połōnczyniu."
+
+#: src/TabbedWebView.vala:102
+#, fuzzy
+#| msgid "Loading captive portal."
+msgid "Loading captive portal"
+msgstr "Ladowanie portalu uwierzitelniynio."
 
 #~ msgid "Force the browser window to appear"
 #~ msgstr "Wymuś, żeby pokozało sie ôkno przeglōndarki"
