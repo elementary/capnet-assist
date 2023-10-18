@@ -24,14 +24,15 @@ flatpak run io.elementary.capnet-assist
 
 Set the environment variable `G_MESSAGES_DEBUG` to "all" to have the captive-login binary print debug messages.
 
-Use the flag `-f` to force the captive login window to show even if no captive portal is detected:
+Use the flag `-u` to direct the captive login window to a specific URL:
 
-    io.elementary.capnet-assist -f 
-
-Use the flag `-u` to direct the captive login window to a specific URL. This may not show a window without `-f` if no captive portal is detected:
-
-    io.elementary.capnet-assist -fu https://elementary.io
+```bash
+flatpak run io.elementary.capnet-assist -u https://elementary.io
+```
     
-An example HTML file is included in this repository, e.g. for screenshots, but note you must include a `file://` path:
+An example HTML file is included in this repository, e.g. for screenshots, but note you must give access permission and include a `file://` path:
 
-    io.elementary.capnet-assist -fu file:///home/username/Projects/elementary/capnet-assist/data/example.html
+```bash
+flatpak override --user --filesystem=/home/username/Projects/elementary/capnet-assist/data/example.html:ro io.elementary.capnet-assist
+flatpak run io.elementary.capnet-assist -u file:///home/username/Projects/elementary/capnet-assist/data/example.html
+```
