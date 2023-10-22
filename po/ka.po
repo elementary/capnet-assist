@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-17 15:51+0000\n"
-"PO-Revision-Date: 2023-03-17 05:25+0000\n"
+"PO-Revision-Date: 2023-10-23 05:10+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
-"Language-Team: Georgian <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist/ka/>\n"
+"Language-Team: Georgian <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/Application.vala:82
@@ -35,34 +35,28 @@ msgstr "შესვლა"
 #: src/MainWindow.vala:166
 #, c-format
 msgid "Expires %s"
-msgstr ""
+msgstr "ვადა ეწურება %s"
 
 #: src/MainWindow.vala:170
 #, c-format
 msgid "Issued by “%s”"
-msgstr ""
+msgstr "გამოცემის ავტორია \"%s\""
 
 #: src/TabbedWebView.vala:92
-#, fuzzy, c-format
-#| msgid "The page is served over an unprotected connection."
+#, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr "ეს გვერდი მოგეწოდებათ დაუცველი კავშირის გავლით."
+msgstr "\"%s\" დაუცველი კავშირით მოგეწოდებათ"
 
 #: src/TabbedWebView.vala:95
-#, fuzzy, c-format
-#| msgid "The page is served over a protected connection."
+#, c-format
 msgid "“%s” is served over a protected connection"
-msgstr "ეს გვერდი მოგეწოდებათ დაცული კავშირის გავლით."
+msgstr "\"%s\" დაცული კავშირით მოგეწოდებათ"
 
 #: src/TabbedWebView.vala:98
-#, fuzzy, c-format
-#| msgid ""
-#| "Some elements of this page are served over an unprotected connection."
+#, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
-msgstr "ამ გვერდის ზოგიერთი ელემენტი მოგეწოდებათ დაუცველი კავშირის გავლით."
+msgstr "\"%s\"-ის ზოგიერთი ელემენტი მოგეწოდებათ დაუცველი კავშირის გავლით"
 
 #: src/TabbedWebView.vala:102
-#, fuzzy
-#| msgid "Loading captive portal."
 msgid "Loading captive portal"
-msgstr "Captive Portal-ის ჩატვირთვა."
+msgstr "Captive Portal-ის ჩატვირთვა"
