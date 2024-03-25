@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-17 15:51+0000\n"
 "PO-Revision-Date: 2024-03-26 22:13+0000\n"
-"Last-Translator: Joao Pinheiro <joaolopespinheiro@gmail.com>\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist/pt/>\n"
 "Language: pt\n"
@@ -35,12 +35,12 @@ msgstr "Iniciar sessão"
 #: src/MainWindow.vala:166
 #, c-format
 msgid "Expires %s"
-msgstr ""
+msgstr "Expira em %s"
 
 #: src/MainWindow.vala:170
 #, c-format
 msgid "Issued by “%s”"
-msgstr ""
+msgstr "Emitido por \"%s\""
 
 #: src/TabbedWebView.vala:92
 #, c-format
@@ -60,10 +60,8 @@ msgstr ""
 "protegida"
 
 #: src/TabbedWebView.vala:102
-#, fuzzy
-#| msgid "Loading captive portal."
 msgid "Loading captive portal"
-msgstr "A carregar portal."
+msgstr "A carregar portal"
 
 #~ msgid "Force the browser window to appear"
 #~ msgstr "Forçar a janela do navegador a aparecer"
