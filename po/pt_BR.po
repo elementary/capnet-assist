@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-17 15:51+0000\n"
-"PO-Revision-Date: 2019-11-22 03:24+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"PO-Revision-Date: 2024-04-24 13:13+0000\n"
+"Last-Translator: Matheus Torres Carvalho <matheustcarvalho@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "desktop/capnet-assist/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/Application.vala:82
@@ -43,24 +43,21 @@ msgid "Issued by “%s”"
 msgstr ""
 
 #: src/TabbedWebView.vala:92
-#, fuzzy, c-format
-#| msgid "The page is served over an unprotected connection."
+#, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr "A página é fornecida através de uma conexão desprotegida."
+msgstr "A página \"%s\" é fornecida através de uma conexão desprotegida"
 
 #: src/TabbedWebView.vala:95
-#, fuzzy, c-format
-#| msgid "The page is served over a protected connection."
+#, c-format
 msgid "“%s” is served over a protected connection"
-msgstr "A página é fornecida por uma conexão protegida."
+msgstr "A página \"%s\" é fornecida através de uma conexão protegida"
 
 #: src/TabbedWebView.vala:98
-#, fuzzy, c-format
-#| msgid ""
-#| "Some elements of this page are served over an unprotected connection."
+#, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
 msgstr ""
-"Alguns elementos dessa página são exibidos em uma conexão desprotegida."
+"Alguns elementos da página \"%s\" são exibidos através de uma conexão "
+"desprotegida"
 
 #: src/TabbedWebView.vala:102
 #, fuzzy
