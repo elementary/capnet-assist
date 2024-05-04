@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Captive Network Assistant
 Exec=io.elementary.capnet-assist
+Categories=System;GTK;
 Comment=Connect to captive network portals
 Icon=io.elementary.capnet-assist
 Terminal=false
