@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-10 14:30-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: frp\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/capnet-assist.metainfo.xml.in:10
+#: data/io.elementary.capnet-assist.desktop.in:3
+msgid "Captive Network Assistant"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:11
+#: data/io.elementary.capnet-assist.desktop.in:5
+msgid "Connect to captive network portals"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:13
+msgid ""
+"Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
+"trains—with ease. Captive Network Assistant automatically opens to help you "
+"get connected."
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:41
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:49
+msgid "Update to elementary runtime 7.2"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
+#: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
+#: data/capnet-assist.metainfo.xml.in:86
+msgid "Updated translations"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:58
+msgid "Update to elementary runtime 7.1"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:67
+msgid "Update to elementary runtime 7"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:76
+msgid "Update to elementary runtime 6.1"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:85
+msgid "New icon"
+msgstr ""
