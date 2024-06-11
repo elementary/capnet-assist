@@ -20,7 +20,7 @@
   </screenshots>
 
   <branding>
-    <color type="primary">#6c508a9</color>
+    <color type="primary">#6c508a</color>
   </branding>
   <custom>
     <value key="x-appcenter-color-primary">#6c508a</value>
