@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-10 14:30-0700\n"
-"PO-Revision-Date: 2024-06-06 21:17+0000\n"
+"PO-Revision-Date: 2024-06-16 21:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: data/capnet-assist.metainfo.xml.in:10
@@ -28,7 +28,7 @@ msgstr "Asistente de red cautiva"
 #: data/capnet-assist.metainfo.xml.in:11
 #: data/io.elementary.capnet-assist.desktop.in:5
 msgid "Connect to captive network portals"
-msgstr "Conéctese a un portal cautivo de red"
+msgstr "Conéctese a portales cautivos en la red"
 
 #: data/capnet-assist.metainfo.xml.in:13
 msgid ""
@@ -46,7 +46,7 @@ msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:49
 msgid "Update to elementary runtime 7.2"
-msgstr ""
+msgstr "Se actualizó al entorno de ejecución de elementary 7.2"
 
 #: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
 #: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
@@ -56,15 +56,15 @@ msgstr "Traducciones actualizadas"
 
 #: data/capnet-assist.metainfo.xml.in:58
 msgid "Update to elementary runtime 7.1"
-msgstr ""
+msgstr "Se actualizó al entorno de ejecución de elementary 7.1"
 
 #: data/capnet-assist.metainfo.xml.in:67
 msgid "Update to elementary runtime 7"
-msgstr ""
+msgstr "Se actualizó al entorno de ejecución de elementary 7"
 
 #: data/capnet-assist.metainfo.xml.in:76
 msgid "Update to elementary runtime 6.1"
-msgstr ""
+msgstr "Se actualizó al entorno de ejecución de elementary 6.1"
 
 #: data/capnet-assist.metainfo.xml.in:85
 msgid "New icon"
