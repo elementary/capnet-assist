@@ -2,7 +2,7 @@
 <!-- Copyright 2018-2023 elementary, Inc <contact@elementary.io> -->
 <component type="desktop-application">
   <id>io.elementary.capnet-assist</id>
-  <translation type="gettext">captive-login</translation>
+  <translation type="gettext">io.elementary.capnet-assist</translation>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <compulsory_for_desktop>Pantheon</compulsory_for_desktop>
