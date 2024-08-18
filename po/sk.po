@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-17 15:51+0000\n"
-"PO-Revision-Date: 2022-05-07 13:35+0000\n"
+"PO-Revision-Date: 2024-08-19 18:16+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
-"Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist/sk/>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/Application.vala:82
@@ -35,35 +35,28 @@ msgstr "Prihlásiť sa"
 #: src/MainWindow.vala:166
 #, c-format
 msgid "Expires %s"
-msgstr ""
+msgstr "Platnosť končí %s"
 
 #: src/MainWindow.vala:170
 #, c-format
 msgid "Issued by “%s”"
-msgstr ""
+msgstr "Vydané „%s“"
 
 #: src/TabbedWebView.vala:92
-#, fuzzy, c-format
-#| msgid "The page is served over an unprotected connection."
+#, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr "Stránka je poskytovaná cez nezabezpečené pripojenie."
+msgstr "„%s“ je poskytovaná cez nezabezpečené pripojenie"
 
 #: src/TabbedWebView.vala:95
-#, fuzzy, c-format
-#| msgid "The page is served over a protected connection."
+#, c-format
 msgid "“%s” is served over a protected connection"
-msgstr "Stránka je poskytovaná cez zabezpečené pripojenie."
+msgstr "„%s“ je poskytovaná cez zabezpečené pripojenie"
 
 #: src/TabbedWebView.vala:98
-#, fuzzy, c-format
-#| msgid ""
-#| "Some elements of this page are served over an unprotected connection."
+#, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
-msgstr ""
-"Niektoré prvky tejto stránky sú poskytované cez nezabezpečené pripojenie."
+msgstr "Niektoré prvky „%s“ sú poskytované cez nezabezpečené pripojenie"
 
 #: src/TabbedWebView.vala:102
-#, fuzzy
-#| msgid "Loading captive portal."
 msgid "Loading captive portal"
-msgstr "Načítava sa uzatvorený sieťový portál."
+msgstr "Načítava sa chránený sieťový portál"
