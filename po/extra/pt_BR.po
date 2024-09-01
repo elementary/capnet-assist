@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:39+0000\n"
-"PO-Revision-Date: 2024-08-16 14:16+0000\n"
+"PO-Revision-Date: 2024-09-02 00:57+0000\n"
 "Last-Translator: José Rafael <jrafaeldesantana@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "desktop/capnet-assist-extra/pt_BR/>\n"
@@ -41,14 +41,12 @@ msgstr ""
 "para ajudá-lo a se conectar."
 
 #: data/capnet-assist.metainfo.xml.in:51
-#, fuzzy
-#| msgid "Update to elementary runtime 7"
 msgid "Update to elementary runtime 8"
-msgstr "Atualizar para o elementary runtime 7"
+msgstr "Atualizar para o elementary runtime 8"
 
 #: data/capnet-assist.metainfo.xml.in:52
 msgid "Performance improvements"
-msgstr ""
+msgstr "Melhorias de performance"
 
 #: data/capnet-assist.metainfo.xml.in:53 data/capnet-assist.metainfo.xml.in:67
 #: data/capnet-assist.metainfo.xml.in:79 data/capnet-assist.metainfo.xml.in:88
