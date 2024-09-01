@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 14:30-0700\n"
+"POT-Creation-Date: 2024-09-01 10:39+0000\n"
 "PO-Revision-Date: 2023-05-12 01:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -26,7 +26,7 @@ msgid "Captive Network Assistant"
 msgstr "キャプティブネットワークアシスタント"
 
 #: data/capnet-assist.metainfo.xml.in:11
-#: data/io.elementary.capnet-assist.desktop.in:5
+#: data/io.elementary.capnet-assist.desktop.in:6
 msgid "Connect to captive network portals"
 msgstr "キャプティブネットワークポータルに接続します"
 
@@ -40,35 +40,43 @@ msgstr ""
 "インしましょう。“キャプティブネットワークアシスタント”が自動的に開き、ネット"
 "ワークに接続するのをお手伝いします。"
 
-#: data/capnet-assist.metainfo.xml.in:41
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#: data/capnet-assist.metainfo.xml.in:51
+#, fuzzy
+#| msgid "Update to elementary runtime 7"
+msgid "Update to elementary runtime 8"
+msgstr "elementary ラインタイムをバージョン 7 にアップデート"
 
-#: data/capnet-assist.metainfo.xml.in:49
-msgid "Update to elementary runtime 7.2"
-msgstr "elementary ラインタイムをバージョン 7.2 にアップデート"
+#: data/capnet-assist.metainfo.xml.in:52
+msgid "Performance improvements"
+msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
-#: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
-#: data/capnet-assist.metainfo.xml.in:86
+#: data/capnet-assist.metainfo.xml.in:53 data/capnet-assist.metainfo.xml.in:67
+#: data/capnet-assist.metainfo.xml.in:79 data/capnet-assist.metainfo.xml.in:88
+#: data/capnet-assist.metainfo.xml.in:97
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/capnet-assist.metainfo.xml.in:58
+#: data/capnet-assist.metainfo.xml.in:66
+msgid "Update to elementary runtime 7.2"
+msgstr "elementary ラインタイムをバージョン 7.2 にアップデート"
+
+#: data/capnet-assist.metainfo.xml.in:78
 msgid "Update to elementary runtime 7.1"
 msgstr "elementary ラインタイムをバージョン 7.1 にアップデート"
 
-#: data/capnet-assist.metainfo.xml.in:67
+#: data/capnet-assist.metainfo.xml.in:87
 msgid "Update to elementary runtime 7"
 msgstr "elementary ラインタイムをバージョン 7 にアップデート"
 
-#: data/capnet-assist.metainfo.xml.in:76
+#: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr "elementary ラインタイムをバージョン 6.1 にアップデート"
 
-#: data/capnet-assist.metainfo.xml.in:85
-msgid "New icon"
-msgstr "新しいアイコン"
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
+
+#~ msgid "New icon"
+#~ msgstr "新しいアイコン"
 
 #~ msgid "Dark style support"
 #~ msgstr "ダークスタイルへの対応"

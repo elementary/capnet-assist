@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 14:30-0700\n"
+"POT-Creation-Date: 2024-09-01 10:39+0000\n"
 "PO-Revision-Date: 2024-08-07 17:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
@@ -26,7 +26,7 @@ msgid "Captive Network Assistant"
 msgstr "Assistent for fangstnettverk"
 
 #: data/capnet-assist.metainfo.xml.in:11
-#: data/io.elementary.capnet-assist.desktop.in:5
+#: data/io.elementary.capnet-assist.desktop.in:6
 msgid "Connect to captive network portals"
 msgstr "Koble til nettverkfangstportaler"
 
@@ -40,35 +40,43 @@ msgstr ""
 "Logg inn i inngangsportaler—som noen Wi-Fi-nettverk på kaféer, luftplasser, "
 "og tog. Fangstportalassistenten åpnes automatisk for å koble deg til."
 
-#: data/capnet-assist.metainfo.xml.in:41
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#: data/capnet-assist.metainfo.xml.in:51
+#, fuzzy
+#| msgid "Update to elementary runtime 7"
+msgid "Update to elementary runtime 8"
+msgstr "Oppdatering til elementary-kjøretidsrutine 7"
 
-#: data/capnet-assist.metainfo.xml.in:49
-msgid "Update to elementary runtime 7.2"
-msgstr "Oppdatering til elementary-kjøretidsrutine 7.2"
+#: data/capnet-assist.metainfo.xml.in:52
+msgid "Performance improvements"
+msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
-#: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
-#: data/capnet-assist.metainfo.xml.in:86
+#: data/capnet-assist.metainfo.xml.in:53 data/capnet-assist.metainfo.xml.in:67
+#: data/capnet-assist.metainfo.xml.in:79 data/capnet-assist.metainfo.xml.in:88
+#: data/capnet-assist.metainfo.xml.in:97
 msgid "Updated translations"
 msgstr "Oppdaterte oversettelser"
 
-#: data/capnet-assist.metainfo.xml.in:58
+#: data/capnet-assist.metainfo.xml.in:66
+msgid "Update to elementary runtime 7.2"
+msgstr "Oppdatering til elementary-kjøretidsrutine 7.2"
+
+#: data/capnet-assist.metainfo.xml.in:78
 msgid "Update to elementary runtime 7.1"
 msgstr "Oppdatering til elementary-kjøretidsrutine 7.1"
 
-#: data/capnet-assist.metainfo.xml.in:67
+#: data/capnet-assist.metainfo.xml.in:87
 msgid "Update to elementary runtime 7"
 msgstr "Oppdatering til elementary-kjøretidsrutine 7"
 
-#: data/capnet-assist.metainfo.xml.in:76
+#: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr "Oppdatering til elementary-kjøretidsrutine 6.1"
 
-#: data/capnet-assist.metainfo.xml.in:85
-msgid "New icon"
-msgstr "Nytt ikon"
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
+
+#~ msgid "New icon"
+#~ msgstr "Nytt ikon"
 
 #~ msgid "Dark style support"
 #~ msgstr "Støtte for mørk drakt"

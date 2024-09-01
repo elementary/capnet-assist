@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 14:30-0700\n"
+"POT-Creation-Date: 2024-09-01 10:39+0000\n"
 "PO-Revision-Date: 2022-08-05 14:42+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -26,7 +26,7 @@ msgid "Captive Network Assistant"
 msgstr "캡티브 네트워크 어시스턴트"
 
 #: data/capnet-assist.metainfo.xml.in:11
-#: data/io.elementary.capnet-assist.desktop.in:5
+#: data/io.elementary.capnet-assist.desktop.in:6
 msgid "Connect to captive network portals"
 msgstr "캡티브 네트워크 포털에 연결"
 
@@ -39,37 +39,45 @@ msgstr ""
 "캡티브 포털에—커피숍, 공항, 기차 등의 와이 파이 네트워크들에—쉽게 로그인 하"
 "기. 캡티브 네트워크 어시스턴트가 자동으로 실행되어서 연결을 돕습니다."
 
-#: data/capnet-assist.metainfo.xml.in:41
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#: data/capnet-assist.metainfo.xml.in:51
+#, fuzzy
+#| msgid "Update to elementary runtime 7"
+msgid "Update to elementary runtime 8"
+msgstr "elementary runtime 7로 업데이트"
 
-#: data/capnet-assist.metainfo.xml.in:49
+#: data/capnet-assist.metainfo.xml.in:52
+msgid "Performance improvements"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:53 data/capnet-assist.metainfo.xml.in:67
+#: data/capnet-assist.metainfo.xml.in:79 data/capnet-assist.metainfo.xml.in:88
+#: data/capnet-assist.metainfo.xml.in:97
+msgid "Updated translations"
+msgstr "최신 번역"
+
+#: data/capnet-assist.metainfo.xml.in:66
 #, fuzzy
 msgid "Update to elementary runtime 7.2"
 msgstr "elementary runtime 7로 업데이트"
 
-#: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
-#: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
-#: data/capnet-assist.metainfo.xml.in:86
-msgid "Updated translations"
-msgstr "최신 번역"
-
-#: data/capnet-assist.metainfo.xml.in:58
+#: data/capnet-assist.metainfo.xml.in:78
 #, fuzzy
 msgid "Update to elementary runtime 7.1"
 msgstr "elementary runtime 6.1로 업데이트"
 
-#: data/capnet-assist.metainfo.xml.in:67
+#: data/capnet-assist.metainfo.xml.in:87
 msgid "Update to elementary runtime 7"
 msgstr "elementary runtime 7로 업데이트"
 
-#: data/capnet-assist.metainfo.xml.in:76
+#: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr "elementary runtime 6.1로 업데이트"
 
-#: data/capnet-assist.metainfo.xml.in:85
-msgid "New icon"
-msgstr "새 아이콘"
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
+
+#~ msgid "New icon"
+#~ msgstr "새 아이콘"
 
 #~ msgid "Dark style support"
 #~ msgstr "다크 스타일 지원"

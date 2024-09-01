@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 14:30-0700\n"
+"POT-Creation-Date: 2024-09-01 10:39+0000\n"
 "PO-Revision-Date: 2020-04-05 22:10+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -25,7 +25,7 @@ msgid "Captive Network Assistant"
 msgstr "कॅप्टिव्ह नेटवर्क सहाय्यक"
 
 #: data/capnet-assist.metainfo.xml.in:11
-#: data/io.elementary.capnet-assist.desktop.in:5
+#: data/io.elementary.capnet-assist.desktop.in:6
 msgid "Connect to captive network portals"
 msgstr "कॅप्टिव्ह पोर्टलला जोडा"
 
@@ -38,35 +38,38 @@ msgstr ""
 "कॉफी शॉप, विमानतळ आणि ट्रेनमध्ये कॅप्टिव्ह पोर्टल-जसे वाय-फाय नेटवर्कमध्ये लॉग इन करा-"
 "सहजतेने. कॅप्टिव्ह नेटवर्क सहाय्यक आपोआप कनेक्ट होण्यास मदत करण्यासाठी स्वयंचलितपणे उघडते."
 
-#: data/capnet-assist.metainfo.xml.in:41
-msgid "elementary, Inc."
-msgstr "एलिमेंटरी,Inc."
-
-#: data/capnet-assist.metainfo.xml.in:49
-msgid "Update to elementary runtime 7.2"
+#: data/capnet-assist.metainfo.xml.in:51
+msgid "Update to elementary runtime 8"
 msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
-#: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
-#: data/capnet-assist.metainfo.xml.in:86
+#: data/capnet-assist.metainfo.xml.in:52
+msgid "Performance improvements"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:53 data/capnet-assist.metainfo.xml.in:67
+#: data/capnet-assist.metainfo.xml.in:79 data/capnet-assist.metainfo.xml.in:88
+#: data/capnet-assist.metainfo.xml.in:97
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/capnet-assist.metainfo.xml.in:58
+#: data/capnet-assist.metainfo.xml.in:66
+msgid "Update to elementary runtime 7.2"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:78
 msgid "Update to elementary runtime 7.1"
 msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:67
+#: data/capnet-assist.metainfo.xml.in:87
 msgid "Update to elementary runtime 7"
 msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:76
+#: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:85
-msgid "New icon"
-msgstr ""
+#~ msgid "elementary, Inc."
+#~ msgstr "एलिमेंटरी,Inc."
 
 #~ msgid "preferences-system-network"
 #~ msgstr "preferences-system-network"

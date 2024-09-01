@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 14:30-0700\n"
+"POT-Creation-Date: 2024-09-01 10:39+0000\n"
 "PO-Revision-Date: 2023-05-23 09:06+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -26,7 +26,7 @@ msgid "Captive Network Assistant"
 msgstr "Assistant au réseau captif"
 
 #: data/capnet-assist.metainfo.xml.in:11
-#: data/io.elementary.capnet-assist.desktop.in:5
+#: data/io.elementary.capnet-assist.desktop.in:6
 msgid "Connect to captive network portals"
 msgstr "Se connecter aux portails captifs"
 
@@ -40,35 +40,43 @@ msgstr ""
 "dans les cafés, les aéroports et les trains. L'assistant au réseau captif "
 "s’ouvre automatiquement pour vous aider à vous connecter."
 
-#: data/capnet-assist.metainfo.xml.in:41
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#: data/capnet-assist.metainfo.xml.in:51
+#, fuzzy
+#| msgid "Update to elementary runtime 7"
+msgid "Update to elementary runtime 8"
+msgstr "Mise à jour vers le programme d'exécution d'elementary OS 7"
 
-#: data/capnet-assist.metainfo.xml.in:49
-msgid "Update to elementary runtime 7.2"
-msgstr "Mise à jour vers l'exécutable elementary 7.2"
+#: data/capnet-assist.metainfo.xml.in:52
+msgid "Performance improvements"
+msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:50 data/capnet-assist.metainfo.xml.in:59
-#: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:77
-#: data/capnet-assist.metainfo.xml.in:86
+#: data/capnet-assist.metainfo.xml.in:53 data/capnet-assist.metainfo.xml.in:67
+#: data/capnet-assist.metainfo.xml.in:79 data/capnet-assist.metainfo.xml.in:88
+#: data/capnet-assist.metainfo.xml.in:97
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/capnet-assist.metainfo.xml.in:58
+#: data/capnet-assist.metainfo.xml.in:66
+msgid "Update to elementary runtime 7.2"
+msgstr "Mise à jour vers l'exécutable elementary 7.2"
+
+#: data/capnet-assist.metainfo.xml.in:78
 msgid "Update to elementary runtime 7.1"
 msgstr "Mise à jour vers l'exécutable elementary 7.1"
 
-#: data/capnet-assist.metainfo.xml.in:67
+#: data/capnet-assist.metainfo.xml.in:87
 msgid "Update to elementary runtime 7"
 msgstr "Mise à jour vers le programme d'exécution d'elementary OS 7"
 
-#: data/capnet-assist.metainfo.xml.in:76
+#: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr "Mise à jour vers le programme d'exécution d'elementary OS 6.1"
 
-#: data/capnet-assist.metainfo.xml.in:85
-msgid "New icon"
-msgstr "Nouvelle icône"
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
+
+#~ msgid "New icon"
+#~ msgstr "Nouvelle icône"
 
 #~ msgid "Dark style support"
 #~ msgstr "Prise en charge du thème sombre"
