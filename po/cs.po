@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:39+0000\n"
-"PO-Revision-Date: 2022-01-12 21:03+0000\n"
-"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist/cs/>\n"
+"PO-Revision-Date: 2024-09-13 00:01+0000\n"
+"Last-Translator: Daniel Hejduk <danielhejduk@disroot.org>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:17+0000\n"
 
 #: src/Application.vala:82
@@ -43,24 +43,20 @@ msgid "Issued by “%s”"
 msgstr ""
 
 #: src/TabbedWebView.vala:92
-#, fuzzy, c-format
-#| msgid "The page is served over an unprotected connection."
+#, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr "Stránka je poskytována prostřednictvím nezabezpečeného připojení."
+msgstr "“%s” je poskytována prostřednictvím nezabezpečeného připojení."
 
 #: src/TabbedWebView.vala:95
-#, fuzzy, c-format
-#| msgid "The page is served over a protected connection."
+#, c-format
 msgid "“%s” is served over a protected connection"
-msgstr "Tato stránka je poskytována prostřednictvím zabezpečeného připojení."
+msgstr "“%s” je poskytována prostřednictvím zabezpečeného připojení."
 
 #: src/TabbedWebView.vala:98
-#, fuzzy, c-format
-#| msgid ""
-#| "Some elements of this page are served over an unprotected connection."
+#, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
 msgstr ""
-"Některé prvky této stránky jsou poskytovány prostřednictvím nezabezpečeného "
+"Některé prvky “%s” jsou poskytovány prostřednictvím nezabezpečeného "
 "připojení."
 
 #: src/TabbedWebView.vala:102
