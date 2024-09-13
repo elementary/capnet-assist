@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:39+0000\n"
-"PO-Revision-Date: 2024-09-04 14:43+0000\n"
+"PO-Revision-Date: 2024-09-14 21:16+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/hu/>\n"
@@ -41,10 +41,8 @@ msgstr ""
 "megnyílik, hogy segítse a kapcsolódásban."
 
 #: data/capnet-assist.metainfo.xml.in:51
-#, fuzzy
-#| msgid "Update to elementary runtime 7"
 msgid "Update to elementary runtime 8"
-msgstr "Frissítés az elementary 7-es futtatókörnyezetre"
+msgstr "Frissítés az elementary 8-as futtatókörnyezetre"
 
 #: data/capnet-assist.metainfo.xml.in:52
 msgid "Performance improvements"
