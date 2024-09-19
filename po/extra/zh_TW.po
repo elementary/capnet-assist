@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:39+0000\n"
-"PO-Revision-Date: 2024-09-02 22:33+0000\n"
+"PO-Revision-Date: 2024-09-19 10:09+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "desktop/capnet-assist-extra/zh_Hant/>\n"
@@ -23,27 +23,28 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:10
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "強制入口助理"
 
 #: data/capnet-assist.metainfo.xml.in:11
 #: data/io.elementary.capnet-assist.desktop.in:6
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "連線到需要透過強制入口登入的網路"
 
 #: data/capnet-assist.metainfo.xml.in:13
 msgid ""
 "Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
-msgstr ""
+msgstr "輕易連線到需要登入強制入口的網路——像是咖啡廳、機場或是火車的 Wi-"
+"Fi。《強制入口助理》會自動開啟，協助您完成連線。"
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Update to elementary runtime 8"
-msgstr ""
+msgstr "將 elementary 執行環境更新至第 8 版"
 
 #: data/capnet-assist.metainfo.xml.in:52
 msgid "Performance improvements"
-msgstr ""
+msgstr "效能改善"
 
 #: data/capnet-assist.metainfo.xml.in:53 data/capnet-assist.metainfo.xml.in:67
 #: data/capnet-assist.metainfo.xml.in:79 data/capnet-assist.metainfo.xml.in:88
@@ -53,19 +54,19 @@ msgstr "更新翻譯"
 
 #: data/capnet-assist.metainfo.xml.in:66
 msgid "Update to elementary runtime 7.2"
-msgstr ""
+msgstr "將 elementary 執行環境更新至第 7.2 版"
 
 #: data/capnet-assist.metainfo.xml.in:78
 msgid "Update to elementary runtime 7.1"
-msgstr ""
+msgstr "將 elementary 執行環境更新至第 7.1 版"
 
 #: data/capnet-assist.metainfo.xml.in:87
 msgid "Update to elementary runtime 7"
-msgstr ""
+msgstr "將 elementary 執行環境更新至第 7 版"
 
 #: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
-msgstr ""
+msgstr "將 elementary 執行環境更新至第 6.1 版"
 
 #~ msgid "elementary, Inc."
 #~ msgstr "elementary, Inc."
