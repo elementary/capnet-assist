@@ -8,24 +8,25 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:39+0000\n"
-"PO-Revision-Date: 2016-10-14 15:35+0000\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-09-19 10:09+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
+"desktop/capnet-assist/zh_Hant/>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: src/Application.vala:82
 msgid "Load this address in the browser window"
-msgstr ""
+msgstr "在瀏覽器視窗中載入此位址"
 
 #: src/Application.vala:82
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/MainWindow.vala:98
 msgid "Log in"
@@ -34,34 +35,28 @@ msgstr "登入"
 #: src/MainWindow.vala:166
 #, c-format
 msgid "Expires %s"
-msgstr ""
+msgstr "有效期限 %s"
 
 #: src/MainWindow.vala:170
 #, c-format
 msgid "Issued by “%s”"
-msgstr ""
+msgstr "由「%s」配發"
 
 #: src/TabbedWebView.vala:92
-#, fuzzy, c-format
-#| msgid "The page is served over an unprotected connection."
+#, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr "本頁面係於未受保護的連線上提供。"
+msgstr "「%s」透過未受保護的連線提供"
 
 #: src/TabbedWebView.vala:95
-#, fuzzy, c-format
-#| msgid "The page is served over a protected connection."
+#, c-format
 msgid "“%s” is served over a protected connection"
-msgstr "本頁面係於受保護的連線上提供。"
+msgstr "「%s」透過受保護的連線提供"
 
 #: src/TabbedWebView.vala:98
-#, fuzzy, c-format
-#| msgid ""
-#| "Some elements of this page are served over an unprotected connection."
+#, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
-msgstr "本頁面中的部分元素係於未受保護的連線上提供。"
+msgstr "「%s」的某些元素是透過未受保護的連線提供的"
 
 #: src/TabbedWebView.vala:102
-#, fuzzy
-#| msgid "Loading captive portal."
 msgid "Loading captive portal"
-msgstr "正載入強制入口頁。"
+msgstr "正在載入強制入口頁"
