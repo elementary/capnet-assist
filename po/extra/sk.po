@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:39+0000\n"
-"PO-Revision-Date: 2024-08-19 18:16+0000\n"
+"PO-Revision-Date: 2024-10-05 18:16+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
-"Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist-extra/sk/>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist-extra/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,14 +41,12 @@ msgstr ""
 "sietí sa automaticky otvorí, aby vám pomohol pripojiť sa."
 
 #: data/capnet-assist.metainfo.xml.in:51
-#, fuzzy
-#| msgid "Update to elementary runtime 7"
 msgid "Update to elementary runtime 8"
-msgstr "Aktualizácia elementary runtime na verziu 7"
+msgstr "Aktualizácia elementary runtime na verziu 8"
 
 #: data/capnet-assist.metainfo.xml.in:52
 msgid "Performance improvements"
-msgstr ""
+msgstr "Zlepšenia výkonu"
 
 #: data/capnet-assist.metainfo.xml.in:53 data/capnet-assist.metainfo.xml.in:67
 #: data/capnet-assist.metainfo.xml.in:79 data/capnet-assist.metainfo.xml.in:88
