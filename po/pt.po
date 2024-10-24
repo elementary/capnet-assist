@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2024-03-26 22:13+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
@@ -20,11 +20,11 @@ msgstr ""
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
-#: src/Application.vala:82
+#: src/Application.vala:92
 msgid "Load this address in the browser window"
 msgstr "Carregar este endereço na janela do navegador"
 
-#: src/Application.vala:82
+#: src/Application.vala:92
 msgid "URL"
 msgstr "URL"
 

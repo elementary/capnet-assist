@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2018-10-22 00:03+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/desktop/"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: src/Application.vala:82
+#: src/Application.vala:92
 msgid "Load this address in the browser window"
 msgstr ""
 
-#: src/Application.vala:82
+#: src/Application.vala:92
 msgid "URL"
 msgstr ""
 

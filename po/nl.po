@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2024-05-30 20:13+0000\n"
 "Last-Translator: Sven <622b1a13-49d8-4ace-bca7-48bff17b4780@unbox.at>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5\n"
 
-#: src/Application.vala:82
+#: src/Application.vala:92
 msgid "Load this address in the browser window"
 msgstr "Laad dit adres in de browser"
 
-#: src/Application.vala:82
+#: src/Application.vala:92
 msgid "URL"
 msgstr "URL"
 

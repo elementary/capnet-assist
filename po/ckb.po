@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2022-04-04 21:19+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Application.vala:82
+#: src/Application.vala:92
 msgid "Load this address in the browser window"
 msgstr "ئەم ناونیشانە لە پەنجەرەی وێبگەڕدا بکەوە"
 
-#: src/Application.vala:82
+#: src/Application.vala:92
 msgid "URL"
 msgstr "لینک (URL)"
 
