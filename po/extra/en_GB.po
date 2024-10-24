@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2024-09-29 02:16+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -39,6 +39,10 @@ msgstr ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Update to elementary runtime 8"
 msgstr "Update to elementary runtime 8"
@@ -68,9 +72,6 @@ msgstr "Update to elementary runtime 7"
 #: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr "Update to elementary runtime 6.1"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "New icon"
 #~ msgstr "New icon"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2022-04-04 21:19+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -39,6 +39,10 @@ msgstr ""
 "قاوەخانەکان، فڕۆکەخانە و ناو شەمەندەفەرەکان. بەشێوەیەکی خۆڕەوت یاریدەدەری "
 "تۆڕی کۆنتڕۆڵکراو دەبێتەوە و یارمەتیت دەدات پەیوەستی ئینتەرنێت ببیت."
 
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr "کۆمپانیای ئێلەمێنتەری هاوپشک."
+
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Update to elementary runtime 8"
 msgstr ""
@@ -68,9 +72,6 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "کۆمپانیای ئێلەمێنتەری هاوپشک."
 
 #~ msgid "Dark style support"
 #~ msgstr "پاڵپشتیکردنی ستایلی تاریک"

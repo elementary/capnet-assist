@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2018-10-13 17:22+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/desktop/"
@@ -41,6 +41,10 @@ msgstr ""
 "kavos parduotuvėse, oro uostuose ir traukiniuose. Belaisvio tinko "
 "pagelbiklis yra automatiškai atveriamas, kad padėtų jums prisijungti."
 
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Update to elementary runtime 8"
 msgstr ""
@@ -70,9 +74,6 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "preferences-system-network"
 #~ msgstr "preferences-system-network"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2024-09-19 10:09+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -35,8 +35,13 @@ msgid ""
 "Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
-msgstr "輕易連線到需要登入強制入口的網路——像是咖啡廳、機場或是火車的 Wi-"
-"Fi。《強制入口助理》會自動開啟，協助您完成連線。"
+msgstr ""
+"輕易連線到需要登入強制入口的網路——像是咖啡廳、機場或是火車的 Wi-Fi。《強制入"
+"口助理》會自動開啟，協助您完成連線。"
+
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Update to elementary runtime 8"
@@ -67,9 +72,6 @@ msgstr "將 elementary 執行環境更新至第 7 版"
 #: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr "將 elementary 執行環境更新至第 6.1 版"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Loading captive portal."
 #~ msgstr "正載入強制入口頁。"

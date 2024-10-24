@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2024-09-02 00:57+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: German <https://l10n.elementary.io/projects/desktop/"
-"capnet-assist-extra/de/>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/desktop/capnet-"
+"assist-extra/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,6 +40,10 @@ msgstr ""
 "WLAN im Café, am Flughafen oder im Zug. Der »Assistent für Netzwerke mit "
 "Vorschaltseite« öffnet sich automatisch, um Sie bei der Anmeldung zu "
 "unterstützen."
+
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Update to elementary runtime 8"
@@ -70,9 +74,6 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Dark style support"
 #~ msgstr "Unterstützung für Dark Mode"

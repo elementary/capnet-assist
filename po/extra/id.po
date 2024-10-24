@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2023-06-01 14:07+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
@@ -40,6 +40,10 @@ msgstr ""
 "kereta api—dengan mudah. Asisten Jaringan Kaptif secara otomatis terbuka "
 "untuk membantu Anda terhubung."
 
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/capnet-assist.metainfo.xml.in:51
 #, fuzzy
 #| msgid "Update to elementary runtime 7"
@@ -71,9 +75,6 @@ msgstr "Pembaruan ke runtime elementary 7"
 #: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 6.1"
 msgstr "Pembaruan ke runtime elementary 6.1"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "New icon"
 #~ msgstr "Ikon baru"

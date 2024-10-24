@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:39+0000\n"
+"POT-Creation-Date: 2024-10-24 15:39+0000\n"
 "PO-Revision-Date: 2016-05-01 01:43+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -33,6 +33,10 @@ msgid ""
 "Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
 msgstr ""
 
 #: data/capnet-assist.metainfo.xml.in:51
