@@ -75,6 +75,16 @@ public class Captive.Application : Gtk.Application {
         granite_settings.notify["prefers-color-scheme"].connect (() => {
             gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
         });
+
+        var quit_action = new SimpleAction ("quit", null);
+        quit_action.activate.connect (() => {
+            if (active_window != null) {
+                active_window.destroy ();
+            }
+        });
+
+        add_action (quit_action);
+        set_accels_for_action ("app.quit", {"<Control>q"});
     }
 
     public override int command_line (ApplicationCommandLine command_line) {
