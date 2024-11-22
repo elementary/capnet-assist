@@ -6,7 +6,7 @@ flatpak remote-add --if-not-exists --system appcenter https://flatpak.elementary
 flatpak install --system --noninteractive appcenter io.elementary.capnet-assist//stable || true
 
 flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install --system --noninteractive flathub org.freedesktop.Platform.GL.default//24.08 || true
+flatpak install --system --noninteractive flathub org.freedesktop.Platform.GL.default//23.08 || true
 
 #DEBHELPER#
 
