@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24 15:39+0000\n"
-"PO-Revision-Date: 2023-08-10 12:08+0000\n"
+"PO-Revision-Date: 2024-11-28 13:16+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
 #: data/capnet-assist.metainfo.xml.in:10
@@ -45,14 +45,12 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
-#, fuzzy
-#| msgid "Update to elementary runtime 7"
 msgid "Update to elementary runtime 8"
-msgstr "Atualização para o elementary runtime 7"
+msgstr "Atualização para o elementary runtime 8"
 
 #: data/capnet-assist.metainfo.xml.in:52
 msgid "Performance improvements"
-msgstr ""
+msgstr "Melhorias de desempenho"
 
 #: data/capnet-assist.metainfo.xml.in:53 data/capnet-assist.metainfo.xml.in:67
 #: data/capnet-assist.metainfo.xml.in:79 data/capnet-assist.metainfo.xml.in:88
