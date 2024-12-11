@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 15:39+0000\n"
+"POT-Creation-Date: 2024-12-11 11:10+0000\n"
 "PO-Revision-Date: 2024-08-07 17:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: English (Canada) <https://l10n.elementary.io/projects/desktop/"
@@ -42,32 +42,36 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
-msgid "Update to elementary runtime 8"
+msgid "Add CTRL+Q quit shortcut"
 msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:52
-msgid "Performance improvements"
-msgstr ""
-
-#: data/capnet-assist.metainfo.xml.in:53 data/capnet-assist.metainfo.xml.in:67
-#: data/capnet-assist.metainfo.xml.in:79 data/capnet-assist.metainfo.xml.in:88
-#: data/capnet-assist.metainfo.xml.in:97
+#: data/capnet-assist.metainfo.xml.in:52 data/capnet-assist.metainfo.xml.in:62
+#: data/capnet-assist.metainfo.xml.in:76 data/capnet-assist.metainfo.xml.in:88
+#: data/capnet-assist.metainfo.xml.in:97 data/capnet-assist.metainfo.xml.in:106
 msgid "Updated translations"
 msgstr "Updated translations"
 
-#: data/capnet-assist.metainfo.xml.in:66
+#: data/capnet-assist.metainfo.xml.in:60
+msgid "Update to elementary runtime 8"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:61
+msgid "Performance improvements"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:75
 msgid "Update to elementary runtime 7.2"
 msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:78
+#: data/capnet-assist.metainfo.xml.in:87
 msgid "Update to elementary runtime 7.1"
 msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:87
+#: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 7"
 msgstr ""
 
-#: data/capnet-assist.metainfo.xml.in:96
+#: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr ""
 
