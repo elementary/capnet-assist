@@ -45,7 +45,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="8.0.1" date="2024-12-11" urgency="medium">
+    <release version="8.0.1" date="2024-12-12" urgency="medium">
       <description>
         <ul>
           <li>Add CTRL+Q quit shortcut</li>
