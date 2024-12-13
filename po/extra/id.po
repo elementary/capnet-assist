@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:10+0000\n"
+"POT-Creation-Date: 2024-12-13 10:18+0000\n"
 "PO-Revision-Date: 2023-06-01 14:07+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
@@ -39,10 +39,6 @@ msgstr ""
 "Masuk ke portal kaptif—seperti jaringan Wi-Fi di kedai kopi, bandara, dan "
 "kereta api—dengan mudah. Asisten Jaringan Kaptif secara otomatis terbuka "
 "untuk membantu Anda terhubung."
-
-#: data/capnet-assist.metainfo.xml.in:42
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -79,6 +75,9 @@ msgstr "Pembaruan ke runtime elementary 7"
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr "Pembaruan ke runtime elementary 6.1"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New icon"
 #~ msgstr "Ikon baru"

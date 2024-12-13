@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:10+0000\n"
+"POT-Creation-Date: 2024-12-13 10:18+0000\n"
 "PO-Revision-Date: 2024-09-02 20:05+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -38,10 +38,6 @@ msgstr ""
 "Log met gemak in op besloten netwerk portalen - zoals WiFi netwerken in "
 "restaurants, vliegvelden en in de trein. De Besloten Netwerk Assistent opent "
 "automatisch om u te helpen verbinding te maken."
-
-#: data/capnet-assist.metainfo.xml.in:42
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -76,6 +72,9 @@ msgstr "Update naar elementary runtime 7"
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr "Update naar elementary runtime 6.1"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New icon"
 #~ msgstr "Nieuw icoon"

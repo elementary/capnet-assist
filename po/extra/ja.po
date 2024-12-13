@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:10+0000\n"
+"POT-Creation-Date: 2024-12-13 10:18+0000\n"
 "PO-Revision-Date: 2024-12-12 05:36+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
-"capnet-assist-extra/ja/>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/capnet-"
+"assist-extra/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,10 +39,6 @@ msgstr ""
 "キャプティブポータル (喫茶店や空港、電車内の Wi-Fi ネットワーク) に簡単にログ"
 "インしましょう。“キャプティブネットワークアシスタント”が自動的に開き、ネット"
 "ワークに接続するのをお手伝いします。"
-
-#: data/capnet-assist.metainfo.xml.in:42
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -77,6 +73,9 @@ msgstr "elementary ラインタイムをバージョン 7 にアップデート"
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr "elementary ラインタイムをバージョン 6.1 にアップデート"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New icon"
 #~ msgstr "新しいアイコン"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:10+0000\n"
+"POT-Creation-Date: 2024-12-13 10:18+0000\n"
 "PO-Revision-Date: 2020-05-26 20:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -38,10 +38,6 @@ msgstr ""
 "Log med lethed på captive portaler såsom Wi-Fi-netværker på kaffebarer, "
 "lufthavne eller i tog. Captive Netværksassistent åbner automatisk for at "
 "hjælpe dig med at blive tilsluttet."
-
-#: data/capnet-assist.metainfo.xml.in:42
-msgid "elementary, Inc."
-msgstr "elementary, Incorporated."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -76,6 +72,9 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr ""
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Incorporated."
 
 #~ msgid "preferences-system-network"
 #~ msgstr "preferences-system-network"

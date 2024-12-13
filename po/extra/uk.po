@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:10+0000\n"
+"POT-Creation-Date: 2024-12-13 10:18+0000\n"
 "PO-Revision-Date: 2024-09-02 20:05+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -39,10 +39,6 @@ msgstr ""
 "Полегшує вхід на портали, що вимагають автентифікації — мережі Wi-Fi у кафе, "
 "аеропортах та поїздах тощо. Помічник автентифікації мережі автоматично "
 "відкривається, щоб допомогти вам під'єднатися."
-
-#: data/capnet-assist.metainfo.xml.in:42
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -77,6 +73,9 @@ msgstr "Оновлення до середовища виконання elementa
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr "Оновлення до середовища виконання elementary 6.1"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New icon"
 #~ msgstr "Нова піктограма"

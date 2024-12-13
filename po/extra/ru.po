@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:10+0000\n"
+"POT-Creation-Date: 2024-12-13 10:18+0000\n"
 "PO-Revision-Date: 2024-12-13 10:16+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
-"Language-Team: Russian <https://l10n.elementary.io/projects/desktop/"
-"capnet-assist-extra/ru/>\n"
+"Language-Team: Russian <https://l10n.elementary.io/projects/desktop/capnet-"
+"assist-extra/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,10 +40,6 @@ msgstr ""
 "Облегчает вход на порталы, требующие аутентификации — сети Wi-Fi в кафе, "
 "аэропортах и поездах и тому подобное. Помощник аутентификации сети "
 "автоматически открывается, чтобы помочь вам подключиться."
-
-#: data/capnet-assist.metainfo.xml.in:42
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -78,6 +74,9 @@ msgstr "Обновлено до elementary runtime 7"
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr "Обновлено до elementary runtime 6.1"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New icon"
 #~ msgstr "Новая иконка"

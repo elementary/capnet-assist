@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:10+0000\n"
+"POT-Creation-Date: 2024-12-13 10:18+0000\n"
 "PO-Revision-Date: 2024-10-05 18:16+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -39,10 +39,6 @@ msgstr ""
 "Prihláste sa do chránených sieťových portálov – ako napríklad do Wi-Fi sietí "
 "v kaviarňach, lietadlách a vlakoch – jednoducho. Asistent prihlasovania do "
 "sietí sa automaticky otvorí, aby vám pomohol pripojiť sa."
-
-#: data/capnet-assist.metainfo.xml.in:42
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -77,6 +73,9 @@ msgstr "Aktualizácia elementary runtime na verziu 7"
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr "Aktualizácia elementary runtime na verziu 6.1"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New icon"
 #~ msgstr "Nová ikonka"
