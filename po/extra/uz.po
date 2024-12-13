@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-13 10:18+0000\n"
-"PO-Revision-Date: 2024-08-07 17:16+0000\n"
+"PO-Revision-Date: 2024-12-14 11:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Uzbek <https://l10n.elementary.io/projects/desktop/capnet-"
-"assist-extra/uz/>\n"
+"Language-Team: Uzbek <https://l10n.elementary.io/projects/desktop/"
+"capnet-assist-extra/uz/>\n"
 "Language: uz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/capnet-assist.metainfo.xml.in:10
 #: data/io.elementary.capnet-assist.desktop.in:3
@@ -44,7 +44,7 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:76 data/capnet-assist.metainfo.xml.in:88
 #: data/capnet-assist.metainfo.xml.in:97 data/capnet-assist.metainfo.xml.in:106
 msgid "Updated translations"
-msgstr ""
+msgstr "Yangilangan tarjimalar"
 
 #: data/capnet-assist.metainfo.xml.in:60
 msgid "Update to elementary runtime 8"
