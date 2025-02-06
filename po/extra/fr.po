@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-13 10:18+0000\n"
 "PO-Revision-Date: 2025-02-06 16:28+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Last-Translator: mrtn2592 <mushroom25@live.fr>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/fr/>\n"
 "Language: fr\n"
@@ -60,11 +60,11 @@ msgstr "Améliorations des performances"
 
 #: data/capnet-assist.metainfo.xml.in:75
 msgid "Update to elementary runtime 7.2"
-msgstr "Mise à jour vers l'exécutable elementary 7.2"
+msgstr "Mise à jour vers l'environnement d'exécution elementary 7.2"
 
 #: data/capnet-assist.metainfo.xml.in:87
 msgid "Update to elementary runtime 7.1"
-msgstr "Mise à jour vers l'exécutable elementary 7.1"
+msgstr "Mise à jour vers l'environnement d'exécution elementary 7.1"
 
 #: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 7"
