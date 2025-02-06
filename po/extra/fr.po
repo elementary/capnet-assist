@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-13 10:18+0000\n"
-"PO-Revision-Date: 2025-02-06 15:06+0000\n"
+"PO-Revision-Date: 2025-02-06 16:27+0000\n"
 "Last-Translator: LinkfandosVF <gael.fandos@icloud.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/fr/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:10
 #: data/io.elementary.capnet-assist.desktop.in:3
 msgid "Captive Network Assistant"
-msgstr "Assistant au réseau captif"
+msgstr "Assistant de réseau captif"
 
 #: data/capnet-assist.metainfo.xml.in:11
 #: data/io.elementary.capnet-assist.desktop.in:6
@@ -37,8 +37,8 @@ msgid ""
 "get connected."
 msgstr ""
 "Connectez-vous facilement aux portails captifs, tels que les réseaux Wi-Fi "
-"dans les cafés, les aéroports et les trains. L'assistant au réseau captif "
-"s’ouvre automatiquement pour vous aider à vous connecter."
+"dans les cafés, aéroports, trains... L'assistant au réseau captif s’ouvre "
+"automatiquement pour vous aider à vous connecter."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
