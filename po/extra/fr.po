@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-13 10:18+0000\n"
 "PO-Revision-Date: 2025-02-06 16:27+0000\n"
-"Last-Translator: LinkfandosVF <gael.fandos@icloud.com>\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/fr/>\n"
 "Language: fr\n"
@@ -56,7 +56,7 @@ msgstr "Mise à jour vers le programme d'exécution d'elementary 8"
 
 #: data/capnet-assist.metainfo.xml.in:61
 msgid "Performance improvements"
-msgstr "Améliorations de performance"
+msgstr "Améliorations des performances"
 
 #: data/capnet-assist.metainfo.xml.in:75
 msgid "Update to elementary runtime 7.2"
