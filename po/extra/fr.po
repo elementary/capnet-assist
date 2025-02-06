@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-13 10:18+0000\n"
-"PO-Revision-Date: 2025-02-06 16:28+0000\n"
-"Last-Translator: mrtn2592 <mushroom25@live.fr>\n"
+"PO-Revision-Date: 2025-02-07 17:16+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/"
 "capnet-assist-extra/fr/>\n"
 "Language: fr\n"
@@ -64,7 +64,7 @@ msgstr "Mise à jour vers l'environnement d'exécution elementary 7.2"
 
 #: data/capnet-assist.metainfo.xml.in:87
 msgid "Update to elementary runtime 7.1"
-msgstr "Mise à jour vers l'environnement d'exécution elementary 7.1"
+msgstr "Mise à jour vers l'environnement d'exécution d'elementary 7.1"
 
 #: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 7"
