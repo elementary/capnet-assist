@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-13 10:18+0000\n"
+"POT-Creation-Date: 2025-04-15 14:07+0000\n"
 "PO-Revision-Date: 2024-12-24 18:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin@serwin.dev>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/desktop/"
-"capnet-assist-extra/pl/>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/desktop/capnet-"
+"assist-extra/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,6 +41,10 @@ msgstr ""
 "sieci Wi-Fi w kawiarniach, na lotniskach czy w pociągach. Program asystenta "
 "sieci uwierzytelnianych otworzy się automatycznie, aby pomóc Ci nawiązać "
 "połączenie."
+
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -75,9 +79,6 @@ msgstr "Aktualizacja do elementary runtime 7"
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr "Aktualizacja do elementary runtime 6.1"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "New icon"
 #~ msgstr "Nowa ikona"
