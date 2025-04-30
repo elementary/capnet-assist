@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-13 10:18+0000\n"
+"POT-Creation-Date: 2025-04-15 14:07+0000\n"
 "PO-Revision-Date: 2018-11-03 13:14+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/desktop/"
@@ -39,6 +39,10 @@ msgstr ""
 "Jednostavno se prijavite na mreže putem portala, poput bežičnih mreža u "
 "kafićima, na aerodromu i u vozovima. Pomoćnik za mreže putem captive portala "
 "automatski se otvara kako bi Vam pomogao da se povežete."
+
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -73,9 +77,6 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "preferences-system-network"
 #~ msgstr "preferences-system-network"

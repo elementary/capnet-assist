@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-13 10:18+0000\n"
+"POT-Creation-Date: 2025-04-15 14:07+0000\n"
 "PO-Revision-Date: 2020-04-05 22:10+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -37,6 +37,10 @@ msgid ""
 msgstr ""
 "कॉफी शॉप, विमानतळ आणि ट्रेनमध्ये कॅप्टिव्ह पोर्टल-जसे वाय-फाय नेटवर्कमध्ये लॉग इन करा-"
 "सहजतेने. कॅप्टिव्ह नेटवर्क सहाय्यक आपोआप कनेक्ट होण्यास मदत करण्यासाठी स्वयंचलितपणे उघडते."
+
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr "एलिमेंटरी,Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -71,9 +75,6 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "एलिमेंटरी,Inc."
 
 #~ msgid "preferences-system-network"
 #~ msgstr "preferences-system-network"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-13 10:18+0000\n"
+"POT-Creation-Date: 2025-04-15 14:07+0000\n"
 "PO-Revision-Date: 2019-09-19 18:26+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -38,6 +38,10 @@ msgstr ""
 "Inicie sesión en portais cativos (como redes Wi-Fi en cafeterías, aeroportos "
 "e trens) con facilidade. O asistente de portais cativos ábrese "
 "automaticamente para conectarse."
+
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
@@ -72,9 +76,6 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "preferences-system-network"
 #~ msgstr "preferences-system-network"
