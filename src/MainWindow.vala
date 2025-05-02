@@ -226,7 +226,7 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
                         }
                     }
                     break;
-                default;
+                default:
                     break;
             }
 
