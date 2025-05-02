@@ -206,9 +206,10 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
             switch (type) {
                 case WebKit.PolicyDecisionType.NEW_WINDOW_ACTION:
                     if (decision is WebKit.ResponsePolicyDecision) {
-                        create_tab ((decision as WebKit.ResponsePolicyDecision).request.get_uri ());
+                        var policy = (WebKit.ResponsePolicyDecision) decision;
+                        create_tab (policy.request.get_uri ());
                     }
-                break;
+                    break;
                 case WebKit.PolicyDecisionType.RESPONSE:
                     if (decision is WebKit.ResponsePolicyDecision) {
                         var policy = (WebKit.ResponsePolicyDecision) decision;
@@ -224,7 +225,9 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
                             return false;
                         }
                     }
-                break;
+                    break;
+                default:
+                    break;
             }
 
             return true;
