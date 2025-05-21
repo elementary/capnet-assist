@@ -8,51 +8,54 @@ msgstr ""
 "Project-Id-Version: io.elementary.capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 14:07+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-05-22 12:55+0000\n"
+"Last-Translator: Buni <ben.gordon@posteo.de>\n"
+"Language-Team: Scots <https://l10n.elementaryos.org/projects/desktop/"
+"capnet-assist/sco/>\n"
 "Language: sco\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: src/Application.vala:92
 msgid "Load this address in the browser window"
-msgstr ""
+msgstr "load this address in the brooser winda"
 
 #: src/Application.vala:92
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/MainWindow.vala:98
 msgid "Log in"
-msgstr ""
+msgstr "Log in"
 
 #: src/MainWindow.vala:166
 #, c-format
 msgid "Expires %s"
-msgstr ""
+msgstr "Expires %s"
 
 #: src/MainWindow.vala:170
 #, c-format
 msgid "Issued by “%s”"
-msgstr ""
+msgstr "Issued by “%s”"
 
 #: src/TabbedWebView.vala:92
 #, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr ""
+msgstr "“%s” is served via a unprotected connection"
 
 #: src/TabbedWebView.vala:95
 #, c-format
 msgid "“%s” is served over a protected connection"
-msgstr ""
+msgstr "“%s” is served via a protected connection"
 
 #: src/TabbedWebView.vala:98
 #, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
-msgstr ""
+msgstr "Sum elements o “%s” ar served via a unprotected connection"
 
 #: src/TabbedWebView.vala:102
 msgid "Loading captive portal"
-msgstr ""
+msgstr "loadin captive portal"
