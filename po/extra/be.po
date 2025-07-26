@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 14:07+0000\n"
-"PO-Revision-Date: 2025-07-19 10:55+0000\n"
+"PO-Revision-Date: 2025-07-27 08:55+0000\n"
 "Last-Translator: lenify <lenify@tutanota.com>\n"
 "Language-Team: Belarusian <https://l10n.elementaryos.org/projects/desktop/"
 "capnet-assist-extra/be/>\n"
@@ -28,7 +28,7 @@ msgstr "Памочнік аўтарызацыі ў сетцы"
 #: data/capnet-assist.metainfo.xml.in:11
 #: data/io.elementary.capnet-assist.desktop.in:6
 msgid "Connect to captive network portals"
-msgstr ""
+msgstr "Далучайцеся да публічных сетак"
 
 #: data/capnet-assist.metainfo.xml.in:13
 msgid ""
@@ -36,6 +36,9 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
+"Лёгка далучайцеся да публічных сетак — такіх як Wi-Fi у кавярнях, аэрапортах "
+"і цягніках. Памочнік аўтарызацыі ў сетцы адкрываецца аўтаматычна, каб "
+"дапамагчы вам злучыцца."
 
 #: data/capnet-assist.metainfo.xml.in:42
 msgid "elementary, Inc."
@@ -43,7 +46,7 @@ msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51
 msgid "Add CTRL+Q quit shortcut"
-msgstr ""
+msgstr "Даданая спалучэнне клавіш CTRL+Q для выхада"
 
 #: data/capnet-assist.metainfo.xml.in:52 data/capnet-assist.metainfo.xml.in:62
 #: data/capnet-assist.metainfo.xml.in:76 data/capnet-assist.metainfo.xml.in:88
@@ -53,24 +56,24 @@ msgstr "Абноўлены пераклады"
 
 #: data/capnet-assist.metainfo.xml.in:60
 msgid "Update to elementary runtime 8"
-msgstr ""
+msgstr "Абноўлена асяроддзя выканання elementary да 8"
 
 #: data/capnet-assist.metainfo.xml.in:61
 msgid "Performance improvements"
-msgstr ""
+msgstr "Паляпшэнні прадуктыўнасці"
 
 #: data/capnet-assist.metainfo.xml.in:75
 msgid "Update to elementary runtime 7.2"
-msgstr ""
+msgstr "Абноўлена асяроддзя выканання elementary да 7.2"
 
 #: data/capnet-assist.metainfo.xml.in:87
 msgid "Update to elementary runtime 7.1"
-msgstr ""
+msgstr "Абноўлена асяроддзя выканання elementary да 7.1"
 
 #: data/capnet-assist.metainfo.xml.in:96
 msgid "Update to elementary runtime 7"
-msgstr ""
+msgstr "Абноўлена асяроддзя выканання elementary да 7"
 
 #: data/capnet-assist.metainfo.xml.in:105
 msgid "Update to elementary runtime 6.1"
-msgstr ""
+msgstr "Абноўлена асяроддзя выканання elementary да 6.1"
