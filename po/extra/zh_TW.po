@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-15 14:07+0000\n"
+"POT-Creation-Date: 2025-08-12 20:08+0000\n"
 "PO-Revision-Date: 2024-12-12 05:36+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://l10n.elementary.io/"
@@ -43,37 +43,38 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/capnet-assist.metainfo.xml.in:51
-msgid "Add CTRL+Q quit shortcut"
-msgstr "新增離開應用程式的 CTRL+Q 快捷鍵"
-
-#: data/capnet-assist.metainfo.xml.in:52 data/capnet-assist.metainfo.xml.in:62
-#: data/capnet-assist.metainfo.xml.in:76 data/capnet-assist.metainfo.xml.in:88
-#: data/capnet-assist.metainfo.xml.in:97 data/capnet-assist.metainfo.xml.in:106
+#: data/capnet-assist.metainfo.xml.in:51 data/capnet-assist.metainfo.xml.in:60
+#: data/capnet-assist.metainfo.xml.in:70 data/capnet-assist.metainfo.xml.in:84
+#: data/capnet-assist.metainfo.xml.in:96 data/capnet-assist.metainfo.xml.in:105
+#: data/capnet-assist.metainfo.xml.in:114
 msgid "Updated translations"
 msgstr "更新翻譯"
 
-#: data/capnet-assist.metainfo.xml.in:60
+#: data/capnet-assist.metainfo.xml.in:59
+msgid "Add CTRL+Q quit shortcut"
+msgstr "新增離開應用程式的 CTRL+Q 快捷鍵"
+
+#: data/capnet-assist.metainfo.xml.in:68
 msgid "Update to elementary runtime 8"
 msgstr "將 elementary 執行環境更新至第 8 版"
 
-#: data/capnet-assist.metainfo.xml.in:61
+#: data/capnet-assist.metainfo.xml.in:69
 msgid "Performance improvements"
 msgstr "效能改善"
 
-#: data/capnet-assist.metainfo.xml.in:75
+#: data/capnet-assist.metainfo.xml.in:83
 msgid "Update to elementary runtime 7.2"
 msgstr "將 elementary 執行環境更新至第 7.2 版"
 
-#: data/capnet-assist.metainfo.xml.in:87
+#: data/capnet-assist.metainfo.xml.in:95
 msgid "Update to elementary runtime 7.1"
 msgstr "將 elementary 執行環境更新至第 7.1 版"
 
-#: data/capnet-assist.metainfo.xml.in:96
+#: data/capnet-assist.metainfo.xml.in:104
 msgid "Update to elementary runtime 7"
 msgstr "將 elementary 執行環境更新至第 7 版"
 
-#: data/capnet-assist.metainfo.xml.in:105
+#: data/capnet-assist.metainfo.xml.in:113
 msgid "Update to elementary runtime 6.1"
 msgstr "將 elementary 執行環境更新至第 6.1 版"
 
