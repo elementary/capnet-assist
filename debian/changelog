@@ -1,3 +1,9 @@
+capnet-assist (8.0.2) noble; urgency=medium
+
+  * New upstream release
+
+ -- Danielle Foré <danielle@elementary.io>  Tue, 02 Sep 2025 10:44:50 -0700
+
 capnet-assist (2.4.3) bionic; urgency=medium
 
   * Release 2.4.3 (#90)
