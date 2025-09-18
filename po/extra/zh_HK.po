@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-12 20:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh_HK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/capnet-assist.metainfo.xml.in:10
+#: data/io.elementary.capnet-assist.desktop.in:3
+msgid "Captive Network Assistant"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:11
+#: data/io.elementary.capnet-assist.desktop.in:6
+msgid "Connect to captive network portals"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:13
+msgid ""
+"Log into captive portals—like Wi-Fi networks at coffee shops, airports, and "
+"trains—with ease. Captive Network Assistant automatically opens to help you "
+"get connected."
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:42
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:51 data/capnet-assist.metainfo.xml.in:60
+#: data/capnet-assist.metainfo.xml.in:70 data/capnet-assist.metainfo.xml.in:84
+#: data/capnet-assist.metainfo.xml.in:96 data/capnet-assist.metainfo.xml.in:105
+#: data/capnet-assist.metainfo.xml.in:114
+msgid "Updated translations"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:59
+msgid "Add CTRL+Q quit shortcut"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:68
+msgid "Update to elementary runtime 8"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:69
+msgid "Performance improvements"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:83
+msgid "Update to elementary runtime 7.2"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:95
+msgid "Update to elementary runtime 7.1"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:104
+msgid "Update to elementary runtime 7"
+msgstr ""
+
+#: data/capnet-assist.metainfo.xml.in:113
+msgid "Update to elementary runtime 6.1"
+msgstr ""
