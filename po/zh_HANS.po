@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.elementary.capnet-assist package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: io.elementary.capnet-assist\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-12 20:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh_HANS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Application.vala:92
+msgid "Load this address in the browser window"
+msgstr ""
+
+#: src/Application.vala:92
+msgid "URL"
+msgstr ""
+
+#: src/MainWindow.vala:98
+msgid "Log in"
+msgstr ""
+
+#: src/MainWindow.vala:166
+#, c-format
+msgid "Expires %s"
+msgstr ""
+
+#: src/MainWindow.vala:170
+#, c-format
+msgid "Issued by “%s”"
+msgstr ""
+
+#: src/TabbedWebView.vala:92
+#, c-format
+msgid "“%s” is served over an unprotected connection"
+msgstr ""
+
+#: src/TabbedWebView.vala:95
+#, c-format
+msgid "“%s” is served over a protected connection"
+msgstr ""
+
+#: src/TabbedWebView.vala:98
+#, c-format
+msgid "Some elements of “%s” are served over an unprotected connection"
+msgstr ""
+
+#: src/TabbedWebView.vala:102
+msgid "Loading captive portal"
+msgstr ""
