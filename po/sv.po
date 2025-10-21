@@ -8,24 +8,24 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-12 20:08+0000\n"
-"PO-Revision-Date: 2018-10-22 00:03+0000\n"
-"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
-"Language-Team: Swedish <https://weblate.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2025-10-22 05:26+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
 "capnet-assist/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: src/Application.vala:92
 msgid "Load this address in the browser window"
-msgstr ""
+msgstr "Läs in den här adressen i webbläsarfönstret"
 
 #: src/Application.vala:92
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/MainWindow.vala:98
 msgid "Log in"
@@ -34,34 +34,28 @@ msgstr "Logga in"
 #: src/MainWindow.vala:166
 #, c-format
 msgid "Expires %s"
-msgstr ""
+msgstr "Löper ut %s"
 
 #: src/MainWindow.vala:170
 #, c-format
 msgid "Issued by “%s”"
-msgstr ""
+msgstr "Utfärdad av \"%s\""
 
 #: src/TabbedWebView.vala:92
-#, fuzzy, c-format
-#| msgid "The page is served over an unprotected connection."
+#, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr "Sidan hämtas över en osäker uppkoppling."
+msgstr "\"%s\" serveras över en oskyddad anslutning"
 
 #: src/TabbedWebView.vala:95
-#, fuzzy, c-format
-#| msgid "The page is served over a protected connection."
+#, c-format
 msgid "“%s” is served over a protected connection"
-msgstr "Sidan hämtas över en säker uppkoppling."
+msgstr "\"%s\" serveras via en skyddad anslutning"
 
 #: src/TabbedWebView.vala:98
-#, fuzzy, c-format
-#| msgid ""
-#| "Some elements of this page are served over an unprotected connection."
+#, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
-msgstr "En del av sidan hämtas genom en osäker uppkoppling."
+msgstr "Vissa delar av \"%s\" serveras via en oskyddad anslutning"
 
 #: src/TabbedWebView.vala:102
-#, fuzzy
-#| msgid "Loading captive portal."
 msgid "Loading captive portal"
-msgstr "Laddar captive-portal."
+msgstr "Läser in fångstportal"
