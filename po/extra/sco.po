@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-12 20:08+0000\n"
-"PO-Revision-Date: 2026-04-06 14:34+0000\n"
+"PO-Revision-Date: 2026-04-06 14:36+0000\n"
 "Last-Translator: Buni <ben.gordon@posteo.de>\n"
 "Language-Team: Scots <https://l10n.elementaryos.org/projects/desktop/"
 "capnet-assist-extra/sco/>\n"
@@ -35,9 +35,9 @@ msgid ""
 "trains—with ease. Captive Network Assistant automatically opens to help you "
 "get connected."
 msgstr ""
-"Log in tae captive portal — like Wi-Fi netwirks in coffee shaps, aeroports, "
-"an trains — wi eeze. Captive Netwirk Assistant automatically apens tae help "
-"ye get connected."
+"Inlog tae captive portals — lik Wi-Fi netwirks in coffee shaps, aeroports, "
+"or trains — wi eese. Captive Netwirk Assistant automatically apens tae help "
+"ye get conneckit."
 
 #: data/capnet-assist.metainfo.xml.in:42
 msgid "elementary, Inc."
@@ -52,7 +52,7 @@ msgstr "Rewrocht translaitions"
 
 #: data/capnet-assist.metainfo.xml.in:59
 msgid "Add CTRL+Q quit shortcut"
-msgstr "Add CRTL+Q quit shortcut"
+msgstr "Eik CRTL+Q quit shortcut"
 
 #: data/capnet-assist.metainfo.xml.in:68
 msgid "Update to elementary runtime 8"
@@ -60,7 +60,7 @@ msgstr "Update tae elementary runtime 8"
 
 #: data/capnet-assist.metainfo.xml.in:69
 msgid "Performance improvements"
-msgstr ""
+msgstr "Performance impruivements"
 
 #: data/capnet-assist.metainfo.xml.in:83
 msgid "Update to elementary runtime 7.2"
