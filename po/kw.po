@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-12 20:08+0000\n"
-"PO-Revision-Date: 2026-09-14 23:13+0000\n"
+"PO-Revision-Date: 2026-10-03 18:03+0000\n"
 "Last-Translator: Flynn <flynn@users.noreply.l10n.elementaryos.org>\n"
 "Language-Team: Cornish <https://l10n.elementaryos.org/projects/desktop/"
 "capnet-assist/kw/>\n"
@@ -35,33 +35,33 @@ msgstr "Gorgevren"
 
 #: src/MainWindow.vala:98
 msgid "Log in"
-msgstr ""
+msgstr "Omgelmi"
 
 #: src/MainWindow.vala:166
 #, c-format
 msgid "Expires %s"
-msgstr ""
+msgstr "Diwedhans: %s"
 
 #: src/MainWindow.vala:170
 #, c-format
 msgid "Issued by “%s”"
-msgstr ""
+msgstr "Dyllys gans “%s”"
 
 #: src/TabbedWebView.vala:92
 #, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr ""
+msgstr "“%s” yw servys dre junyans diwith"
 
 #: src/TabbedWebView.vala:95
 #, c-format
 msgid "“%s” is served over a protected connection"
-msgstr ""
+msgstr "“%s” yw servys dre junyans difresys"
 
 #: src/TabbedWebView.vala:98
 #, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
-msgstr ""
+msgstr "Nebes elvennow a “%s” yw servys dre junyans diwith"
 
 #: src/TabbedWebView.vala:102
 msgid "Loading captive portal"
-msgstr ""
+msgstr "Ow karga portal keth"
