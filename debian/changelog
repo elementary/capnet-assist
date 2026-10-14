@@ -1,3 +1,9 @@
+capnet-assist (9.0.0) noble; urgency=medium
+
+  * Release 9.0.0 (#153)
+
+ -- elementary <builds@elementary.io>  Wed, 14 Oct 2026 22:29:22 +0000
+
 capnet-assist (8.0.2) noble; urgency=medium
 
   * New upstream release
