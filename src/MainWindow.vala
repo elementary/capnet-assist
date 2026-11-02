@@ -109,6 +109,7 @@ public class Captive.MainWindow : Gtk.ApplicationWindow {
         box.append (tabview);
 
         child = box;
+        title = _("Captive Network Assistant");
 
         tabview.notify["selected-page"].connect (() => {
             var webview = (TabbedWebView) tabview.get_selected_page ().child;
