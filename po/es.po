@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-12 20:08+0000\n"
+"POT-Creation-Date: 2026-11-03 20:28+0900\n"
 "PO-Revision-Date: 2024-06-16 21:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/capnet-"
@@ -20,53 +20,54 @@ msgstr ""
 "X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2017-02-22 06:06+0000\n"
 
-#: src/Application.vala:92
+#: src/Application.vala:78
 msgid "Load this address in the browser window"
 msgstr "Cargar esta dirección en la ventana del navegador web"
 
-#: src/Application.vala:92
+#: src/Application.vala:78
 msgid "URL"
 msgstr "URL"
 
-#: src/MainWindow.vala:98
+#: src/MainWindow.vala:83
 msgid "Log in"
 msgstr "Iniciar sesión"
 
-#: src/MainWindow.vala:166
+#: src/MainWindow.vala:112
+msgid "Captive Network Assistant"
+msgstr "Asistente de portal cautivo"
+
+#: src/MainWindow.vala:152
 #, c-format
 msgid "Expires %s"
 msgstr "Expira el %s"
 
-#: src/MainWindow.vala:170
+#: src/MainWindow.vala:156
 #, c-format
 msgid "Issued by “%s”"
 msgstr "Emitido por «%s»"
 
-#: src/TabbedWebView.vala:92
+#: src/TabbedWebView.vala:77
 #, c-format
 msgid "“%s” is served over an unprotected connection"
 msgstr "«%s» se suministra mediante una conexión no segura"
 
-#: src/TabbedWebView.vala:95
+#: src/TabbedWebView.vala:80
 #, c-format
 msgid "“%s” is served over a protected connection"
 msgstr "«%s» se suministra mediante una conexión segura"
 
-#: src/TabbedWebView.vala:98
+#: src/TabbedWebView.vala:83
 #, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
 msgstr ""
 "Algunos elementos de «%s» se suministran mediante una conexión no segura"
 
-#: src/TabbedWebView.vala:102
+#: src/TabbedWebView.vala:87
 msgid "Loading captive portal"
 msgstr "Cargando el portal cautivo"
 
 #~ msgid "Force the browser window to appear"
 #~ msgstr "Forzar que se muestre la ventana del navegador"
-
-#~ msgid "Captive Network Assistant"
-#~ msgstr "Asistente de portal cautivo"
 
 #~ msgid "Connect to captive network portals"
 #~ msgstr "Conéctese a un portal cautivo de red"

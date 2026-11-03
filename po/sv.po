@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-12 20:08+0000\n"
+"POT-Creation-Date: 2026-11-03 20:28+0900\n"
 "PO-Revision-Date: 2025-10-30 09:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
@@ -19,43 +19,47 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.11.4\n"
 
-#: src/Application.vala:92
+#: src/Application.vala:78
 msgid "Load this address in the browser window"
 msgstr "Läs in den här adressen i webbläsarfönstret"
 
-#: src/Application.vala:92
+#: src/Application.vala:78
 msgid "URL"
 msgstr "URL"
 
-#: src/MainWindow.vala:98
+#: src/MainWindow.vala:83
 msgid "Log in"
 msgstr "Logga in"
 
-#: src/MainWindow.vala:166
+#: src/MainWindow.vala:112
+msgid "Captive Network Assistant"
+msgstr ""
+
+#: src/MainWindow.vala:152
 #, c-format
 msgid "Expires %s"
 msgstr "Löper ut %s"
 
-#: src/MainWindow.vala:170
+#: src/MainWindow.vala:156
 #, c-format
 msgid "Issued by “%s”"
 msgstr "Utfärdad av \"%s\""
 
-#: src/TabbedWebView.vala:92
+#: src/TabbedWebView.vala:77
 #, c-format
 msgid "“%s” is served over an unprotected connection"
 msgstr "\"%s\" serveras över en oskyddad anslutning"
 
-#: src/TabbedWebView.vala:95
+#: src/TabbedWebView.vala:80
 #, c-format
 msgid "“%s” is served over a protected connection"
 msgstr "\"%s\" serveras via en skyddad anslutning"
 
-#: src/TabbedWebView.vala:98
+#: src/TabbedWebView.vala:83
 #, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
 msgstr "Vissa delar av \"%s\" serveras via en oskyddad anslutning"
 
-#: src/TabbedWebView.vala:102
+#: src/TabbedWebView.vala:87
 msgid "Loading captive portal"
 msgstr "Läser in upplåsningsportal"
