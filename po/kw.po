@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-03 20:28+0900\n"
-"PO-Revision-Date: 2026-10-03 18:03+0000\n"
-"Last-Translator: Flynn <flynn@users.noreply.l10n.elementaryos.org>\n"
+"PO-Revision-Date: 2026-11-04 12:04+0000\n"
+"Last-Translator: Automatic translation add-on <noreply-addon-"
+"autotranslate@weblate.org>\n"
 "Language-Team: Cornish <https://l10n.elementaryos.org/projects/desktop/"
 "capnet-assist/kw/>\n"
 "Language: kw\n"
@@ -39,7 +40,7 @@ msgstr "Omgelmi"
 
 #: src/MainWindow.vala:112
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Darbarell Rosweyth Keth"
 
 #: src/MainWindow.vala:152
 #, c-format
