@@ -8,9 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-03 20:28+0900\n"
-"PO-Revision-Date: 2021-08-27 18:48+0000\n"
-"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
-"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/capnet-"
+"PO-Revision-Date: 2026-11-04 12:04+0000\n"
+"Last-Translator: Automatic translation add-on <noreply-addon-"
+"autotranslate@weblate.org>\n"
+"Language-Team: Arabic <https://l10n.elementaryos.org/projects/desktop/capnet-"
 "assist/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: src/Application.vala:78
 msgid "Load this address in the browser window"
@@ -34,7 +35,7 @@ msgstr "سجل الدخول"
 
 #: src/MainWindow.vala:112
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "مساعد بوابة الدخول الإلكترونية"
 
 #: src/MainWindow.vala:152
 #, c-format
