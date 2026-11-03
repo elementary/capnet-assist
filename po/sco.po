@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: io.elementary.capnet-assist\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-03 20:28+0900\n"
-"PO-Revision-Date: 2025-05-22 12:55+0000\n"
-"Last-Translator: Buni <ben.gordon@posteo.de>\n"
+"PO-Revision-Date: 2026-11-04 12:04+0000\n"
+"Last-Translator: Automatic translation add-on <noreply-addon-"
+"autotranslate@weblate.org>\n"
 "Language-Team: Scots <https://l10n.elementaryos.org/projects/desktop/capnet-"
 "assist/sco/>\n"
 "Language: sco\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: src/Application.vala:78
 msgid "Load this address in the browser window"
@@ -33,7 +34,7 @@ msgstr "Log in"
 
 #: src/MainWindow.vala:112
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Captive Netwirk Assistant"
 
 #: src/MainWindow.vala:152
 #, c-format
