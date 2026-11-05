@@ -8,25 +8,28 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-03 20:28+0900\n"
-"PO-Revision-Date: 2016-10-10 12:53-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-11-06 11:04+0000\n"
+"Last-Translator: Davit Yedigaryan <davit.yedigaryan.1993@gmail.com>\n"
+"Language-Team: Armenian <https://l10n.elementaryos.org/projects/desktop/"
+"capnet-assist/hy/>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: src/Application.vala:78
 msgid "Load this address in the browser window"
-msgstr ""
+msgstr "Բեռնել այս հասցեն դիտարկիչի պատուհանում"
 
 #: src/Application.vala:78
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/MainWindow.vala:83
 msgid "Log in"
-msgstr ""
+msgstr "Մուտք գործել"
 
 #: src/MainWindow.vala:112
 msgid "Captive Network Assistant"
@@ -35,28 +38,28 @@ msgstr ""
 #: src/MainWindow.vala:152
 #, c-format
 msgid "Expires %s"
-msgstr ""
+msgstr "Լրանում է %s-ին"
 
 #: src/MainWindow.vala:156
 #, c-format
 msgid "Issued by “%s”"
-msgstr ""
+msgstr "Տրված է «%s»-ի կողմից"
 
 #: src/TabbedWebView.vala:77
 #, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr ""
+msgstr "«%s»-ը տրամադրվում է անպաշտպան կապով"
 
 #: src/TabbedWebView.vala:80
 #, c-format
 msgid "“%s” is served over a protected connection"
-msgstr ""
+msgstr "«%s»-ը տրամադրվում է պաշտպանված կապով"
 
 #: src/TabbedWebView.vala:83
 #, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
-msgstr ""
+msgstr "«%s»-ի որոշ տարրեր տրամադրվում են անպաշտպան կապով"
 
 #: src/TabbedWebView.vala:87
 msgid "Loading captive portal"
-msgstr ""
+msgstr "Բեռնվում է մուտքի էջը"
