@@ -8,18 +8,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-15 07:28+0900\n"
-"PO-Revision-Date: 2016-10-10 12:53-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-11-09 21:04+0000\n"
+"Last-Translator: Davit Yedigaryan <davit.yedigaryan.1993@gmail.com>\n"
+"Language-Team: Armenian <https://l10n.elementaryos.org/projects/desktop/"
+"capnet-assist-extra/hy/>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: data/capnet-assist.metainfo.xml.in:10
 #: data/io.elementary.capnet-assist.desktop.in:2
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Մուտքի ցանցի օգնական"
 
 #: data/capnet-assist.metainfo.xml.in:11
 #: data/io.elementary.capnet-assist.desktop.in:5
@@ -35,7 +38,7 @@ msgstr ""
 
 #: data/capnet-assist.metainfo.xml.in:42
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/capnet-assist.metainfo.xml.in:51 data/capnet-assist.metainfo.xml.in:59
 #: data/capnet-assist.metainfo.xml.in:68 data/capnet-assist.metainfo.xml.in:78
@@ -43,7 +46,7 @@ msgstr ""
 #: data/capnet-assist.metainfo.xml.in:113
 #: data/capnet-assist.metainfo.xml.in:122
 msgid "Updated translations"
-msgstr ""
+msgstr "Թարմացված թարգմանություններ"
 
 #: data/capnet-assist.metainfo.xml.in:67
 msgid "Add CTRL+Q quit shortcut"
