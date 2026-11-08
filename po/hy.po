@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-03 20:28+0900\n"
-"PO-Revision-Date: 2026-11-06 11:04+0000\n"
+"PO-Revision-Date: 2026-11-09 21:04+0000\n"
 "Last-Translator: Davit Yedigaryan <davit.yedigaryan.1993@gmail.com>\n"
 "Language-Team: Armenian <https://l10n.elementaryos.org/projects/desktop/"
 "capnet-assist/hy/>\n"
@@ -33,7 +33,7 @@ msgstr "Մուտք գործել"
 
 #: src/MainWindow.vala:112
 msgid "Captive Network Assistant"
-msgstr ""
+msgstr "Մուտքի ցանցի օգնական"
 
 #: src/MainWindow.vala:152
 #, c-format
