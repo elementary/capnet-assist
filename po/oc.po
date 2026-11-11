@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-03 20:28+0900\n"
-"PO-Revision-Date: 2026-11-04 12:04+0000\n"
-"Last-Translator: Automatic translation add-on <noreply-addon-"
-"autotranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-11-12 16:04+0000\n"
+"Last-Translator: Mejans <farga@mejans.fr>\n"
 "Language-Team: Occitan <https://l10n.elementaryos.org/projects/desktop/"
 "capnet-assist/oc/>\n"
 "Language: oc\n"
@@ -39,39 +38,32 @@ msgstr "Assistent de ret captiu"
 #: src/MainWindow.vala:152
 #, c-format
 msgid "Expires %s"
-msgstr ""
+msgstr "Expira lo %s"
 
 #: src/MainWindow.vala:156
 #, c-format
 msgid "Issued by “%s”"
-msgstr ""
+msgstr "Emés per « %s »"
 
 #: src/TabbedWebView.vala:77
-#, fuzzy, c-format
-#| msgid "The page is served over an unprotected connection."
+#, c-format
 msgid "“%s” is served over an unprotected connection"
-msgstr "Aquesta pagina s’aficha a partir d’una connexion pas segura."
+msgstr "« %s » s’aficha a partir d’una connexion non protegida"
 
 #: src/TabbedWebView.vala:80
-#, fuzzy, c-format
-#| msgid "The page is served over a protected connection."
+#, c-format
 msgid "“%s” is served over a protected connection"
-msgstr "Aquesta pagina s’aficha a partir d’una connexion segura."
+msgstr "« %s » s’aficha a partir d’una connexion protegida"
 
 #: src/TabbedWebView.vala:83
-#, fuzzy, c-format
-#| msgid ""
-#| "Some elements of this page are served over an unprotected connection."
+#, c-format
 msgid "Some elements of “%s” are served over an unprotected connection"
 msgstr ""
-"D’unes elements d’aquesta pagina son afichats d’una connexion pas segura "
-"estant."
+"D’unes elements de « %s » son afichats d’una connexion non protegida estant"
 
 #: src/TabbedWebView.vala:87
-#, fuzzy
-#| msgid "Loading captive portal."
 msgid "Loading captive portal"
-msgstr "Cargament del portanèl."
+msgstr "Cargament del portanèl captiu"
 
 #~ msgid "Force the browser window to appear"
 #~ msgstr "Forçar l’afichatge de la fenèstra del navegador"
